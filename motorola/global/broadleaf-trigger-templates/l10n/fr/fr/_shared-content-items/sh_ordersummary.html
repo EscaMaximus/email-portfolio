@@ -1,0 +1,78 @@
+					%%[IF @ProjectFolder == 'ORDER_CONFIRMATION' OR @ProjectFolder == 'SHIP_CONFIRMATION' OR @ProjectFolder == 'ORDER_ACKNOWLEDGED' THEN]%%
+					<tr>
+						<td style="padding: 0 30px 10px 30px;">
+							<!--[if (gte mso 9)|(IE)]><table width="540" align="left" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
+							<table class="col540" align="left" border="0" cellpadding="0" cellspacing="0" style="width: 100%; max-width: 540px;">
+								<tr>
+									<td valign="top">
+										<table width="100%" border="0" cellpadding="0" bgcolor="#ffffff" cellspacing="0" align="left">
+											<tr>
+												<td bgcolor="%%=v(@TemplateHighlightColor)=%%" style="vertical-align: top; padding:12px 12px 25px 12px; border-radius: 1px;">
+													<table width="100%" border="0" cellspacing="0" cellpadding="0">
+														<tr>
+															<td class="p" width="50%" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 16px; line-height: 22px; font-weight: normal; color: #FFFFFF; text-align: left; vertical-align: middle; padding:5px 0 5px 5px;">Sous-total</td>
+															<td class="p" width="50%" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 16px; line-height: 22px; font-weight: normal; color: #FFFFFF; text-align: right; vertical-align: middle; padding:5px 5px 5px 0;">%%=FormatNumber(@SubTotal,"C2", @C_Sharp_Locale_Str)=%%</td>
+														</tr>
+														<tr>
+															<td class="p" width="50%" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 16px; line-height: 22px; font-weight: normal; color: #FFFFFF; text-align: left; vertical-align: middle; padding:0 0 5px 5px;">R&eacute;ductions</td>
+															<td class="p" width="50%" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 16px; line-height: 22px; font-weight: normal; color: #FFFFFF; text-align: right; vertical-align: middle; padding:0 5px 5px 0;">
+															%%[IF (@DiscountAmt != 0.00) OR (@DiscountAmt != 0) THEN]%%
+																-%%=FormatNumber(@DiscountAmt,"C2", @C_Sharp_Locale_Str)=%%
+															%%[ELSE]%%
+																&ndash;
+															%%[ENDIF]%%
+															</td>
+														</tr>
+														<tr>
+															<td class="p" width="50%" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 16px; line-height: 22px; font-weight: normal; color: #FFFFFF; text-align: left; vertical-align: middle; padding:0 0 5px 5px;">Livraison</td>
+															<td class="p" width="50%" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 16px; line-height: 22px; font-weight: normal; color: #FFFFFF; text-align: right; vertical-align: middle; padding:0 5px 5px 0;">
+																%%[IF (@ShippingAmt != 0.00) OR (@ShippingAmt != 0) THEN]%%
+																	%%=FormatNumber(@ShippingAmt,"C2", @C_Sharp_Locale_Str)=%%
+																%%[ELSE]%%
+																	Gratuit
+																%%[ENDIF]%%
+															</td>
+														</tr>
+														<tr>
+															<td class="p" width="50%" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 16px; line-height: 22px; font-weight: normal; color: #FFFFFF; text-align: left; vertical-align: middle; padding:0 0 5px 5px;">TVA:</td>
+															<td class="p" width="50%" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 16px; line-height: 22px; font-weight: normal; color: #FFFFFF; text-align: right; vertical-align: middle; padding:0 5px 5px 0;">%%=FormatNumber(@EstimatedTaxAmt,"C2", @C_Sharp_Locale_Str)=%%</td>
+														</tr>
+														%%[IF @NumberOfInstallments >= 1 THEN]%%
+														<tr>
+															<td class="p" width="50%" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 16px; line-height: 22px; font-weight: normal; color: #FFFFFF; text-align: left; vertical-align: middle; padding:0 0 5px 5px;">Number of installments</td>
+															<td class="p" width="50%" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 16px; line-height: 22px; font-weight: normal; color: #FFFFFF; text-align: right; vertical-align: middle; padding:0 5px 5px 0;">%%=v(@NumberOfInstallments)=%%</td>
+														</tr>
+														%%[ENDIF]%%
+													</table>
+													<table width="100%" border="0" cellspacing="0" cellpadding="0">
+														<tr>
+															<td class="h4" width="100%" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 20px; line-height: 26px; font-weight:normal; color: #FFFFFF; text-align: right; vertical-align: middle; padding:5px 5px 5px 0">Total&nbsp;&nbsp;%%=FormatNumber(@TotalOrderAmt,"C2", @C_Sharp_Locale_Str)=%%</td>
+														</tr>
+													</table>
+												</td>
+											</tr>                         
+										</table>                                        
+									</td>
+								</tr>
+							</table>
+							<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+						</td>
+					</tr>
+					%%[ENDIF]%%
+					<tr>
+						<td style="padding: 0 30px 30px 30px; border-bottom: 1px solid #D3D3D3;">
+							<!--[if (gte mso 9)|(IE)]><table width="540" align="left" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
+							<table class="col540" align="left" border="0" cellpadding="0" cellspacing="0" style="width: 100%; max-width: 540px;">
+								<tr>
+									<td valign="top">
+										<table width="100%" border="0" cellspacing="0" cellpadding="0">
+											<tr>
+												<td height="46" class="button-full-width" style="background: %%=v(@TemplateHighlightColor)=%%; border-radius: 1px;" align="center" ><a href="%%=RedirectTo(Concat(@OrderStatusURL,@MotoOrderNumber))=%%" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 16px; line-height: 16px; font-weight: bold; color:#FFFFFF; text-decoration:none; display: block; width:100%; padding: 15px 0 15px 0;" title="&Eacute;tat de la commande" target="_blank" alias="order_status">&Eacute;tat de la commande</a></td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+							<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+						</td>
+					</tr>

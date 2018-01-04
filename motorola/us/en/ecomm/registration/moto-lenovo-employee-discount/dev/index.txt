@@ -1,0 +1,105 @@
+%%[
+	/*
+		US-EN MOTO/LENOVO EMPLOYEE COUPON EMAIL
+		Author: Motorola ExactTarget Team
+		Revision Date: 11/9/2016
+	*/	
+	/* GA Tagging Definitions */
+	VAR @UtmSource, @UtmMedium, @UtmCampaign, @UtmContent, @EmailHash, @FirstName, @Email
+	SET @UtmSource = 'motoemail'
+	SET @UtmMedium = 'email'
+	SET @UtmCampaign = 'ECOMM_NA_US_EN_REGISTRATION_MOTO'
+	SET @UtmContent = 'EMPLOYEEDISCOUNT'
+	SET @Email = emailaddr
+	SET @EmailHash = SHA256(@Email)
+
+	SET @FirstName = ProperCase(Lookup("REGISTRATION_PAGE_INSERT_Adt", "FIRST_NAME", "EMAIL_ADDRESS", @Email))
+
+	/* Claim Coupon */
+	VAR @CouponRow, @CouponCode, @rows, @row, @EmailAddress
+
+	SET @EmailAddress = AttributeValue("emailaddr")		
+
+	IF _messagecontext == "PREVIEW" THEN
+		SET @CouponCode = "XXXX-XXXX"
+	ELSE
+
+		SET @CouponRow = ClaimRow("ECOMM_NA_US_EN_PROMOTION_MOTO_CUSTOMCOUPONS","IsClaimed","SubscriberKey",@EmailAddress) 
+		IF empty(@CouponRow) THEN
+			/* You can do other error handling here if you want.*/
+			/* This aborts the send */
+			raiseError("no more coupons available")
+		ELSE
+			SET @CouponCode = field(@CouponRow,"CouponCode") 
+		ENDIF
+	ENDIF 
+
+]%%
+
+
+Thanks for your registration.
+
+
+*****
+
+
+%%[ IF NOT empty(@FirstName) THEN ]%%Hi %%=v(@FirstName)=%%,%%[ ELSE ]%%Hi,%%[ ENDIF ]%%
+
+Thanks for registering. As an employee of Motorola and Lenovo, you're eligible for a discount of up to 15% off smartphones, smartwatches, and accessories.
+
+Pricing is subject to change without notice. Discounts cannot be combined.
+
+Here's your unique promo code:
+
+%%=v(@CouponCode)=%%
+
+Just visit Motorola.com and enter the promo code at the end of checkout to receive the discount.
+
+Happy shopping,
+Your Friends at Motorola
+
+*****
+
+Motorola-
+http://www.motorola.com/us/home?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_bug_top
+
+Twitter-
+https://twitter.com/Moto_USA
+
+Facebook- 
+https://www.facebook.com/MotoUSA/
+
+Google+
+https://plus.google.com/+Moto
+
+Instagram-
+http://instagram.com/moto_usa/
+
+YouTube-
+https://www.youtube.com/user/motorola
+
+
+*****
+
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola.
+
+Promo code valid while supplies last. 
+
+We do not authorize reselling of devices purchased on this site for commercial purposes. Warranty, support, and any other services provided are not transferable if you resell devices purchased from this site.
+
+For employee pricing details, please refer to the FAQs.
+
+FAQs>
+https://motorola-global-portal.custhelp.com/app/answers/prod_answer_detail/a_id/106956
+
+Motorola values your privacy. Read the Motorola Privacy Policy for more information on our privacy practices. Please read the Motorola Website Terms of Use before using our website.
+
+Privacy>
+http://www.motorola.com/us/legal/privacy-policy
+
+Legal>
+http://www.motorola.com/us/legal/terms-of-use
+
+
+MOTOROLA and the Stylized M Logo are trademarks of Motorola Trademark Holdings, LLC. Android, Google and other marks are trademarks of Google Inc. All other trademarks are the property of their respective owners. ©%%=Format(Now(), "yyyy")=%% Motorola Mobility LLC. All rights reserved.

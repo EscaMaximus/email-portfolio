@@ -1,0 +1,120 @@
+﻿%%[
+	/*
+		CA-EN MOTO G4 FAMILY ANNC
+		Author: Motorola ExactTarget Team
+		Revision Date: 5/15/2016
+	*/	
+		/* GA Tagging Definitions */
+		
+		SET @UtmSource = 'motoemail'
+		SET @UtmMedium = 'email'
+		SET @UtmCampaign = 'ECOMM_NA_CA_EN_PRODUCT_MOTOG4FAMILY'
+		SET @UtmContent = 'ANNC'
+
+]%%
+
+
+Moto G Plus and Moto G Play are on their way.
+
+
+*****
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola.
+
+Browser View>
+%%view_email_url%%
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+*****
+
+
+Switch language preference to French.
+
+Switch>
+%%=RedirectTo(MicrositeURL(43267, 'eid', @Email, 'c', 'ecomm_na_ca_fr_registration_langprefupdate'))=%%
+
+
+*****
+
+
+Meet the next generation of Moto G
+
+Coming this summer! Now you have a choice. Choose a new Moto G for a better mobile experience, at an affordable price.
+
+
+*****
+
+Moto G Plus
+
+Focus on what matters
+
+A best-in-class camera and quick charging
+
+The new Moto G Plus features the most advanced 16 MP camera in its class. Plus, the wide-angle 5 MP front camera fits everyone into your shot. TurboPower™ charging gives you up to 6 hours of power in 15 minutes.*
+
+Learn more>
+http://www.motorola.ca/products/moto-g-plus?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=Moto_G_Plus_Learn_More
+
+
+*****
+
+Moto G Play
+
+More phone. More fun. Affordable as ever.
+
+A powerful phone with a pure experience
+
+Take performance to the next level. The new Moto G Play packs a powerful quad-core processor so you can switch between apps with ease. And the pure, clutter-free version of Android™ won't slow you down.
+
+Learn more>
+http://www.motorola.ca/products/moto-g-play?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=Moto_G_Play_Learn_More
+
+
+*****
+
+
+Motorola-
+http://www.motorola.ca/?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_bug_top
+
+Twitter-
+https://twitter.com/Moto_CAN
+
+Facebook- 
+https://www.facebook.com/MotoInCAN
+
+YouTube-
+https://www.youtube.com/user/MyMotoCanada
+
+
+*****
+
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola. If this email has been forwarded to you, you can opt-in for future communications from Motorola.
+
+Opt-in for future communications>
+https://pages.motorola-mail.com/registration-ca-en/?c=ECOMM_NA_CA_EN_REGISTRATION_FORWARDEDOPTIN&utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=forwarded_optin
+
+* Battery must be substantially depleted; charging rate slows as charging progresses. All battery life claims are approximate and based on an average mixed use profile that includes both usage and standby time on a 4G LTE network. Out-of-box settings are applied to the mixed use profile to project battery performance. Actual battery performance will vary and depends on many factors including signal strength, network configuration, age of battery, operating temperature, features selected, device settings, and voice, data, and other application usage patterns.
+
+If you no longer wish to receive promotional emails from Motorola Mobility LLC, please unsubscribe.
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+Please direct any questions concerning Motorola's privacy practices to privacy@motorola.com.
+
+Enquiries or requests to unsubscribe from ("opt-out" of) communications from Motorola may also be mailed to: Motorola Mobility UK, Ltd., Redwood, Crockford Lane, Chineham Business Park, Basingstoke, RG24 8WQ.
+
+Motorola values your privacy. For more information on our Privacy Practices, please visit www.motorola.com/privacy
+
+Privacy>
+http://www.motorola.ca/consumers/About_Motorola-Legal-Privacy_Policy/About_Motorola-Legal-Privacy_Policy,en_CA,pg.html
+
+Please visit www.motorola.com/legal to see Motorola's website terms of use.
+
+Legal>
+http://www.motorola.ca/consumers/About_Motorola-Legal-Terms_of_Use/About_Motorola-Legal-Terms_of_Use,en_CA,pg.html
+
+MOTOROLA and the Stylized M Logo are trademarks of Motorola Trademark Holdings, LLC. Android, Google and other marks are trademarks of Google Inc. All other trademarks are the property of their respective owners. (c)%%=Format(Now(), "yyyy")=%% Motorola Mobility LLC. All rights reserved.

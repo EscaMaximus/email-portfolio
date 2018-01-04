@@ -1,0 +1,142 @@
+﻿%%[
+	/*
+		US-EN JBL SOUNDBOOST SPEAKER EPISODE 1
+		Author: Motorola ExactTarget Team
+		Revision Date: 11/11/2016
+	*/	
+	/* GA Tagging Definitions */
+	SET @UtmSource = 'motoemail'
+	SET @UtmMedium = 'email'
+	SET @UtmCampaign = 'CONSUMER_NA_US_EN_ONBOARDING_MOTOZFAMILYMOTOMODS'
+	SET @UtmContent = 'JBLSOUNDBOOSTEP1'
+
+]%%
+
+
+Instant boom box in a snap.
+
+***
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola.
+
+Browser View>
+%%view_email_url%%
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+***
+
+
+User Guide>
+https://motorola-global-portal.custhelp.com/ci/fattach/get/1739009/1469714128/redirect/1/filename/JBL_Concert_QSG_B_V7_LD.pdf
+
+Customer Service>
+https://motorola-global-portal.custhelp.com/app/mcp/landing_troubleshooter/g_id/5059?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=customer_service
+
+Owner Forums>
+https://forums.lenovo.com/t5/Moto-Z-Phones-Mod-Capable/ct-p/Moto_Z_Mod_Capable
+
+
+***
+
+JBL Soundboost | Speaker
+
+Snap it on. Enjoy the sound.
+
+Simply snap on the speaker and it plays high quality JBL audio instantly. No pairing. No hassle.
+
+Learn more>
+http://www.motorola.com/us/products/moto-mods/jbl-soundboost-speaker?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=jbl_quality
+
+
+***
+
+Power your sound
+
+Charge your speaker by itself for up to 10 hours of audio.* Or if your phone is attached, charge the phone to power up both with a single charger.
+
+Learn more>
+https://motorola-global-portal.custhelp.com/app/answers/prod_answer_detail/a_id/111798/p/9827,9830/?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=charge
+
+
+***
+
+
+Moto Mods(tm)
+
+Amazing today. Awesome tomorrow.
+
+Your Moto Z phone can instantly transform into a 70" movie projector, battery powerhouse and more. This is just the start. More Moto Mods are being developed by your favorite brands. And they're designed to work with future generation Moto Z phones.**
+
+Buy now>
+http://www.motorola.com/us/moto-mods?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_mods_buy_now
+
+
+***
+
+
+Free shipping***>
+http://www.motorola.com/us/legal/terms-of-sale?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=shipping
+
+
+Specials>
+http://www.motorola.com/us/specials?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=specials
+
+
+***
+
+Motorola-
+http://www.motorola.com/us/home?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_bug_top
+
+Twitter-
+https://twitter.com/Moto_USA
+
+Facebook- 
+https://www.facebook.com/MotoUSA/
+
+Google+
+https://plus.google.com/+Moto
+
+Instagram-
+https://www.instagram.com/moto_usa/
+
+YouTube-
+https://www.youtube.com/user/motorola
+
+
+***
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola. If this email has been forwarded to you, you can opt-in for future communications from Motorola.
+
+opt-in for future communications>
+https://pages.motorola-mail.com/registration-us-en/?c=ECOMM_NA_US_EN_REGISTRATION_FORWARDEDOPTIN&utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=forwarded_optin
+
+All screen images simulated.
+
+* All battery life claims are approximate and based on a mixed use profile (which includes both usage and standby time) under optimal network conditions. Actual battery performance will vary and depends on many factors including signal strength, network configuration, age of battery, operating temperature, features selected, device settings, and voice, data, and other application usage patterns.
+
+** Co-branded Moto Mods may require software upgrades to maintain compatibility, contact the manufacturer for details.
+
+*** Free shipping for orders over $75.
+
+Certain features, functionality and product specifications may be network dependent and subject to additional terms, conditions, and charges. All are subject to change without notice.
+
+If you no longer wish to receive promotional emails from Motorola Mobility LLC, please unsubscribe.
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+Please direct any questions concerning Motorola's privacy practices to privacy@motorola.com.
+
+Inquiries or requests to unsubscribe from ("opt-out" of) communications from Motorola may also be mailed to: Motorola Mobility LLC Attn: Privacy Compliance Program 222 W. Merchandise Mart Plaza, Suite 1800, Mailstop 16-O19.02, Chicago, IL 60654.
+
+Motorola values your privacy. For more information on our Privacy Practices, please visit Motorola Privacy Policy. Please visit Motorola Website Terms of Use to see Motorola's website terms of use.
+
+Privacy>
+http://www.motorola.com/us/legal/privacy-policy
+
+Legal>
+http://www.motorola.com/us/legal/terms-of-use
+
+MOTOROLA and the Stylized M Logo are trademarks of Motorola Trademark Holdings, LLC. Android, Google and other marks are trademarks of Google Inc. All other trademarks are the property of their respective owners. (c)%%=Format(Now(), "yyyy")=%% Motorola Mobility LLC. All rights reserved.

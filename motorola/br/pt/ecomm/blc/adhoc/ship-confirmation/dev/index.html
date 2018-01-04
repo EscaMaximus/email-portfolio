@@ -1,0 +1,233 @@
+<!--%%[
+	/*
+		SHIP CONFIRMATION
+		Author: Motorola ExactTarget Team
+		Revision Date: 8/3/2016
+	*/
+
+	VAR @FirstName, @LastName, @DateFormat, @DateDayFormat, @DateDayYearFormat
+
+	SET @Email = EMAIL
+	SET @FirstName = FIRST
+	SET @LastName = LAST
+	
+	IF NOT EMPTY(@LastName) THEN
+		SET @FirstName = Concat(@FirstName, " ")
+	ENDIF
+
+	SET @FullName = Concat(ProperCase(@FirstName),ProperCase(@LastName))
+
+
+	SET @MotoOrderNumber = ORDERNUMBER
+	SET @PurchaseDate = DATE2
+
+	/* Subject and Date Definition/Formatting */
+	SET @SubjectLine = "Seu pedido está a caminho."
+
+	/* Template highlight Color */
+	VAR @TemplateHighlightColor, @MotoBugColor
+
+	SET @TemplateHighlightColor = '#ff4f4f'
+	SET @MotoBugColor = 'http://image.motorola-mail.com/lib/fe901272716d077b74/m/4/bug-motorola-ff4f4f.png'
+
+	/* Subject and Date Definition/Formatting */
+	SET @DateFormat = "DD/MM/YY"
+	SET @DateDayFormat = "DDDD DD/MM"
+	SET @DateDayYearFormat = "DDDDD DD/MM/YY"
+
+	/* GA Tagging Definitions */
+	VAR @UtmSource, @UtmMedium, @UtmCampaign, @UtmContent
+
+	SET @UtmSource = 'motoemail'
+	SET @UtmMedium = 'email'
+	SET @UtmCampaign = 'ECOMM_LATAM_BR_PT_TRIGGER_PAYMENT'
+	SET @UtmContent = 'CONFIRMATION'
+	SET @GaBaseString = Concat("?utm_source=",@UtmSource,"&utm_medium=",@UtmMedium,"&utm_campaign=",@UtmCampaign,"&utm_content=",@UtmContent,"&")
+
+	VAR @MotoBugURL, @PreTextHeaderURL, @CustomerServiceURL, @OrderStatusURL
+
+	/* Moto Bug URL */
+	SET @MotoBugURL = 'http://www.motorola.com.br/home'
+	SET @MotoBugURL = Concat(@MotoBugURL,@GaBaseString,"utm_term=moto_bug_top")
+
+	/* Pre-Text Header URL */
+	SET @PreTextHeaderURL = 'http://www.motorola.com.br/home'
+	SET @PreTextHeaderURL = Concat(@PreTextHeaderURL,@GaBaseString,"utm_term=pretext_header")
+
+	/* Customer Service URL */
+	SET @CustomerServiceURL = 'https://motorola-global-portal-pt.custhelp.com/app/mcp/landing_troubleshooter/g_id/5203'
+	SET @CustomerServiceURL = Concat(@CustomerServiceURL,@GaBaseString,"utm_term=customer_service")
+
+	/* Order Status URL */
+	SET @OrderStatusURL = 'https://motorola-global-portal-pt.custhelp.com/app/mcp/track-my-stuff-landing/orderId/'
+
+
+]%%-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>%%=v(@SubjectLine)=%%</title>
+
+	<style type="text/css">
+
+		/* Reset and Email Client Fixes */
+		body { margin: 0!important; padding: 0; min-width: 100%!important; -webkit-text-size-adjust: 100%;-ms-text-size-adjust:100%; }
+		html { width: 100%; }
+		table, tr, td { border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; }
+		img { height: auto; border: 0; }
+		#outlook a{ padding:0; }
+		.ExternalClass{ width:100%; }
+		.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div{ line-height: 100%; }
+		div[style*="margin: 16px 0"] { margin:0!important; }
+		
+		/* Start Styling */
+		@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+		/* Content Width */
+		.content { width: 100%; max-width: 600px; }
+
+		/* Links */
+		.body-copy-222c30 a { color: #222c30!important; text-decoration:none!important; }
+		.legal-link-8d8f95 a { color: #8d8f95!important; text-decoration:none!important; }
+
+		/* Headlines */
+		.h1 { font-family: 'Open Sans', Arial, sans-serif; font-size: 32px; line-height: 38px; font-weight:normal; color: #222c30; }
+		.h2 { font-family: 'Open Sans', Arial, sans-serif; font-size: 28px; line-height: 34px; font-weight:normal; color: #80888c; }
+		.h3 { font-family: 'Open Sans', Arial, sans-serif; font-size: 24px; line-height: 30px; font-weight:normal; color: #80888c; }
+		.h4 { font-family: 'Open Sans', Arial, sans-serif; font-size: 20px; line-height: 26px; font-weight:normal; color: #80888c; }
+
+		/* Body copy */
+		.p-lead { font-family: 'Open Sans', Arial, sans-serif; font-size: 18px; line-height: 24px; font-weight:normal; color: #222c30; }
+		.p { font-family: 'Open Sans', Arial, sans-serif; font-size: 16px; line-height: 22px; font-weight:normal; color: #222c30; }
+		.p-address { font-family: 'Open Sans', Arial, sans-serif; font-size: 15px; line-height: 21px; font-weight:normal; color: #222c30; }
+		.p-order-detail { font-family: 'Open Sans', Arial, sans-serif; font-size: 14px; line-height: 20px; font-weight:normal; color: #222c30; }
+
+		/* Buttons */
+		.button-full-width { font-family: 'Open Sans', Arial, sans-serif; font-size: 16px; line-height: 16px; font-weight: bold; color:#FFFFFF; text-decoration:none; }
+		.button { font-family: 'Open Sans', Arial, sans-serif; font-size: 16px; line-height: 16px; font-weight: bold; color:#FFFFFF; text-decoration:none; }
+		.button-full-width:hover, .button:hover { border-radius:1px; background-color:#33a1ff!important; color:#FFFFFF!important; -webkit-transition: all .17s !important; transition: all .17s !important; }
+
+		@media screen and (max-width: 480px), screen and (max-device-width: 480px) {
+			body[yahoo] div[class="email-size"] { letter-spacing: 0!important; }
+		}
+	</style>
+</head>
+
+<body yahoo="fix" bgcolor="#FAFAFA">
+<div style="letter-spacing: 550px; line-height: 0; mso-hide: all;" class="email-size">&nbsp;</div>
+<div style="display:none; white-space:nowrap; font:15px courier; color:#ffffff; line-height:0; width:550px !important; min-width:550px !important; max-width:550px !important; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div>
+	<table width="100%" bgcolor="#FAFAFA" border="0" cellpadding="0" cellspacing="0">
+		<tr>
+			<td>
+				<!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->     
+				<table bgcolor="#FFFFFF" class="content" align="center" cellpadding="0" cellspacing="0" border="0" style="margin:0 auto; width: 100%; max-width: 600px;">
+					<tr>
+						<td bgcolor="#FAFAFA" class="header-pretext" style="font-family: Arial, Verdana, sans-serif; font-size:13px; line-height:16px; font-weight:bold; color:#222c30; padding: 15px 20px 15px 20px; text-align:center;">Obrigado por comprar no site <a href="%%=RedirectTo(@PreTextHeaderURL)=%%" style="text-decoration:none; color:#222c30;" class="body-copy-222c30">Motorola.com.br</a></td>
+					</tr>
+					<tr>
+						<td class="header" style="padding: 20px 20px 0 20px;"><a href="http://www.motorola.com.br/home" title="Motorola" target="_blank" alias="moto_bug_top"><img src="http://image.motorola-mail.com/lib/fe901272716d077b74/m/4/bug-motorola-20160217.png" alt="" width="51" height="51" style="font-family:arial, verdana, sans-serif; font-size:14px; color:#4d4d4d; border:0;" /></a></td>
+					</tr>
+					<tr>
+						<td class="innerpadding" style="padding: 40px 30px 7px 30px;">
+							<table width="100%" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td class="h1" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 32px!important; line-height: 38px!important; font-weight: bold; color: #222c30; padding: 0 0 20px 0;">
+											%%[IF NOT EMPTY(@FullName) THEN]%%
+												Oi %%=v(@FullName)=%%,
+											%%[ELSE]%%
+												Oi,
+											%%[ENDIF]%%
+									</td>
+								</tr>
+								<tr>
+									<td class="p-lead" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 18px; line-height: 24px; font-weight:normal; color: #222c30; padding:0 0 40px 0;">Seu pedido est&aacute; a caminho!</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td bgcolor="#F0F0F0" style="padding: 15px 30px 15px 30px; border-bottom: 1px solid #D3D3D3;">
+							<table width="100%" border="0" cellpadding="0" cellspacing="0" align="left">
+								<tr>
+									<td style="font-size: 14px; color: #FFFFFF; text-align: left; vertical-align: top;">
+										<table width="100%" border="0" cellspacing="0" cellpadding="0">
+											<tr>
+												<td width="100%" class="h3" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 24px; line-height: 30px; font-weight:normal; color: #80888c; padding: 0 0 20px 0;">Detalhes do pedido</td>
+											</tr>
+										</table>
+										<table width="100%" border="0" cellspacing="0" cellpadding="0">
+											<tr>
+												<td width="10%" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
+												<td width="90%" class="p" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 16px; line-height: 22px; font-weight: normal; color: #222c30; text-align: left;  padding:0 5px 15px 0;"><span style="font-weight:bold;">N&uacute;mero do pedido</span>: %%=v(@MotoOrderNumber)=%%</td>
+											</tr>
+											<tr>
+												<td width="10%" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
+												<td width="90%" class="p" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 16px; line-height: 22px; font-weight: normal; color: #222c30; text-align: left;  padding:0 5px 15px 0;"><span style="font-weight:bold;">Realizado</span>: <a style="color: #222c30; text-decoration:none;" class="p-delivery-date">%%=FormatDate(@PurchaseDate, @DateDayYearFormat, "","pt_BR")=%%</a></td>
+											</tr>
+										</table>
+									</td>
+								</tr>                         
+							</table>                                        
+						</td>
+					</tr>
+					<tr>
+						<td style="padding: 20px 30px 40px 30px; vertical-align:top;">
+							<table width="100%" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td class="p" align="center" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 16px; line-height: 22px; font-weight:normal; color: #222c30; padding:0 10px 0 10px;">D&uacute;vidas?<br /><a href="%%=RedirectTo(@CustomerServiceURL)=%%" style="color: #222c30; text-decoration:underline;" class="highlight-link" title="Contate o Servi&ccedil;o de Atendimento ao Cliente" target="_blank" alias="customer_service">Contate o Servi&ccedil;o de Atendimento ao Cliente</a></td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td style="vertical-align:top;">
+							<table width="100%" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td align="center" style="font-size: 1px; line-height: 1px;">
+										<a href="https://twitter.com/moto_bra" title="Twitter" target="_blank" alias="twitter"><img src="http://image.motorola-mail.com/lib/fe901272716d077b74/m/4/ico-twitter-grey.png" width="63" height="54" alt="Twitter" title="Twitter" style="font-family: Arial, Helvetica, sans-serif; font-size:11px; color:#FFFFFF; border:0;" /></a>
+										<a href="https://www.facebook.com/MotoBRA/" title="Facebook" target="_blank" alias="facebook"><img src="http://image.motorola-mail.com/lib/fe901272716d077b74/m/4/ico-facebook-grey.png" width="63" height="54" alt="Facebook" title="Facebook" style="font-family: Arial, Helvetica, sans-serif; font-size:11px; color:#FFFFFF; border:0;" /></a>
+										<a href="https://plus.google.com/+MotoBRA" title="Google+" target="_blank" alias="google_plus"><img src="http://image.motorola-mail.com/lib/fe901272716d077b74/m/4/ico-google-plus-grey.png" width="63" height="54" alt="Google+" title="Google+" style="font-family: Arial, Helvetica, sans-serif; font-size:11px; color:#FFFFFF; border:0;" /></a>
+										<a href="https://www.instagram.com/moto_bra/" title="instagram" target="_blank" alias="instagram"><img src="http://image.motorola-mail.com/lib/fe901272716d077b74/m/4/ico-instagram-mobile-grey-20160520.png" width="63" height="54" alt="instagram" title="instagram" style="font-family: Arial, Helvetica, sans-serif; font-size:11px; color:#FFFFFF; border:0;" /></a>
+										<a href="https://www.youtube.com/c/motobra" title="YouTube" target="_blank" alias="youtube"><img src="http://image.motorola-mail.com/lib/fe901272716d077b74/m/4/ico-youtube-grey.png" width="63" height="54" alt="YouTube" title="YouTube" style="font-family: Arial, Helvetica, sans-serif; font-size:11px; color:#FFFFFF; border:0;" /></a>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>					
+					<tr>
+						<td style="vertical-align:top;" bgcolor="#FAFAFA">
+							<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="legal" style="-webkit-text-size-adjust: 100%;">
+								<tr>
+									<td align="center" style="text-align:left; padding:20px 20px 10px 20px; font-family: Arial, Helvetica, sans-serif; color:#8d8f95; font-size:11px; line-height:15px;" class="legal-copy">N&atilde;o responda a este email. Se tiver d&uacute;vidas e precisar falar com a Motorola, entre em contato com o <a href="%%=RedirectTo(@CustomerServiceURL)=%%" title="Suporte ao Cliente" style="color:#8d8f95; text-decoration:underline;" target="_blank" alias="customer_support">Suporte ao Cliente</a>.</td>
+								</tr>
+								<tr>
+									<td align="center" style="text-align:left; padding:0 20px 10px 20px; font-family: Arial, Helvetica, sans-serif; color:#8d8f95; font-size:11px; line-height:15px;" class="legal-copy">Voc&ecirc; [<a style="color:#8d8f95; text-decoration:none;" class="legal-link-8d8f95"><span style="color:#8d8f95; text-decoration:none;">%%emailaddr%%</span></a>] recebeu este email devido a uma transa&ccedil;&atilde;o ou uma rela&ccedil;&atilde;o anterior com a Motorola.</td>
+								</tr>
+								<tr>
+									<td align="center" style="text-align:left; padding:0 20px 10px 20px; font-family: Arial, Helvetica, sans-serif; color:#8d8f95; font-size:11px; line-height:15px;" class="legal-copy">Alguns recursos, servi&ccedil;os e aplicativos dependem da rede e podem n&atilde;o estar dispon&iacute;veis em todas as &aacute;reas; termos adicionais, condi&ccedil;&otilde;es e/ou custos podem ser aplicados. Todos os recursos, funcionalidade e outras especifica&ccedil;&otilde;es de produto est&atilde;o sujeitas a altera&ccedil;&otilde;es sem aviso pr&eacute;vio ou qualquer outra obriga&ccedil;&atilde;o. Entre em contato com o seu prestador de servi&ccedil;os para maiores detalhes.</td>
+								</tr>
+								<tr>
+									<td align="center" style="text-align:left; padding:0 20px 10px 20px; font-family: Arial, Helvetica, sans-serif; color:#8d8f95; font-size:11px; line-height:15px;" class="legal-copy">Favor enviar quaisquer quest&otilde;es relacionadas &agrave;s pr&aacute;ticas de privacidade da Motorola para <a href="mailto:privacy@motorola.com" title="privacy@motorola.com" style="color:#8d8f95; text-decoration:underline;" target="_blank">privacy@motorola.com</a>.</td>
+								</tr>
+								<tr>
+									<td align="center" style="text-align:left; padding:0 20px 10px 20px; font-family: Arial, Helvetica, sans-serif; color:#8d8f95; font-size:11px; line-height:15px;" class="legal-copy">As perguntas ou solicita&ccedil;&otilde;es para remo&ccedil;&atilde;o de envio (&ldquo;opt-out&rdquo;) &nbsp;das comunica&ccedil;&otilde;es da Motorola tamb&eacute;m podem ser enviadas por correio para: <a style="color:#8d8f95; text-decoration:none;" class="legal-link-8d8f95">Motorola Mobility LLC, Attn: Privacy Compliance Program, 222 W. Merchandise Mart Plaza, Suite 1800, Chicago, IL 60654.</a></td>
+								</tr>
+								<tr>
+									<td align="center" style="text-align:left; padding:0 20px 10px 20px; font-family: Arial, Helvetica, sans-serif; color:#8d8f95; font-size:11px; line-height:15px;" class="legal-copy">A Motorola valoriza sua privacidade. Para maiores informa&ccedil;&otilde;es sobre nossas Pr&aacute;ticas de Privacidade, acesse <a href="http://www.motorola.com.br/consumers/about-motorola-BR/About_Motorola-Legal-Privacy_Policy/About_Motorola-Legal-Privacy_Policy.html" title="www.motorola.com/privacy" style="color:#8d8f95; text-decoration:underline;" target="_blank" alias="privacy">www.motorola.com/privacy</a>. Acesse <a href="http://www.motorola.com.br/consumers/about-motorola-BR/About_Motorola-Legal-Terms_of_Use/About_Motorola-Legal-Terms_of_Use.html" title="www.motorola.com/legal" style="color:#8d8f95; text-decoration:underline;" target="_blank" class="legal-link-8d8f95" alias="legal">www.motorola.com/legal</a> para ler os termos de uso do site da Motorola.</td>
+								</tr>
+								<tr>
+									<td align="center" style="text-align:left; padding:0 20px 40px 20px; font-family: Arial, Helvetica, sans-serif; color:#8d8f95; font-size:11px; line-height:15px;" class="legal-copy">Motorola &eacute; uma marca registrada da Motorola Trademark Holdings, LLC. Facebook &eacute; uma marca da Facebook, Inc. Android, Chrome, Gmail, Google, Google Maps, Google Play, Google+, YouTube e outras marcas s&atilde;o marcas da Google Inc. Todas as outras marcas registradas pertencem a seus respectivos propriet&aacute;rios. &copy;%%=Format(Now(), "yyyy")=%% Motorola Mobility LLC. Todos direitos reservados.</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+			<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+			</td>
+		</tr>
+	</table>
+	<custom name="opencounter" type="tracking"> 
+</body>
+</html>

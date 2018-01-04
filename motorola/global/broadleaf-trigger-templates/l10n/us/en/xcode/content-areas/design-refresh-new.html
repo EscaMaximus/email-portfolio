@@ -1,0 +1,39 @@
+					<tr>
+						<td class="innerpadding" style="padding: 40px 30px 7px 30px;">
+							<table width="100%" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td class="h1" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 32px!important; line-height: 38px!important; font-weight: bold; color: #222c30; padding: 0 0 40px 0;">
+											%%[IF NOT EMPTY(@FullName) THEN]%%
+												Hi %%=v(@FullName)=%%,
+											%%[ELSE]%%
+												Hi,
+											%%[ENDIF]%%
+									</td>
+								</tr>
+								<tr>
+									<td class="h3" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 24px; line-height: 30px; font-weight:bold; color: #80888c; padding:0 0 15px 0;">Give your phone a makeover.</td>
+								</tr>
+								<tr>
+									<td class="p-lead" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 18px; line-height: 24px; font-weight:normal; color: #222c30; padding:0 0 15px 0;">With a design refresh, you can trade in your device for one with a brand-new look.</td>
+								</tr>
+								<tr>
+									<td class="p-lead" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 18px; line-height: 24px; font-weight:normal; color: #222c30; padding:0 0 15px 0;">You'll need this PIN to request your design refresh: <span style="color: %%=v(@TemplateHighlightColor)=%%; font-weight:bold;">%%=v(@XcodeRedemptionPin)=%%</span></td>
+								</tr>
+								<tr>
+									<td class="p-lead" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 18px; line-height: 24px; font-weight:normal; color: #222c30; padding:0 0 30px 0;">Make sure you use your PIN before it expires on <a style="text-decoration:none; font-weight:bold" class="p-delivery-date">%%=FormatDate(@XcodeExpirationDate, @DateDayYearFormat, "", @C_Sharp_Locale_Str)=%%</a>.</td>
+								</tr>
+								<tr>
+									<td class="p-lead" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 16px; line-height: 22px; font-weight:bold; color: #222c30; padding:0 0 15px 0;">IMPORTANT NOTES ABOUT YOUR DESIGN REFRESH</td>
+								</tr>
+								<tr>
+									<td class="p-small" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 14px; line-height: 20px; font-weight:normal; color: #222c30; padding:0 0 10px 0;">&bull; You'll need to provide a valid credit card number to redesign your device. Your card will be charged for the design refresh, then refunded within 10 days after we receive your eligible original device.</td>
+								</tr>
+								<tr>
+									<td class="p-small" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 14px; line-height: 20px; font-weight:normal; color: #222c30; padding:0 0 10px 0;">&bull; You'll receive a separate email from the shipping carrier with instructions for printing your return label.</td>
+								</tr>
+								<tr>
+									<td class="p-small" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 14px; line-height: 20px; font-weight:normal; color: #222c30; padding:0 0 25px 0;">&bull; Use the box your design refresh phone ships in to return your original phone.  Print the shipping label and tape it over the box's original shipping label.</td>
+								</tr>
+							</table>
+						</td>
+					</tr>

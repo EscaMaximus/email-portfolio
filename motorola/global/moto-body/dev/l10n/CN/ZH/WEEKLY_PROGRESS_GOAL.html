@@ -1,0 +1,90 @@
+<table width="600" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#FFFFFF" class="mobile-content-size" style="min-width:600px;" summary="Weekly Progress Goal">
+	<tr>
+		<td valign="top" style="padding:0">
+		
+			<table width="600" border="0" cellpadding="0" cellspacing="0" class="mobile-content-size" style="min-width:600px">
+				<tr>
+					<td width="600" style="text-align: center; vertical-align: top;">
+						<!-- start hero -->
+						<table width="600" border="0" cellpadding="0" cellspacing="0" class="mobile-content-size" style="min-width:600px">
+							<tr>
+								<td height="30"></td>
+							</tr>
+							<tr>
+								<td height="20" style="text-align: center; vertical-align: middle; font-family: Arial, Helvetica, sans-serif; font-size:24px; line-height:33px; font-weight:normal; color:#80888C; padding:0 25px 0 25px;" class="weekly-progress-header-01">&#x6BCF;&#x5468;&#x76EE;&#x6807;&#x8FDB;&#x5EA6;</td>
+							</tr>
+						</table>
+						<!-- end hero -->
+						<table width="600" border="0" cellpadding="0" cellspacing="0" align="center" class="mobile-content-size" style="min-width:600px">
+							<tr>
+								<td style="text-align: left; vertical-align: top;">
+
+									<table width="600" border="0" cellpadding="0" cellspacing="0" class="mobile-content-size" style="min-width:600px">
+										<tr>
+											<td height="20" class="weekly-progress-top-spacer"></td>
+										</tr>
+									</table>
+									<table width="600" border="0" cellpadding="0" cellspacing="0" class="weekly-progress-graph-table" align="center" style="min-width:600px">
+										<tr>
+											<td width="600" style="text-align: center; vertical-align: top;" class="weekly-progress-graph">
+												<!-- start heart graph  -->
+												<img src="%%=v(@WeeklyProgressChart)=%%" width="550" alt="Weekly Progress Graph" />
+												<!-- end heart graph -->
+											</td>
+										</tr>
+									</table>
+									<table width="600" border="0" cellpadding="0" cellspacing="0" class="mobile-content-size" style="min-width:600px">
+										<tr>
+											<td height="5" class="heart-activity-top-spacer"></td>
+										</tr>
+									</table>
+									<table width="600" border="0" cellpadding="0" cellspacing="0" class="mobile-content-size" style="min-width:600px">
+										<tr>
+											<td width="600" style="text-align: left; vertical-align: top;">
+												<!-- start heart info -->
+												<table border="0" cellpadding="0" cellspacing="0">
+													<tr>
+														<td style="text-align: left; vertical-align: middle; font-family: Arial, Helvetica, sans-serif; font-size:13px; line-height:15px; font-weight:bold; color:#80888C; padding:0 0 0 60px;" class="weekly-progress-img"><img src="http://cdn.motorola-2.com/us/en/motorola/moto-body/episode-01/images/ico-heart-hor-line.png" width="30" height="2" alt="" /></td>
+														<td style="text-align: left; vertical-align: middle; font-family: Arial, Helvetica, sans-serif; font-size:13px; line-height:15px; font-weight:bold; color:#80888C; padding:0 0 0 0;" class="weekly-progress-img"><img src="http://cdn.motorola-2.com/us/en/motorola/moto-body/episode-01/images/ico-steps-hor-line.png" width="30" height="2" alt="" /></td>
+														<td style="text-align: left; vertical-align: middle; font-family: Arial, Helvetica, sans-serif; font-size:13px; line-height:15px; font-weight:bold; color:#80888C; padding:0 0 0 0;" class="weekly-progress-img"><img src="http://cdn.motorola-2.com/us/en/motorola/moto-body/episode-01/images/ico-calories-hor-line.png" width="30" height="2" alt="" /></td>
+													</tr>  
+													<tr>
+														<td style="text-align: left; vertical-align: middle; font-family: Arial, Helvetica, sans-serif; font-size:12px; line-height:15px; font-weight:normal; color:#80888C; padding:5px 40px 0 60px;" class="weekly-progress-sub-header">&#x5FC3;&#x810F;&#x6D3B;&#x52A8;</td>
+														<td style="text-align: left; vertical-align: middle; font-family: Arial, Helvetica, sans-serif; font-size:12px; line-height:15px; font-weight:normal; color:#80888C; padding:5px 40px 0 0;" class="weekly-progress-sub-header">&#x6B65;&#x6570;</td>
+														<td style="text-align: left; vertical-align: middle; font-family: Arial, Helvetica, sans-serif; font-size:12px; line-height:15px; font-weight:normal; color:#80888C; padding:5px 40px 0 0;" class="weekly-progress-sub-header">&#x5361;&#x8DEF;&#x91CC;</td>
+													</tr>
+												</table>
+												<table width="600" border="0" cellpadding="0" cellspacing="0" class="mobile-content-size" style="min-width:600px">
+													<tr>
+														<td style="font-family: Arial, Helvetica, sans-serif; font-size:16px; line-height:21px; font-weight:normal; color:#606668; padding:30px 0 0 60px;" class="best-overall-day-hd">&#x6700;&#x4F73;&#x7684;&#x4E00;&#x5929;&#xFF1A; <a style="color:#606668; text-decoration:none;" class="date">%%=FormatDate(@WeeklyProgressBestDay, @DateDayYearFormat, "", @C_Sharp_Locale_Str)=%%</a>
+														</td>
+													</tr>
+													<tr>
+														<td style="font-family: Arial, Helvetica, sans-serif; font-size:14px; line-height:19px; font-weight:normal; color:#80888C; padding:5px 50px 0 60px;" class="best-overall-day-body">%%=FormatNumber(@WeeklyProgressBestDayHeartRate,"N0", @C_Sharp_Locale_Str)=%% &#x5206;&#x949F;&#x7684;&#x5FC3;&#x810F;&#x6D3B;&#x52A8; &ndash; %%=FormatNumber(@WeeklyProgressBestDaySteps,"N0", @C_Sharp_Locale_Str)=%% &#x6B65;&#x6570; &ndash; &#x603B;&#x5171;&#x71C3;&#x70E7; %%=FormatNumber(@WeeklyProgressBestDayCalories,"N0", @C_Sharp_Locale_Str)=%% </td>
+													</tr>
+												</table>
+												<!-- end heart info -->
+											</td>
+										</tr>  
+									</table>
+
+								</td>
+							</tr>
+							<tr>
+								<td height="30"></td>
+							</tr>
+						</table>
+
+						<!-- end product info -->
+					</td>
+				</tr>
+			</table>
+
+		</td>
+	</tr>
+</table>
+<table width="600" height="1" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#AFB6BA" class="mobile-content-size" style="min-width:600px;">
+	<tr>
+		<td class="hor-line" height="1" style="font-size:1px; line-height:1px;"> </td>
+	</tr>
+</table>	

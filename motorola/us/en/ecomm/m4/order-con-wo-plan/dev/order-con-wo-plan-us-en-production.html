@@ -1,0 +1,298 @@
+%%[
+	/*
+		M4 DESIGN CONFIRMATION EMAIL
+		Author: Motorola ExactTarget Team
+		Revision Date: 9/14/2016
+	*/
+
+	VAR @Email, @FirstName, @LastName, @FullName, @OrderNumber, @MotoOrderNumber, @Country, @Language, @M4PartnerName, @M4PartnerNumber, @PurchaseDate, @EstimatedDeliveryDate, @LineItems, @TotalLineItems, @CSPhoneNumber, @CSURL
+	
+	SET @Email = EmailAddress
+	SET @FirstName = FIRST_NAME
+	SET @LastName = LAST_NAME
+	
+	IF NOT EMPTY(@LastName) THEN
+		SET @FirstName = Concat(@Firstname, " ")
+	ENDIF
+	
+	SET @FullName = Concat(ProperCase(@FirstName),ProperCase(@LastName))
+	SET @OrderNumber = M4_PARTNER_ORDER_NUMBER
+	SET @MotoOrderNumber = MOTO_ORDER_NUMBER
+	SET @Country = BILL_TO_COUNTRY
+	SET @Language = PREF_LANGUAGE
+	SET @M4PartnerName = M4_PARTNER_NAME
+	SET @M4PartnerNumber = M4_PARTNER_ORDER_NUMBER
+	SET @PurchaseDate = PURCHASE_DATE
+	SET @EstimatedDeliveryDate = PROMISED_DELIVERY_DATE
+	SET @LineItems = DCONF_OPTION_LINE_ITEMS
+	SET @TotalLineItems = NUMBER_OF_LINE_ITEMS
+	SET @CSPhoneNumber = CUST_SERVICE_PHONE_NUMBER
+	SET @CSURL = CUST_SERVICE_URL
+]%%
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="HandheldFriendly" content="True" />
+	<title>Your new DROID Turbo 2 is on its way.</title>
+
+	<style type="text/css">
+		body	 { width: 100%; background-color: #dfe5e9; margin:0; padding:0; -webkit-text-size-adjust: 100%;-ms-text-size-adjust:100%; }
+		html { width: 100%; }
+		table, td { border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; }
+		img{ border:0 none; height:auto;line-height:100%;outline:none;text-decoration:none; }
+		a img{ border:0 none;}
+		.imageFix{ display:block;}
+		#outlook a{ padding:0; }
+		.ExternalClass{ width:100%; }
+		.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div{ line-height: 100%; }
+		div[style*="margin: 16px 0"] { margin:0 !important; }
+		.default-link a { text-decoration:none; color:#444444; }
+		.body-copy a { text-decoration:none; color:#5b5858; }
+		.applelinks-white a { text-decoration:none; color:#FFFFFF; }
+		
+		@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+		
+		.cta-show-them-table:hover { border-radius:2px; background-color:#33a1ff!important; color:#FFFFFF!important; -webkit-transition: all .17s !important; transition: all .17s !important; }
+		a.cta-show-them:hover { border-radius:2px; background-color:#33a1ff!important; color:#FFFFFF!important; -webkit-transition: all .17s !important; transition: all .17s !important; }
+		
+		/* Outlook 07/10/13 fix */
+		.pre-text-header  { font-family: Arial, Verdana, sans-serif; color:#383838; font-size:13px; line-height:16px; }
+		.intro-copy-cell, .legal-copy { font-family: Arial, Verdana, sans-serif; font-size:11px; line-height:14px; font-weight:normal; }
+		.promotion-features { font-family: Arial, Verdana, sans-serif; font-size: 11px; line-height: 14px; }
+		.moto-g-header-01 { font-family: 'Open Sans', Arial, sans-serif; font-size:23px; line-height:31px; font-weight:normal; }
+		.moto-g-paragraph-01 { font-family: Arial, Verdana, sans-serif; font-size: 15px; line-height: 24px; font-weight:normal; }
+		.design-btn { font-size: 17px; font-weight: bold; font-family: Arial, Verdana, sans-serif; line-height: 24px; }
+
+		
+		@media screen and (max-width: 480px), screen and (max-device-width: 480px) {
+			
+			/* mobile resize */
+			body[yahoo] .mobile-content-size { width:320px!important; min-width:320px!important; }
+
+			/* body */
+			body[yahoo] td[class="header-01"] { padding: 20px 20px 0 20px !important;  }
+			body[yahoo] td[class="header-02"] { padding: 40px 20px 0 20px !important;  }
+			body[yahoo] td[class="paragraph-01"] { padding: 20px 40px 25px 20px !important;  }
+			body[yahoo] td[class="header-03"] { padding: 40px 20px 3px 20px !important;  }
+			body[yahoo] td[class="hor-line-wrapper"] { padding: 0 0 0 20px !important;  }
+			body[yahoo] img[class="hor-line"] { width: 280px!important; height: 1px!important;  }
+			body[yahoo] td[class="paragraph-02"] { padding: 20px 20px 25px 20px !important;  }
+			body[yahoo] td[class="header-04"] { padding: 40px 20px 3px 20px !important;  }
+			body[yahoo] th[class="phone-details"] { width:300px!important; min-width:300px!important; padding:0 0 0 20px!important; display:block!important;  }
+			body[yahoo] th[class="phone"] { width:295px!important; min-width:295px!important;padding:0 0 40px 25px!important; display:block!important; }
+			body[yahoo] td[class="header-05"] { padding: 40px 20px 3px 20px !important;  }
+			body[yahoo] td[class="paragraph-03"] { padding: 20px 20px 25px 20px !important;  }
+			body[yahoo] td[class="header-06"] { padding: 30px 20px 0 20px !important;  }
+			body[yahoo] td[class="paragraph-04"] { padding: 10px 20px 40px 20px !important;  }
+			body[yahoo] td[class="header-07"] { padding: 30px 20px 0 20px !important;  }
+			body[yahoo] td[class="header-08"] { padding: 30px 20px 0 20px !important;  }
+			body[yahoo] td[class="paragraph-05"] { padding: 10px 30px 20px 20px !important;  }
+			body[yahoo] td[class="paragraph-06"] { padding: 0 20px 0 20px !important;  }
+			body[yahoo] td[class="paragraph-07"] { padding: 20px 20px 20px 20px !important;  }
+
+			/* legal */		
+			body[yahoo] .legal {width:320px!important; min-width:320px!important; }
+			body[yahoo] td[class="legal-copy"] { text-align:center!important; }
+
+		}
+	</style>
+</head>
+<body bgcolor="#dfe5e9" style="margin:0;padding:0;" yahoo="fix">
+<div style="display:none; white-space:nowrap; font:15px courier; color:#ffffff; line-height:0; width:550px !important; min-width:550px !important; max-width:550px !important; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div>
+	<!-- Wrapper -->
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#dfe5e9" >
+		<tr>
+			<td width="100%" valign="top" style="padding:10px 0 0 0;">
+			
+				<table width="550" border="0" cellpadding="0" cellspacing="0" align="center" class="mobile-content-size" style="min-width:550px;" bgcolor="#FFFFFF">
+					<tr>
+						<td style="padding:20px 20px 15px 20px;" class="moto-bug" width="50%"><a href="http://www.motorola.com/us/home" target="_blank" title="motorola.com"><img src="https://image.motorola-mail.com/lib/fe901272716d077b74/m/3/bug-motorola_20151001.gif" alt="" border="0"></a></td>
+						<td style="text-align:right; padding:25px 20px 15px 0;" class="verizon-bug" width="50%"><img src="https://image.motorola-mail.com/lib/fe901272716d077b74/m/3/VZW_logo-20151008.jpg" alt="" border="0" width="149" height="36" style="float:right;"></td>
+					</tr>
+				</table>
+				<table width="550" border="0" cellpadding="0" cellspacing="0" class="mobile-content-size" style="min-width:550px" align="center" bgcolor="#FFFFFF">
+					<tr>
+						<td width="550" valign="top" style="padding:0;">
+						<!-- start -->
+						
+							<table width="550" border="0" cellpadding="0" cellspacing="0" class="mobile-content-size" style="min-width:550px">
+								<tr>
+									<td width="550" style="text-align: left; vertical-align: top; font-family: 'Open Sans', Arial, sans-serif; font-size:32px !important; line-height:40px !important; font-weight:normal; color:#222c30; padding:30px 30px 0 30px;" class="header-01">Design confirmation</td>
+								</tr>  
+								<tr>
+									<td width="550" style="text-align: left; vertical-align: top; font-size: 18px !important; color: #222c30; font-weight: normal; font-family: Arial, Verdana, sans-serif; line-height: 26px !important; padding:50px 30px 0 30px;" class="header-02">
+											%%[IF NOT EMPTY(@FullName) THEN]%%
+												Hi %%=v(@FullName)=%%,
+											%%[ELSE]%%
+												Hi,
+											%%[ENDIF]%%
+									</td>
+								</tr>                         
+								<tr>
+									<td width="550" style="text-align: left; vertical-align: top; font-size: 14px !important; color: #222c30; font-weight: normal; font-family: Arial, Verdana, sans-serif; line-height: 24px !important; padding:20px 30px 25px 30px;" class="paragraph-01">Thank you for designing your <strong>DROID Turbo 2</strong> with Moto Maker. Once the assembly is complete, your new phone will be on its way to you.</td>
+								</tr>                         
+							</table>
+							
+							<table width="550" border="0" cellpadding="0" cellspacing="0" class="mobile-content-size" style="min-width:550px">
+								<tr>
+									<td width="550" style="text-align: left; vertical-align: top; font-family: 'Open Sans', Arial, sans-serif; font-size:20px !important; line-height:29px !important; font-weight:normal; color:#222c30; padding:30px 30px 3px 30px;" class="header-03">Order summary</td>
+								</tr>  
+								<tr>
+									<td width="550" style="text-align: left; vertical-align: top; font-size: 1px !important; font-weight: normal; font-family: Arial, Verdana, sans-serif; line-height: 1px !important; padding:0 0 0 30px;" class="hor-line-wrapper"><img src="https://image.motorola-mail.com/lib/fe901272716d077b74/m/3/hor-line-single_20151001.gif" alt="" height="1" width="484" class="hor-line" /></td>
+								</tr>                         
+								<tr>
+									<td width="550" style="text-align: left; vertical-align: top; font-size: 14px !important; color: #222c30; font-weight: normal; font-family: Arial, Verdana, sans-serif; line-height: 22px !important; padding:20px 30px 25px 30px;" class="paragraph-02">
+										<strong>Order #</strong>: %%=v(@OrderNumber)=%%<br />
+										<strong>Estimated delivery date</strong>: <a style="color:#222c30; text-decoration:none;" class="default-link">%%=Format(@EstimatedDeliveryDate, "M/d/yyyy")=%%</a>
+									</td>
+								</tr>                         
+							</table>
+							
+							<table width="550" border="0" cellpadding="0" cellspacing="0" class="mobile-content-size" style="min-width:550px">
+								<tr>
+									<td width="550" style="text-align: left; vertical-align: top; font-family: 'Open Sans', Arial, sans-serif; font-size:20px !important; line-height:29px !important; font-weight:normal; color:#222c30; padding:30px 30px 3px 30px;" class="header-04">Design details</td>
+								</tr>  
+								<tr>
+									<td width="550" style="text-align: left; vertical-align: top; font-size: 1px !important; font-weight: normal; font-family: Arial, Verdana, sans-serif; line-height: 1px !important; padding:0 0 0 30px;" class="hor-line-wrapper"><img src="https://image.motorola-mail.com/lib/fe901272716d077b74/m/3/hor-line-single_20151001.gif" alt="" height="1" width="484" class="hor-line" /></td>
+								</tr>                         
+							</table>
+							%%[
+							/* Define line item variables */
+							VAR @LineItemQty, @Counter, @TotalDesignedProducts, @LoopQty, @Counter, @LineItemPosition
+
+							SET @LineItemQty = 13
+							SET @LineItemPosition = 0
+							SET @TotalDesignedProducts = Divide(@TotalLineItems, @LineItemQty)
+							
+							/* Outer Loop through line items */
+							SET @LoopQty = @TotalDesignedProducts
+							FOR @Counter = 1 to @LoopQty DO
+							
+							VAR @AssetModelSource, @ItemNumberSku, @FrontColor, @BackColor, @Trim, @Greeting, @Wallpaper, @Memory, @GoogleAcct, @WallCharger, @Engraving, @CartRebuild, @ProductImage, @DesignRefresh
+
+								SET @LineItemPosition = Add(@LineItemPosition, 1)
+								SET @AssetModelSource = Field(Row(BuildRowSetFromString(@LineItems, '&#x7C;'), @LineItemPosition), 1)
+
+								SET @LineItemPosition = Add(@LineItemPosition, 1)
+								SET @ItemNumberSku = Field(Row(BuildRowSetFromString(@LineItems, '&#x7C;'), @LineItemPosition), 1)
+
+								SET @LineItemPosition = Add(@LineItemPosition, 1)
+								SET @FrontColor = Field(Row(BuildRowSetFromString(@LineItems, '&#x7C;'), @LineItemPosition), 1)
+
+								SET @LineItemPosition = Add(@LineItemPosition, 1)
+								SET @BackColor = Field(Row(BuildRowSetFromString(@LineItems, '&#x7C;'), @LineItemPosition), 1)
+
+								SET @LineItemPosition = Add(@LineItemPosition, 1)
+								SET @Trim = Field(Row(BuildRowSetFromString(@LineItems, '&#x7C;'), @LineItemPosition), 1)
+
+								SET @LineItemPosition = Add(@LineItemPosition, 1)
+								SET @Greeting = Field(Row(BuildRowSetFromString(@LineItems, '&#x7C;'), @LineItemPosition), 1)
+
+								SET @LineItemPosition = Add(@LineItemPosition, 1)
+								SET @Wallpaper = Field(Row(BuildRowSetFromString(@LineItems, '&#x7C;'), @LineItemPosition), 1)
+
+								SET @LineItemPosition = Add(@LineItemPosition, 1)
+								SET @Memory = Field(Row(BuildRowSetFromString(@LineItems, '&#x7C;'), @LineItemPosition), 1)
+
+								SET @LineItemPosition = Add(@LineItemPosition, 1)
+								SET @GoogleAcct = Field(Row(BuildRowSetFromString(@LineItems, '&#x7C;'), @LineItemPosition), 1)
+
+								SET @LineItemPosition = Add(@LineItemPosition, 1)
+								SET @WallCharger = Field(Row(BuildRowSetFromString(@LineItems, '&#x7C;'), @LineItemPosition), 1)
+
+								SET @LineItemPosition = Add(@LineItemPosition, 1)
+								SET @Engraving = Field(Row(BuildRowSetFromString(@LineItems, '&#x7C;'), @LineItemPosition), 1)
+
+								SET @LineItemPosition = Add(@LineItemPosition, 1)
+								SET @ProductImage = Field(Row(BuildRowSetFromString(@LineItems, '&#x7C;'), @LineItemPosition), 1)
+
+								SET @LineItemPosition = Add(@LineItemPosition, 1)
+								SET @DesignRefresh = Field(Row(BuildRowSetFromString(@LineItems, '&#x7C;'), @LineItemPosition), 1)
+
+							]%%
+							<table width="550" border="0" cellpadding="0" cellspacing="0" class="mobile-content-size" align="center" style="display:block">
+								<tr>
+									<th width="208" style="padding:0 0 0 30px;" class="phone-details" valign="top">
+									<!-- start -->
+										<table width="100%" border="0" cellspacing="0" cellpadding="0">
+											<tr>
+												<td width="10%" style="font-size: 14px; color: #222c30; font-weight: bold; text-align: left; font-family: Arial, Helvetica, sans-serif; line-height: 22px; vertical-align: top; padding:25px 0 0 0">1</td>
+												<td width="90%" style="font-size: 14px; color: #ff4f4f; font-weight: bold; text-align: left; font-family: Arial, Helvetica, sans-serif; line-height: 22px; vertical-align: top; padding:25px 0 0 0">%%=v(@AssetModelSource)=%%</td>
+											</tr>
+										</table>
+										<table width="100%" border="0" cellspacing="0" cellpadding="0">
+											<tr>
+												<td width="100%" style="font-size: 14px; color: #222c30; font-weight: normal; text-align: left; font-family: Arial, Helvetica, sans-serif; line-height: 22px; vertical-align: top; padding:10px 0 20px 0">
+													<strong>Model</strong> - %%[IF NOT EMPTY(@Memory) THEN]%%%%=v(@Memory)=%%<br />%%[ELSE]%%N/A<br />%%[ENDIF]%%
+													<strong>Front &amp; Frame</strong> - %%[IF NOT EMPTY(@FrontColor) THEN]%%%%=v(@FrontColor)=%%<br />%%[ELSE]%%N/A<br />%%[ENDIF]%%
+													<strong>Back</strong> - %%[IF NOT EMPTY(@BackColor) THEN]%%%%=v(@BackColor)=%%<br />%%[ELSE]%%N/A<br />%%[ENDIF]%%
+													<strong>Accent</strong> - %%[IF NOT EMPTY(@Trim) THEN]%%%%=v(@Trim)=%%<br />%%[ELSE]%%N/A<br />%%[ENDIF]%%
+													<strong>Greeting</strong> - %%[IF NOT EMPTY(@Greeting) THEN]%%%%=v(@Greeting)=%%<br />%%[ELSE]%%N/A<br />%%[ENDIF]%%
+													<strong>Engraving</strong> - %%[IF NOT EMPTY(@Engraving) THEN]%%%%=v(@Engraving)=%%<br />%%[ELSE]%%N/A<br />%%[ENDIF]%%
+												</td>
+											</tr>
+										</table>
+									<!-- end -->
+									</th>
+									<th width="282" class="phone" valign="top" style="padding:15px 0 25px 0; text-align:right;"><img src="%%=v(@ProductImage)=%%" alt="%%=v(@AssetModelSource)=%%" title="%%=v(@AssetModelSource)=%%" border="0" style="color:#333333; font-size:14px; display:block" width="270" height="270" /></th>
+								</tr>
+							</table>
+							
+							%%[IF @DesignRefresh == "Y" THEN]%%
+							<table width="550" border="0" cellpadding="0" cellspacing="0" class="mobile-content-size" style="min-width:550px">
+								<tr>
+									<td width="550" style="text-align: left; vertical-align: top; font-family: 'Open Sans', Arial, sans-serif; font-size:20px !important; line-height:29px !important; font-weight:normal; color:#222c30; padding:0 30px 3px 30px;" class="header-05">Enjoy now, refresh later</td>
+								</tr>  
+								<tr>
+									<td width="550" style="text-align: left; vertical-align: top; font-size: 1px !important; font-weight: normal; font-family: Arial, Verdana, sans-serif; line-height: 1px !important; padding:0 0 0 30px;" class="hor-line-wrapper"><img src="https://image.motorola-mail.com/lib/fe901272716d077b74/m/3/hor-line-single_20151001.gif" alt="" height="1" width="484" class="hor-line" /></td>
+								</tr>  
+								<tr>
+									<td width="550" style="text-align: left; vertical-align: top; font-size: 14px !important; color: #222c30; font-weight: normal; font-family: Arial, Verdana, sans-serif; line-height: 22px !important; padding:20px 20px 25px 30px;" class="paragraph-03">
+										When you're ready to refresh your design, visit <a href="http://www.motorola.com/us/design-refresh-redemption" style="text-decoration: underline; color: #222c30; font-weight:normal;" target="_blank" title="www.motorola.com/us/design-refresh-redemption">www.motorola.com/us/design-refresh-redemption</a> to redeem your code and redesign your DROID Turbo 2.
+										<table width="280" border="0" cellspacing="0" cellpadding="0" summary="spacer"><tr><td height="10" style="font-size: 10px; line-height: 10px;">&nbsp;</td></tr></table>
+										<a href="http://www.motorola.com/us/droid-turbo2-design-refresh/design-refresh/droid-turbo2-design-refresh.html" style="text-decoration: underline; color: #ff4f4f; font-weight:bold;" target="_blank" title="Learn more">Learn more</a>	
+									</td>
+								</tr>                         
+							</table>
+							%%[ENDIF]%%
+							<table width="550" border="0" cellpadding="0" cellspacing="0" class="mobile-content-size" style="min-width:550px">
+								<tr>
+									<td width="550" style="text-align: left; vertical-align: top; font-size: 1px !important; font-weight: normal; font-family: Arial, Verdana, sans-serif; line-height: 1px !important; padding:0 0 0 30px;" class="hor-line-wrapper"><img src="https://image.motorola-mail.com/lib/fe901272716d077b74/m/3/hor-line-single_20151001.gif" alt="" height="1" width="484" class="hor-line" /></td>
+								</tr>  
+							</table>
+							%%[
+							NEXT @Counter
+							]%%
+							<table width="550" border="0" cellpadding="0" cellspacing="0" class="mobile-content-size" style="min-width:550px">
+								<tr>
+									<td width="550" style="text-align: left; vertical-align: top; font-family: 'Open Sans', Arial, sans-serif; font-size:18px !important; line-height:27px !important; font-weight:normal; color:#222c30; padding:30px 30px 0 30px;" class="header-06">Any questions?</td>
+								</tr>  
+								<tr>
+									<td width="550" style="text-align: left; vertical-align: top; font-size: 13px !important; color: #80888c; font-weight: normal; font-family: Arial, Verdana, sans-serif; line-height: 20px !important; padding:10px 30px 40px 30px;" class="paragraph-04">Please refer to the Verizon Order Confirmation email for contact information about your order.</td>
+								</tr>                         
+							</table>
+							<!-- end -->
+						</td>
+					</tr>  
+				</table>
+				<table width="550" border="0" cellpadding="0" cellspacing="0" align="center" class="legal" style="-webkit-text-size-adjust: 100%;">
+					<tr>
+						<td align="center" style="text-align:left; padding:20px 20px 10px 20px; font-family: Arial, Helvetica, sans-serif; color:#444444; font-size:11px; line-height:15px;" class="legal-copy">All screen images simulated.</td>
+					</tr>
+					<tr>
+						<td align="center" style="text-align:left; padding:0 20px 10px 20px; font-family: Arial, Helvetica, sans-serif; color:#444444; font-size:11px; line-height:15px;" class="legal-copy">Motorola values your privacy. Read the <a href="http://www.motorola.com/us/legal/privacy-policy" title="Privacy" style="color:#444444; text-decoration:underline;" target="_blank">Motorola Privacy Policy</a> for more information on our privacy practices. Please read the <a href="http://www.motorola.com/us/legal/terms-of-use" title="Terms of Use" style="color:#444444; text-decoration:underline;" target="_blank">Motorola Website Terms of Use</a> before using our website.</td>
+					</tr>
+					<tr>
+						<td align="center" style="text-align:left; padding:0 20px 40px 20px; font-family: Arial, Helvetica, sans-serif; color:#444444; font-size:11px; line-height:15px;" class="legal-copy">MOTOROLA and the Stylized M Logo are trademarks of Motorola Trademark Holdings, LLC. DROID is a trademark of Lucasfilm Ltd. and its related companies. Used under license. Android, Google and other marks are trademarks of Google Inc. All other trademarks are the property of their respective owners. &copy;%%=Format(Now(), "yyyy")=%% Motorola Mobility LLC. All rights reserved <a href="%%view_email_url%%" title="Web Version" style="text-decoration:none; color:#444444;" target="_blank">reserved</a>.</td>
+					</tr>
+				</table>		
+				<!-- end -->
+			</td>
+		</tr>
+	</table>
+	<custom name="opencounter" type="tracking"> 
+</body>
+</html>

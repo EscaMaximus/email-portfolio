@@ -1,0 +1,133 @@
+﻿%%[/*
+
+		US-EN Moto X Gen 2 March Sale
+		Author: Motorola ExactTarget Team
+		Revision Date: 3/10/2016
+
+		/* GA Tagging Definitions */
+		
+		SET @UtmSource = 'motoemail'
+		SET @UtmMedium = 'email'
+		SET @UtmCampaign = 'ECOMM_NA_US_EN_PROMOTION_MOTOXGEN2MOTOXPE'
+		SET @UtmContent = 'MARCH2016SALE'
+
+*/]%%
+
+
+Buy Moto X (2nd Gen.) now starting at $249.99 and add a clearance accessory for free!
+
+
+****
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola.
+
+Browser View>
+%%view_email_url%%
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+****
+
+
+Free shipping on orders over $75>
+http://www.motorola.com/us/consumers/about-motorola-us/About_Motorola-Legal-Terms_of_Sale/About_Motorola-Legal-Terms_of_Sale.html?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=free_shipping
+
+
+Apply for Moto Credit>
+http://www.motorola.com/us/motorola-finance-pdp.html?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=credit
+
+
+Specials>
+http://www.motorola.com/us/motorola-shop-all-sale.html?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=specials
+
+
+
+****
+
+
+
+Both $50 off
+
+Moto X
+PURE EDITION
+
+Get a 32 GB Moto X Pure Edition for only $399.99.* Make it uniquely yours in Moto Maker with thousands of color and material customization options including premium wood and leather.
+
+Shop now, this offer ends on Thursday, March 17.
+
+Build yours>
+http://www.motorola.com/us/products/motomaker/FLEXR6?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=buy_now_motoxpe&accent-color=OP106012
+
+
+****
+
+
+
+Moto X
+
+Build the beautifully contoured, customizable Moto X (2nd Gen.) the way you want it starting at only $249.99 without a contract.** Use Moto Maker to choose from thousands of color combinations to make it uniquely yours.
+
+Plus, add a free clearance accessory when you purchase Moto X (2nd Gen.)***
+
+Buy now>
+https://www.motorola.com/us/motomaker?pid=FLEXR2&utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=buy_now_motoxgen2
+
+
+
+****
+
+Motorola-
+http://www.motorola.com/us/home?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_bug_top
+
+Twitter-
+https://twitter.com/Moto_USA
+
+Facebook- 
+https://www.facebook.com/MotoUSA/
+
+Google+
+https://plus.google.com/+Motorola/posts
+
+Instagram-
+http://instagram.com/motorola
+
+YouTube-
+https://www.youtube.com/user/motorola
+
+
+****
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola.If this email has been forwarded to you, you can opt-in for future communications from Motorola.
+
+opt-in for future communications>
+https://pages.motorola-mail.com/registration-us-en/?c=ECOMM_NA_US_EN_REGISTRATION_FORWARDEDOPTIN&utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=forwarded_optin
+
+All screen images simulated.
+
+* Offer valid for Moto X Pure Edition only (reg. $449.99) through 10:59 a.m. CT on 3/17/16. Discount applied at checkout. Moto X upgrades are available at an extra cost as stated in Moto Maker.
+
+** Offer valid for Moto X (2nd Gen.) only (reg. $299.99) while supplies last. Discount applied at checkout. Moto X upgrades are available at an extra cost as stated in Moto Maker.
+
+*** Offer valid with Moto X (2nd Gen.) purchase through 10:59 a.m. CT on 3/22/16 or while supplies last. Discount applies when you add both items to your cart.
+
+If you no longer wish to receive promotional emails from Motorola Mobility LLC, please unsubscribe.
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+Please direct any questions concerning Motorola's privacy practices to privacy@motorola.com.
+
+Inquiries or requests to unsubscribe from ("opt-out" of) communications from Motorola may also be mailed to: Motorola Mobility LLC Attn: Privacy Compliance Program 222 W. Merchandise Mart Plaza, Suite 1800, Mailstop 16-O19.02, Chicago, IL 60654.
+
+Motorola values your privacy. For more information on our Privacy Practices, please visit www.motorola.com/privacy
+
+Privacy>
+http://www.motorola.com/us/consumers/about-motorola-us/About_Motorola-Legal-Legal_and_Privacy_Policy/About_Motorola-Legal-Legal_and_Privacy_Policy.html
+
+Please visit www.motorola.com/legal to see Motorola's website terms of use.
+
+Legal>
+http://www.motorola.com/us/consumers/about-motorola-us/About_Motorola-Legal-Terms_of_Use/About_Motorola-Legal-Terms_of_Use.html
+
+MOTOROLA and the Stylized M Logo are trademarks of Motorola Trademark Holdings, LLC. Android, Google and other marks are trademarks of Google Inc. All other trademarks are the property of their respective owners. (c)%%=Format(Now(), "yyyy")=%% Motorola Mobility LLC. All rights reserved.

@@ -1,0 +1,136 @@
+﻿%%[
+	/*
+		US-EN MOTO G4 PLAY EPISODE 3
+		Author: Motorola ExactTarget Team
+		Revision Date: 10/6/2016
+	*/
+	/* GA Tagging Definitions */
+	SET @UtmSource = 'motoemail'
+	SET @UtmMedium = 'email'
+	SET @UtmCampaign = 'CONSUMER_NA_US_EN_ONBOARDING_MOTOGGEN4'
+	SET @UtmContent = 'MOTOGPLAYEP3'
+
+]%%
+
+
+Ready to explore more advanced features?
+
+
+***
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola.
+
+Browser View>
+%%view_email_url%%
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+***
+
+User Guide>
+https://motorola-global-portal.custhelp.com/ci/fattach/get/1777039/1472239560/redirect/1/filename/68018207001B.pdf
+
+Customer Service>
+https://motorola-global-portal.custhelp.com/app/mcp/landing_troubleshooter/g_id/5059/?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=customer_service
+
+Owner Forums>
+https://forums.lenovo.com/t5/Moto-G4-Moto-G4-Plus/bd-p/MotoG4thGen
+
+
+***
+
+Moto G Play
+
+Do even more
+
+Learn how to extend the functionality of your new Moto G Play with these tips and tricks.
+
+***
+
+Remember when
+
+Remind yourself to call your mom when you get home. Or pick up the dry cleaning when you're close to the cleaners. Set reminders based on your location or time of day.
+
+Learn more>
+https://motorola-global-portal.custhelp.com/app/answers/prod_answer_detail/a_id/112870/p/30,6720,9809/?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=reminders
+
+***
+
+Circle of trust
+
+Smart Lock keeps your phone unlocked when it's connected via Bluetooth® to a trusted device, such as your car stereo. Or when it's in a trusted place, like home or work.
+
+Learn more>
+https://motorola-global-portal.custhelp.com/app/answers/prod_answer_detail/a_id/112869/p/30,6720,9809/?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=smart_lock
+
+***
+
+Screen 'em out
+
+Before you hand your phone over to a friend, coworker or your kids, use Screen Pinning to lock them into a single app. There'll be no more surprises when you get it back.
+
+Learn more>
+https://motorola-global-portal.custhelp.com/app/answers/prod_answer_detail/a_id/112874/p/30,6720,9809/?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=screen_pinning
+
+***
+
+Free shipping*>
+http://www.motorola.com/us/legal/terms-of-sale?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=shipping#shipping
+
+Specials>
+http://www.motorola.com/us/specials?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=specials
+
+*****
+
+Motorola-
+http://www.motorola.com/us/home?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_bug_top
+
+Twitter-
+https://twitter.com/Moto_USA
+
+Facebook- 
+https://www.facebook.com/MotoUSA/
+
+Google+
+https://plus.google.com/+Moto
+
+Instagram-
+http://instagram.com/moto_usa/
+
+YouTube-
+https://www.youtube.com/user/motorola
+
+
+*****
+
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola. If this email has been forwarded to you, you can opt-in for future communications from Motorola.
+
+opt-in for future communications>
+https://pages.motorola-mail.com/registration-us-en/?c=ECOMM_NA_US_EN_REGISTRATION_FORWARDEDOPTIN&utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=forwarded_optin
+
+All screen images simulated.
+
+* Free shipping for orders over $75.
+
+Certain features, functionality and product specifications may be network dependent and subject to additional terms, conditions, and charges. All are subject to change without notice.
+
+If you no longer wish to receive promotional emails from Motorola Mobility LLC, please unsubscribe.
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+Please direct any questions concerning Motorola's privacy practices to privacy@motorola.com.
+
+Inquiries or requests to unsubscribe from ("opt-out" of) communications from Motorola may also be mailed to: Motorola Mobility LLC Attn: Privacy Compliance Program 222 W. Merchandise Mart Plaza, Suite 1800, Mailstop 16-O19.02, Chicago, IL 60654.
+
+Motorola values your privacy. For more information on our Privacy Practices, please visit Motorola Privacy Policy. Please visit Motorola Website Terms of Use to see Motorola's website terms of use.
+
+Privacy>
+http://www.motorola.com/us/legal/privacy-policy
+
+Legal>
+http://www.motorola.com/us/legal/terms-of-use
+
+MOTOROLA and the Stylized M Logo are trademarks of Motorola Trademark Holdings, LLC. Android, Google and other marks are trademarks of Google Inc. All other trademarks are the property of their respective owners.(c)%%=Format(Now(), "yyyy")=%% Motorola Mobility LLC. All rights reserved.

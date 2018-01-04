@@ -1,0 +1,151 @@
+﻿%%[
+	/*
+		GB-EN MOTO G4 Episode 3
+		Author: Motorola ExactTarget Team
+		Revision Date: 1/23/2017
+	*/	
+	/* GA Tagging Definitions */
+	SET @UtmSource = 'motoemail'
+	SET @UtmMedium = 'email'
+	SET @UtmCampaign = 'CONSUMER_EMARA_GB_EN_ONBOARDING_MOTOGGEN4'
+	SET @UtmContent = 'EP3'
+
+]%%
+
+
+Ready to explore more advanced features?
+
+
+***
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola.
+
+Browser View>
+%%view_email_url%%
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+***
+
+
+User Guide>
+https://motorola-global-en-uk.custhelp.com/app/answers/prod_answer_detail/a_id/111373/p/30,6720,9686
+
+Customer Service>
+https://motorola-global-en-uk.custhelp.com/app/mcp/landing_troubleshooter/g_id/5141/?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=customer_service
+
+Owner Forums>
+https://forums.lenovo.com/t5/Moto-G4-Moto-G4-Plus/bd-p/MotoG4thGen
+
+
+
+***
+
+
+Moto G4 Plus
+
+Do even more
+
+Learn how to extend the functionality of your new Moto G with these tips and tricks.
+
+
+***
+
+
+Remember when
+
+Remind yourself to call your mom when you get home. Or pick up the dry cleaning when you're close to the cleaners. Set reminders based on your location or time of day.
+
+Learn more>
+https://motorola-global-en-uk.custhelp.com/app/answers/detail/a_id/110963/p/30,6720,9687/?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=reminders
+
+
+***
+
+
+Circle of trust
+
+Smart Lock keeps your phone unlocked when it's connected via Bluetooth® to a trusted device, such as your car stereo. Or when it's in a trusted place, like home or work.
+
+Learn more>
+https://motorola-global-en-uk.custhelp.com/app/answers/detail/a_id/110961/p/30,6720,9687/?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=smart_lock
+
+
+***
+
+
+Shoot like a pro
+
+Switch your camera to Professional Mode for ultimate control. Choose the shutter speed, ISO, white balance and more.
+
+Learn more>
+https://motorola-global-en-uk.custhelp.com/app/answers/detail/a_id/110957/p/30,6720,9687/?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=pro_mode
+
+
+***
+
+
+Screen 'em out
+
+Before you hand your phone over to a friend, coworker or your kids, use Screen Pinning to lock them into a single app. There'll be no more surprises when you get it back.
+
+Learn more>
+https://motorola-global-en-uk.custhelp.com/app/answers/detail/a_id/110967/p/30,6720,9687/?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=screen_pinning
+
+
+***
+
+
+Free shipping*>
+http://www.motorola.co.uk/legal/terms-of-sale?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=shipping#shipping
+
+
+Specials>
+http://www.motorola.co.uk/specials?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=specials
+
+
+***
+
+Motorola-
+http://www.motorola.com/us/home?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_bug_top
+
+Twitter-
+https://twitter.com/moto
+
+Facebook- 
+https://www.facebook.com/MotoInUK
+
+Instagram-
+https://www.instagram.com/moto.uk/
+
+
+***
+
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola.
+
+All screen images simulated.
+
+* Free shipping for orders over £75.
+
+Certain features, functionality and product specifications may be network dependent and subject to additional terms, conditions, and charges. All are subject to change without notice.
+
+If you no longer wish to receive promotional emails from Motorola Mobility LLC, please unsubscribe.
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+Please direct any questions concerning Motorola's privacy practices to privacy@motorola.com.
+
+Enquiries or requests to unsubscribe from ("opt-out" of) communications from Motorola may also be mailed to: Motorola Mobility UK, Ltd., Redwood, Crockford Lane, Chineham Business Park, Basingstoke, RG24 8WQ.
+
+Motorola values your privacy. For more information on our Privacy Practices, please visit Motorola Privacy Policy. Please visit Motorola Website Terms of Use to see Motorola's website terms of use.
+
+Privacy>
+http://www.motorola.co.uk/legal/privacy-policy
+
+Legal>
+http://www.motorola.co.uk/legal/terms-of-use
+
+Moto branded products are designed and manufactured by or for Motorola Mobility LLC, a wholly owned subsidiary of Lenovo. MOTOROLA and the Stylised M Logo are trademarks of Motorola Trademark Holdings, LLC. Facebook is a trademark of Facebook, Inc. Android, Google and other marks are trademarks of Google Inc. All other trademarks are the property of their respective owners. (c)%%=Format(Now(), "yyyy")=%% Motorola Mobility LLC. All rights reserved.

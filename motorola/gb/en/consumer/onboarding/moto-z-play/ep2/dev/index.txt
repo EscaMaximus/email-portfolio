@@ -1,0 +1,139 @@
+﻿%%[
+	/*
+		GB-EN MOTO Z PLAY EPISODE 2
+		Author: Motorola ExactTarget Team
+		Revision Date: 1/23/2017
+	*/	
+	/* GA Tagging Definitions */
+	VAR @UtmSource, @UtmMedium, @UtmCampaign, @UtmContent, @EmailHash, @CouponCode
+	SET @UtmSource = 'motoemail'
+	SET @UtmMedium = 'email'
+	SET @UtmCampaign = 'CONSUMER_EMARA_GB_EN_ONBOARDING_MOTOZFAMILYMOTOMODS'
+	SET @UtmContent = 'MOTOZPLAYEP2'
+
+]%%
+
+
+Learn more about Moto Z.
+
+
+***
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola.
+
+Browser View>
+%%view_email_url%%
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+***
+
+User Guide>
+https://motorola-global-en-uk.custhelp.com/ci/fattach/get/1806843/1474345054/redirect/1/filename/Moto%20Z%20Play_UG_en-GB_68018241002A.pdf
+
+Customer Service>
+https://motorola-global-en-uk.custhelp.com/app/mcp/landing_troubleshooter/g_id/5141/?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=customer_service
+
+Owner Forums>
+https://forums.lenovo.com/t5/Moto-Z-Play/bd-p/Moto_Z_Play
+
+
+***
+
+Moto Z Play
+
+Transforms with Moto Mods(tm)
+
+Snap Moto Mods(tm) onto your new Moto Z Play and transform it in an instant. You'll do things you never thought possible with a phone.
+
+Learn more>
+https://www.motorola.co.uk/products/moto-z-play?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_mods#moto-mods
+
+***
+
+Easily stay in the loop
+
+Moto Display provides important information right from the lock-screen. Get a preview of text messages, see your next appointment, even play and pause music.
+
+Learn more>
+https://motorola-global-en-uk.custhelp.com/app/answers/detail/a_id/113670/p/30,6720,9837/?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_display
+
+*** 
+
+Keep memories safe
+
+Google Photos(tm) is the smarter way to store photos and videos. Stay automatically backed up and organized, and get two years of free storage at original quality.*
+
+Learn more>
+https://motorola-global-en-uk.custhelp.com/app/answers/detail/a_id/113638/p/30,6720,9837/?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=google_photos
+
+***
+
+Moto Mods(tm)
+
+Amazing today. Awesome tomorrow.
+
+Your Moto Z  phone can instantly transform into a 70" movie projector, battery powerhouse and more. This is just the start. More Moto Mods are being developed by your favourite brands. And they're designed to work with future generation Moto Z phones.**
+
+Buy now>
+http://www.motorola.co.uk/moto-mods?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_mods
+
+
+***
+
+Free shipping***>
+http://www.motorola.co.uk/legal/terms-of-sale?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=shipping#shipping
+
+
+Specials>
+http://www.motorola.co.uk/specials?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=specials
+
+***
+
+Motorola-
+https://www.motorola.co.uk/home?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_bug_top
+
+Twitter-
+https://twitter.com/moto
+
+Facebook- 
+https://www.facebook.com/MotoInUK
+
+Instagram-
+https://www.instagram.com/moto.uk/
+
+
+***
+
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola.
+
+All screen images simulated.
+
+* Promotional offer must be redeemed by March 31, 2017. Two-year period begins when the first photo or video is backed up to Google Photos from an eligible device. This offer is limited to a single Google account, as identified by a unique ID, can only be redeemed once per Google account ID, and cannot be combined with other offers, and is not transferable. User must select original upload size in settings to take advantage of this offer. Offer available only in countries where the Google Photos service is available. Use of Google Photos is subject to the Google Photos Terms of Service available at http://www.google.com/policies/terms, the Google Privacy Policy available http://www.google.com/policies/privacy/.
+
+** Co-branded Moto Mods may require software upgrades to maintain compatibility, contact the manufacturer for details.
+
+*** Free shipping for orders over £75.
+
+Certain features, functionality and product specifications may be network dependent and subject to additional terms, conditions, and charges. All are subject to change without notice.
+
+If you no longer wish to receive promotional emails from Motorola Mobility LLC, please unsubscribe.
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+Please direct any questions concerning Motorola's privacy practices to privacy@motorola.com.
+
+Enquiries or requests to unsubscribe from ("opt-out" of) communications from Motorola may also be mailed to: Motorola Mobility UK, Ltd., Redwood, Crockford Lane, Chineham Business Park, Basingstoke, RG24 8WQ.
+
+Motorola values your privacy. For more information on our Privacy Practices, please visit Motorola Privacy Policy. Please visit Motorola Website Terms of Use to see Motorola's website terms of use.
+
+Privacy>
+http://www.motorola.co.uk/legal/privacy-policy
+
+Legal>
+http://www.motorola.co.uk/legal/terms-of-use
+
+Moto branded products are designed and manufactured by or for Motorola Mobility LLC, a wholly owned subsidiary of Lenovo. MOTOROLA and the Stylised M Logo are trademarks of Motorola Trademark Holdings, LLC. The Bluetooth(r) trademarks are owned by their proprietor and used under license.  Facebook is a trademark of Facebook, Inc. Android, Google and other marks are trademarks of Google Inc. All other trademarks are the property of their respective owners. (c)%%=Format(Now(), "yyyy")=%% Motorola Mobility LLC. All rights reserved.

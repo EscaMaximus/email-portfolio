@@ -1,0 +1,17 @@
+					<tr>
+						<td bgcolor="#F0F0F0" style="padding: 15px 30px 15px 30px; vertical-align:top; border-bottom: 1px solid #D3D3D3;">
+							<table width="220" border="0" cellspacing="0" cellpadding="0" align="center" style="margin:0 auto;">
+								<tr>
+									<td height="46" class="button" style="background: %%=v(@TemplateHighlightColor)=%%; border-radius: 1px;" align="center">
+										%%[IF (@ProjectFolder == 'PAYMENT_PENDING' AND @PaymentTypeOne == 'BILL') OR (@ProjectFolder == 'PAYMENT_PENDING' AND @PaymentTypeTwo == 'BILL') THEN]%%
+											<a href="%%=RedirectTo(@OfflinePaymentURL)=%%" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 16px; line-height: 16px; font-weight: bold; color:#FFFFFF; text-decoration:none; display: block; width:100%; padding: 15px 0 15px 0;" title="Imprimir boleto" target="_blank">Imprimir boleto</a>
+										%%[ELSEIF (@ProjectFolder == 'PAYMENT_PENDING' AND @PaymentTypeOne == 'DEBIT') OR (@ProjectFolder == 'PAYMENT_PENDING' AND @PaymentTypeTwo == 'DEBIT') THEN]%%
+											<a href="%%=RedirectTo(@OfflinePaymentURL)=%%" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 16px; line-height: 16px; font-weight: bold; color:#FFFFFF; text-decoration:none; display: block; width:100%; padding: 15px 0 15px 0;" title="Pagar no seu banco" target="_blank">Pagar no seu banco</a>
+										%%[ELSE]%%
+											<a href="%%=RedirectTo(Concat(@OrderStatusURL,@MotoOrderNumber))=%%" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 16px; line-height: 16px; font-weight: bold; color:#FFFFFF; text-decoration:none; display: block; width:100%; padding: 15px 0 15px 0;" title="Status do pedido" target="_blank" alias="order_status">Status do pedido</a>
+										%%[ENDIF]%%
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>

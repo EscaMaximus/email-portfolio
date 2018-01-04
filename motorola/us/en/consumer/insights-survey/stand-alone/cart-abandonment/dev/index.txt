@@ -1,0 +1,113 @@
+﻿%%[ 
+	/*
+		CART ABANDONMENT SURVEY
+		Author: Motorola ExactTarget Team
+		Revision Date: 4/11/2016
+		Summary: Hashing email using SHA256.
+	*/
+
+	VAR @Email, @EmailHash
+
+	SET @Email = emailaddr
+	SET @EmailHash = SHA256(@Email)
+
+	UpdateDE("CONSUMER_NA_US_EN_OWNERPULSE_CARTABANDONMENT_JOURNEY",1,"EMAIL_ADDRESS",@Email,"UUID",@EmailHash)
+
+]%%
+
+
+We want to improve our shopping experience at Motorola.com.
+
+
+*************************************************************************************
+
+You [%%emailaddr%%] have received this email message to update you about your recent interaction with motorola.com. This is a one-time communication.
+
+To stay informed about Motorola products and services, subscribe now or visit motorola.com.
+
+Subscribe now>
+https://pages.motorola-mail.com/registration-us-en/?c=CONSUMER_NA_US_EN_OWNERPULSE_CARTABANDONMENT_LAUNCH&utm_source=motoemail&utm_medium=email&utm_campaign=CONSUMER_NA_US_EN_OWNERPULSE_CARTABANDONMENT&utm_content=LAUNCH&utm_term=subscribe
+
+Browser View>
+%%view_email_url%%
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+*************************************************************************************
+
+
+
+
+We noticed that you didn't finish shopping
+
+If you don't mind, we have just two questions for you that will help us improve the shopping experience at Motorola.com.
+
+Tell us why>
+https://research.brandup.com/?r=survey/index&sid=286831&lang=en&286831X66X632=%%=v(@EmailHash)=%%&utm_source=motoemail&utm_medium=email&utm_campaign=CONSUMER_NA_US_EN_OWNERPULSE_CARTABANDONMENT&utm_content=LAUNCH&utm_term=start_survey
+
+
+If you would like to continue with your purchase, we would love to have you back.
+
+Continue shopping
+http://www.motorola.com/us/home?utm_source=motoemail&utm_medium=email&utm_campaign=CONSUMER_NA_US_EN_OWNERPULSE_CARTABANDONMENT&utm_content=LAUNCH&utm_term=continue_shopping
+
+
+
+
+
+************************************************************************************
+
+
+Motorola-
+http://www.motorola.com/us/home?utm_source=motoemail&utm_medium=email&utm_campaign=CONSUMER_NA_US_EN_OWNERPULSE_CARTABANDONMENT&utm_content=LAUNCH&utm_term=moto_bug_top
+
+Twitter-
+https://twitter.com/Moto_USA
+
+Facebook- 
+https://www.facebook.com/MotoUSA/
+
+Google+
+https://plus.google.com/+Motorola/posts
+
+Instagram-
+http://instagram.com/motorola
+
+YouTube-
+https://www.youtube.com/user/motorola
+
+
+*************************************************************************************
+
+
+You [%%emailaddr%%] have received this email message to update you about your recent interaction with motorola.com. This is a one-time communication.
+
+To stay informed about Motorola products and services, subscribe now or visit motorola.com.
+
+Subscribe now>
+https://pages.motorola-mail.com/registration-us-en/?c=CONSUMER_NA_US_EN_OWNERPULSE_CARTABANDONMENT_LAUNCH&utm_source=motoemail&utm_medium=email&utm_campaign=CONSUMER_NA_US_EN_OWNERPULSE_CARTABANDONMENT&utm_content=LAUNCH&utm_term=subscribe
+
+
+All screen images simulated.
+
+If you no longer wish to receive promotional emails from Motorola Mobility LLC, please unsubscribe.
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+Please direct any questions concerning Motorola's privacy practices to privacy@motorola.com.
+
+Inquiries or requests to unsubscribe from ("opt-out" of) communications from Motorola may also be mailed to: Motorola Mobility LLC Attn: Privacy Compliance Program 222 W. Merchandise Mart Plaza, Suite 1800, Mailstop 16-O19.02, Chicago, IL 60654.
+
+Motorola values your privacy. For more information on our Privacy Practices, please visit www.motorola.com/privacy
+
+Privacy>
+http://www.motorola.com/us/consumers/about-motorola-us/About_Motorola-Legal-Legal_and_Privacy_Policy/About_Motorola-Legal-Legal_and_Privacy_Policy.html
+
+Please visit www.motorola.com/legal to see Motorola's website terms of use.
+
+Legal>
+http://www.motorola.com/us/consumers/about-motorola-us/About_Motorola-Legal-Terms_of_Use/About_Motorola-Legal-Terms_of_Use.html
+
+MOTOROLA and the Stylized M Logo are trademarks of Motorola Trademark Holdings, LLC. Android, Google and other marks are trademarks of Google Inc. All other trademarks are the property of their respective owners. (c)%%=Format(Now(), "yyyy")=%% Motorola Mobility LLC. All rights reserved.

@@ -1,0 +1,147 @@
+﻿%%[
+	/*
+		US-EN MOTO HASSELBLAD EPISODE 1
+		Author: Motorola ExactTarget Team
+		Revision Date: 10/18/2016
+	*/	
+	/* GA Tagging Definitions */
+	SET @UtmSource = 'motoemail'
+	SET @UtmMedium = 'email'
+	SET @UtmCampaign = 'CONSUMER_NA_US_EN_ONBOARDING_MOTOZFAMILYMOTOMODS'
+	SET @UtmContent = 'HASSELBLADEP1'
+	SET @EmailHash = SHA256(lowercase(trim(emailaddr)))
+
+]%%
+
+
+Instant 10x optical zoom in a snap.
+
+***
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola.
+
+Browser View>
+%%view_email_url%%
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+***
+
+User Guide>
+https://motorola-global-portal.custhelp.com/ci/fattach/get/1793641/1473436216/redirect/1/filename/True%20Zoom_GSG_Canada%20Latam_68018258003A.pdf
+
+Customer Service>
+https://motorola-global-portal.custhelp.com/app/mcp/landing_troubleshooter/g_id/5059?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=customer_service&ceid=%%=v(@EmailHash)=%%
+
+Owner Forums>
+https://forums.lenovo.com/t5/Moto-Z-Phones-Mod-Capable/ct-p/Moto_Z_Mod_Capable
+
+***
+
+Hasselblad True Zoom
+Create to inspire
+
+Snap it on. Zoom right in.
+
+Enjoy a real imaging experience with your phone. Get 10x optical zoom and a Xenon flash, in a snap. Capture and share like never before. 
+
+Learn more>
+http://www.motorola.com/us/products/moto-mods/hasselblad-true-zoom?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=hasselblad_welcome_story&ceid=%%=v(@EmailHash)=%%
+
+***
+
+The Hasselblad experience
+
+Advanced shooting and scene modes to fuel your creativity and a RAW format option for superior quality and editing flexibility.
+
+Learn more>
+http://www.motorola.com/us/products/moto-mods/hasselblad-true-zoom?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=advanced_shooting&ceid=%%=v(@EmailHash)=%%#hasselblad-experience
+
+***
+
+Shoot + share
+
+Share your beautiful shots with family and friends, and automatically back up all of your full-size, high-quality pictures to Google Photos™. Plus, get two years of free storage at original quality.[*]
+
+Learn more>
+http://www.motorola.com/us/products/moto-mods/hasselblad-true-zoom?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=google_photos_storage&ceid=%%=v(@EmailHash)=%%#shoot-share
+
+***
+
+Moto Mods(tm)
+
+Amazing today. Awesome tomorrow.
+
+Your Moto Z phone can instantly transform into a 70" movie projector, battery powerhouse and more. This is just the start. More Moto Mods are being developed by your favorite brands. And they're designed to work with future generation Moto Z phones.**
+
+Buy now>
+http://www.motorola.com/us/moto-mods?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_mods_buy_now&ceid=%%=v(@EmailHash)=%%
+
+***
+
+
+Free shipping***>
+http://www.motorola.com/us/legal/terms-of-sale?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=shipping&ceid=%%=v(@EmailHash)=%%
+
+
+Specials>
+http://www.motorola.com/us/specials?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=specials&ceid=%%=v(@EmailHash)=%%
+
+
+***
+
+Motorola-
+http://www.motorola.com/us/home?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_bug_top&ceid=%%=v(@EmailHash)=%%
+
+Twitter-
+https://twitter.com/Moto_USA
+
+Facebook- 
+https://www.facebook.com/MotoUSA/
+
+Google+
+https://plus.google.com/+Moto
+
+Instagram-
+https://www.instagram.com/moto_usa/
+
+YouTube-
+https://www.youtube.com/user/motorola
+
+
+***
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola. If this email has been forwarded to you, you can opt-in for future communications from Motorola.
+
+opt-in for future communications>
+https://pages.motorola-mail.com/registration-us-en/?c=ECOMM_NA_US_EN_REGISTRATION_FORWARDEDOPTIN&utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=forwarded_optin&ceid=%%=v(@EmailHash)=%%
+
+All screen images simulated.
+
+* Promotional offer must be redeemed by March 31, 2017. Two-year period begins when the first photo or video is backed up to Google Photos from an eligible device. This offer is limited to a single Google account, as identified by a unique ID, can only be redeemed once per Google account ID, and cannot be combined with other offers, and is not transferable.  User must select original upload size in settings to take advantage of this offer. Offer available only in countries where the Google Photos service is available. Use of Google Photos is subject to the Google Photos Terms of Service available at http://www.google.com/policies/terms, the Google Privacy Policy available http://www.google.com/policies/privacy/.
+
+** Co-branded Moto Mods may require software upgrades to maintain compatibility, contact the manufacturer for details.
+
+*** Free shipping for orders over $75.
+
+Certain features, functionality and product specifications may be network dependent and subject to additional terms, conditions, and charges. All are subject to change without notice.
+
+If you no longer wish to receive promotional emails from Motorola Mobility LLC, please unsubscribe.
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+Please direct any questions concerning Motorola's privacy practices to privacy@motorola.com.
+
+Inquiries or requests to unsubscribe from ("opt-out" of) communications from Motorola may also be mailed to: Motorola Mobility LLC Attn: Privacy Compliance Program 222 W. Merchandise Mart Plaza, Suite 1800, Mailstop 16-O19.02, Chicago, IL 60654.
+
+Motorola values your privacy. For more information on our Privacy Practices, please visit Motorola Privacy Policy. Please visit Motorola Website Terms of Use to see Motorola's website terms of use.
+
+Privacy>
+http://www.motorola.com/us/legal/privacy-policy
+
+Legal>
+http://www.motorola.com/us/legal/terms-of-use
+
+MOTOROLA and the Stylized M Logo are trademarks of Motorola Trademark Holdings, LLC. Android, Google and other marks are trademarks of Google Inc. All other trademarks are the property of their respective owners. (c)%%=Format(Now(), "yyyy")=%% Motorola Mobility LLC. All rights reserved.

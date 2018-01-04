@@ -1,0 +1,47 @@
+					<tr>
+						<td bgcolor="#F0F0F0" style="padding: 15px 30px 15px 30px; border-bottom: 1px solid #D3D3D3;">
+							<table width="100%" border="0" cellpadding="0" cellspacing="0" align="left">
+								<tr>
+									<td style="font-size: 14px; color: #FFFFFF; text-align: left; vertical-align: top;">
+										<table width="100%" border="0" cellspacing="0" cellpadding="0">
+											<tr>
+												<td width="100%" class="h3" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 24px; line-height: 30px; font-weight:normal; color: #80888c; padding: 0 0 20px 0;">Detalhes do pedido</td>
+											</tr>
+										</table>
+										<table width="100%" border="0" cellspacing="0" cellpadding="0">
+											%%[IF NOT EMPTY(@MotoOrderNumber) THEN]%%
+											<tr>
+												<td width="10%" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
+												<td width="90%" class="p" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 16px; line-height: 22px; font-weight: normal; color: #222c30; text-align: left;  padding:0 5px 15px 0;"><span style="font-weight:bold;">N&uacute;mero do pedido</span>: <a href="%%=RedirectTo(Concat(@OrderStatusURL,@MotoOrderNumber))=%%" style="text-decoration: underline; color: %%=v(@TemplateHighlightColor)=%%; font-weight:bold;" class="highlight-link">%%=v(@MotoOrderNumber)=%%</a></td>
+											</tr>
+											%%[ENDIF]%%
+											%%[IF @PurchaseDate != "1/1/0001 12:00:00 AM" THEN]%%
+											<tr>
+												<td width="10%" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
+												<td width="90%" class="p" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 16px; line-height: 22px; font-weight: normal; color: #222c30; text-align: left;  padding:0 5px 15px 0;"><span style="font-weight:bold;">Realizado</span>: <a style="color: #222c30; text-decoration:none;" class="p-delivery-date">%%=FormatDate(@PurchaseDate, @DateDayYearFormat, "", @C_Sharp_Locale_Str)=%%</a></td>
+											</tr>
+											%%[ENDIF]%%
+											%%[IF @ProjectFolder == 'PAYMENT_DECLINED' OR @ProjectFolder == 'ORDER_CANCELED' OR @ProjectFolder == 'ORDER_DELAYED' OR @ProjectFolder == 'ORDER_ON_HOLD' THEN]%%
+											<tr>
+												<td width="10%" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
+												<td width="90%"  class="p" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 16px; line-height: 22px; font-weight: normal; color: #222c30; text-align: left;  padding:0 5px 15px 0;"><span style="font-weight:bold;">Payment amount</span>: %%=FormatNumber(@TotalOrderAmt,"C2", @C_Sharp_Locale_Str)=%%</td>
+											</tr>
+											%%[ENDIF]%%
+											%%[IF (@ProjectFolder == 'PAYMENT_CONFIRMATION') OR (@ProjectFolder == 'PAYMENT_PENDING') OR (@ProjectFolder == 'ORDER_CONFIRMATION') THEN]%%
+											<tr>
+												<td width="10%" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
+												<td width="90%"  class="p" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 16px; line-height: 22px; font-weight: normal; color: #222c30; text-align: left;  padding:0 5px 15px 0;">
+													<!-- start payment methid logic -->
+													<span style="font-weight:bold;">Pagamento</span>: %%[IF NOT EMPTY(@PaymentMethodTwo) THEN]%%<br />%%[ENDIF]%%
+													%%[IF NOT EMPTY(@PaymentMethodTwo) THEN]%%<span style="font-weight:bold; padding:0 0 0 10px;">&bull;</span> %%[ENDIF]%% %%[IF NOT EMPTY(@PaymentMethodOne) THEN]%%%%=v(Propercase(@PaymentMethodOne))=%%%%[ENDIF]%% %%[IF NOT EMPTY(@PaymentLastFourDigits) THEN]%%*%%=v(@PaymentLastFourDigits)=%%%%[ENDIF]%%<br />
+													%%[IF NOT EMPTY(@PaymentMethodTwo) THEN]%%<span style="font-weight:bold; padding:0 0 0 10px;">&bull;</span> %%[ENDIF]%%%%[IF NOT EMPTY(@PaymentMethodTwo) THEN]%%%%=v(@PaymentMethodTwo)=%%%%[ENDIF]%%
+													<!-- end payment method logic -->
+													</td>
+											</tr>
+											%%[ENDIF]%%
+										</table>
+									</td>
+								</tr>                         
+							</table>                                        
+						</td>
+					</tr>

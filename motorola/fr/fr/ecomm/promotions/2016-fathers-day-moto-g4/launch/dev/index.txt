@@ -1,0 +1,148 @@
+﻿%%[
+	/*
+		GB-EN MOTO G4 EXCITE
+		Segment: GB Interested / Hand-Raisers for the G4
+		Tag: ECOMM_EMARA_GB_EN_PRODUCT_MOTOG4FAMILY_MOTOG4EXCITE
+		Author: Motorola ExactTarget Team
+		Revision Date: 5/22/2016
+	*/	
+		/* GA Tagging Definitions */
+		
+		SET @UtmSource = 'motoemail'
+		SET @UtmMedium = 'email'
+		SET @UtmCampaign = 'ECOMM_EMARA_GB_EN_PRODUCT_MOTOG4FAMILY'
+		SET @UtmContent = 'MOTOG4EXCITE'
+
+]%%
+
+
+A faster phone. A pure experience.
+
+
+*****
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola.
+
+Browser View>
+%%view_email_url%%
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+*****
+
+
+Free shipping for all orders over £75>
+http://www.motorola.co.uk/terms-of-sale/terms-of-sale.html?utm_source=motoemail&utm_medium=email&utm_campaign=ECOMM_EMARA_GB_EN_PROMOTION_WINTERSALE&utm_content=LAUNCH&utm_term=shipping&#shipping
+
+
+Specials>
+http://www.motorola.co.uk/specials-uk.html?utm_source=motoemail&utm_medium=email&utm_campaign=ECOMM_EMARA_GB_EN_PROMOTION_WINTERSALE&utm_content=LAUNCH&utm_term=specials
+
+
+*****
+
+
+Focus on what matters
+
+The next generation of Moto G is here. Check out all the new features and place your order today!
+
+
+*****
+
+
+
+
+Moto G
+
+Focus on what matters
+
+Starting at £169
+
+All-new design. Same great comfort.
+
+With a streamlined design that fits nicely in your pocket, it is our thinnest Moto G yet. Rounded edges and a micro-texture back make it easy to grip, so you can use it comfortably with just one hand.
+
+It's here>
+http://www.motorola.co.uk/products/moto-g?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_g_its_here
+
+
+*****
+
+
+Enjoy a smooth Android(tm) experience
+
+With a pure version of Android, there's no software clutter to slow Moto G down.
+
+It's here>
+http://www.motorola.co.uk/products/moto-g?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_g_its_here
+
+
+*****
+
+Moto G Plus
+
+Starting at £229
+
+Fingerprint reader
+
+A passcode as unique as you
+
+Forget about typing your passcode. Simply touch the fingerprint reader to wake up Moto G Plus and unlock it.
+
+It's here>
+http://www.motorola.co.uk/products/moto-g-plus?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_g_plus_its_here
+
+
+*****
+
+
+Life moves fast. Move faster.
+
+With its octa-core processor, Moto G Plus can run multiple apps simultaneously with ease.
+
+It's here>
+http://www.motorola.co.uk/products/moto-g-plus?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_g_plus_its_here
+
+
+*****
+
+
+Motorola-
+http://www.motorola.co.uk/home?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_bug_top
+
+Twitter-
+https://twitter.com/moto
+
+Facebook- 
+https://www.facebook.com/MotoInUK
+
+YouTube-
+https://www.youtube.com/user/motorola
+
+
+*****
+
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola.
+
+If you no longer wish to receive promotional emails from Motorola Mobility LLC, please unsubscribe.
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+Please direct any questions concerning Motorola's privacy practices to privacy@motorola.com.
+
+Enquiries or requests to unsubscribe from ("opt-out" of) communications from Motorola may also be mailed to: Motorola Mobility UK, Ltd., Redwood, Crockford Lane, Chineham Business Park, Basingstoke, RG24 8WQ.
+
+Motorola values your privacy. For more information on our Privacy Practices, please visit www.motorola.com/privacy
+
+Privacy>
+http://www.motorola.com/us/consumers/about-motorola-us/About_Motorola-Legal-Legal_and_Privacy_Policy/About_Motorola-Legal-Legal_and_Privacy_Policy.html
+
+Please visit www.motorola.com/legal to see Motorola's website terms of use.
+
+Legal>
+http://www.motorola.com/us/consumers/about-motorola-us/About_Motorola-Legal-Terms_of_Use/About_Motorola-Legal-Terms_of_Use.html
+
+MOTOROLA and the Stylised M Logo are trademarks of Motorola Trademark Holdings, LLC. Facebook is a trademark of Facebook, Inc. Android, Google and other marks are trademarks of Google Inc. All other trademarks are the property of their respective owners. (c)%%=Format(Now(), "yyyy")=%% Motorola Mobility LLC. All rights reserved.

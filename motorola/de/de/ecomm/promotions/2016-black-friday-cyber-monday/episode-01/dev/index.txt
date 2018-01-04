@@ -1,0 +1,159 @@
+﻿%%[
+	/*
+		DE-DE BLACK FRIDAY EPISODE 1
+		Author: Motorola ExactTarget Team
+		Revision Date: 11/18/2016
+	*/	
+	/* GA Tagging Definitions */
+	VAR @UtmSource, @UtmMedium, @UtmCampaign, @UtmContent, @EmailHash, @CouponCode
+	SET @UtmSource = 'motoemail'
+	SET @UtmMedium = 'email'
+	SET @UtmCampaign = 'ECOMM_EMARA_DE_DE_PROMOTION_2016BLACKFRIDAY'
+	SET @UtmContent = 'EPISODE01'
+]%%
+
+
+Jetzt bei ausgewählten Geräten von attraktiven Top-Angeboten profitieren.
+
+****
+
+Sie [%%emailaddr%%] erhalten diese E-Mail aufgrund einer früheren Transaktion oder Geschäftsbeziehung mit Motorola.
+
+Browser-Ansicht>
+%%view_email_url%%
+
+Abmelden>
+https://pages.motorola-mail.com/unsubscribe_t/?lang=de
+
+****
+
+Kostenloser Versand bei allen Bestellungen über 95,00 €>
+http://www.motorola.de/legal/terms-of-sale?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=shipping#shipping
+
+
+Aktionen>
+http://www.motorola.de/specials?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=specials
+
+****
+
+hellomoto
+
+Der Black Friday startet heute! Jetzt unter ausgewählten Moto Z Smartphones wählen und ein MotoMod™ gibt's noch dazu! Ein Klack und gemeinsam eröffnen sie grenzenlose Möglichkeiten.
+
+Lenovo
+
+***
+
+INKLUSIVE Incipio® offGRID™ Power Pack (Im Wert von 89 €)
+
+Beim Kauf eines Moto Z
+
+Jetzt das weltweit flachste Smartphone kaufen und bis zu 22 Std. Extra-Power* sind inklusive.** Und der Versand ist kostenlos.
+
+Jetzt kaufen>
+https://www.motorola.de/products/motomaker/MotoModsDE?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=free_offgrid
+
+
+Lenovo
+
+***
+
+INKLUSIVE JBL SoundBoost Speaker (Im Wert von 99 €)
+
+Beim Kauf eines Moto Z Play
+
+Jetzt das Smartphone mit unserer längsten Akku-Laufzeit aller Zeiten* kaufen und den Klang-Kick gibt es inklusive.** Und der Versand ist kostenlos.
+
+Jetzt kaufen>
+https://www.motorola.de/products/motomaker/MotoModsDE?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=free_soundboost
+
+
+Lenovo
+
+***
+
+
+Moto G Play
+20 € sparen
+Statt 159 €, Schon ab 139 €***
+
+Mehr Smartphone. Mehr Spaß. Und günstiger denn je dank 20 € Rabatt.*** Und der Versand ist kostenlos.
+
+Jetzt kaufen>
+https://www.motorola.de/products/moto-g-play/ecomm?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=g_play_discount
+
+
+Lenovo
+
+***
+
+
+Moto X Force
+100 € sparen
+Statt 599 €, Schon ab 499 €***
+
+Sparen Sie 100 €*** beim Smartphone mit dem ersten bruchfesten Display der Welt.†  Und der Versand ist kostenlos.
+
+Jetzt kaufen>
+https://www.motorola.de/products/motomaker/FLEXR7DE?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=x_force_discount
+
+
+Lenovo
+
+***
+
+
+Moto X Style
+40 € sparen
+Statt 419 €, Schon ab 379 €***
+
+Sparen Sie 40 € beim Smartphone, dessen Interieur so schön ist wie das Exterieur.*** Und der Versand ist kostenlos.
+
+Jetzt kaufen>
+https://www.motorola.de/products/motomaker/FLEXR6DE?accent-color=OP106012&utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=x_style_discount
+
+
+Lenovo
+
+
+*****
+
+
+Motorola-
+http://www.motorola.de/home?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_bug_top
+
+Twitter-
+https://twitter.com/Moto_GER
+
+Facebook- 
+https://www.facebook.com/MotoInGER
+
+YouTube-
+https://www.youtube.com/user/motorola
+
+
+*****
+
+
+Sie [%%emailaddr%%] erhalten diese E-Mail aufgrund einer früheren Transaktion oder Geschäftsbeziehung mit Motorola.
+
+Abbildungen modifiziert.
+
+* Alle Angaben zur Akku-Laufzeit sind Annäherungswerte basierend auf einem gemischten Standardnutzungsprofil. Dieses Profil basiert auf Motorola Geräten in führenden 4G LTE-Netzwerken mit hervorragender Netzabdeckung und berücksichtigt sowohl Nutzungs- als auch Standby-Zeiten. Für das Profil der gemischten Nutzung wurden die Werkseinstellungen verwendet, um die Akku-Laufzeit zu berechnen. Die tatsächliche Akku-Leistung variiert und ist von vielen Faktoren abhängig, dazu zählen Signalstärke, Netzwerkkonfiguration, Alter des Akkus, Umgebungstemperatur, ausgewählte Features, Geräteeinstellungen sowie sprach-, daten- und andere anwendungsspezifische Gegebenheiten.
+
+** Das Angebot gilt bis zum 28.11.16, 23:59 Uhr oder solange der Vorrat reicht. Rabatt erscheint im Warenkorb wenn beide Produkte hinzugefügt werden.
+
+*** Das Angebot gilt bis zum 28.11.16, 23:59 Uhr oder solange der Vorrat reicht. Rabatt und gratis Premium-Cover werden im Warenkorb angezeigt. Weitere Upgrades für Moto X Force, Moto X Style and Moto 360 sind auf Moto Maker gegen Aufpreis erhältlich.
+
+† Für das Display und die integrierte Schutzschicht gilt eine Garantie gegen Bruch und Sprünge für die Dauer von vier (4) Jahren ab dem ursprünglichen Kaufdatum; Kratzer oder andere Beschädigungen der austauschbaren Schutzfolie sind von dieser Garantie ausgenommen. Das Smartphone ist nicht stoßfest oder darauf ausgelegt, allen Sturzschäden standzuhalten. Es gelten weitere Garantieausschlüsse, darunter Kratzer und andere optische Beeinträchtigungen, vorsätzliche Beschädigung oder unsachgemäßer Gebrauch sowie normale Abnutzung.
+
+Wenn Sie keine E-Mails oder andere Informationen von Motorola Mobility Germany GmbH erhalten möchten, können Sie diese hier abbestellen. 
+
+Sie diese hier abbestellen>
+https://pages.motorola-mail.com/unsubscribe_t/?lang=de
+
+Bitte richten Sie alle Fragen zu den Datenschutzrichtlinien von Motorola an: privacy@motorola.com. Falls Sie keine weiteren Informationen von Motorola bekommen möchten, können Sie sich abmelden, indem Sie Ihre Abmeldung an folgende Adresse senden: Motorola Mobility Germany GmbH - a LENOVO Company, Vorstadt 2, D- 61440 Oberursel.
+
+Motorola schützt die Privatsphäre seiner Kunden. Weitere Informationen zu unseren Datenschutzregelungen finden Sie unter www.motorola.de/legal/privacy-policy. Unsere Nutzungsbedingungen finden Sie auf der Website www.motorola.de/legal/terms-of-use.
+
+MOTOROLA und das stilisierte M-Logo sind Marken oder eingetragene Warenzeichen der Motorola Trademark Holdings, LLC. Facebook ist eine Marke von Facebook, lnc. Google, das Google-Logo, Android, YouTube, Chrome, Gmail, Google Play und andere Marken sind Markenzeichen von Google Inc. Bei allen anderen Firmen- und Produktnamen handelt es sich um Marken der betreffenden Unternehmen. (c)%%=Format(Now(), "yyyy")=%% Motorola Mobility LLC. Alle Rechte vorbehalten.

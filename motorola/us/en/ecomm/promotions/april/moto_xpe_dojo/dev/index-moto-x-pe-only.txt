@@ -1,0 +1,118 @@
+﻿%%[
+	/*
+		US-EN 2016 APRIL MOTO X PE PROMOTION
+		Author: Motorola ExactTarget Team
+		Revision Date: 4/18/2016
+	*/	
+		/* GA Tagging Definitions */
+		
+		SET @UtmSource = 'motoemail'
+		SET @UtmMedium = 'email'
+		SET @UtmCampaign = 'ECOMM_NA_US_EN_PROMOTION_2016APRIL'
+		SET @UtmContent = 'MOTOXPE'
+
+]%%
+
+
+Save $50 when you buy Moto X Pure Edition.
+
+
+*****
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola.
+
+Browser View>
+%%view_email_url%%
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+*****
+
+
+Free shipping on orders over $75>
+http://www.motorola.com/us/consumers/about-motorola-us/About_Motorola-Legal-Terms_of_Sale/About_Motorola-Legal-Terms_of_Sale.html?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=free_shipping
+
+
+Apply for Moto Credit>
+http://www.motorola.com/us/motorola-finance-pdp.html?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=credit
+
+
+Specials>
+http://www.motorola.com/us/motorola-shop-all-sale.html?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=specials
+
+
+*****
+
+
+
+
+moto x
+PURE EDITION
+
+$50 off*
+
+Perfect pictures at an amazing price
+
+The uniquely customizable Moto X Pure Edition features a 21 MP camera that captures beautiful, true-to-life images and spectacular selfies. And now, for a limited time, you can get it starting at just $349.99.*
+
+Shop soon! This offer is valid until Monday, May 2.
+
+Build yours>
+http://www.motorola.com/us/products/motomaker/FLEXR6?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=build_yours_motoxpe
+
+
+
+*****
+
+
+Motorola-
+http://www.motorola.com/us/home?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_bug_top
+
+Twitter-
+https://twitter.com/Moto_USA
+
+Facebook- 
+https://www.facebook.com/MotoUSA/
+Google+
+https://plus.google.com/+Motorola/posts
+
+Instagram-
+http://instagram.com/motorola
+
+YouTube-
+https://www.youtube.com/user/motorola
+
+
+*****
+
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola. If this email has been forwarded to you, you can opt-in for future communications from Motorola.
+
+opt-in for future communications>
+https://pages.motorola-mail.com/registration-us-en/?c=ECOMM_NA_US_EN_REGISTRATION_FORWARDEDOPTIN&utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=forwarded_optin
+
+* Offer valid for Moto X Pure Edition only through 10:59 a.m. CT on 5/2/16. Subject to product availability. Moto X Pure Edition upgrades are available at an extra cost as stated in Moto Maker.
+
+Certain features, services and applications are network dependent and may not be available in all areas; additional terms, conditions and/or charges may apply. All features, functionality and other product specifications are subject to change without notice or obligation. Contact your service provider for details.
+
+If you no longer wish to receive promotional emails from Motorola Mobility LLC, please unsubscribe.
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+Please direct any questions concerning Motorola's privacy practices to privacy@motorola.com.
+
+Inquiries or requests to unsubscribe from ("opt-out" of) communications from Motorola may also be mailed to: Motorola Mobility LLC Attn: Privacy Compliance Program 222 W. Merchandise Mart Plaza, Suite 1800, Mailstop 16-O19.02, Chicago, IL 60654.
+
+Motorola values your privacy. For more information on our Privacy Practices, please visit www.motorola.com/privacy
+
+Privacy>
+http://www.motorola.com/us/consumers/about-motorola-us/About_Motorola-Legal-Legal_and_Privacy_Policy/About_Motorola-Legal-Legal_and_Privacy_Policy.html
+
+Please visit www.motorola.com/legal to see Motorola's website terms of use.
+
+Legal>
+http://www.motorola.com/us/consumers/about-motorola-us/About_Motorola-Legal-Terms_of_Use/About_Motorola-Legal-Terms_of_Use.html
+
+MOTOROLA and the Stylized M Logo are trademarks of Motorola Trademark Holdings, LLC. Android, Android Wear, Google and other marks are trademarks of Google Inc. All other trademarks are the property of their respective owners. (c)%%=Format(Now(), "yyyy")=%% Motorola Mobility LLC. All rights reserved.

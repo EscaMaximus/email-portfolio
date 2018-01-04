@@ -1,0 +1,134 @@
+%%[
+	/*
+		US-EN VZW FEBRUARY SALE BATTERY DRAINERS
+		Author: @dnjx37
+		Revision Date: 1/31/2017
+	*/
+	/* GA Tagging Definitions */
+	VAR @EmailDataDefinitionID, @UtmSource, @UtmMedium, @UtmCampaign, @UtmContent, @EmailHash, @CouponCode
+
+	SET @EmailDataDefinitionID = EMAIL_DEFINITION_ID
+
+	
+	SET @PreTextHeader = Field(@row,"PRE_TEXT_HEADER")
+	SET @UtmSource = Field(@row,"UTM_SOURCE")
+	SET @UtmMedium = Field(@row,"UTM_MEDIUM")
+	SET @UtmCampaign = Field(@row,"UTM_CAMPAIGN")
+	SET @UtmContent = Field(@row,"UTM_CONTENT")
+	SET @EmailHash = SHA256(lowercase(trim(emailaddr)))
+
+	IF (@EmailDataDefinitionID == 367 OR @EmailDataDefinitionID == 370) THEN
+		SET @promoValidThrough = "*"
+		SET @Display = "**"
+		SET @Battery = "***"
+	ELSE
+		SET @promoValidThrough = "*"
+		SET @Display = "**"
+		SET @Battery = "***"
+	ENDIF
+]%%
+
+
+%%=v(@PreTextHeader)=%%
+
+
+***
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola.
+
+Browser View>
+%%view_email_url%%
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+
+***
+
+get 50% off moto z force droid%%=v(@promoValidThrough)=%%
+starting at $15/mo
+
+Moto Z Force Droid, featuring a shatterproof display%%=v(@Display)=%%, is half off for a limited time%%=v(@promoValidThrough)=%%.
+
+
+Buy now>
+https://www.verizonwireless.com/wireless-devices/smartphones/droid/
+
+
+Only on Verizon
+
+Different is better
+
+Lenovo
+
+***
+
+
+TUMI wireless charging power pack
+
+Juice up your phone with up to 22 hours of extra battery power%%=v(@Battery)=%%. 
+
+Buy now>
+https://www.verizonwireless.com/wireless-devices/smartphones/droid/
+
+
+Different is better
+
+Lenovo
+
+
+
+***
+
+Motorola-
+http://www.motorola.com/us/home?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_bug_top&ceid=%%=v(@EmailHash)=%%
+
+Twitter-
+https://twitter.com/Moto_USA
+
+Facebook- 
+https://www.facebook.com/MotoUSA/
+
+Google+
+https://plus.google.com/+Moto
+
+Instagram-
+http://instagram.com/moto_usa/
+
+YouTube-
+https://www.youtube.com/user/motorola
+
+
+***
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola. If this email has been forwarded to you, you can opt-in for future communications from Motorola.
+
+opt-in for future communications>
+https://pages.motorola-mail.com/registration-us-en/?c=ECOMM_NA_US_EN_REGISTRATION_FORWARDEDOPTIN&utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=forwarded_optin
+
+All screen images simulated.
+
+%%=v(@promoValidThrough)=%% Offer valid through 10:59 a.m. CT on 2/20/17 or while supplies last.
+
+%%=v(@Display)=%% The display and embedded lens are warranted against shattering and cracking for four (4) years from the original date of purchase; scratches or other damage to the protective lens is not covered by this warranty, but should always be in place to prevent scratches and other damage to the underlying components. This phone is not shockproof or designed to withstand all damage from dropping. All other warranty exclusions, including scratches and other cosmetic damage, intentional damage or abuse, normal wear and tear and other limitations apply; Visit www.motorola.com/shattershield for additional details.
+
+%%=v(@Battery)=%% All battery life claims are approximate and based on a standard mixed use profile. The mixed use profile is based on Motorola devices on major 4G LTE networks with excellent coverage and includes both usage and standby time. Out-of-box settings are applied to the mixed use profile to project battery performance. Actual battery performance will vary and depends on many factors including signal strength, network configuration, age of battery, operating temperature, features selected, device settings, and voice, data, and other application usage patterns.
+
+If you no longer wish to receive promotional emails from Motorola Mobility LLC, please unsubscribe.
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+Please direct any questions concerning Motorola's privacy practices to privacy@motorola.com.
+
+Inquiries or requests to unsubscribe from ("opt-out" of) communications from Motorola may also be mailed to: Motorola Mobility LLC Attn: Privacy Compliance Program 222 W. Merchandise Mart Plaza, Suite 1800, Mailstop 16-O19.02, Chicago, IL 60654.
+
+Motorola values your privacy. For more information on our Privacy Practices, please visit Motorola Privacy Policy. Please visit Motorola Website Terms of Use to see Motorola's website terms of use.
+
+Privacy>
+http://www.motorola.com/us/legal/privacy-policy
+
+Legal>
+http://www.motorola.com/us/legal/terms-of-use
+
+Moto branded products are designed and manufactured by or for Motorola Mobility LLC, a wholly owned subsidiary of Lenovo. MOTOROLA and the Stylized M Logo are trademarks of Motorola Trademark Holdings, LLC. Android, Google and other marks are trademarks of Google Inc. All other trademarks are the property of their respective owners. (c)%%=Format(Now(), "yyyy")=%% Motorola Mobility LLC. All rights reserved.

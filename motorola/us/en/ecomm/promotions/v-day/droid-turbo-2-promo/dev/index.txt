@@ -1,0 +1,128 @@
+﻿
+
+Buy DROID Turbo 2, get another for 50% off. Plus, new Sweethearts Special Edition designs.
+
+
+*****
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola.
+
+Browser View>
+%%view_email_url%%
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+*****
+
+
+Free shipping on orders over $75>
+http://www.motorola.com/us/consumers/about-motorola-us/About_Motorola-Legal-Terms_of_Sale/About_Motorola-Legal-Terms_of_Sale.html?utm_source=motoemail&utm_medium=email&utm_campaign=ECOMM_NA_US_EN_PROMOTION_VDAY&utm_content=DROIDTURBO2PROMO&utm_term=free_shipping
+
+
+Apply for Moto Credit>
+http://www.motorola.com/us/motorola-finance-pdp.html?utm_source=motoemail&utm_medium=email&utm_campaign=ECOMM_NA_US_EN_PROMOTION_VDAY&utm_content=DROIDTURBO2PROMO&utm_term=credit
+
+
+Specials>
+http://www.motorola.com/us/motorola-shop-all-sale.html?utm_source=motoemail&utm_medium=email&utm_campaign=ECOMM_NA_US_EN_PROMOTION_VDAY&utm_content=DROIDTURBO2PROMO&utm_term=specials
+
+
+*****
+
+
+
+
+DROID Turbo 2
+by Motorola
+
+A sweetheart of a deal
+
+Love can last forever, but here's a deal that won't: Buy one DROID Turbo 2 and get another 50% off.* The shatterproof screen you need—plus, tough-love shades exclusively for Valentine's Day.** 
+#ThatMomentWhen
+
+Shop now>
+http://www.verizonwireless.com/smartphones/motorola/
+
+
+verizon
+
+
+
+*****
+
+
+
+DROID Turbo 2
+by Motorola
+
+
+Meet your new crush
+Get your hands on one of four DROID Turbo 2 Sweethearts Special Edition phones in time for Valentine's Day. You can personalize yours with exclusive specs--including customized device designs inspired by the season of love. 
+#ThatMomentWhen
+
+Choose yours>
+http://www.verizonwireless.com/smartphones/motorola-droid-turbo-2-designed-by-you/
+
+
+
+verizon
+
+
+
+
+*****
+
+
+Motorola-
+http://www.motorola.com/us/home?utm_source=motoemail&utm_medium=email&utm_campaign=ECOMM_NA_US_EN_PROMOTION_VDAY&utm_content=DROIDTURBO2PROMO&utm_term=moto_bug_top
+
+Twitter-
+https://twitter.com/Moto_USA
+
+Facebook- 
+http://www.facebook.com/motorola
+
+Google+
+https://plus.google.com/+Motorola/posts
+
+Instagram-
+http://instagram.com/motorola
+
+YouTube-
+https://www.youtube.com/user/motorola
+
+
+*****
+
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola. If this email has been forwarded to you, you can opt-in for future communications from Motorola.
+
+opt-in for future communications>
+https://pages.motorola-mail.com/registration-us-en/?c=ECOMM_NA_US_EN_REGISTRATION_FORWARDEDOPTIN&utm_source=motoemail&utm_medium=email&utm_campaign=ECOMM_NA_US_EN_PROMOTION_VDAY&utm_content=DROIDTURBO2PROMO&utm_term=forwarded_optin
+
+
+* Offer valid 1/19/16-2/25/16. Offer Valid on the DROID Turbo 2/Turbo 2 Moto Maker or DROID Maxx 2. New device payment activation/upgrade per device req'd. 50% off retail price on select DROID of equal or lesser value.
+
+** The display and embedded lens are warranted against shattering and cracking for four (4) years from the original date of purchase; scratches or other damage to the protective lens is not covered by this warranty, but should always be in place to prevent scratches and other damage to the underlying components. This phone is not shockproof or designed to withstand all damage from dropping. All other warranty exclusions, including scratches and other cosmetic damage, intentional damage or abuse, normal wear and tear and other limitations apply. Visit motorola.com/shattershield for additional details.
+
+If you no longer wish to receive promotional emails from Motorola Mobility LLC, please unsubscribe.
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+Please direct any questions concerning Motorola's privacy practices to privacy@motorola.com.
+
+Inquiries or requests to unsubscribe from ("opt-out" of) communications from Motorola may also be mailed to: Motorola Mobility LLC Attn: Privacy Compliance Program 222 W. Merchandise Mart Plaza, Suite 1800, Mailstop 16-O19.02, Chicago, IL 60654.
+
+Motorola values your privacy. For more information on our Privacy Practices, please visit www.motorola.com/privacy
+
+Privacy>
+http://www.motorola.com/us/consumers/about-motorola-us/About_Motorola-Legal-Legal_and_Privacy_Policy/About_Motorola-Legal-Legal_and_Privacy_Policy.html
+
+Please visit www.motorola.com/legal to see Motorola's website terms of use.
+
+Legal>
+http://www.motorola.com/us/consumers/about-motorola-us/About_Motorola-Legal-Terms_of_Use/About_Motorola-Legal-Terms_of_Use.html
+
+MOTOROLA and the Stylized M Logo are trademarks of Motorola Trademark Holdings, LLC. DROID is a trademark of Lucasfilm Ltd. and its related companies. Used under license. Android, Google and other marks are trademarks of Google Inc. All other trademarks are the property of their respective owners. (c)%%=Format(Now(), "yyyy")=%% Motorola Mobility LLC. All rights reserved.

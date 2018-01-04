@@ -1,0 +1,206 @@
+<table width="600" border="0" cellpadding="0" cellspacing="0" align="center" class="mobile-content-size" style="min-width:600px;">
+	<tr>
+		<td style="padding:6px 10px 3px 10px; font-family: Arial, Verdana, sans-serif; color:#8d8f95; font-size:13px; line-height:14px; font-weight:normal; text-align:center;" class="pre-text-header"><span style="color:#383838; font-weight:bold;"><a style="text-decoration:none;  font-family: Arial, Verdana, sans-serif; color:#383838; font-size:13px; line-height:16px; " class="applelinks-dark">Moto 360 registra tus pasos, distancia, frecuencia cardiaca y calor&iacute;as con Moto Body.</a></span>	</td>
+	</tr>
+</table>
+<table width="600" border="0" cellpadding="0" cellspacing="0" align="center" class="mobile-content-size" style="min-width:600px;">
+	<tr>
+		<td style="padding:0 10px 4px 10px; font-family: Arial, Verdana, sans-serif; color:#8d8f95; font-size:11px; line-height:14px; font-weight:normal; text-align:center;" class="intro-copy-cell">T&uacute;, [<a style="color:#8d8f95; text-decoration:none;" class="applelinks"><span style="color:#8d8f95; text-decoration:none;">%%emailaddr%%</span></a>], has recibido este correo debido a una transacci&oacute;n o relaci&oacute;n anterior con Motorola. <a href="%%view_email_url%%" title="Web Version" style="text-decoration:underline; color:#8d8f95;" target="_blank"><span style="color:#8d8f95; text-decoration:underline;">Vista del navegador</span></a> | <a href="https://help.motorola.com/hc/apps/connect/devices/360/email/?uid=%%=v(@UID)=%%%%=v(@mode)=%%" title="Unsubscribe" style="text-decoration:underline; color:#8d8f95;" target="_blank">Cancelar suscripci&oacute;n</a>
+		</td>
+	</tr>
+</table>
+<table width="600" border="0" cellpadding="0" cellspacing="0" align="center" class="mobile-content-size" style="min-width:600px; border-bottom-left-radius:4px; border-bottom-right-radius:4px;" bgcolor="F3F3F3">
+	<tr>
+		<td width="600" valign="top" class="mobile-content-size" style="min-width:600px;">
+			<!-- start -->
+
+				<table width="600" border="0" cellpadding="0" cellspacing="0" align="center" class="mobile-content-size" style="min-width:600px; ">
+					<tr>
+						<td valign="top" style="padding:0">
+						
+							<table width="600" border="0" cellpadding="0" cellspacing="0" class="mobile-content-size" style="min-width:600px">
+								<tr>
+									<td align="center" background="http://cdn.motorola-2.com/us/en/motorola/moto-body/episode-01/images/bkg-header.jpg" bgcolor="#00c1d4" width="600" height="80" style="text-align: left; vertical-align: top; padding:0 0 0 25px; border-top-left-radius:4px; border-top-right-radius:4px;" class="motorola-bug">
+										<!--[if gte mso 9]>
+										<v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:600px; height:80px;">
+										<v:fill type="tile" src="http://cdn.motorola-2.com/us/en/motorola/moto-body/episode-01/images/bkg-header.jpg" color="#32aac3" />
+										<v:textbox inset="0,0,0,0">
+										<![endif]-->
+										<div>
+											<a href="http://www.motorola.es/" target="_blank"><img src="http://cdn.motorola-2.com/us/en/motorola/moto-body/episode-01/images/moto-body-bug-rev02.png" alt="" width="268" height="62" style="font-family: Arial, Verdana, sans-serif; color:#4d4d4d; font-size:14px; border:0;" /></a>
+										</div>
+										<!--[if gte mso 9]>
+										</v:textbox>
+										</v:rect>
+										<![endif]-->
+									</td>
+								</tr>
+							</table>
+							<table width="600" border="0" cellpadding="0" cellspacing="0" bgcolor="#F3F3F3" class="mobile-content-size" style="min-width:600px">
+								<tr>
+									<td align="center" width="600" style="text-align: left; vertical-align: top; font-family: 'Open Sans', Arial, sans-serif; font-size:16px; line-height:25px; font-weight:normal; color:#AFB6BA; padding:20px 25px 0 25px;" class="story-one-date"><a style="color:#AFB6BA; text-decoration:none;" class="date-hero">%%=FormatDate(@StartDate, @DateFormat, "", @C_Sharp_Locale_Str)=%% - %%=FormatDate(@EndDate, @DateFormat, "", @C_Sharp_Locale_Str)=%%</a></td>
+								</tr>
+							</table>
+
+							%%[ <!-- Start Intro Include --> ]%%
+							%%=ContentAreaByName(@IntroCopyInclude)=%%
+							%%[ <!-- End Intro Include --> ]%%
+
+						%%[ IF @TemplateID == '1' OR @TemplateID == '2' THEN ]%%
+						
+							%%[ IF @HeartRateBestDayMinutes >= '1' OR @StepsBestDaySteps >= '1' OR @CaloriesBestDayCalories >= '1' THEN ]%%
+							
+							<table width="600" border="0" cellpadding="0" cellspacing="0" bgcolor="#F3F3F3" class="mobile-content-size" style="min-width:600px">
+								<tr>
+									<td width="600" style="text-align: left; vertical-align: top; font-family: 'Open Sans', Arial, sans-serif; font-size:20px; line-height:29px; font-weight:normal; color:#606668; padding:9px 25px 10px 25px;" class="weekly-bests-header">Lo mejor de la semana</td>
+								</tr>  
+							</table>
+							<table border="0" cellpadding="0" cellspacing="0" bgcolor="#F3F3F3" class="mobile-content-size">
+								<tr>
+									<td width="25" class="break-column"></td>
+									
+							%%[ IF @HeartRateBestDayMinutes >= '1' THEN ]%%
+									<td align="center" width="40" style="text-align: left; vertical-align: middle;" class="break-column"><img src="http://cdn.motorola-2.com/us/en/motorola/moto-body/episode-01/images/ico-heart-rate-80x80.png" height="40" width="40" alt="heart rate" style="" /></td>
+									<td align="center" width="10" class="break-column-wb-spacer"></td>
+									<td align="center" width="132" style="text-align: left; vertical-align: middle; font-family: 'Open Sans', Arial, sans-serif; font-size:16px; line-height:20px; font-weight:bold; color:#606668;" class="break-column-wb-date"><a style="color:#606668; text-decoration:none;" class="date">%%=FormatNumber(@HeartRateBestDayMinutes,"N0", @C_Sharp_Locale_Str)=%% minuto%%[ IF @HeartRateBestDayMinutes > '1' THEN ]%%s%%[ ENDIF ]%%<br /><span style="font-family: 'Open Sans', Arial, sans-serif; font-size:12px; line-height:16px; font-weight:normal; color:#606668;">%%=FormatDate(@HeartRateBestDayDate, @DateDayFormat, "", @C_Sharp_Locale_Str)=%%</span></a></td>
+							%%[ ENDIF ]%%	
+									
+							%%[ IF @StepsBestDaySteps >= '1' THEN ]%%
+									<td align="center" width="40" style="text-align: left; vertical-align: middle;" class="break-column"><img src="http://cdn.motorola-2.com/us/en/motorola/moto-body/episode-01/images/ico-steps-80x80.png" height="40" width="40" alt="steps" style="" /></td>
+									<td align="center" width="10" class="break-column-wb-spacer"></td>
+									<td align="center" width="132" style="text-align: left; vertical-align: middle; font-family: 'Open Sans', Arial, sans-serif; font-size:16px; line-height:20px; font-weight:bold; color:#606668;" class="break-column-wb-date"><a style="color:#606668; text-decoration:none;" class="date">%%=FormatNumber(@StepsBestDaySteps,"N0", @C_Sharp_Locale_Str)=%% pasos<!--/*step%%[ IF @StepsBestDaySteps > '1' THEN ]%%s%%[ ENDIF ]%%*/--><br /><span style="font-family: 'Open Sans', Arial, sans-serif; font-size:12px; line-height:16px; font-weight:normal; color:#606668;">%%=FormatDate(@StepsBestDayDate, @DateDayFormat, "", @C_Sharp_Locale_Str)=%%</span></a></td>
+							%%[ ENDIF ]%%	
+									
+							%%[ IF @CaloriesBestDayCalories >= '1' THEN ]%%
+									<td align="center" width="40" style="text-align: left; vertical-align: middle;" class="break-column"><img src="http://cdn.motorola-2.com/us/en/motorola/moto-body/episode-01/images/ico-calories-80x80.png" height="40" width="40" alt="calories" style="" /></td>
+									<td width="10" class="break-column-wb-spacer"></td>
+									<td align="center" width="132" style="text-align: left; vertical-align: middle; font-family: 'Open Sans', Arial, sans-serif; font-size:16px; line-height:20px; font-weight:bold; color:#606668;" class="break-column-wb-date"><a style="color:#606668; text-decoration:none;" class="date">%%=FormatNumber(@CaloriesBestDayCalories,"N0", @C_Sharp_Locale_Str)=%% calor&iacute;a%%[ IF @CaloriesBestDayCalories > '1' THEN ]%%s%%[ ENDIF ]%%<br /><span style="font-family: 'Open Sans', Arial, sans-serif; font-size:12px; line-height:16px; font-weight:normal; color:#606668;">%%=FormatDate(@CaloriesBestDayDate, @DateDayFormat, "", @C_Sharp_Locale_Str)=%%</span></a></td>
+							%%[ ENDIF ]%%
+
+									<td class="break-column"></td>
+								</tr>
+							</table>
+
+							%%[ ENDIF ]%%
+
+						%%[ IF @HeartRateStreakNumberOfDays >= '1' OR @StepsStreakNumberOfDays >= '1' OR @CaloriesStreakNumberOfDays >= '1' THEN ]%%
+							<table width="600" border="0" cellpadding="0" cellspacing="0" bgcolor="#F3F3F3" class="mobile-content-size" style="min-width:600px">
+								<tr>
+									<td height="18" class="weekly-best-middle-spacer"> </td>
+								</tr>
+							</table>
+							<table width="600" border="0" cellpadding="0" cellspacing="0" bgcolor="#F3F3F3" class="mobile-content-size" style="min-width:600px">
+								<tr>
+									<td width="600" style="text-align: left; vertical-align: top; font-family: 'Open Sans', Arial, sans-serif; font-size:20px; line-height:29px; font-weight:normal; color:#606668; padding:0 25px 10px 25px;" class="weekly-streaks-header">Tus rachas</td>
+								</tr>  
+							</table>
+							<table border="0" cellpadding="0" cellspacing="0" bgcolor="#F3F3F3" class="mobile-content-size">
+								<tr>
+									<td width="25" class="break-column"></td>
+
+									%%[ IF @HeartRateStreakNumberOfDays >= '1' THEN ]%%
+										<td align="center" width="40" style="text-align: left; vertical-align: middle;" class="break-column"><img src="http://cdn.motorola-2.com/us/en/motorola/moto-body/episode-01/images/ico-heart-rate-80x80.png" height="40" width="40" alt="heart rate" style="" /></td>
+										<td align="center" width="10" class="break-column-wb-spacer"></td>
+										<td align="center" width="132" style="text-align: left; vertical-align: middle; font-family: 'Open Sans', Arial, sans-serif; font-size:16px; line-height:20px; font-weight:bold; color:#606668;" class="break-column-wb-date"><a style="color:#606668; text-decoration:none;" class="date">%%=v(@HeartRateStreakNumberOfDays)=%% d&iacute;a%%[ IF @HeartRateStreakNumberOfDays > '1' THEN ]%%s%%[ ENDIF ]%%<br /><span style="font-family: 'Open Sans', Arial, sans-serif; font-size:12px; line-height:16px; font-weight:normal; color:#606668;">%%= v(@HeartRateStreakStartDayName) =%% - %%= v(@HeartRateStreakEndDayName) =%%</span></a></td>
+									%%[ ENDIF ]%%
+									
+									
+									%%[ IF @StepsStreakNumberOfDays >= '1' THEN ]%%
+									<td align="center" width="40" style="text-align: left; vertical-align: middle;" class="break-column"><img src="http://cdn.motorola-2.com/us/en/motorola/moto-body/episode-01/images/ico-steps-80x80.png" height="40" width="40" alt="steps" style="" /></td>
+									<td align="center" width="10" class="break-column-wb-spacer"></td>
+									<td align="center" width="132" style="text-align: left; vertical-align: middle; font-family: 'Open Sans', Arial, sans-serif; font-size:16px; line-height:20px; font-weight:bold; color:#606668;" class="break-column-wb-date"><a style="color:#606668; text-decoration:none;" class="date">%%=v(@StepsStreakNumberOfDays)=%% d&iacute;a%%[ IF @StepsStreakNumberOfDays > '1' THEN ]%%s%%[ ENDIF ]%%<br /><span style="font-family: 'Open Sans', Arial, sans-serif; font-size:12px; line-height:16px; font-weight:normal; color:#606668;">%%= v(@StepsStreakStartDayName) =%% - %%= v(@StepsStreakEndDayName) =%%</span></a></td>
+									%%[ ENDIF ]%%
+									
+									%%[ IF @CaloriesStreakNumberOfDays >= '1' THEN ]%%
+									<td align="center" width="40" style="text-align: left; vertical-align: middle;" class="break-column"><img src="http://cdn.motorola-2.com/us/en/motorola/moto-body/episode-01/images/ico-calories-80x80.png" height="40" width="40" alt="calories" style="" /></td>
+									<td width="10" class="break-column-wb-spacer"></td>
+									<td align="center" width="132" style="text-align: left; vertical-align: middle; font-family: 'Open Sans', Arial, sans-serif; font-size:16px; line-height:20px; font-weight:bold; color:#606668;" class="break-column-wb-date"><a style="color:#606668; text-decoration:none;" class="date">%%=v(@CaloriesStreakNumberOfDays)=%% d&iacute;a%%[ IF @CaloriesStreakNumberOfDays > '1' THEN ]%%s%%[ ENDIF ]%%<br /><span style="font-family: 'Open Sans', Arial, sans-serif; font-size:12px; line-height:16px; font-weight:normal; color:#606668;">%%= v(@CaloriesStreakStartDayName) =%% - %%= v(@CaloriesStreakEndDayName) =%%</span></a></td>
+									%%[ ENDIF ]%%
+									<td width="29" class="break-column"></td>
+								</tr>
+							</table>
+						%%[ ENDIF ]%%
+							<table width="600" border="0" cellpadding="0" cellspacing="0" bgcolor="#F3F3F3" class="mobile-content-size" style="min-width:600px">
+								<tr>
+									<td height="24" class="weekly-best-bottom-spacer"></td>
+								</tr>
+							</table>
+
+						%%[ ENDIF ]%%
+
+						</td>
+					</tr>
+				</table>
+				<table width="600" height="1" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#AFB6BA" class="mobile-content-size" style="min-width:600px;">
+					<tr>
+						<td class="hor-line" height="1" style="font-size:1px; line-height:1px;">&nbsp;</td>
+					</tr>
+				</table>
+
+			%%[ <!-- Start Template 1 & 2 Check: Weekly Progress --> ]%%
+			%%[ IF @TemplateID == '1' OR @TemplateID == '2' THEN ]%%
+
+				%%=ContentAreaByName(@HeartRateActivityInclude)=%%
+				%%=ContentAreaByName(@StepsActivityInclude)=%%
+				%%=ContentAreaByName(@CaloriesActivityInclude)=%%
+				%%=ContentAreaByName(@WeeklyProgressInclude)=%%
+
+			%%[ ENDIF ]%%
+			%%[ <!-- End Template 2 Check: Weekly Progress --> ]%%
+
+			%%[ <!-- Start Template 2 Check: Weekly Progress --> ]%%
+			%%[ IF @TemplateID == '2' THEN ]%%
+
+			%%[	/* Progress Since Last Week */
+				SET @ProgressSinceLastWeek = Concat(@L10nPath,"PROGRESS_SINCE_LAST_WEEK",@IncludeSuffix)
+				SET @ProgressSinceLastWeekChart = Concat(@ChartBaseURL, @ChartFolderName, "/", "PRG", "-", @UID, "_", @ChartPartialName, ".png")
+				SET @ProgressSinceLastWeekChartMobile = Concat(@ChartBaseURL, @ChartFolderName, "/", "PRG", "-", @UID, "_", @ChartPartialName, "-mobile.png") ]%%
+
+				%%=ContentAreaByName(@ProgressSinceLastWeekInclude)=%%
+
+			%%[ ENDIF ]%%
+			%%[ <!-- End Template 2 Check: Weekly Progress --> ]%%
+
+				<table width="600" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#FFFFFF" class="mobile-content-size" style="min-width:600px;">
+					<tr>
+						<td valign="top" style="padding:0">
+						
+							<table width="600" border="0" cellpadding="0" cellspacing="0" class="mobile-content-size" style="min-width:600px">
+								<tr>
+									<td style="text-align: left; vertical-align: top; font-family: 'Open Sans', Arial, sans-serif; font-size:14px; line-height:19px; font-weight:normal; color:#777777; padding:20px 60px 20px 25px;" class="unsub-copy-01">
+										<!-- start unsub info -->
+										Para obtener los datos m&aacute;s precisos, aseg&uacute;rate de tener siempre actualizado tu perfil de Moto Connect en el tel&eacute;fono.
+										<!-- end unsub info -->
+									</td>
+								</tr>
+							</table> 
+
+						</td>
+					</tr>
+				</table>
+				<table width="600" height="1" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#AFB6BA" class="mobile-content-size" style="min-width:600px;">
+					<tr>
+						<td class="hor-line" height="1" style="font-size:1px; line-height:1px;"> </td>
+					</tr>
+				</table>
+			<!-- end -->
+		</td>
+	</tr>
+</table>
+<table width="600" border="0" cellpadding="0" cellspacing="0" align="center" class="mobile-content-size" style="-webkit-text-size-adjust: 100%;">
+	<tr>
+		<td align="center" style="padding:20px 20px 10px 20px; font-family: Arial, Helvetica, sans-serif; color:#8d8f95; font-size:11px; line-height:15px; text-align:left;" class="legal-copy">
+			
+			 
+			<a href="https://help.motorola.com/hc/apps/connect/devices/360/email/?uid=%%=v(@UID)=%%%%=v(@mode)=%%" style="color:#8d8f95; text-decoration:underline;">Cancelar la suscripci&oacute;n</a> a los correos electr&oacute;nicos semanales de Moto Body. Tambi&eacute;n puedes cancelar la suscripci&oacute;n a trav&eacute;s de tu perfil de Moto Body en la aplicaci&oacute;n Moto Connect de tu tel&eacute;fono. Dirige cualquier duda que te surja sobre las pol&iacute;ticas de privacidad de Motorola a <a href="mailto:privacy@motorola.com" title="privacy@motorola.com" style="color:#8d8f95; text-decoration:underline;" target="_blank">privacy@motorola.com</a>.</td>
+	</tr>
+	<tr>
+		<td align="center" style="padding:0 20px 10px 20px; font-family: Arial, Helvetica, sans-serif; color:#8d8f95; font-size:11px; line-height:15px; text-align:left;" class="legal-copy">Las dudas y solicitudes para cancelar la suscripción de (&quot;dejar de recibir&quot;) comunicaciones de Motorola también se pueden enviar a: Motorola Mobility LLC Attn: Privacy Compliance Program <a style="color:#8d8f95; text-decoration:none; cursor:text" class="applelinks"><span style="color:#8d8f95; text-decoration:none; border-bottom-width: 0; border-bottom-style:none; border-bottom-color: transparent;">222&nbsp;W. Merchandise Mart Plaza, Suite 1800, Chicago, IL 60654.</span></a></td>
+	</tr>
+	<tr>
+		<td align="center" style="padding:0 20px 10px 20px; font-family: Arial, Helvetica, sans-serif; color:#8d8f95; font-size:11px; line-height:15px; text-align:left;" class="legal-copy">Motorola valora tu confidencialidad. Si quieres obtener m&aacute;s informaci&oacute;n sobre nuestras pol&iacute;ticas de privacidad, visita <a href="http://www.motorola.es/legal/privacy-policy" title="www.motorola.es/legal/privacy-policy" style="color:#8d8f95; text-decoration:underline;" target="_blank">www.motorola.es/legal/privacy-policy</a>. Para conocer los t&eacute;rminos de uso del sitio web de Motorola, visita <a href="http://www.motorola.es/legal/terms-of-use" title="www.motorola.es/legal/terms-of-use" style="color:#8d8f95; text-decoration:underline;" target="_blank">www.motorola.es/legal/terms-of-use</a>.</td>
+	</tr>
+	<tr>
+		<td align="center" style="padding:0 20px 40px 20px; font-family: Arial, Helvetica, sans-serif; color:#8d8f95; font-size:11px; line-height:15px; text-align:left;" class="legal-copy">MOTOROLA y el logotipo de la M estilizada son marcas comerciales registradas de Motorola Trademark Holdings, LLC. Facebook es una marca registrada de Facebook, Inc. Android, Google y otras marcas comerciales registradas son propiedad de Google Inc. Todas las dem&aacute;s marcas registradas son propiedad de sus respectivos due&ntilde;os. &copy;%%=Format(Now(), "yyyy")=%% Motorola Mobility LLC. Todos los derechos reservados.</td>
+	</tr>
+</table>

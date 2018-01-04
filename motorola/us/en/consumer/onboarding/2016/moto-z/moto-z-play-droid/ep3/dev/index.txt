@@ -1,0 +1,148 @@
+﻿%%[
+	/*
+		US-EN MOTO Z PLAY EPISODE 3
+		Author: Motorola ExactTarget Team
+		Revision Date: 11/11/2016
+	*/	
+	/* GA Tagging Definitions */
+	VAR @UtmSource, @UtmMedium, @UtmCampaign, @UtmContent, @EmailHash
+	SET @UtmSource = 'motoemail'
+	SET @UtmMedium = 'email'
+	SET @UtmCampaign = 'CONSUMER_NA_US_EN_ONBOARDING_MOTOZFAMILYMOTOMODS'
+	SET @UtmContent = 'MOTOZPLAYDROIDEP3'
+	SET @EmailHash = SHA256(lowercase(trim(emailaddr)))
+
+]%%
+
+
+Ready to explore more features?
+
+
+***
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola.
+
+Browser View>
+%%view_email_url%%
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+***
+
+User Guide>
+https://motorola-global-portal.custhelp.com/ci/fattach/get/1792503/1473362243/redirect/1/filename/68018248001.GSG_final.pdf
+
+Customer Service>
+https://motorola-global-portal.custhelp.com/app/mcp/landing_troubleshooter/g_id/5059/?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=customer_service&ceid=%%=v(@EmailHash)=%%
+
+Owner Forums>
+https://forums.lenovo.com/t5/Moto-Z-Play/bd-p/Moto_Z_Play
+
+
+***
+
+Moto Z Play Droid
+
+See the bigger picture
+
+Your new Moto Z Play Droid packs a beautiful 5.5" 1080p HD Super AMOLED display into a thin metal frame. And snap on Moto Mods™ for a completely new mobile experience.
+
+Learn more>
+http://www.motorola.com/us/products/moto-z-play?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=performance&ceid=%%=v(@EmailHash)=%%#performance-packed
+
+***
+
+Remember when
+
+Remind yourself to call your mom when you get home. Or pick up the dry cleaning when you're close to the cleaners. Set reminders based on your location or time of day.
+
+Learn more>
+https://motorola-global-portal.custhelp.com/app/answers/prod_answer_detail/a_id/113318/p/30,6720,9835/?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=reminders&ceid=%%=v(@EmailHash)=%%
+
+***
+
+Speaking of helpful
+
+Use Google Voice to find the nearest coffee shop, send a quick text message, and more. Just say, "OK, Google," when you're on the home screen and ask.
+
+Learn more>
+https://motorola-global-portal.custhelp.com/app/answers/detail/a_id/115179/p/30,6720,9835/?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=google_voice&ceid=%%=v(@EmailHash)=%%
+
+***
+
+Moto Mods(tm)
+
+Amazing today. Awesome tomorrow.
+
+Your Moto Z phone can instantly transform into a 70" movie projector, battery powerhouse and more. This is just the start. More Moto Mods are being developed by your favorite brands. And they're designed to work with future generation Moto Z phones.*
+
+Buy now>
+http://www.motorola.com/us/moto-mods?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_mods&ceid=%%=v(@EmailHash)=%%
+
+
+***
+
+
+Free shipping**>
+http://www.motorola.com/us/legal/terms-of-sale?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=shipping&ceid=%%=v(@EmailHash)=%%
+
+
+Specials>
+http://www.motorola.com/us/specials?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=specials&ceid=%%=v(@EmailHash)=%%
+
+
+***
+
+Motorola-
+http://www.motorola.com/us/home?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_bug_top&ceid=%%=v(@EmailHash)=%%
+
+Twitter-
+https://twitter.com/Moto_USA
+
+Facebook- 
+https://www.facebook.com/MotoUSA/
+
+Google+
+https://plus.google.com/+Moto
+
+Instagram-
+https://www.instagram.com/moto_usa/
+
+YouTube-
+https://www.youtube.com/user/motorola
+
+
+***
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola. If this email has been forwarded to you, you can opt-in for future communications from Motorola.
+
+opt-in for future communications>
+https://pages.motorola-mail.com/registration-us-en/?c=ECOMM_NA_US_EN_REGISTRATION_FORWARDEDOPTIN&utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=forwarded_optin
+
+All screen images simulated.
+
+* Co-branded Moto Mods may require software upgrades to maintain compatibility, contact the manufacturer for details.
+
+** Free shipping for orders over $75.
+
+Certain features, functionality and product specifications may be network dependent and subject to additional terms, conditions, and charges. All are subject to change without notice.
+
+If you no longer wish to receive promotional emails from Motorola Mobility LLC, please unsubscribe.
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+Please direct any questions concerning Motorola's privacy practices to privacy@motorola.com.
+
+Inquiries or requests to unsubscribe from ("opt-out" of) communications from Motorola may also be mailed to: Motorola Mobility LLC Attn: Privacy Compliance Program 222 W. Merchandise Mart Plaza, Suite 1800, Mailstop 16-O19.02, Chicago, IL 60654.
+
+Motorola values your privacy. For more information on our Privacy Practices, please visit Motorola Privacy Policy. Please visit Motorola Website Terms of Use to see Motorola's website terms of use.
+
+Privacy>
+http://www.motorola.com/us/legal/privacy-policy
+
+Legal>
+http://www.motorola.com/us/legal/terms-of-use
+
+MOTOROLA and the Stylized M Logo are trademarks of Motorola Trademark Holdings, LLC. DROID is a trademark of Lucasfilm Ltd. and its related companies. Android, Google and other marks are trademarks of Google Inc. All other trademarks are the property of their respective owners. (c)%%=Format(Now(), "yyyy")=%% Motorola Mobility LLC. All rights reserved.

@@ -1,0 +1,145 @@
+﻿%%[
+	/*
+		US-EN MOTO G4 PLAY EPISODE 1
+		Author: Motorola ExactTarget Team
+		Revision Date: 10/5/2016
+	*/	
+	/* GA Tagging Definitions */
+	SET @UtmSource = 'motoemail'
+	SET @UtmMedium = 'email'
+	SET @UtmCampaign = 'CONSUMER_NA_US_EN_ONBOARDING_MOTOGGEN4'
+	SET @UtmContent = 'MOTOGPLAYEP1'
+
+]%%
+
+
+It's full of great features to make your life easier.
+
+***
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola.
+
+Browser View>
+%%view_email_url%%
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+***
+
+User Guide>
+https://motorola-global-portal.custhelp.com/ci/fattach/get/1777039/1472239560/redirect/1/filename/68018207001B.pdf
+
+Customer Service>
+https://motorola-global-portal.custhelp.com/app/mcp/landing_troubleshooter/g_id/5059/?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=customer_service
+
+Owner Forums>
+https://forums.lenovo.com/t5/Moto-G4-Moto-G4-Plus/bd-p/MotoG4thGen
+
+***
+
+Moto G Play
+
+Welcome to our most popular family of phones!
+
+Your new Moto G Play is packed with incredible features for an amazing value. Let's take a look!
+
+***
+
+Next level performance
+
+The fast, reliable quad-core processor, plus 2 GB of RAM, lets you switch back and forth between apps without slowing down.
+
+Learn more>
+http://www.motorola.com/us/products/moto-g-play?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=performance#performance
+
+***
+
+Pure Android(tm) experience
+
+Get faster performance with a clutter-free version of Android Marshmallow.
+
+Learn more>
+http://www.motorola.com/us/products/moto-g-play?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_pure#experiences
+
+***
+
+Crystal-clear photos
+
+The 8 MP camera features a fast ƒ/2.2 aperture and captures video at 30 fps in 1080p. Plus, take stunning selfies with a 5 MP camera in front.
+
+Learn more>
+http://www.motorola.com/us/products/moto-g-play?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=camera#camera
+
+***
+
+All-day battery*
+
+Power through the day without worrying about battery life.
+
+Learn more>
+http://www.motorola.com/us/products/moto-g-play?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=battery#battery
+
+***
+
+Free shipping**>
+http://www.motorola.com/us/legal/terms-of-sale?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=shipping#shipping
+
+Specials>
+http://www.motorola.com/us/specials?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=specials
+
+*****
+
+Motorola-
+http://www.motorola.com/us/home?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_bug_top
+
+Twitter-
+https://twitter.com/Moto_USA
+
+Facebook- 
+https://www.facebook.com/MotoUSA/
+
+Google+
+https://plus.google.com/+Moto
+
+Instagram-
+http://instagram.com/moto_usa/
+
+YouTube-
+https://www.youtube.com/user/motorola
+
+
+*****
+
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola. If this email has been forwarded to you, you can opt-in for future communications from Motorola.
+
+opt-in for future communications>
+https://pages.motorola-mail.com/registration-us-en/?c=ECOMM_NA_US_EN_REGISTRATION_FORWARDEDOPTIN&utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=forwarded_optin
+
+All screen images simulated.
+
+* All battery life claims are approximate and based on an average mixed use profile that includes both usage and standby time on a 4G LTE network. Out-of-box settings are applied to the mixed use profile to project battery performance. Actual battery performance will vary and depends on many factors including signal strength, network configuration, age of battery, operating temperature, features selected, device settings, and voice, data, and other application usage patterns.
+
+** Free shipping for orders over $75.
+
+Certain features, functionality and product specifications may be network dependent and subject to additional terms, conditions, and charges. All are subject to change without notice.
+
+If you no longer wish to receive promotional emails from Motorola Mobility LLC, please unsubscribe.
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+Please direct any questions concerning Motorola's privacy practices to privacy@motorola.com.
+
+Inquiries or requests to unsubscribe from ("opt-out" of) communications from Motorola may also be mailed to: Motorola Mobility LLC Attn: Privacy Compliance Program 222 W. Merchandise Mart Plaza, Suite 1800, Mailstop 16-O19.02, Chicago, IL 60654.
+
+Motorola values your privacy. For more information on our Privacy Practices, please visit Motorola Privacy Policy. Please visit Motorola Website Terms of Use to see Motorola's website terms of use.
+
+Privacy>
+http://www.motorola.com/us/legal/privacy-policy
+
+Legal>
+http://www.motorola.com/us/legal/terms-of-use
+
+MOTOROLA and the Stylized M Logo are trademarks of Motorola Trademark Holdings, LLC. Android, Google and other marks are trademarks of Google Inc. All other trademarks are the property of their respective owners.(c)%%=Format(Now(), "yyyy")=%% Motorola Mobility LLC. All rights reserved.

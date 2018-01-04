@@ -1,0 +1,121 @@
+%%[
+	/*
+		US-EN HOLIDAY EMAIL EPISODE 2
+		Author: Motorola ExactTarget Team
+		Revision Date: 12/1/2016
+	*/	
+	/* GA Tagging Definitions */
+	VAR @UtmSource, @UtmMedium, @UtmCampaign, @UtmContent, @EmailHash, @CouponCode
+	SET @UtmSource = 'motoemail'
+	SET @UtmMedium = 'email'
+	SET @UtmCampaign = 'ECOMM_NA_US_EN_PROMOTION_2016HOLIDAY'
+	SET @UtmContent = 'EPISODE02'
+	SET @EmailHash = SHA256(lowercase(trim(emailaddr)))
+]%%
+
+
+Enjoy our lowest prices ever on Moto G Play.
+
+*****
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola.
+
+Browser View>
+%%view_email_url%%
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+*****
+
+Free shipping on orders over $75>
+http://www.motorola.com/us/legal/terms-of-sale?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=free_shipping&ceid=%%=v(@EmailHash)=%%
+
+
+Specials>
+http://www.motorola.com/us/specials?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=specials&ceid=%%=v(@EmailHash)=%%
+
+*****
+
+hellomoto
+
+Looking for the perfect gift?
+
+Hurry up and shop now! This holiday savings on the popular Moto G Play ends soon.
+
+Lenovo
+
+***
+
+$20 off!
+
+Moto G Play
+Reg. $149.99 
+from $129.99*
+
+Buy now>
+https://www.motorola.com/us/products/moto-g-play/ecomm?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_g_play_sale&ceid=%%=v(@EmailHash)=%%
+
+Lenovo
+
+***
+
+Looking for another way to save during the holidays? Check out this special offer from our parent company, Lenovo!**
+
+Shop now>
+http://shop.lenovo.com/us/en/landingpage/promotions/holiday-deals/?cid=EDM_2016_NA_US_CON_MOTOSEND
+
+*****
+
+Motorola-
+http://www.motorola.com/us/home?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_bug_top&ceid=%%=v(@EmailHash)=%%
+
+Twitter-
+https://twitter.com/Moto_USA
+
+Facebook- 
+https://www.facebook.com/MotoUSA/
+
+Google+
+https://plus.google.com/+Moto
+
+Instagram-
+http://instagram.com/moto_usa/
+
+YouTube-
+https://www.youtube.com/user/motorola
+
+
+*****
+
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola. If this email has been forwarded to you, you can opt-in for future communications from Motorola.
+
+opt-in for future communications>
+https://pages.motorola-mail.com/registration-us-en/?c=ECOMM_NA_US_EN_REGISTRATION_FORWARDEDOPTIN&utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=forwarded_optin
+
+All screen images simulated.
+
+* Offer valid through 10:59 p.m. CT on 11/29/16 or while supplies last. Upgrades to Moto G Plus and Moto G are available at an extra cost as stated in Moto Maker.
+
+** Motorola Mobility was acquired by Lenovo, the world leader in Personal Computers, in 2014. Motorola products have always been about innovation and Lenovo products are no different. We are proud to share with you the latest innovative products from Lenovo and will occasionally be highlighting special offers from Lenovo in our communications moving forward.
+If you no longer wish to receive promotional emails from Motorola Mobility LLC, please unsubscribe.
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+Please direct any questions concerning Motorola's privacy practices to privacy@motorola.com.
+
+Inquiries or requests to unsubscribe from ("opt-out" of) communications from Motorola may also be mailed to: Motorola Mobility LLC Attn: Privacy Compliance Program 222 W. Merchandise Mart Plaza, Suite 1800, Chicago, IL 60654.
+
+Motorola values your privacy. For more information on our Privacy Practices, please visit Motorola Privacy Policy. Please visit Motorola Website Terms of Use to see Motorola's website terms of use.
+
+Privacy>
+http://www.motorola.com/us/legal/privacy-policy
+
+Legal>
+http://www.motorola.com/us/legal/terms-of-use
+
+MOTOROLA and the Stylized M Logo are trademarks of Motorola Trademark Holdings, LLC. Android, Google and other marks are trademarks of Google Inc. All other trademarks are the property of their respective owners. (c)%%=Format(Now(), "yyyy")=%% Motorola Mobility LLC. All rights reserved.
+
+

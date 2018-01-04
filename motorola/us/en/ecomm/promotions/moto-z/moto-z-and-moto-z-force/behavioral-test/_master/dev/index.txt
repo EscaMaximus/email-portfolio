@@ -1,0 +1,110 @@
+%%[
+	/*
+		US-EN MOTO Z FAMILY AFFIRM LAUNCH
+		Author: Motorola ExactTarget Team
+		Revision Date: 1/3/2017
+	*/	
+	/* GA Tagging Definitions */
+	VAR @UtmSource, @UtmMedium, @UtmCampaign, @UtmContent, @EmailHash, @CouponCode
+	SET @UtmSource = 'motoemail'
+	SET @UtmMedium = 'email'
+	SET @UtmCampaign = 'ECOMM_NA_US_EN_PROMOTION_MOTOZFAMILYMOTOMODS'
+	SET @UtmContent = 'AFFIRMLAUNCH'
+	SET @EmailHash = SHA256(lowercase(trim(emailaddr)))
+]%%
+
+
+Easy monthly payments over 3, 6 or 12 months.
+
+*****
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola.
+
+Browser View>
+%%view_email_url%%
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+*****
+
+Free shipping on orders over $75>
+http://www.motorola.com/us/legal/terms-of-sale?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=free_shipping&ceid=%%=v(@EmailHash)=%%
+
+
+Specials>
+http://www.motorola.com/us/specials?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=specials&ceid=%%=v(@EmailHash)=%%
+
+*****
+
+moto z family from 0% apr
+
+Make easy monthly payments on your next Moto device. The application process is simple and secure. Just select the Affirm payment option at checkout.
+
+Quick and Easy: Enter a few pieces of information for a real-time credit decision.
+
+No Hidden Fees: Know upfront exactly what you'll owe, with no hidden costs and no surprises. 
+
+For a limited time, experience the Moto Z Family at rates from as low as 0% APR.*
+
+Start shopping>
+https://www.motorola.com/us/specials?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=start_shopping&ceid=%%=v(@EmailHash)=%%
+
+
+Affirm
+
+Lenovo
+
+*****
+
+Motorola-
+http://www.motorola.com/us/home?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_bug_top&ceid=%%=v(@EmailHash)=%%
+
+Twitter-
+https://twitter.com/Moto_USA
+
+Facebook- 
+https://www.facebook.com/MotoUSA/
+
+Google+
+https://plus.google.com/+Moto
+
+Instagram-
+http://instagram.com/moto_usa/
+
+YouTube-
+https://www.youtube.com/user/motorola
+
+
+*****
+
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola. If this email has been forwarded to you, you can opt-in for future communications from Motorola.
+
+opt-in for future communications>
+https://pages.motorola-mail.com/registration-us-en/?c=ECOMM_NA_US_EN_REGISTRATION_FORWARDEDOPTIN&utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=forwarded_optin
+
+All screen images simulated.
+
+* Offer applies to purchases of Moto Z, Moto Z Droid, Moto Z Play, Moto Z Play Droid, and Moto Z Force Droid and valid from Dec. 19, 2016 at 10:59 a.m. CT through Jan. 31, 2017 at 10:59 a.m. CT. Rates from 0-30% APR over 6, 12, or 18 months and subject to credit approval. Offer is subject to change at any time and subject to product availability. For all other purchases, rates from 10-30% APR over 6, 12, or 18 months and subject to credit approval. Previous purchase are ineligible for offer. Actual terms shown at checkout. Down payment may be required. For purchases under $100, limited payment options are available. Eligibility for financing and rates is based on applicant's creditworthiness. Credit check required, though checking your eligibility won't affect your credit score. Affirm loans are made by Cross River Bank, a New Jersey-chartered bank, Member FDIC.
+
+If you no longer wish to receive promotional emails from Motorola Mobility LLC, please unsubscribe.
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+Please direct any questions concerning Motorola's privacy practices to privacy@motorola.com.
+
+Inquiries or requests to unsubscribe from ("opt-out" of) communications from Motorola may also be mailed to: Motorola Mobility LLC Attn: Privacy Compliance Program 222 W. Merchandise Mart Plaza, Suite 1800, Chicago, IL 60654.
+
+Motorola values your privacy. For more information on our Privacy Practices, please visit Motorola Privacy Policy. Please visit Motorola Website Terms of Use to see Motorola's website terms of use.
+
+Privacy>
+http://www.motorola.com/us/legal/privacy-policy
+
+Legal>
+http://www.motorola.com/us/legal/terms-of-use
+
+Moto branded products are designed and manufactured by or for Motorola Mobility LLC, a wholly owned subsidiary of Lenovo. MOTOROLA and the Stylized M Logo are trademarks of Motorola Trademark Holdings, LLC. Android, Google and other marks are trademarks of Google Inc. All other trademarks are the property of their respective owners. (c)%%=Format(Now(), "yyyy")=%% Motorola Mobility LLC. All rights reserved.
+
+

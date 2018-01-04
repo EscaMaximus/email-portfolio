@@ -1,0 +1,68 @@
+%%[
+	/*
+		MX-ES ORDER CANCELED VARIABLE CONTENT DEFINITIONS
+		Summary: various items can be set in this file such as Subject Line, Google Analytics, Order Status URL, Customer Service URL and Template Highlight Color in Hero and Buttons.
+		Author: Motorola ExactTarget Team
+		Revision Date: 7/12/2016
+	*/
+
+	VAR @SubjectLine, @DateFormat, @DateDayFormat, @DateDayYearFormat
+
+	/* Subject and Date Definition/Formatting */
+	SET @SubjectLine = "El pedido de tu Motorola: Pedido cancelado"
+
+	/* Template highlight Color */
+	VAR @TemplateHighlightColor, @MotoBugColor
+
+	SET @TemplateHighlightColor = '#d51bea'
+	SET @MotoBugColor = 'http://image.motorola-mail.com/lib/fe901272716d077b74/m/4/bug-motorola-d51bea.png'
+
+	/* Subject and Date Definition/Formatting */
+	SET @DateFormat = "D/M/YYYY"
+	SET @DateDayFormat = "DDDD. D/M"
+	SET @DateDayYearFormat = "DDDDD. D/M/YYYY"
+
+	/* GA Tagging Definitions */
+	VAR @UtmSource, @UtmMedium, @UtmCampaign, @UtmContent, @GaBaseString, @GaBaseStringAmpersand
+
+	SET @UtmSource = 'motoemail'
+	SET @UtmMedium = 'email'
+	SET @UtmCampaign = 'ECOMM_LATAM_MX_ES_TRIGGER_ORDER'
+	SET @UtmContent = 'CANCELED'
+	SET @GaBaseString = Concat("?utm_source=",@UtmSource,"&utm_medium=",@UtmMedium,"&utm_campaign=",@UtmCampaign,"&utm_content=",@UtmContent,"&")
+	SET @GaBaseStringAmpersand = Concat("&utm_source=",@UtmSource,"&utm_medium=",@UtmMedium,"&utm_campaign=",@UtmCampaign,"&utm_content=",@UtmContent,"&")
+
+	VAR @MotoBugURL, @PreTextHeaderURL, @ContactUsURL, @CustomerServiceURL, @OrderStatusURL, @TryAgainURL, @QueryStringCheck
+
+	/* Moto Bug URL */
+	SET @MotoBugURL = 'http://www.motorola.com.mx'
+	SET @MotoBugURL = Concat(@MotoBugURL,@GaBaseString,"utm_term=moto_bug_top")
+
+	/* Pre-Text Header URL */
+	SET @PreTextHeaderURL = 'http://www.motorola.com.mx'
+	SET @PreTextHeaderURL = Concat(@PreTextHeaderURL,@GaBaseString,"utm_term=pretext_header")
+
+	/* Customer Service URL */
+	SET @CustomerServiceURL = 'https://motorola-global-es-latam.custhelp.com/app/mcp/landing_troubleshooter/g_id/5088'
+	SET @CustomerServiceURL = Concat(@CustomerServiceURL,@GaBaseString,"utm_term=customer_service")
+
+	/* Contact Us Customer Service URL */
+	SET @ContactUsURL = 'https://motorola-global-es-latam.custhelp.com/app/chat/mm_chat_launch'
+	SET @ContactUsURL = Concat(@ContactUsURL,@GaBaseString,"utm_term=contact_us")
+
+	/* Order Status URL */
+	SET @OrderStatusURL = 'https://motorola-global-es-latam.custhelp.com/app/mcp/track-my-stuff-landing/orderId/'
+
+	/* Try Again URL */
+	SET @TryAgainURL = AttributeValue("CART_REBUILD_URL")
+	IF EMPTY(@TryAgainURL) THEN
+		SET @TryAgainURL = "http://www.motorola.com.mx"
+	ENDIF
+	SET @QueryStringCheck = IndexOf(@TryAgainURL,"?")
+	IF @QueryStringCheck > 0 THEN
+		SET @TryAgainURL = Concat(@TryAgainURL,@GaBaseStringAmpersand,"utm_term=try_again")
+	ELSE
+		SET @TryAgainURL = Concat(@TryAgainURL,@GaBaseString,"utm_term=try_again")
+	ENDIF
+
+]%%

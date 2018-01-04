@@ -1,0 +1,116 @@
+﻿%%[
+	/*
+		GB-EN MOTO Z PLAY / HASSELBLAD ANNC
+		Author: Motorola ExactTarget Team
+		Revision Date: 9/6/2016
+	*/	
+	/* GA Tagging Definitions */
+	VAR @UtmSource, @UtmMedium, @UtmCampaign, @UtmContent
+	SET @UtmSource = 'motoemail'
+	SET @UtmMedium = 'email'
+	SET @UtmCampaign = 'ECOMM_EMARA_GB_EN_PRODUCT_MOTOZFAMILYMOTOMODS'
+	SET @UtmContent = 'MOTOZPLAYHASSELBLADANNC'
+
+]%%
+
+
+Moto Z Play & Hasselblad True Zoom.
+
+
+***
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola.
+
+Browser View>
+%%view_email_url%%
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+***
+
+
+Free shipping on orders over £75>
+http://www.motorola.co.uk/legal/terms-of-sale?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=shipping#shipping
+
+
+Specials>
+http://www.motorola.co.uk/specials?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=specials
+
+
+***
+
+Ultimate power. Unlimited possibilities.
+
+Introducing
+Moto Z Play
+
+Moto Z Play packs Moto's longest lasting smartphone battery ever with up to 50 hours of power on a single charge.* TurboPower(tm) charging adds as much as 8 hours of battery life in just 15 minutes.**
+
+Plus, transform your Moto Z Play with Moto Mods(tm) and do things you never thought possible with a phone.
+
+Buy now>
+http://www.motorola.co.uk/products/moto-z-play?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_z_play_buy_now
+
+***
+
+Transform your mobile camera experience
+
+Hasselblad Create to Inspire
+
+The legendary camera maker brings its legacy and unique shooting experiences to your Moto Z smartphone.
+
+Snap it on and capture crisp, detailed photos from a distance with 10X optical zoom. Take blur-free, evenly lit pictures in any environment with the Xenon flash. 
+
+Buy now>
+http://www.motorola.co.uk/products/moto-mods/hasselblad-true-zoom?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=hasselblad_buy_now
+
+
+Moto Mods
+
+
+***
+
+Motorola-
+http://www.motorola.co.uk/home?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_bug_top
+
+Twitter-
+https://twitter.com/moto
+
+Facebook- 
+https://www.facebook.com/MotoInUK
+
+Instagram-
+https://instagram.com/motorola_uk/
+
+
+***
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola.
+
+All screen images simulated.
+
+* All battery life claims are approximate and based on a standard mixed use profile. The mixed use profile is based on Motorola devices on major 4G LTE networks with excellent coverage and includes both usage and standby time. Out-of-box settings are applied to the mixed use profile to project battery performance. Actual battery performance will vary and depends on many factors including signal strength, network configuration, age of battery, operating temperature, features selected, device settings, and voice, data, and other application usage patterns.
+
+** Battery must be substantially depleted; charging rate slows as charging progresses. Charger sold separately in some markets.
+
+Certain features, functionality and product specifications may be network dependent and subject to additional terms, conditions, and charges. All are subject to change without notice.
+
+If you no longer wish to receive promotional emails from Motorola Mobility LLC, please unsubscribe.
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+Please direct any questions concerning Motorola's privacy practices to privacy@motorola.com.
+
+Enquiries or requests to unsubscribe from ("opt-out" of) communications from Motorola may also be mailed to: Motorola Mobility UK, Ltd., Redwood, Crockford Lane, Chineham Business Park, Basingstoke, RG24 8WQ.
+
+Motorola values your privacy. For more information on our Privacy Practices, please visit Motorola Privacy Policy. Please visit Motorola Website Terms of Use to see Motorola's website terms of use.
+
+Privacy>
+http://www.motorola.co.uk/legal/privacy-policy
+
+Legal>
+http://www.motorola.co.uk/legal/terms-of-use
+
+MOTOROLA and the Stylised M Logo are trademarks of Motorola Trademark Holdings, LLC. Facebook is a trademark of Facebook, Inc. Android, Google and other marks are trademarks of Google Inc. All other trademarks are the property of their respective owners. (c)%%=Format(Now(), "yyyy")=%% Motorola Mobility LLC. All rights reserved.

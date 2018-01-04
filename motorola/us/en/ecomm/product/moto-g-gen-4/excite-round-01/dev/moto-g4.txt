@@ -1,0 +1,147 @@
+﻿%%[
+	/*
+		US-EN MOTO G4 EXCITE
+		Author: Motorola ExactTarget Team
+		Revision Date: 5/23/2016
+	*/	
+		/* GA Tagging Definitions */
+		SET @UtmSource = 'motoemail'
+		SET @UtmMedium = 'email'
+		SET @UtmCampaign = 'ECOMM_NA_US_EN_PRODUCT_MOTOG4FAMILY'
+		SET @UtmContent = 'MOTOG4EXCITE'
+
+]%%
+
+
+Streamlined design, packed with performance.
+
+
+*****
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola.
+
+Browser View>
+%%view_email_url%%
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+*****
+
+
+Free shipping on orders over $75>
+http://www.motorola.com/us/consumers/about-motorola-us/About_Motorola-Legal-Terms_of_Sale/About_Motorola-Legal-Terms_of_Sale.html?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=free_shipping
+
+
+Apply for Moto Credit>
+http://www.motorola.com/us/motorola-finance-pdp.html?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=credit
+
+
+Specials>
+http://www.motorola.com/us/motorola-shop-all-sale.html?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=specials
+
+
+*****
+
+
+The next generation of Moto G is coming! 
+
+Take a peek at amazing new features packed into these affordable, carrier-friendly smartphones.
+
+
+*****
+
+Moto G
+
+Carrier-friendly
+
+Moto G is unlocked and works on on all major carriers. You have the freedom to choose the one that's right for you.
+
+Learn more>
+http://www.motorola.com/us/products/moto-g?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_g_unlocked
+
+
+*****
+
+A battery that lasts
+
+Moto G is designed to last a full day and then some, thanks to a 3000 mAh battery.**
+
+Learn more>
+http://www.motorola.com/us/products/moto-g?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_g_battery
+
+
+*****
+
+
+Moto G Plus
+
+Charge at the speed of life
+
+Give your battery a quick energy boost with the included TurboPower(tm) charger. It gives Moto G Plus up to 6 hours of power in just 15 minutes of charging.*
+
+Learn more>
+http://www.motorola.com/us/products/moto-g-plus?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_g_plus_charger
+
+
+*****
+
+
+Life moves fast. Move faster.
+
+With its octa-core processor, Moto G Plus can run multiple apps simultaneously with ease.
+
+Learn more>
+http://www.motorola.com/us/products/moto-g-plus?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_g_plus_performance
+
+
+*****
+
+Motorola-
+http://www.motorola.com/us/home?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_bug_top
+
+Twitter-
+https://twitter.com/Moto_USA
+
+Facebook- 
+https://www.facebook.com/MotoUSA/
+
+Google+
+https://plus.google.com/+Motorola/posts
+
+Instagram-
+http://instagram.com/motorola
+
+YouTube-
+https://www.youtube.com/user/motorola
+
+
+*****
+
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola.
+
+* All battery life claims are approximate and based on an average mixed use profile that includes both usage and standby time on a 4G LTE network. Out-of-box settings are applied to the mixed use profile to project battery performance. Actual battery performance will vary and depends on many factors including signal strength, network configuration, age of battery, operating temperature, features selected, device settings, and voice, data, and other application usage patterns.
+
+** Battery must be substantially depleted; charging rate slows as charging progresses.
+
+If you no longer wish to receive promotional emails from Motorola Mobility LLC, please unsubscribe.
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+Please direct any questions concerning Motorola's privacy practices to privacy@motorola.com.
+
+Inquiries or requests to unsubscribe from ("opt-out" of) communications from Motorola may also be mailed to: Motorola Mobility LLC Attn: Privacy Compliance Program 222 W. Merchandise Mart Plaza, Suite 1800, Mailstop 16-O19.02, Chicago, IL 60654.
+
+Motorola values your privacy. For more information on our Privacy Practices, please visit www.motorola.com/privacy
+
+Privacy>
+http://www.motorola.com/us/consumers/about-motorola-us/About_Motorola-Legal-Legal_and_Privacy_Policy/About_Motorola-Legal-Legal_and_Privacy_Policy.html
+
+Please visit www.motorola.com/legal to see Motorola's website terms of use.
+
+Legal>
+http://www.motorola.com/us/consumers/about-motorola-us/About_Motorola-Legal-Terms_of_Use/About_Motorola-Legal-Terms_of_Use.html
+
+MOTOROLA and the Stylized M Logo are trademarks of Motorola Trademark Holdings, LLC. Android, Google and other marks are trademarks of Google Inc. All other trademarks are the property of their respective owners. (c)%%=Format(Now(), "yyyy")=%% Motorola Mobility LLC. All rights reserved.

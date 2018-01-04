@@ -1,0 +1,117 @@
+﻿<!--%%[
+	/*
+		DE-DE MOTO G4 FAMILY ANNC
+		Author: Motorola ExactTarget Team
+		Revision Date: 5/13/2016
+	*/	
+		/* GA Tagging Definitions */
+		
+		SET @UtmSource = 'motoemail'
+		SET @UtmMedium = 'email'
+		SET @UtmCampaign = 'ECOMM_EMARA_DE_DE_PRODUCT_MOTOG4FAMILY'
+		SET @UtmContent = 'ANNC'
+
+]%%-->
+
+
+Die neue Moto G Familie ist unterwegs.
+
+
+****
+
+Sie [%%emailaddr%%] erhalten diese E-Mail aufgrund einer früheren Transaktion oder Geschäftsbeziehung mit Motorola.
+
+Browser-Ansicht>
+%%view_email_url%%
+
+Abmelden>
+https://pages.motorola-mail.com/unsubscribe_t/?lang=de
+
+****
+
+
+Kostenloser Versand bei allen Bestellungen über 95,00 €>
+http://www.motorola.de/corporate-motorola-terms-of-sale-de/corporate-motorola-terms-of-sale-de.html?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=shipping#shipping
+
+
+Aktionen>
+http://www.motorola.de/specials-de.html?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=specials
+
+
+
+****
+
+
+Das mehrfach ausgezeichnete Moto G ist noch besser geworden
+
+Jetzt das neue Moto G wählen und das bessere Smartphone-Erlebnis zum günstigen Preis erleben. Dann das Design, den Speicher und Arbeitsspeicher auf Moto Maker auswählen. Ab 24. Mai vorbestellen! 
+
+
+****
+
+
+
+Das Wesentliche im Fokus
+
+Herausragende Kamera, Dual-SIM und Turbo-Aufladen
+
+Das neue Moto G Plus besitzt die fortschrittlichste 16-Megapixel-Kamera seiner Klasse. Dank Dual-SIM kann man zwei Tarife oder Telefonnummern in einem Smartphone nutzen. Aufladen mit TurboPower™ liefert bis zu 6 Stunden Akku-Power nach 15 Minuten Laden.* Und: Einfach den Fingerabdrucksensor berühren, schon wird das Smartphone aktiviert und entsperrt.
+
+Mehr erfahren>
+http://www.motorola.de/products/moto-g-plus?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=Moto_G_Plus_Learn_More
+
+
+****
+
+
+Starke Performance: gemacht, um zu bestehen
+
+Ultraschnell mit einer fortschrittlichen Kamera
+
+Schnell, schneller, am schnellsten! Das neue Moto G hat einen starken Octa-Core-Prozessor – so lassen sich mehrere Apps gleichzeitig öffnen, ohne dass die Geschwindigkeit nachlässt. Und mit der fortschrittlichen 13-MP-Kamera gelingen Fotos in Profi-Qualität.
+
+Mehr erfahren>
+http://www.motorola.de/products/moto-g?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=Moto_G_Learn_More
+
+
+************************************************************************************
+
+Motorola-
+http://www.motorola.de/home?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_bug_top
+
+Twitter-
+https://twitter.com/Moto_GER
+
+Facebook- 
+https://www.facebook.com/MotoInUK
+
+YouTube-
+https://www.youtube.com/user/motorola
+
+
+*************************************************************************************
+
+
+Sie [%%emailaddr%%] erhalten diese E-Mail aufgrund einer früheren Transaktion oder Geschäftsbeziehung mit Motorola.
+
+Abbildungen modifiziert.
+
+* Der Akku muss größtenteils entladen sein; die Aufladegeschwindigkeit nimmt mit zunehmender Aufladung ab. Alle Angaben zur Akku-Laufzeit sind ungefähre Werte, basierend auf einem durchschnittlichen, gemischten Nutzungsprofil, das sowohl Nutzungs- als auch Standby-Zeiten in einem 4G LTE-Netz umfasst. Für das Profil der gemischten Nutzung wurden die Werkseinstellungen verwendet, um die Akku-Laufzeit zu berechnen. Die tatsächliche Akku-Leistung variiert und ist von vielen Faktoren abhängig, dazu zählen Signalstärke, Netzwerkkonfiguration, Alter des Akkus, Umgebungstemperatur, ausgewählte Features, Geräteeinstellungen sowie sprach-, daten- und andere anwendungsspezifische Gegebenheiten.
+
+Wenn Sie keine E-Mails oder andere Informationen von Motorola Mobility Germany GmbH erhalten möchten, können Sie diese hier abbestellen. 
+
+Sie diese hier abbestellen>
+https://pages.motorola-mail.com/unsubscribe_t/?lang=de
+
+
+Bitte richten Sie alle Fragen zu den Datenschutzrichtlinien von Motorola an: privacy@motorola.com. Falls Sie keine weiteren Informationen von Motorola bekommen möchten, können Sie sich abmelden, indem Sie Ihre Abmeldung an folgende Adresse senden: Motorola Mobility Germany GmbH, Geschäftsbereich Mobile Devices, Telco Kreisel 1, D-65510 Idstein.
+
+Motorola schützt die Privatsphäre seiner Kunden. Weitere Informationen zu unseren Datenschutzregelungen finden Sie unter www.motorola.com/privacy. Unsere Nutzungsbedingungen finden Sie auf der Website www.motorola.com/legal.
+
+Datenschutz>
+http://www.motorola.de/consumers/about-motorola-DE/About_Motorola-Legal-Privacy_Policy/About_Motorola-Legal-Privacy_Policy.html
+
+Nutzungsbedingungen>
+http://www.motorola.de/consumers/about-motorola-DE/About_Motorola-Legal-Terms_of_Use/About_Motorola-Legal-Terms_of_Use.html
+
+MOTOROLA und das stilisierte M-Logo sind Marken oder eingetragene Warenzeichen der Motorola Trademark Holdings, LLC. Facebook ist eine Marke von Facebook, lnc. Google, das Google-Logo, Android, YouTube, Chrome, Gmail, Google Play und andere Marken sind Markenzeichen von Google Inc. Bei allen anderen Firmen- und Produktnamen handelt es sich um Marken der betreffenden Unternehmen. (c)%%=Format(Now(), "yyyy")=%% Motorola Mobility LLC. Alle Rechte vorbehalten.

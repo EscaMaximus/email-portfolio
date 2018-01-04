@@ -1,0 +1,21 @@
+					<tr>
+						<td class="innerpadding" style="padding: 40px 30px 7px 30px;">
+							<table width="100%" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td class="h1" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 32px!important; line-height: 38px!important; font-weight: bold; color: #222c30; padding: 0 0 20px 0;">
+											%%[IF NOT EMPTY(@FullName) THEN]%%
+												Hola %%=v(@FullName)=%%,
+											%%[ELSE]%%
+												Hola,
+											%%[ENDIF]%%
+									</td>
+								</tr>
+								<tr>
+									<td class="p-lead" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 18px; line-height: 24px; font-weight:normal; color: #222c30; padding:0 0 15px 0;">Se cancelaron uno o m&aacute;s de los art&iacute;culos de tu pedido. Consulta el estado del pedido para obtener m&aacute;s informaci&oacute;n.</td>
+								</tr>
+								<tr>
+									<td class="p-lead" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 18px; line-height: 24px; font-weight:normal; color: #222c30; padding:0 0 15px 0;">Si no solicitaste una cancelaci&oacute;n, o si crees que esta cancelaci&oacute;n se debe a un error, ponte en contacto con <a href="%%=RedirectTo(@ContactUsURL)=%%" style="color: #222c30; text-decoration:underline;" class="highlight-link" title="Atenci&oacute;n al Cliente" target="_blank" alias="contact_us">Atenci&oacute;n al Cliente</a>.</td>
+								</tr>
+							</table>
+						</td>
+					</tr>

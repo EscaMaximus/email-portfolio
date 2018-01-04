@@ -1,0 +1,27 @@
+					<tr>
+						<td class="innerpadding" style="padding: 40px 30px 7px 30px;">
+							<table width="100%" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td class="h1" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 32px!important; line-height: 38px!important; font-weight: bold; color: #222c30; padding: 0 0 20px 0;">
+											%%[IF NOT EMPTY(@FullName) THEN]%%
+												Hi %%=v(@FullName)=%%,
+											%%[ELSE]%%
+												Hi,
+											%%[ENDIF]%%
+									</td>
+								</tr>
+								<tr>
+									<td class="h3" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 24px; line-height: 30px; font-weight:bold; color: #80888c; padding:0 0 15px 0;">We apologise.</td>
+								</tr>
+								<tr>
+									<td class="h4" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 20px; line-height: 26px; font-weight:normal; color: #80888c; padding:0 0 15px 0;">Your order has been cancelled.</td>
+								</tr>
+								<tr>
+									<td class="p-lead" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 18px; line-height: 24px; font-weight:normal; color: #222c30; padding:0 0 15px 0;">There was an issue processing your credit card.</td>
+								</tr>
+								<tr>
+									<td class="p-lead" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 18px; line-height: 24px; font-weight:normal; color: #222c30; padding:0 20px 15px 0;">If you feel this cancellation is in error, please contact <a href="%%=RedirectTo(@ContactUsURL)=%%" style="color: #222c30; text-decoration:underline;" class="highlight-link" title="Customer Support" target="_blank" alias="contact_us">Customer Support</a> or try to submit your order again using another payment method.</td>
+								</tr>
+							</table>
+						</td>
+					</tr>

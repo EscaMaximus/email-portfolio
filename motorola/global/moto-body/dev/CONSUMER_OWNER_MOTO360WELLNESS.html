@@ -1,0 +1,358 @@
+%%[
+	/*
+			Moto Body Email Communication: Template 1, 2, 3
+			Author: Motorola ExactTarget Team
+			Revision: 160 - Production
+			Revision Date: 5/13/2015
+	*/
+
+	/* Intro Vars */
+	VAR @MotoBodyIndex, @MotoBodyCSS, @MotoBodySubjectLine, @MotoBodyPreTextHeader, @FirstName, @StartDate, @EndDate, @TemplateID, @IntroCopyInclude, @UID, @mode
+	
+	/* Chart Vars */
+	VAR @ChartBaseURL, @ChartFolderName, @ChartPartialName, @RoundChartFolderName
+	
+	/* Heart Rate Vars */
+	VAR @HeartRateCurrentWeekRoundChart, @HeartRatePreviousWeekRoundChart, @HeartRateActivityCurrWeekChart, @HeartRateBestDayDate, @HeartRateBestDayMinutes, @HeartRateActivityPercentageValue, @HeartRateActivityShowLastWeekPercentageActivity, @HeartRateWeekTotal, @HeartRateTotalMin, @HeartRateHealthyDays, @HeartRateChart, @HeartRateChartMobile, @HeartRateWeeklyGoalMinutes, @HeartRateWeeklyGoalDays
+	
+	/* Steps Vars */
+	VAR @StepsCurrentWeekRoundChart, @StepsPreviousWeekRoundChart, @StepsActivityRoundChart, @StepsBestDayDate, @StepsBestDaySteps, @StepsWeekTotal, @StepsTotalDistance, @StepsActivityPercentageValue, @StepsActivityStatus, @StepsActivityShowLastWeekPercentageActivity, @StepsActivityPercentageIcon, @StepsChart, @StepsChartMobile, @StepsMetric, @StepsWeeklyGoal
+	
+	/* Calories Vars */
+	VAR @CaloriesCurrentWeekRoundChart, @CaloriesPreviousWeekRoundChart, @CaloriesActivityRoundChart, @CaloriesBestDayDate, @CaloriesBestDayCalories, @CaloriesWeekTotal, @CaloriesChart, @CaloriesChartMobile, @CaloriesWeekTotalActive, @CaloriesWeeklyGoal, @CaloriesActivityStatus, @CaloriesActivityStatusValue, @CaloriesActivityPercentageValue, @CaloriesActivityShowLastWeekPercentageActivity, @CaloriesActivityPercentageIcon
+	
+	/* Weekly Progress Vars */
+	VAR @WeeklyProgressChart, @WeeklyProgressChartMobile, @WeeklyProgressBestDay, @WeeklyProgressBestDayHeartRate, @WeeklyProgressBestDaySteps, @WeeklyProgressBestDayCalories
+	
+	/* Progress Since Last Week Vars */
+	VAR @ProgressSinceLastWeekInclude, @ProgressSinceLastWeekChart, @ProgressSinceLastWeekChartMobile
+
+	/* Parse the Language and Country if it exists */
+	SET @PreferredLanguage = PREF_LANGUAGE
+
+	IF Length(@PreferredLanguage) >= 5 THEN
+		SET @ParsedLanguage = Substring(@PreferredLanguage, 1, 2)
+		SET @ParsedLanguage = Uppercase(@ParsedLanguage)
+		SET @ParsedCountry = Substring(@PreferredLanguage, 4, 2)
+	ELSE
+		SET @ParsedLanguage = Uppercase(@PreferredLanguage)
+		SET @ParsedCountry = "ZZ"
+	ENDIF
+
+	VAR @Language, @Country
+
+	/* The locale languages in this string fallback to language only */
+	/* SET @Locale_Languages = "AR,DA,DE,EL,ES,FR,HI,IT,IW,JA,KO,MS,NB,NL,PL,RO,RU,SV,TH,TR,VI" */
+
+	SET @Locale_Languages = "DE,ES,FR,IT,JA,KO,RU"
+
+	/* The locales in this string are to pass thru unaffected: 4/21 removed ,ZH_CN,ZH_TW temporarily so we can have it QA'ed by Ray */
+	SET @Locale_Passthru = "EN_GB,EN_US,ES_US,FR_CA,PT_BR,PT_PT"
+
+	/* Concat so we get an entirely uppercase string with locale */
+	SET @Locale_Str = Concat(@ParsedLanguage, "_", @ParsedCountry)
+
+	/* en_HK would pass thru this without being modified */
+	VAR @C_Sharp_Locale_Str
+
+	/* Identify L10n and fallbacks */
+	IF IndexOf(@Locale_Passthru, @Locale_Str) > 0 THEN
+		SET @Language = @ParsedLanguage
+		SET @Country = @ParsedCountry
+		SET @C_Sharp_Locale_Str = Concat(Lowercase(@ParsedLanguage), "-", Uppercase(@ParsedCountry))
+	ELSEIF IndexOf(@Locale_Languages, @ParsedLanguage) > 0 THEN
+		SET @Language = @ParsedLanguage
+		SET @Country = "ZZ"
+		SET @C_Sharp_Locale_Str = Lowercase(@ParsedLanguage)
+	ELSE
+		SET @Language = "EN"
+		SET @Country = "US"
+		SET @C_Sharp_Locale_Str = Concat(Lowercase(@Language), "-", Uppercase(@Country))
+	ENDIF
+
+	SET @L10nPath = Concat("My Contents\MOTO360WELLNESS\GLOBAL\L10n\", @Country, "\", @Language, "\")
+	SET @IncludeSuffix = ".html"
+
+	/* HTML Template */
+	SET @MotoBodyIndex = Concat(@L10nPath, "INDEX", @IncludeSuffix)
+	SET @MotoBodyCSS = Concat(@L10nPath, "CSS_HEADER_CONTENT", @IncludeSuffix)
+	
+	/* Intro Information */
+	SET @FirstName = NAME
+	SET @StartDate = START_DATE
+	SET @EndDate = END_DATE
+	SET @TemplateID = TEMPLATE_ID
+
+	/* Include Localized variables */
+	ContentAreaByName(Concat(@L10nPath, "VARIABLES", @IncludeSuffix))
+
+	SET @MotoBodySubjectLine = Concat(@SubjectLine, FormatDate(@StartDate, @DateFormat, "", @C_Sharp_Locale_Str), " - ", FormatDate(@EndDate, @DateFormat, "", @C_Sharp_Locale_Str))
+
+	/* Config Chart URL Structure */
+	SET @ChartBaseURL = 'http://cdn.motorola-2.com/motobody/360/'
+	SET @ChartFolderName = Format(@EndDate, "MMddyyyy")
+	SET @UID = UID_UNSUBSCRIBE
+	SET @ChartPartialName = Format(@EndDate, "MMddyyyy")
+	
+	/* Config Heart Activity Round Chart URL Structure */
+	SET @RoundChartFolderName = 'common'
+	SET @HeartRateCurrentWeekRoundChart = HR_ACTIVITY_CURR_WEEK_CHART
+
+		/* set default value in case 0 or blank */
+		IF IsNull(@HeartRateCurrentWeekRoundChart) THEN
+			SET @HeartRateCurrentWeekRoundChart = '000'
+		ELSEIF @HeartRateCurrentWeekRoundChart == '0' THEN
+			SET @HeartRateCurrentWeekRoundChart = '000'	
+		ELSEIF @HeartRateCurrentWeekRoundChart >= '1' AND @HeartRateCurrentWeekRoundChart <= '9' THEN
+			SET @HeartRateCurrentWeekRoundChart = Concat("00", @HeartRateCurrentWeekRoundChart)
+		ELSEIF @HeartRateCurrentWeekRoundChart >= '10' AND @HeartRateCurrentWeekRoundChart <= '99' THEN
+			SET @HeartRateCurrentWeekRoundChart = Concat("0", @HeartRateCurrentWeekRoundChart)
+		ENDIF
+
+	SET @HeartRatePreviousWeekRoundChart = HR_ACTIVITY_PREV_WEEK_CHART
+
+		/* set default value in case 0 or blank*/
+		IF IsNull(@HeartRatePreviousWeekRoundChart) THEN
+			SET @HeartRatePreviousWeekRoundChart = '000'
+		ELSEIF @HeartRatePreviousWeekRoundChart == '0' THEN
+			SET @HeartRatePreviousWeekRoundChart = '000'
+		ELSEIF @HeartRatePreviousWeekRoundChart >= '1' AND @HeartRatePreviousWeekRoundChart <= '9' THEN
+			SET @HeartRatePreviousWeekRoundChart = Concat("00", @HeartRatePreviousWeekRoundChart)
+		ELSEIF @HeartRatePreviousWeekRoundChart >= '10' AND @HeartRatePreviousWeekRoundChart <= '99' THEN
+			SET @HeartRatePreviousWeekRoundChart = Concat("0", @HeartRatePreviousWeekRoundChart)
+		ENDIF 
+
+	/* HEART RATE */
+
+		SET @HeartRateStreakNumberOfDays = HR_STREAK
+		IF NOT IsNull(@HeartRateStreakNumberOfDays) THEN
+
+			SET @HeartRateStreakDays = Replace(HR_STREAK_DAYS,"{", "")
+			SET @HeartRateStreakDays = Replace(@HeartRateStreakDays,"}", "")
+			
+			SET @HeartRateStreakStartDay = Substring(@HeartRateStreakDays, 1, 1)
+			SET @HeartRateStreakEndDay = Substring(@HeartRateStreakDays, 3, 1)
+
+			SET @HeartRateStreakStartDayName = FormatDate(Concat("2014-12-0", @HeartRateStreakStartDay, " 00:00:00"), "DDDD", "", @C_Sharp_Locale_Str))
+			SET @HeartRateStreakEndDayName = FormatDate(Concat("2014-12-0", @HeartRateStreakEndDay, " 00:00:00"), "DDDD", "", @C_Sharp_Locale_Str))
+		ENDIF
+
+	SET @HeartRateActivityInclude = Concat(@L10nPath, "HEART_ACTIVITY", @IncludeSuffix)
+	SET @HeartRateActivityRoundChart = Concat(@ChartBaseURL, @RoundChartFolderName, "/", "HRD", "/", "HRD", "_", @HeartRatePreviousWeekRoundChart, "_", @HeartRateCurrentWeekRoundChart, ".png")
+	SET @HeartRateBestDayDate = HR_BEST_DAY_DATE
+	SET @HeartRateBestDayMinutes = HR_BEST_DAY_MINS
+	SET @HeartRateActivityPercentageValue = HR_ACTIVITY_PERCENTAGE_IMPROVE
+
+	IF IsNull(@HeartRateActivityPercentageValue) OR @HeartRateActivityPercentageValue == 0 THEN
+		SET @HeartRateActivityShowLastWeekPercentageActivity = 'no'
+	ELSE
+		SET @HeartRateActivityShowLastWeekPercentageActivity = 'yes'
+		IF @HeartRateActivityPercentageValue < 1 THEN
+			SET @HeartRateActivityPercentageIcon = 'http://cdn.motorola-2.com/us/en/motorola/moto-body/episode-01/images/ico-arrow-down.png'
+		ELSEIF @HeartRateActivityPercentageValue >= 1 THEN
+			SET @HeartRateActivityPercentageIcon = 'http://cdn.motorola-2.com/us/en/motorola/moto-body/episode-01/images/ico-arrow-up.png'
+		ENDIF
+	ENDIF
+
+	SET @HeartRateWeekTotal = HR_ACTIVITY_CURR_WEEK_TOTAL
+	SET @HeartRateTotalMin = HR_ACTIVITY_CURR_WEEK_TOTAL
+	SET @HeartRateHealthyDays = HR_ACTIVITY_HEALTHY_DAYS
+	SET @HeartRateChart = Concat(@ChartBaseURL, @ChartFolderName, "/", "HRC", "-", @UID, "_", @ChartPartialName, ".png")
+	SET @HeartRateChartMobile = Concat(@ChartBaseURL, @ChartFolderName, "/", "HRC", "-", @UID, "_", @ChartPartialName, "-mobile.png")
+	SET @HeartRateWeeklyGoalMinutes = HR_ACTIVITY_WEEKLY_GOAL_MINS
+	SET @HeartRateWeeklyGoalDays = HR_ACTIVITY_WEEKLY_GOAL_DAYS
+
+	/* Config Steps Activity Round Chart URL Structure */
+	SET @StepsCurrentWeekRoundChart = STEPS_CURR_WEEK_CHART
+	SET @StepsCurrentWeekRoundChart = FormatNumber(@StepsCurrentWeekRoundChart,"N")
+	SET @StepsCurrentWeekRoundChart = Replace(@StepsCurrentWeekRoundChart,".", "")
+
+	SET @StepsPreviousWeekRoundChart = STEPS_PREV_WEEK_CHART
+	SET @StepsPreviousWeekRoundChart = FormatNumber(@StepsPreviousWeekRoundChart,"N")
+	SET @StepsPreviousWeekRoundChart = Replace(@StepsPreviousWeekRoundChart,".", "")
+
+	/* STEPS */
+
+	SET @StepsStreakNumberOfDays = STEPS_STREAK
+
+	IF NOT IsNull(@StepsStreakNumberOfDays) THEN
+	
+		SET @StepsStreakDays = Replace(STEPS_STREAK_DAYS,"{", "")
+		SET @StepsStreakDays = Replace(@StepsStreakDays,"}", "")
+
+		SET @StepsStreakStartDay = Substring(@StepsStreakDays, 1, 1)
+		SET @StepsStreakEndDay = Substring(@StepsStreakDays, 3, 1)
+
+		SET @StepsStreakStartDayName = FormatDate(Concat("2014-12-0", @StepsStreakStartDay, " 00:00:00"), "DDDD", "", @C_Sharp_Locale_Str))
+		SET @StepsStreakEndDayName = FormatDate(Concat("2014-12-0", @StepsStreakEndDay, " 00:00:00"), "DDDD", "", @C_Sharp_Locale_Str))
+
+	ENDIF
+
+	SET @StepsActivityInclude = Concat(@L10nPath, "STEPS", @IncludeSuffix)
+	SET @StepsActivityRoundChart = Concat(@ChartBaseURL, @RoundChartFolderName, "/", "SRD", "/", "SRD", "_", @StepsPreviousWeekRoundChart, "_", @StepsCurrentWeekRoundChart, ".png")
+	SET @StepsBestDayDate = STEPS_BEST_DAY_DATE
+	SET @StepsBestDaySteps = STEPS_BEST_DAY_STEPS
+	SET @StepsWeekTotal = STEPS_TOTAL_CURR_WEEK
+	SET @StepsTotalDistance = STEPS_TOTAL_DISTANCE_CURR_WEEK
+	SET @StepsActivityPercentageValue = STEPS_PERCENTAGE_IMPROVE
+
+	IF IsNull(@StepsActivityPercentageValue) OR @StepsActivityPercentageValue == 0 THEN
+		SET @StepsActivityShowLastWeekPercentageActivity = 'no'
+	ELSE
+		SET @StepsActivityShowLastWeekPercentageActivity = 'yes'
+		IF @StepsActivityPercentageValue < 1 THEN	
+			SET @StepsActivityPercentageIcon = 'http://cdn.motorola-2.com/us/en/motorola/moto-body/episode-01/images/ico-arrow-down-since-last-week.png'
+			
+		ELSEIF @StepsActivityPercentageValue >= 1 THEN
+			SET @StepsActivityPercentageIcon = 'http://cdn.motorola-2.com/us/en/motorola/moto-body/episode-01/images/ico-arrow-up-since-last-week.png'
+			
+		ENDIF
+	ENDIF
+
+	SET @StepsChart = Concat(@ChartBaseURL, @ChartFolderName, "/", "STC", "-", @UID, "_", @ChartPartialName, ".png")
+	SET @StepsChartMobile = Concat(@ChartBaseURL, @ChartFolderName, "/", "STC", "-", @UID, "_", @ChartPartialName, "-mobile.png")
+	SET @StepsMetric = STEPS_DISTANCE_METRIC
+	SET @StepsWeeklyGoal = STEPS_WEEKLY_GOAL
+	SET @StepsActivityStatus = 'default'
+
+	/* Check for Steps Mesaging */
+	IF NOT IsNull(@StepsWeeklyGoal) THEN
+		SET @StepsActivityStatusValue = FormatNumber(Divide(@StepsWeekTotal,@StepsWeeklyGoal), "N2")
+
+		IF @StepsActivityStatusValue >= 0.50 THEN
+					SET @StepsActivityStatus = 'increase'
+		ELSE
+			SET @StepsActivityStatus = 'decrease'
+		ENDIF
+	ENDIF
+
+	/* Config Calories Activity Round Chart URL Structure */
+	SET @CaloriesCurrentWeekRoundChart = CALORIES_CURR_WEEK_CHART
+	SET @CaloriesCurrentWeekRoundChart = FormatNumber(@CaloriesCurrentWeekRoundChart,"N")
+	SET @CaloriesCurrentWeekRoundChart = Replace(@CaloriesCurrentWeekRoundChart,".", "")
+	SET @CaloriesPreviousWeekRoundChart = CALORIES_PREV_WEEK_CHART
+	SET @CaloriesPreviousWeekRoundChart = FormatNumber(@CaloriesPreviousWeekRoundChart,"N")
+	SET @CaloriesPreviousWeekRoundChart = Replace(@CaloriesPreviousWeekRoundChart,".", "")
+
+	/* CALORIES */
+	
+	SET @CaloriesStreakNumberOfDays = CALO_STREAK
+	
+	IF NOT IsNull(@CaloriesStreakNumberOfDays) THEN
+
+		SET @CaloriesStreakDays = Replace(CALO_STREAK_DAYS,"{", "")
+		SET @CaloriesStreakDays = Replace(@CaloriesStreakDays,"}", "")
+
+		SET @CaloriesStreakStartDay = Substring(@CaloriesStreakDays, 1, 1)
+		SET @CaloriesStreakEndDay = Substring(@CaloriesStreakDays, 3, 1)
+
+		SET @CaloriesStreakStartDayName = FormatDate(Concat("2014-12-0", @CaloriesStreakStartDay, " 00:00:00"), "DDDD", "", @C_Sharp_Locale_Str))
+		SET @CaloriesStreakEndDayName = FormatDate(Concat("2014-12-0", @CaloriesStreakEndDay, " 00:00:00"), "DDDD", "", @C_Sharp_Locale_Str))
+
+	ENDIF
+
+	SET @CaloriesActivityInclude = Concat(@L10nPath, "CALORIES", @IncludeSuffix)
+	SET @CaloriesActivityRoundChart = Concat(@ChartBaseURL, @RoundChartFolderName, "/", "CRD", "/", "CRD", "_", @CaloriesPreviousWeekRoundChart, "_", @CaloriesCurrentWeekRoundChart, ".png")
+	SET @CaloriesBestDayDate = CALO_BEST_DAY_DATE
+	SET @CaloriesBestDayCalories = CALO_BEST_DAY_CALS
+	SET @CaloriesWeekTotal = CALORIES_TOTAL_CURR_WEEK
+	SET @CaloriesChart = Concat(@ChartBaseURL, @ChartFolderName, "/", "CLC", "-", @UID, "_", @ChartPartialName, ".png")
+	SET @CaloriesChartMobile = Concat(@ChartBaseURL, @ChartFolderName, "/", "CLC", "-", @UID, "_", @ChartPartialName, "-mobile.png")
+	SET @CaloriesWeekTotalActive = CALORIES_TOTAL_ACTIVE_CURR_WEEK
+
+	SET @CaloriesActivityPercentageValue = CALORIES_PERCENTAGE_IMPROVE
+
+	IF IsNull(@CaloriesActivityPercentageValue) OR @CaloriesActivityPercentageValue == 0 THEN
+		SET @CaloriesActivityShowLastWeekPercentageActivity = 'no'
+	ELSE
+		SET @CaloriesActivityShowLastWeekPercentageActivity = 'yes'
+		IF @CaloriesActivityPercentageValue < '1' THEN
+			SET @CaloriesActivityPercentageIcon = 'http://cdn.motorola-2.com/us/en/motorola/moto-body/episode-01/images/ico-arrow-down-since-last-week.png'
+		ELSEIF @CaloriesActivityPercentageValue >= '1' THEN
+			SET @CaloriesActivityPercentageIcon = 'http://cdn.motorola-2.com/us/en/motorola/moto-body/episode-01/images/ico-arrow-up-since-last-week.png'
+		ENDIF
+	ENDIF
+
+	SET @CaloriesWeeklyGoal = CALORIES_WEEKLY_GOAL
+
+	/* Check for Calories Mesaging */
+	IF NOT IsNull(@CaloriesWeeklyGoal) THEN
+		SET @CaloriesActivityStatusValue = FormatNumber(Divide(@CaloriesWeekTotalActive,@CaloriesWeeklyGoal), "N2")
+
+		IF @CaloriesActivityStatusValue >= 0.50 THEN
+					SET @CaloriesActivityStatus = 'increase'
+		ELSE
+			SET @CaloriesActivityStatus = 'decrease'
+		ENDIF
+	ENDIF
+
+	/* Weekly Progress */
+	SET @WeeklyProgressInclude = Concat(@L10nPath, "WEEKLY_PROGRESS_GOAL", @IncludeSuffix)
+	SET @WeeklyProgressChart = Concat(@ChartBaseURL, @ChartFolderName, "/", "ALL", "-", @UID, "_", @ChartPartialName, ".png")
+	SET @WeeklyProgressChartMobile = Concat(@ChartBaseURL, @ChartFolderName, "/", "ALL", "-", @UID, "_", @ChartPartialName, "-mobile.png")
+	SET @WeeklyProgressBestDay = BEST_OVERALL_DAY_DATE
+	SET @WeeklyProgressBestDayHeartRate = BEST_OVERALL_DAY_HR
+	SET @WeeklyProgressBestDaySteps = BEST_OVERALL_DAY_STEPS
+	SET @WeeklyProgressBestDayCalories = BEST_OVERALL_DAY_CALORIES
+
+	/* Progress Since Last Week */
+	SET @ProgressSinceLastWeekInclude = Concat(@L10nPath, "PROGRESS_SINCE_LAST_WEEK", @IncludeSuffix)
+	SET @ProgressSinceLastWeekChart = Concat(@ChartBaseURL, @ChartFolderName, "/", "PRG", "-", @UID, "_", @ChartPartialName, ".png")
+	SET @ProgressSinceLastWeekChartMobile = Concat(@ChartBaseURL, @ChartFolderName, "/", "PRG", "-", @UID, "_", @ChartPartialName, "-mobile.png")
+
+
+	/* Intro Copy Messaging */
+	IF @TemplateID == '1' THEN 
+		SET @IntroCopyInclude = Concat(@L10nPath, "INTROCOPY_WELCOME", @IncludeSuffix)
+
+	ELSEIF @TemplateID == '2' THEN
+
+		SET @HeartActiveProgress = Divide(@HeartRateHealthyDays, @HeartRateWeeklyGoalDays)
+		SET @HeartActiveProgress = Multiply(@HeartActiveProgress, 100)
+		
+		IIF ((@HeartActiveProgress >= 100), "100", @HeartActiveProgress)
+		
+		SET @OverallProgressToGoal = Add(@HeartActiveProgress, @StepsCurrentWeekRoundChart)
+		SET @OverallProgressToGoal = Add(@OverallProgressToGoal, @CaloriesCurrentWeekRoundChart)
+		SET @OverallProgress = Divide(@OverallProgressToGoal, 3)
+	
+		IF @OverallProgress > '70' THEN
+			SET @IntroCopyInclude = Concat(@L10nPath, "INTROCOPY_GOODWEEK", @IncludeSuffix)
+		ELSE
+			SET @IntroCopyInclude = Concat(@L10nPath, "INTROCOPY_KEEPGOING", @IncludeSuffix)
+		ENDIF
+		
+	ELSEIF @TemplateID == '3' THEN
+		SET @IntroCopyInclude = Concat(@L10nPath, "INTROCOPY_NODATA", @IncludeSuffix)
+	
+	ELSEIF @TemplateID == '4' THEN
+		SET @IntroCopyInclude = Concat(@L10nPath, "INTROCOPY_WEMISSYOU", @IncludeSuffix)
+	
+	ENDIF
+]%%
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="HandheldFriendly" content="True" />
+	<title>%%=v(@MotoBodySubjectLine)=%%</title>
+	
+	%%=ContentAreaByName(@MotoBodyCSS)=%%
+</head>
+
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" yahoo="fix" style="margin:0; padding:0;" bgcolor="#fcfbfb">
+<div style="display:none; white-space:nowrap; font:15px courier; color:#ffffff; line-height:0; width:600px !important; min-width:600px !important; max-width:600px !important; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</div>
+	<!-- Wrapper -->
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#fcfbfb" >
+		<tr>
+			<td width="100%" valign="top">
+				%%=ContentAreaByName(@MotoBodyIndex)=%%
+			</td>
+		</tr>
+	</table>
+	<custom name="opencounter" type="tracking"> 
+	<img src="http://pixel.inbox.exacttarget.com/pixel.gif?r=6de0ae58748ebb08b2bc9ea6632a95d9ea85dd97" width="2" height="2" alt="" />
+</body>
+</html>

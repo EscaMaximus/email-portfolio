@@ -1,0 +1,108 @@
+﻿%%[
+	/*
+		US-EN MOTO G5 ANNC VERSION A
+		Author: Motorola ExactTarget Team
+		Revision Date: 2/24/2017
+		
+		GA Tagging Definitions
+	*/
+	VAR @UtmSource, @UtmMedium, @UtmCampaign, @UtmContent, @Email, @EmailHash
+	SET @UtmSource = 'motoemail'
+	SET @UtmMedium = 'email'
+	SET @UtmCampaign = 'ECOMM_NA_US_EN_PRODUCT_MOTOG5FAMILY'
+	SET @UtmContent = 'MOTOGPLUSANNCVERA'
+	SET @EmailHash = SHA256(lowercase(trim(emailaddr)))
+
+]%%
+
+
+It’s unlocked. Choose among major US carriers.
+
+****
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola.
+
+Browser View>
+%%view_email_url%%
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+
+****
+
+captivating design. unlimited performance.
+
+moto g plus
+
+Break the mold. Coming this spring, Moto G Plus features a precision-crafted metal design, and the most advanced camera in its class. Plus, it's unlocked so you can use it on any major U.S. carrier.
+
+Learn more>
+https://www.motorola.com/us/products/moto-g-plus?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_g_plus_learn_more&ceid=%%=v(@EmailHash)=%%
+
+
+Lenovo
+
+****
+
+
+Free shipping on orders over $75*>
+http://www.motorola.com/us/consumers/about-motorola-us/About_Motorola-Legal-Terms_of_Sale/About_Motorola-Legal-Terms_of_Sale.html?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=free_shipping
+
+
+Specials>
+http://www.motorola.com/us/motorola-shop-all-sale.html?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=specials
+
+
+****
+
+
+Motorola-
+http://www.motorola.com/us/home?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_bug_top&ceid=%%=v(@EmailHash)=%%
+
+Twitter-
+https://twitter.com/Moto_USA
+
+Facebook- 
+https://www.facebook.com/MotoUSA/
+
+Google+
+https://plus.google.com/+Motorola/posts
+
+Instagram-
+http://instagram.com/motorola
+
+YouTube-
+https://www.youtube.com/user/motorola
+
+
+****
+
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola. If this email has been forwarded to you, you can opt-in for future communications from Motorola.
+
+opt-in for future communications>
+https://pages.motorola-mail.com/registration-us-en/?c=ECOMM_NA_US_EN_REGISTRATION_FORWARDEDOPTIN&utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=forwarded_optin
+
+All screen images simulated.
+
+* Free shipping for orders over $75.
+
+If you no longer wish to receive promotional emails from Motorola Mobility LLC, please unsubscribe.
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+Please direct any questions concerning Motorola's privacy practices to privacy@motorola.com.
+
+Inquiries or requests to unsubscribe from ("opt-out" of) communications from Motorola may also be mailed to: Motorola Mobility LLC Attn: Privacy Compliance Program 222 W. Merchandise Mart Plaza, Suite 1800, Mailstop 16-O19.02, Chicago, IL 60654.
+
+Motorola values your privacy. For more information on our Privacy Practices, please visit Motorola Privacy Policy. Please visit Motorola Website Terms of Use to see Motorola's website terms of use.
+
+Privacy>
+http://www.motorola.com/us/legal/privacy-policy
+
+Legal>
+http://www.motorola.com/us/legal/terms-of-use
+
+Moto branded products are designed and manufactured by or for Motorola Mobility LLC, a wholly owned subsidiary of Lenovo. MOTOROLA and the Stylized M Logo are trademarks of Motorola Trademark Holdings, LLC. DROID is a trademark of Lucasfilm Ltd. and its related companies. Used under license. Android, Google and other marks are trademarks of Google Inc. All other trademarks are the property of their respective owners. (c)%%=Format(Now(), "yyyy")=%% Motorola Mobility LLC. All rights reserved.

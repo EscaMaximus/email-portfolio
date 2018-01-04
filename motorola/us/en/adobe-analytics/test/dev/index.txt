@@ -1,0 +1,127 @@
+﻿%%[
+	/*
+		US-EN ADOBE ANALYTICS PIXEL TEST / MOTO G4 PLUS FOLLOW UP
+		Author: Motorola ExactTarget Team
+		Revision Date: 8/9/2016
+	*/	
+		/* GA Tagging Definitions */
+		SET @UtmSource = 'motoemail'
+		SET @UtmMedium = 'email'
+		SET @UtmCampaign = 'TEST'
+		SET @UtmContent = 'MOTOGPLUSTEST'
+
+		VAR @Email, @EmailHash, @Comparison
+	
+		SET @Email = emailaddr
+		SET @EmailHash = SHA256(@Email)
+		SET @Comparison = "*"
+
+]%%
+
+
+Shoot pro-level photos with a 16 MP camera.
+
+
+*****
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola.
+
+Browser View>
+%%view_email_url%%
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+*****
+
+Free shipping on orders over $75
+http://www.motorola.com/us/legal/terms-of-sale?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=free_shipping&ceid=%%=v(@EmailHash)=%%
+
+Apply for Moto Credit>
+http://www.motorola.com/us/motorola-financing?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=credit&ceid=%%=v(@EmailHash)=%%
+
+Specials>
+http://www.motorola.com/us/specials?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=specials&ceid=%%=v(@EmailHash)=%%
+
+*****
+
+Moto G4 Plus
+
+Your design. Amazing price!
+
+Build your customized Moto G Plus with Moto Maker, exclusively on motorola.com. Choose your own front, back and accent colors. Select the amount of storage, and even have your name or a phrase engraved on the back.
+
+Starting at only $249.99
+
+Build yours>
+http://www.motorola.com/us/products/motomaker/FLEXR10?version=16MP16GB&front-color=color-black&utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_g_plus_mm_build_yours&ceid=%%=v(@EmailHash)=%%
+
+*****
+
+
+Moto G4 Plus
+
+The most advanced camera in its class
+
+Get photo quality rated among the top smartphone cameras, ahead of iPhone® 6S, iPhone 6S Plus, and other phones that are more than twice the price.[*]
+
+Starting at only $249.99
+
+Build yours>
+http://www.motorola.com/us/products/motomaker/FLEXR10?version=16MP16GB&front-color=color-black&utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_g_plus_camera_build_yours&ceid=%%=v(@EmailHash)=%%
+
+*****
+
+
+Motorola-
+http://www.motorola.com/us/home?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_bug_top&ceid=%%=v(@EmailHash)=%%
+
+Twitter-
+https://twitter.com/Moto_USA
+
+Facebook- 
+https://www.facebook.com/MotoUSA/
+
+Google+
+https://plus.google.com/+Motorola/posts
+
+Instagram-
+http://instagram.com/moto_usa/
+
+YouTube-
+https://www.youtube.com/user/motorola
+
+
+*****
+
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola. If this email has been forwarded to you, you can opt-in for future communications from Motorola.
+
+opt in>
+https://pages.motorola-mail.com/registration-us-en/?c=ECOMM_NA_US_EN_REGISTRATION_FORWARDEDOPTIN&utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=forwarded_optin&ceid=%%=v(@EmailHash)=%%
+
+All screen images simulated.
+
+* The comparison focuses on the "Photo" ratings only, not overall or video ratings. DxOMark Mobile is the trusted industry standard for independent image quality measurements and ratings of mobile device camera. Test results are available on www.dxomark.com and in the press. Information other than DxOMark Mobile scores is provided independently by Motorola.
+
+
+If you no longer wish to receive promotional emails from Motorola Mobility LLC, please unsubscribe.
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+Please direct any questions concerning Motorola's privacy practices to privacy@motorola.com.
+
+Inquiries or requests to unsubscribe from ("opt-out" of) communications from Motorola may also be mailed to: Motorola Mobility LLC Attn: Privacy Compliance Program 222 W. Merchandise Mart Plaza, Suite 1800, Mailstop 16-O19.02, Chicago, IL 60654.
+
+Motorola values your privacy. For more information on our Privacy Practices, please visit www.motorola.com/privacy
+
+Privacy>
+http://www.motorola.com/us/consumers/about-motorola-us/About_Motorola-Legal-Legal_and_Privacy_Policy/About_Motorola-Legal-Legal_and_Privacy_Policy.html
+
+Please visit www.motorola.com/legal to see Motorola's website terms of use.
+
+Legal>
+http://www.motorola.com/us/consumers/about-motorola-us/About_Motorola-Legal-Terms_of_Use/About_Motorola-Legal-Terms_of_Use.html
+
+MOTOROLA and the Stylized M Logo are trademarks of Motorola Trademark Holdings, LLC. Android, Google and other marks are trademarks of Google Inc. All other trademarks are the property of their respective owners. (c)%%=Format(Now(), "yyyy")=%% Motorola Mobility LLC. All rights reserved.

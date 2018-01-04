@@ -1,0 +1,101 @@
+﻿%%[
+	/*
+		DE-DE MOTO G4 PLAY LAUNCH
+		Author: Motorola ExactTarget Team
+		Revision Date: 8/8/2016
+	*/	
+		/* GA Tagging Definitions */
+		SET @UtmSource = 'motoemail'
+		SET @UtmMedium = 'email'
+		SET @UtmCampaign = 'ECOMM_EMARA_DE_DE_PRODUCT_MOTOG4FAMILY'
+		SET @UtmContent = 'GPLAYLAUNCH'
+]%%
+
+
+Das neueste Mitglied der Moto G Familie.
+
+
+****
+
+Sie [%%emailaddr%%] erhalten diese E-Mail aufgrund einer früheren Transaktion oder Geschäftsbeziehung mit Motorola.
+
+Browser-Ansicht>
+%%view_email_url%%
+
+Abmelden>
+https://pages.motorola-mail.com/unsubscribe_t/?lang=de
+
+****
+
+
+Kostenloser Versand bei allen Bestellungen über 95,00 €>
+http://www.motorola.de/corporate-motorola-terms-of-sale-de/corporate-motorola-terms-of-sale-de.html?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=shipping#shipping
+
+
+Aktionen>
+http://www.motorola.de/specials-de.html?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=specials
+
+
+
+****
+
+Das neue
+Moto G4 Play
+
+Mehr Smartphone. Mehr Spaß. Günstig wie immer.
+
+Das neue Moto G Play: Performance auf einem neuen Niveau. Ein leistungsstarker Quad-Core-Prozessor und 2 GB* Arbeitsspeicher sorgen für ungebremsten Spaß. Und die Performance wird durch eine pure Android(tm)-Version ohne überflüssigen Ballast noch einmal gesteigert.
+
+Schon ab 159,00 €
+
+Jetzt vorbestellen>
+http://www.motorola.de/products/moto-g-play?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_g_play_performance_pre_order
+
+
+*****
+
+
+Den Moment festhalten und mit anderen teilen.
+
+Mit der 8-Megapixel-Kamera brillante Fotos aufnehmen. Die Kamera des Moto G Play nutzt größere Pixel als sonst üblich – für bessere Ergebnisse auch bei schlechtem Licht. Und mit der 5-MP-Frontkamera gelingen perfekte Selfies.
+
+Schon ab 159,00 €
+
+Jetzt vorbestellen>
+http://www.motorola.de/products/moto-g-play?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_g_play_camera_pre_order
+
+*****
+
+
+Motorola-
+http://www.motorola.de/home?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_bug_top
+
+Twitter-
+https://twitter.com/Moto_GER
+
+Facebook- 
+https://www.facebook.com/MotoInGER
+
+YouTube-
+https://www.youtube.com/user/motorola
+
+
+*****
+
+
+Sie [%%emailaddr%%] erhalten diese E-Mail aufgrund einer früheren Transaktion oder Geschäftsbeziehung mit Motorola.
+
+Abbildungen modifiziert.
+
+* Interner Speicher variiert je nach Modell und Region.
+
+Wenn Sie keine E-Mails oder andere Informationen von Motorola Mobility Germany GmbH erhalten möchten, können Sie diese hier abbestellen. 
+
+Sie diese hier abbestellen>
+https://pages.motorola-mail.com/unsubscribe_t/?lang=de
+
+Bitte richten Sie alle Fragen zu den Datenschutzrichtlinien von Motorola an: privacy@motorola.com. Falls Sie keine weiteren Informationen von Motorola bekommen möchten, können Sie sich abmelden, indem Sie Ihre Abmeldung an folgende Adresse senden: Motorola Mobility Germany GmbH - a LENOVO Company, Vorstadt 2, D- 61440 Oberursel.
+
+Motorola schützt die Privatsphäre seiner Kunden. Weitere Informationen zu unseren Datenschutzregelungen finden Sie unter www.motorola.de/legal/privacy-policy. Unsere Nutzungsbedingungen finden Sie auf der Website www.motorola.de/legal/terms-of-use.
+
+MOTOROLA und das stilisierte M-Logo sind Marken oder eingetragene Warenzeichen der Motorola Trademark Holdings, LLC. Facebook ist eine Marke von Facebook, lnc. Google, das Google-Logo, Android, YouTube, Chrome, Gmail, Google Play und andere Marken sind Markenzeichen von Google Inc. Bei allen anderen Firmen- und Produktnamen handelt es sich um Marken der betreffenden Unternehmen. (c)%%=Format(Now(), "yyyy")=%% Motorola Mobility LLC. Alle Rechte vorbehalten.

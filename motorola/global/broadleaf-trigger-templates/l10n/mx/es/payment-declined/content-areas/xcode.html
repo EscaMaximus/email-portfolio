@@ -1,0 +1,27 @@
+					<tr>
+						<td class="innerpadding" style="padding: 40px 30px 7px 30px;">
+							<table width="100%" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td class="h1" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 32px!important; line-height: 38px!important; font-weight: bold; color: #222c30; padding: 0 0 20px 0;">
+											%%[IF NOT EMPTY(@FullName) THEN]%%
+												Hola %%=v(@FullName)=%%,
+											%%[ELSE]%%
+												Hola,
+											%%[ENDIF]%%
+									</td>
+								</tr>
+								<tr>
+									<td class="h3" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 24px; line-height: 30px; font-weight:bold; color: #80888c; padding:0 0 15px 0;">Te pedimos disculpas.</td>
+								</tr>
+								<tr>
+									<td class="h4" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 20px; line-height: 26px; font-weight:normal; color: #80888c; padding:0 0 15px 0;">Tu pedido se cancel&oacute;.</td>
+								</tr>
+								<tr>
+									<td class="p-lead" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 18px; line-height: 24px; font-weight:normal; color: #222c30; padding:0 0 15px 0;">El c&oacute;digo de canje para este pedido ya se us&oacute; en un pedido anterior.</td>
+								</tr>
+								<tr>
+									<td class="p-lead" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 18px; line-height: 24px; font-weight:normal; color: #222c30; padding:0 0 15px 0;">Si crees que esta cancelaci&oacute;n se debe a un error, ponte en contacto con <a href="%%=RedirectTo(@ContactUsURL)=%%" style="color: #222c30; text-decoration:underline;" class="highlight-link" title="Atenci&oacute;n al Cliente o intenta volver" target="_blank" alias="contact_us">Atenci&oacute;n al Cliente</a> o intenta volver a enviar el pedido usando otro m&eacute;todo de pago.</td>
+								</tr>
+							</table>
+						</td>
+					</tr>

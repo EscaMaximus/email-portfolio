@@ -1,0 +1,278 @@
+%%[
+	/*
+		US-EN END OF LIFE VI REFRESH MONTH 10 AND 22
+		Segment: Month 10 and 22
+		Name: CONSUMER_NA_US_EN_PRODUCT_EOL_EP1
+		Campaign Definition: Dyanamic
+		Author: @dnjx37
+		Revision Date: 1/18/2017
+	*/
+
+	VAR @EmailDataDefinitionID, @EmailHash, @FirstName, @Device, @Anniversary, @CouponCode, @AnniversaryYear, @Year, @SubjectLine, @PreTextHeader, @LegalIntro, @StoryOne, @StoryOneLegal, @StoryTwo, @StoryTwoLegal, @StoryThree, @StoryThreeLegal, @StoryFour, @StoryFourLegal, @StoryFive, @StoryFiveLegal, @StorySix, @StorySixLegal, @StorySeven, @StorySevenLegal, @StoryEight, @StoryEightLegal, @StoryNine, @StoryNineLegal, @StoryTen, @StoryTenLegal, @SocialNetworks, @LegalFooter, @UtmSource, @UtmMedium, @UtmCampaign, @UtmContent
+	
+	
+	/* Define Dyamic Data */
+	SET @EmailHash = SHA256(lowercase(trim(emailaddr)))
+	SET @FirstName = Propercase(trim(FIRST_NAME))
+	SET @Device = trim(ASSET_MODEL)
+	SET @Anniversary = trim(ANNIVERSARY)
+	SET @CouponCode = ''
+	SET @CouponCode = trim(PROMOTION_CODE)
+
+	/* Email data definition from DE */
+	SET @EmailDataDefinitionID = EMAIL_DEFINITION_ID
+
+	IF @Anniversary == 1 THEN
+		SET @AnniversaryYear = "first"
+		SET @Year = "one year"
+	ELSEIF  @Anniversary == 2 THEN
+		SET @AnniversaryYear = "second"
+		SET @Year = "two years"
+	ELSE @Anniversary == 1 THEN
+		SET @AnniversaryYear = "first"
+		SET @Year = "one year"
+	ENDIF
+
+	/* Lookup data definition */
+	SET @ReturnDataSet = LookupOrderedRows("EMAIL_DEFINITIONS",1,"ID","ID",@EmailDataDefinitionID)
+	SET @row = Row(@ReturnDataSet,1)
+
+	SET @SubjectLine = Field(@row,"SUBJECT_LINE")
+	SET @PreTextHeader = Field(@row,"PRE_TEXT_HEADER")
+	SET @LegalIntro = Field(@row,"LEGAL_INTRO")
+	SET @StoryOne = Field(@row,"STORY_ONE")
+	SET @StoryOneLegal = Field(@row,"STORY_ONE_LEGAL")
+	SET @StoryTwo = Field(@row,"STORY_TWO")
+	SET @StoryTwoLegal = Field(@row,"STORY_TWO_LEGAL")
+	SET @StoryThree = Field(@row,"STORY_THREE")
+	SET @StoryThreeLegal = Field(@row,"STORY_THREE_LEGAL")
+	SET @StoryFour = Field(@row,"STORY_FOUR")
+	SET @StoryFourLegal = Field(@row,"STORY_FOUR_LEGAL")
+	SET @StoryFive = Field(@row,"STORY_FIVE")
+	SET @StoryFiveLegal = Field(@row,"STORY_FIVE_LEGAL")
+	SET @StorySix = Field(@row,"STORY_SIX")
+	SET @StorySixLegal = Field(@row,"STORY_SIX_LEGAL")
+	SET @StorySeven = Field(@row,"STORY_SEVEN")
+	SET @StorySevenLegal = Field(@row,"STORY_SEVEN_LEGAL")
+	SET @StoryEight = Field(@row,"STORY_EIGHT")
+	SET @StoryEightLegal = Field(@row,"STORY_EIGHT_LEGAL")
+	SET @StoryNine = Field(@row,"STORY_NINE")
+	SET @StoryNineLegal = Field(@row,"STORY_NINE_LEGAL")
+	SET @StoryTen = Field(@row,"STORY_TEN")
+	SET @StoryTenLegal = Field(@row,"STORY_TEN_LEGAL")
+	SET @SocialNetworks = Field(@row,"SOCIAL_NETWORKS")
+	SET @LegalFooter = Field(@row,"LEGAL_FOOTER")
+	SET @UtmSource = Field(@row,"UTM_SOURCE")
+	SET @UtmMedium = Field(@row,"UTM_MEDIUM")
+	SET @UtmCampaign = Field(@row,"UTM_CAMPAIGN")
+	SET @UtmContent = Field(@row,"UTM_CONTENT")
+
+	IF EMPTY(@FirstName) THEN
+		IF @Anniversary == 1 THEN
+			IF (@EmailDataDefinitionID == 357) OR (@EmailDataDefinitionID == 362) THEN
+				SET @SubjectLine = "It's been almost 1 year--the phone you've been waiting for."
+			ELSE
+				SET @SubjectLine = "It's been almost 1 year--the phone you've been waiting for and save 10%."
+			ENDIF
+		ELSE
+			IF (@EmailDataDefinitionID == 357) OR (@EmailDataDefinitionID == 362) THEN
+				SET @SubjectLine = "It's been almost 2 years--the phone you've been waiting for."
+			ELSE
+				SET @SubjectLine = "It's been almost 2 years--the phone you've been waiting for and save 10%."
+			ENDIF
+		ENDIF
+	ELSE
+		IF @Anniversary == 1 THEN
+			IF (@EmailDataDefinitionID == 357) OR (@EmailDataDefinitionID == 362) THEN
+				SET @SubjectLine = Concat(@FirstName, ", ", "it's been almost 1 year--get the new phone you've been waiting for.")
+			ELSE
+				SET @SubjectLine = Concat(@FirstName, ", ", "it's been almost 1 year--get the new phone you've been waiting for and save 10%.")
+			ENDIF
+		ELSE
+			IF (@EmailDataDefinitionID == 357) OR (@EmailDataDefinitionID == 362) THEN
+				SET @SubjectLine = Concat(@FirstName, ", ", "it's been almost 2 years--get the new phone you've been waiting for.")
+			ELSE
+				SET @SubjectLine = Concat(@FirstName, ", ", "it's been almost 2 years--get the new phone you've been waiting for and save 10%.")
+			ENDIF
+		ENDIF
+	ENDIF
+
+	/* Define Product Specific Legal Indicators */
+	VAR @Camera, @Battery, @Display, @CouponLegal
+
+	IF @EmailDataDefinitionID == 357 THEN
+		SET @Display = "*"
+		SET @Battery = "**"
+	ELSEIF @EmailDataDefinitionID == 358 THEN
+		SET @CouponLegal = "*"
+		SET @Display = "**"
+		SET @Battery = "***"
+	ELSEIF @EmailDataDefinitionID == 362 THEN
+		SET @Display = "*"
+		SET @Battery = "**"
+	ELSEIF @EmailDataDefinitionID == 363 THEN
+		SET @CouponLegal = "*"
+		SET @Display = "**"
+		SET @Battery = "***"
+	ELSE
+		SET @CouponLegal = "*"
+		SET @Display = "**"
+		SET @Battery = "***"
+	ENDIF
+
+
+]%%
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+	<!--[if gte mso 9]><xml>
+	 <o:OfficeDocumentSettings>
+	  <o:AllowPNG/>
+	  <o:PixelsPerInch>96</o:PixelsPerInch>
+	 </o:OfficeDocumentSettings>
+	</xml><![endif]-->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="HandheldFriendly" content="True" />
+	<title>%%=v(@SubjectLine)=%%</title>
+	
+	<!--[if gte mso 10]>
+	<style type="text/css" media="all">
+		 body, table, td, a { font-family: Verdana, Arial, Helvetica, sans-serif; }
+		 p,a,li,td,body,table,blockquote { -ms-text-size-adjust:100%; -webkit-text-size-adjust:100%; }
+		.cta, .cta-red { font-family: Arial, Verdana, sans-serif !important; font-size: 15px; line-height: 18px; font-weight:normal; }
+		
+		.intro-mo10-header-01 { font-family: Arial, Verdana, sans-serif !important; font-size:30px; line-height:36px; font-weight:bold; }
+		.intro-mo10-paragraph-01 { font-family: Verdana, Arial, sans-serif; font-size: 15px; line-height: 24px; font-weight:normal; }
+
+		.intro-mo10-promo-header-01 { font-family: Arial, Verdana, sans-serif !important; font-size:30px; line-height:36px; font-weight:bold; }
+		.intro-mo10-promo-paragraph-01 { font-family: Verdana, Arial, sans-serif; font-size: 15px; line-height: 24px; font-weight:normal; }
+		.intro-mo10-promo-paragraph-02 { font-family: Verdana, Arial, sans-serif; font-size: 15px; line-height: 24px; font-weight:normal; }
+		.intro-mo10-promo-paragraph-03 { font-family: Verdana, Arial, sans-serif; font-size: 15px; line-height: 24px; font-weight:normal; }
+		.intro-mo10-promo-paragraph-04 { font-family: Verdana, Arial, sans-serif; font-size: 15px; line-height: 24px; font-weight:normal; }
+
+		.intro-mo22-header-01 { font-family: Arial, Verdana, sans-serif !important; font-size:30px; line-height:36px; font-weight:bold; }
+		.intro-mo22-paragraph-01 { font-family: Verdana, Arial, sans-serif; font-size: 15px; line-height: 24px; font-weight:normal; }
+
+		.intro-mo22-promo-header-01 { font-family: Arial, Verdana, sans-serif !important; font-size:30px; line-height:36px; font-weight:bold; }
+		.intro-mo22-promo-paragraph-01 { font-family: Verdana, Arial, sans-serif; font-size: 15px; line-height: 24px; font-weight:normal; }
+		.intro-mo22-promo-paragraph-02 { font-family: Verdana, Arial, sans-serif; font-size: 15px; line-height: 24px; font-weight:normal; }
+		.intro-mo22-promo-paragraph-03 { font-family: Verdana, Arial, sans-serif; font-size: 15px; line-height: 24px; font-weight:normal; }
+		.intro-mo22-promo-paragraph-04 { font-family: Verdana, Arial, sans-serif; font-size: 15px; line-height: 24px; font-weight:normal; }
+
+		.moto-z-header-01 { font-family: Arial, Verdana, sans-serif !important; font-size:27px; line-height:33px; font-weight:bold; }
+		.moto-z-header-02 { font-family: Arial, Verdana, sans-serif !important; font-size:21px; line-height:27px; font-weight:bold; }
+		.moto-z-header-04 { font-family: Arial, Verdana, sans-serif !important; font-size:20px; line-height:26px; font-weight:bold; }
+		.moto-z-paragraph-01 { font-family: Verdana, Arial, sans-serif; font-size: 15px; line-height: 24px; font-weight:normal; }
+		.moto-z-paragraph-02 { font-family: Verdana, Arial, sans-serif; font-size: 15px; line-height: 24px; font-weight:normal; }
+		.moto-z-p-small { font-family: Verdana, Arial, sans-serif; font-size: 13px; line-height: 19px; font-weight:normal; }
+
+		.moto-z-force-header-01 { font-family: Arial, Verdana, sans-serif !important; font-size:28px; line-height:34px; font-weight:bold; }
+		.moto-z-force-header-02 { font-family: Arial, Verdana, sans-serif !important; font-size:21px; line-height:27px; font-weight:bold; }
+		.moto-z-force-header-04 { font-family: Arial, Verdana, sans-serif !important; font-size:20px; line-height:26px; font-weight:bold; }
+		.moto-z-force-paragraph-01 { font-family: Verdana, Arial, sans-serif; font-size: 15px; line-height: 24px; font-weight:normal; }
+		.moto-z-force-paragraph-02 { font-family: Verdana, Arial, sans-serif; font-size: 15px; line-height: 24px; font-weight:normal; }
+		.moto-z-force-p-small { font-family: Verdana, Arial, sans-serif; font-size: 13px; line-height: 19px; font-weight:normal; }
+
+	</style>
+	<![endif]-->
+	<!--[if lte mso 10]><!--><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"><!--<![endif]--> 
+	
+	<style type="text/css">
+		a[x-apple-data-detectors] {	color: inherit !important; text-decoration: none !important; }
+		a[href^=tel],a[href^=sms] { color:inherit; cursor:default; text-decoration:none; }
+	</style>
+	<style type="text/css">
+		body { width: 100%; background-color: #f7f7f7; margin:0!important; padding:0; -webkit-text-size-adjust: 100%;-ms-text-size-adjust:100%; }
+		html { width: 100%; }
+		table, td { border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; }
+		img { border:0 none; line-height:100%; outline:none; text-decoration:none; -ms-interpolation-mode:bicubic; }
+		a img { border:0 none;}
+		p,a,li,td,blockquote { mso-line-height-rule:exactly; }
+		.imageFix { display:block;}
+		#outlook a { padding:0; }
+		.ReadMsgBody { width:100%; }
+		.ExternalClass { width:100%; }
+		.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div,.ExternalClass font { line-height: 100%; }
+		.default-link a { text-decoration:none; color:#8d8f95; }		
+
+		/* button hover styling */
+		.cta-table:hover { border-radius:1px; background-color:#33a1ff!important; color:#FFFFFF!important; -webkit-transition: all .17s !important; transition: all .17s !important; }
+		a.cta:hover { border-radius:1px; background-color:#33a1ff!important; color:#FFFFFF!important; -webkit-transition: all .17s !important; transition: all .17s !important; }
+		.cta-table-red:hover { border-radius:1px; background-color:#e31d1a!important; color:#FFFFFF!important; -webkit-transition: all .17s !important; transition: all .17s !important; }
+		a.cta-red:hover { border-radius:1px; background-color:#e31d1a!important; color:#FFFFFF!important; -webkit-transition: all .17s !important; transition: all .17s !important; }
+		.x-bkg-swap-color:hover a { background-color:#33a1ff!important; color:#FFFFFF!important; -webkit-transition: all .17s !important; transition: all .17s !important; }
+		.x-bkg-swap-color-red:hover a { background-color:#e31d1a!important; color:#FFFFFF!important; -webkit-transition: all .17s !important; transition: all .17s !important; } 
+		
+
+		@media screen and (max-width: 480px), screen and (max-device-width: 480px) {
+			
+			/* mobile resize */
+			.mobile-content-size { width:320px!important; min-width:320px!important; }
+			.mobile-content-inner-size { width:320px!important; min-width:320px!important; }
+			.story-wrapper { width:320px!important; min-width:320px!important; padding:0 0 0 0!important; }
+			.social-networks { width:320px!important; min-width:320px!important; }
+			.hide { display:none!important; }
+			.email-size { letter-spacing: 0!important; }
+
+			/* header */
+			.pre-text-header { padding:0 20px 0 0!important; }
+			.intro-copy-cell { padding:3px 5px 0 0!important; }
+			.bug-wrapper { padding:15px 15px 10px 10px!important;  }
+			.intro-wrapper { padding:0 0 0 0!important; }
+			.promotion-features { padding:5px 25px 5px 25px!important; }
+
+			/* cta */
+			.cta-table { width:220px!important; }
+			.cta-table-red { width:220px!important; }	
+			.left-col-button { width:57px!important; }
+			.cta-one-row { width:239px!important; padding:0 0 0 0!important; text-align: left!important; }		
+			.left-col-button-no-bug { width:50px!important; }
+			.cta-one-row-no-bug { width:270px!important; padding:0 0 0 0!important; text-align: left!important; }
+			.lenovo-bug { width:31px!important; }
+		
+		}
+		
+		%%=ContentAreaByName(Concat(@LegalIntro,'.css'))=%%
+		%%=ContentAreaByName(Concat(@StoryOne,'.css'))=%%
+		%%=ContentAreaByName(Concat(@StoryTwo,'.css'))=%%
+		%%=ContentAreaByName(Concat(@StoryThree,'.css'))=%%
+		%%=ContentAreaByName(Concat(@StoryFour,'.css'))=%%
+		%%=ContentAreaByName(Concat(@SocialNetworks,'.css'))=%%
+		%%=ContentAreaByName(Concat(@LegalFooter,'.css'))=%%
+	</style>
+</head>
+<body bgcolor="#f7f7f7" style="margin:0;padding:0;" yahoo="fix">
+<div style="letter-spacing: 550px; line-height: 0; mso-hide: all;" class="email-size">&nbsp;</div><!-- Yahoo App Min Block -->
+<div style="display:none; white-space:nowrap; font:15px courier; color:#ffffff; line-height:0; width:550px !important; min-width:550px !important; max-width:550px !important; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div><!-- Google App / Inbox Min Block -->
+	<!-- Wrapper -->
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#f7f7f7" >
+		<tr>
+			<td width="100%" valign="top">
+				<!-- start -->
+				%%=ContentAreaByName(Concat(@LegalIntro,'.html'))=%%
+				%%=ContentAreaByName(Concat(@StoryOne,'.html'))=%%
+				%%=ContentAreaByName(Concat(@StoryTwo,'.html'))=%%
+				<table width="550" height="5" border="0" cellpadding="0" cellspacing="0" class="mobile-content-size" style="width: 550px; height: 5px; min-width:550px" align="center">
+					<tr>
+						<td width="550" height="5" style="font-size:2px; line-height:2px;">&nbsp;</td>
+					</tr>                         
+				</table>
+				%%=ContentAreaByName(Concat(@StoryThree,'.html'))=%%
+				<table width="550" height="5" border="0" cellpadding="0" cellspacing="0" class="mobile-content-size" style="width: 550px; height: 5px; min-width:550px" align="center">
+					<tr>
+						<td width="550" height="5" style="font-size:2px; line-height:2px;">&nbsp;</td>
+					</tr>                         
+				</table>
+				%%=ContentAreaByName(Concat(@StoryFour,'.html'))=%%
+				%%=ContentAreaByName(Concat(@SocialNetworks,'.html'))=%%
+				%%=ContentAreaByName(Concat(@LegalFooter,'.html'))=%%
+				<!-- end -->
+			</td>
+		</tr>
+	</table>
+	<img src="http://lenovo.demdex.net/event?d_dpid=95079&d_dpuuid=%%=v(@EmailHash)=%%&e_type=email&e_jobid=%%jobid%%" width="2" height="2" alt="" />
+	<custom name="opencounter" type="tracking"> 
+	<img src="http://pixel.inbox.exacttarget.com/pixel.gif?r=6de0ae58748ebb08b2bc9ea6632a95d9ea85dd97" width="2" height="2" alt="" />
+</body>
+</html>

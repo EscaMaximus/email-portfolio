@@ -1,0 +1,159 @@
+<table width="600" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#FFFFFF" class="mobile-content-size" style="min-width:600px;" summary="Heart Activity">
+	<tr>
+		<td valign="top" style="padding:0">
+
+			<table width="600" border="0" cellpadding="0" cellspacing="0" class="mobile-content-size" style="min-width:600px">
+				<tr>
+					<td width="600" style="text-align: center; vertical-align: top;" class="break-column">
+
+						%%[ heart container ]%%
+						<table border="0" cellpadding="0" cellspacing="0" align="center" class="mobile-content-size">
+							<tr>
+								<td width="140" style="text-align: left; vertical-align: bottom;" class="break-stat">
+								
+									<table width="110" border="0" cellpadding="0" cellspacing="0" align="center" class="mobile-content-size" style="min-width:110px">
+										<tr>
+											<td style="text-align: left; vertical-align: bottom; padding:25px 0 20px 20px;" class="heart-activity-chart"><img src="%%=v(@HeartRateActivityRoundChart)=%%" alt="heart rate" width="90" height="90" /></td>
+										</tr>
+									</table>
+
+								</td>
+								<td width="460" style="text-align: left; vertical-align: middle;" class="break-stat">
+
+									%%[ start product info ]%%
+									<table border="0" cellpadding="0" cellspacing="0" align="left" class="mobile-content-size">
+										<tr>
+											<td style="text-align: left; vertical-align: middle; font-family: 'Open Sans', Arial, sans-serif; font-size:20px; line-height:33px; font-weight:normal; color:#FF3B3B; padding:20px 20px 0 0;" class="heart-activity-header-01">&#xC2EC;&#xC7A5; &#xD65C;&#xB3D9;</td>
+										</tr>
+										<tr>
+											<td style="text-align: center; vertical-align: top;" align="center">
+												
+												<table border="0" cellpadding="0" cellspacing="0" align="center" class="mobile-content-size">
+													<tr>
+														<td style="text-align: center; vertical-align: middle;" class="break-stat">
+															%%[ start total minutes ]%%
+															<table border="0" cellpadding="0" cellspacing="0" align="center">
+																<tr>
+																	<td style="font-family: 'Open Sans', Arial, sans-serif; font-size:24px; line-height:28px; font-weight:normal; color:#80888C; text-align:left;" class="center">%%=FormatNumber(@HeartRateTotalMin,"N0", @C_Sharp_Locale_Str)=%%</td>
+																</tr>
+																<tr>
+																	<td style="font-family: 'Open Sans', Arial, sans-serif; font-size:12px; line-height:18px; font-weight:normal; color:#80888C; text-align:left;" class="center">&#xCD1D; &#xBD84;<!--/*total minute%%[ IF @HeartRateTotalMin > '1' THEN ]%%s%%[ ENDIF ]%%*/--></td>
+																</tr>
+															</table>
+															%%[ end total minutes ]%%
+														</td>
+														<td width="51" align="center" class="middle-spacer">
+															%%[ start hor line ]%%
+															<table width="51" border="0" cellspacing="0" cellpadding="0" style="min-width:20px;">
+																<tr>
+																	<td width="25"></td>
+																	<td width="1" height="45" bgcolor="#dfe5e9" style="font-size:1px; line-height:1px;"></td>
+																	<td width="25"></td>
+																</tr>
+															</table>
+															%%[ end hor line ]%%
+														</td>
+														<td style="text-align: center; vertical-align: middle;" class="break-stat">
+															%%[ start total minutes ]%%
+															<table border="0" cellpadding="0" cellspacing="0" align="center">
+																<tr>
+																	<td style="font-family: 'Open Sans', Arial, sans-serif; font-size:24px; line-height:28px; font-weight:normal; color:#80888C; text-align:left" class="center">%%=FormatNumber(@HeartRateHealthyDays,"N0", @C_Sharp_Locale_Str)=%%</td>
+																</tr>
+																<tr>
+																	<td style="font-family: 'Open Sans', Arial, sans-serif; font-size:12px; line-height:18px; font-weight:normal; color:#80888C; text-align:left;" class="center">&#xC644;&#xB8CC;&#xD55C; &#xC77C; &#xC218;</td>
+																</tr>
+															</table>
+															%%[ end total minutes ]%%
+														</td>
+													%%[ IF @TemplateID == '2' AND @HeartRateActivityShowLastWeekPercentageActivity == 'yes' THEN ]%%
+														<td width="51" align="center" class="middle-spacer">
+															%%[ start hor line ]%%
+															<table width="51" border="0" cellspacing="0" cellpadding="0" style="min-width:20px;">
+																<tr>
+																	<td width="25"></td>
+																	<td width="1" height="45" bgcolor="#dfe5e9" style="font-size:1px; line-height:1px;"></td>
+																	<td width="25"></td>
+																</tr>
+															</table>
+															%%[ end hor line ]%%
+														</td>
+														<td width="160" style="text-align: center; vertical-align: middle;" class="break-stat">
+															%%[ start total minutes ]%%
+															<table width="160" border="0" cellpadding="0" cellspacing="0" align="center" style="min-width:160px">
+																<tr>
+																	<td style="font-family: 'Open Sans', Arial, sans-serif; font-size:24px; line-height:28px; font-weight:normal; color:#80888C; text-align:left; vertical-align:bottom;" class="center"><img src="%%=v(@HeartRateActivityPercentageIcon)=%%" alt="" width="18" height="18" style="display:inline-block;" />%%=Replace(FormatNumber(@HeartRateActivityPercentageValue,"N0", @C_Sharp_Locale_Str), "-", "")=%%%</td>
+																</tr>
+																<tr>
+																	<td style="font-family: 'Open Sans', Arial, sans-serif; font-size:12px; line-height:18px; font-weight:normal; color:#80888C; text-align:left;" class="center">&#xC9C0;&#xB09C; &#xC8FC;&#xBD80;&#xD130;</td>
+																</tr>
+															</table>
+															%%[ end total minutes ]%%
+														</td>
+													%%[ ENDIF ]%%
+													</tr>
+												</table>
+											</td>
+										</tr>
+										<tr>
+											<td height="20"></td>
+										</tr>
+									</table>
+
+								%%[ close heart container ]%%
+								</td>
+							</tr>
+						</table>
+
+						<table width="600" border="0" cellpadding="0" cellspacing="0" align="center" class="mobile-content-size" style="min-width:600px">
+							<tr>
+								<td style="text-align: left; vertical-align: top;">
+								
+									<table width="600" border="0" cellpadding="0" cellspacing="0" class="heart-graph-table" align="center" style="min-width:600px">
+										<tr>
+											<td width="600" style="text-align: center; vertical-align: top; padding:0 10px 0 40px;" class="heart-graph">
+												%%[ start heart graph  ]%%
+												<img src="%%=v(@HeartRateChart)=%%" width="550" alt="Heart Graph" />
+												%%[ end heart graph ]%%
+											</td>
+										</tr>  
+									</table>
+									<table width="600" border="0" cellpadding="0" cellspacing="0" class="mobile-content-size" style="min-width:600px">
+										<tr>
+											<td width="600" style="text-align: left; vertical-align: top;">
+												%%[ start heart info ]%%
+												<table width="600" border="0" cellpadding="0" cellspacing="0" class="mobile-content-size" style="min-width:600px">
+													<tr>
+														<td style="font-family: 'Open Sans', Arial, sans-serif; font-size:16px; line-height:21px; font-weight:normal; color:#606668; padding:15px 25px 0 50px;" class="heart-weekly-goal-hd">&#xC8FC;&#xAC04; &#xBAA9;&#xD45C;:  %%=FormatNumber(@HeartRateWeeklyGoalDays,"N0", @C_Sharp_Locale_Str)=%% &#xC77C;</td>
+													</tr>
+													<tr>
+														<td style="font-family: 'Open Sans', Arial, sans-serif; font-size:14px; line-height:19px; font-weight:normal; color:#80888C; padding:5px 50px 0 50px;" class="heart-weekly-goal-body">5&#xC77C; &#xB3D9;&#xC548; &#xCD5C;&#xC18C; 30&#xBD84;&#xC529; &#xC5F4;&#xC2EC;&#xD788; &#xD65C;&#xB3D9;&#xD558;&#xB294; &#xAC83;&#xC740; &#xC804;&#xBC18;&#xC801;&#xC778; &#xC2EC;&#xD608;&#xAD00; &#xAC74;&#xAC15;&#xC744; &#xC9C0;&#xD0A4;&#xB294; &#xB370; &#xB3C4;&#xC6C0;&#xC774; &#xB429;&#xB2C8;&#xB2E4;.</td>
+													</tr>
+													<tr>
+														<td style="font-family: 'Open Sans', Arial, sans-serif; font-size:14px; line-height:19px; font-weight:normal; color:#80888C; padding:5px 50px 0 50px;" class="heart-weekly-goal-body">&#xCC38;&#xACE0;: &#xC77C;&#xC77C; &#xBAA9;&#xD45C;&#xB294; &#xC8FC;&#xAC04; &#xBAA9;&#xD45C;&#xB97C; &#xB2EC;&#xC131;&#xD560; &#xC218; &#xC788;&#xB3C4;&#xB85D; &#xC218;&#xCE58;&#xB97C; &#xC815;&#xD574;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;.</td>
+													</tr>
+												</table>
+												%%[ end heart info ]%%
+											</td>
+										</tr>
+									</table>
+
+								</td>
+							</tr>
+							<tr>
+								<td height="30"></td>
+							</tr>
+						</table>
+
+						%%[ end product info ]%%
+					</td>
+				</tr>
+			</table>
+
+		</td>
+	</tr>
+</table>
+<table width="600" height="1" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#AFB6BA" class="mobile-content-size" style="min-width:600px;">
+	<tr>
+		<td class="hor-line" height="1" style="font-size:1px; line-height:1px;"> </td>
+	</tr>
+</table>	

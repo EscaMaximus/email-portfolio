@@ -1,0 +1,54 @@
+							<table class="col240" align="left" border="0" cellpadding="0" cellspacing="0" style="width: 100%; max-width: 240px;">
+								<tr>
+									<td style="vertical-align:top;">
+										<table width="100%" border="0" cellpadding="0" cellspacing="0">
+											<tr>
+												<td class="h4" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 20px; line-height: 26px; font-weight:normal; color: #80888c; padding:0 0 10px 0;">Shipping to</td>
+											</tr>
+											<tr>
+												<td class="p-address" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 15px; line-height: 21px; font-weight:normal; color: #222c30; padding: 0 0 3px 0;">
+													%%[IF NOT EMPTY(@ShipToFullName) THEN]%%
+														%%=v(@ShipToFullName)=%%
+													%%[ELSE]%%
+														%%=v(@ShipToFirstName)=%%
+													%%[ENDIF]%%
+												</td>
+											</tr>
+											%%[IF NOT EMPTY(@ShipToCompanyName) THEN]%%
+											<tr>
+												<td class="p-address" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 15px; line-height: 21px; font-weight:normal; color: #222c30; padding: 0 0 3px 0;"><a style="color: #222c30; text-decoration:none;" class="body-copy-222c30">%%=v(@ShipToCompanyName)=%%</a></td>
+											</tr>
+											%%[ENDIF]%%
+											%%[IF NOT EMPTY(@ShipToAddress01) THEN]%%
+											<tr>
+												<td class="p-address" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 15px; line-height: 21px; font-weight:normal; color: #222c30; padding: 0 0 3px 0;"><a style="color: #222c30; text-decoration:none;" class="body-copy-222c30">%%=v(@ShipToAddress01)=%%</a></td>
+											</tr>
+											%%[ENDIF]%%
+											%%[IF NOT EMPTY(@ShipToAddress02) THEN]%%
+											<tr>
+												<td class="p-address" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 15px; line-height: 21px; font-weight:normal; color: #222c30; padding: 0 0 3px 0;"><a style="color: #222c30; text-decoration:none;" class="body-copy-222c30">%%=v(@ShipToAddress02)=%%</a></td>
+											</tr>
+											%%[ENDIF]%%
+											%%[IF NOT EMPTY(@ShipToAddress03) THEN]%%
+											<tr>
+												<td class="p-address" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 15px; line-height: 21px; font-weight:normal; color: #222c30; padding: 0 0 3px 0;"><a style="color: #222c30; text-decoration:none;" class="body-copy-222c30">%%=v(@ShipToAddress03)=%%</a></td>
+											</tr>
+											%%[ENDIF]%%
+											%%[IF NOT EMPTY(@ShipToCity) OR NOT EMPTY(@ShipToState) OR NOT EMPTY(@ShipToZip) THEN]%%
+											<tr>
+												<td class="p-address" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 15px; line-height: 21px; font-weight:normal; color: #222c30; padding: 0 0 3px 0;"><a style="color: #222c30; text-decoration:none;" class="body-copy-222c30">%%[IF NOT EMPTY(@ShipToCity) THEN]%%%%=v(@ShipToCity)=%%%%[ENDIF]%%&nbsp;%%[IF NOT EMPTY(@ShipToState) THEN]%%%%=v(@ShipToState)=%%,&nbsp;%%[ENDIF]%%%%[IF NOT EMPTY(@ShipToZip) THEN]%%%%=v(@ShipToZip)=%%%%[ENDIF]%%</a></td>
+											</tr>
+											%%[ENDIF]%%
+											<tr>
+												<td class="p-address" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 15px; line-height: 21px; font-weight:normal; color: #222c30; padding: 0 0 3px 0;"><a style="color: #222c30; text-decoration:none;" class="body-copy-222c30">United States</a></td>
+											</tr>
+											%%[IF NOT EMPTY(@ShipToPhoneNumber) THEN]%%
+											<tr>
+												<td class="p-address" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 15px; line-height: 21px; font-weight:normal; color: #222c30; padding: 0 0 25px 0;"><a style="color: #222c30; text-decoration:none;" class="body-copy-222c30">%%=v(@ShipToPhoneNumber)=%%</a></td>
+											</tr>
+											%%[ENDIF]%%
+										</table>                                        
+									</td>
+								</tr>
+							</table>
+							<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->

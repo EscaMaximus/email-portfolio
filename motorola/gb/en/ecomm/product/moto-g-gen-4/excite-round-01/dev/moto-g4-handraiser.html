@@ -1,0 +1,169 @@
+%%[
+	/*
+		GB-EN MOTO G4 EXCITE HAND RAISER
+		Segment: GB Hand Raiser G4
+		Tag: ECOMM_EMARA_GB_EN_PRODUCT_MOTOG4FAMILY_G4EXCITEHANDRAISER
+		Campaign Definition: 38
+		Author: Motorola ExactTarget Team
+		Revision Date: 5/24/2016
+	*/
+
+	VAR @EmailDataDefinitionID, @SubjectLine, @PreTextHeader, @LegalIntro, @StoryOne, @StoryOneLegal, @StoryTwo, @StoryTwoLegal, @StoryThree, @StoryThreeLegal, @StoryFour, @StoryFourLegal, @StoryFive, @StoryFiveLegal, @StorySix, @StorySixLegal, @StorySeven, @StorySevenLegal, @StoryEight, @StoryEightLegal, @StoryNine, @StoryNineLegal, @StoryTen, @StoryTenLegal, @SocialNetworks, @LegalFooter, @UtmSource, @UtmMedium, @UtmCampaign, @UtmContent
+	
+	/* Email data definition which defines content */
+	SET @EmailDataDefinitionID = 38
+	
+	/* Lookup data definition */
+	SET @ReturnDataSet = LookupOrderedRows("EMAIL_DEFINITIONS",1,"ID","ID",@EmailDataDefinitionID)
+	SET @row = Row(@ReturnDataSet,1)
+
+	SET @SubjectLine = Field(@row,"SUBJECT_LINE")
+	SET @PreTextHeader = Field(@row,"PRE_TEXT_HEADER")
+	SET @LegalIntro = Field(@row,"LEGAL_INTRO")
+	SET @StoryOne = Field(@row,"STORY_ONE")
+	SET @StoryOneLegal = Field(@row,"STORY_ONE_LEGAL")
+	SET @StoryTwo = Field(@row,"STORY_TWO")
+	SET @StoryTwoLegal = Field(@row,"STORY_TWO_LEGAL")
+	SET @StoryThree = Field(@row,"STORY_THREE")
+	SET @StoryThreeLegal = Field(@row,"STORY_THREE_LEGAL")
+	SET @StoryFour = Field(@row,"STORY_FOUR")
+	SET @StoryFourLegal = Field(@row,"STORY_FOUR_LEGAL")
+	SET @StoryFive = Field(@row,"STORY_FIVE")
+	SET @StoryFiveLegal = Field(@row,"STORY_FIVE_LEGAL")
+	SET @StorySix = Field(@row,"STORY_SIX")
+	SET @StorySixLegal = Field(@row,"STORY_SIX_LEGAL")
+	SET @StorySeven = Field(@row,"STORY_SEVEN")
+	SET @StorySevenLegal = Field(@row,"STORY_SEVEN_LEGAL")
+	SET @StoryEight = Field(@row,"STORY_EIGHT")
+	SET @StoryEightLegal = Field(@row,"STORY_EIGHT_LEGAL")
+	SET @StoryNine = Field(@row,"STORY_NINE")
+	SET @StoryNineLegal = Field(@row,"STORY_NINE_LEGAL")
+	SET @StoryTen = Field(@row,"STORY_TEN")
+	SET @StoryTenLegal = Field(@row,"STORY_TEN_LEGAL")
+	SET @SocialNetworks = Field(@row,"SOCIAL_NETWORKS")
+	SET @LegalFooter = Field(@row,"LEGAL_FOOTER")
+	SET @UtmSource = Field(@row,"UTM_SOURCE")
+	SET @UtmMedium = Field(@row,"UTM_MEDIUM")
+	SET @UtmCampaign = Field(@row,"UTM_CAMPAIGN")
+	SET @UtmContent = Field(@row,"UTM_CONTENT")
+
+]%%
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="HandheldFriendly" content="True" />
+	<title>%%=v(@SubjectLine)=%%</title>
+	<style type="text/css">
+		.x-bkg-swap-color:hover a, * [lang~="x-bkg-swap-color"]:hover a { background-color:#33a1ff!important; } 
+	</style>
+	<style type="text/css">
+			a[x-apple-data-detectors] {	color: inherit !important; text-decoration: none !important; }
+	</style>
+	<style type="text/css">
+		body	 { width: 100%; background-color: #f7f7f7; margin:0!important; padding:0; -webkit-text-size-adjust: 100%;-ms-text-size-adjust:100%; }
+		html { width: 100%; }
+		table, td { border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; }
+		img{ border:0 none; height:auto;line-height:100%;outline:none;text-decoration:none; }
+		a img{ border:0 none;}
+		.imageFix{ display:block;}
+		#outlook a{ padding:0; }
+		.ExternalClass{ width:100%; }
+		.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div{ line-height: 100%; }
+		div[style*="margin: 16px 0"] { margin:0 !important; }
+		.default-link a { text-decoration:none; color:#8d8f95; }
+		.body-copy a { text-decoration:none; color:#5b5858; }
+		.body-copy-FFFFFF a { text-decoration:none; color:#FFFFFF; }
+		.body-copy-383838 a { text-decoration:none; color:#383838; }
+		.body-copy-464646 a { text-decoration:none; color:#464646; }
+
+		@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+		.cta-show-them-table:hover { border-radius:1px; background-color:#33a1ff!important; color:#FFFFFF!important; -webkit-transition: all .17s !important; transition: all .17s !important; }
+		a.cta-show-them:hover { border-radius:1px; background-color:#33a1ff!important; color:#FFFFFF!important; -webkit-transition: all .17s !important; transition: all .17s !important; }
+
+		/* Outlook 07/10/13 fix */
+		.pre-text-header  { font-family: Arial, Verdana, sans-serif; color:#383838; font-size:13px; line-height:16px; }
+		.intro-copy-cell, .legal-copy { font-family: Arial, Verdana, sans-serif; font-size:11px; line-height:14px; font-weight:normal; }
+		.promotion-features { font-family: Verdana, Arial, sans-serif; font-size: 11px; line-height: 14px; }
+
+		@media screen and (max-width: 480px), screen and (max-device-width: 480px) {
+			
+			/* mobile resize */
+			body[yahoo] .mobile-content-size { width:320px!important; min-width:320px!important; }
+			body[yahoo] .mobile-content-inner-size { width:320px!important; min-width:320px!important; }
+			body[yahoo] .story-wrapper { width:320px!important; min-width:320px!important; padding:0 0 0 0!important; }
+			body[yahoo] table[class="social-networks"] { width:320px!important; min-width:320px!important; }
+			*[class*="mobile-only"] { display: block !important; max-height: none !important; }
+			body[yahoo] .hide { display:none!important; }
+			body[yahoo] div[class="email-size"] { letter-spacing: 0!important; }
+			a[x-apple-data-detectors] {	color: inherit !important; text-decoration: none !important; font-size: inherit !important; font-family: inherit !important; font-weight: inherit !important; line-height: inherit !important; }
+
+			/* cta */
+			body[yahoo] td[class="cta-one-row"] { width:320px!important; padding:0 0 0 60px!important; } 
+			body[yahoo] td[class="cta-one-row-left"] { width:320px!important; padding:0 0 0 20px!important; } 
+			body[yahoo] td[class="left-col-button"] { display: none!important; }
+			body[yahoo] table[class="cta-show-them-table"] { width:200px!important; }
+			body[yahoo] table[class="btn-design-yours-table"] { width: 280px !important; min-width: 280px !important; }
+			body[yahoo] td[class="btn-design-yours"] { text-align:center!important;  }
+			body[yahoo] a[class="design-btn"] { width: 280px !important; min-width: 280px !important; }
+			body[yahoo] td[class="btn-spacer"] { height:20px!important;  }
+		}
+		
+		%%=ContentAreaByName(Concat(@LegalIntro,'.css'))=%%
+		%%=ContentAreaByName(Concat(@StoryOne,'.css'))=%%
+		%%=ContentAreaByName(Concat(@StoryTwo,'.css'))=%%
+		%%=ContentAreaByName(Concat(@StoryThree,'.css'))=%%
+		%%=ContentAreaByName(Concat(@StoryFour,'.css'))=%%
+		%%=ContentAreaByName(Concat(@StoryFive,'.css'))=%%
+		%%=ContentAreaByName(Concat(@StorySix,'.css'))=%%
+		%%=ContentAreaByName(Concat(@SocialNetworks,'.css'))=%%
+		%%=ContentAreaByName(Concat(@LegalFooter,'.css'))=%%
+	</style>
+</head>
+<body bgcolor="#f7f7f7" style="margin:0;padding:0;" yahoo="fix">
+<div style="letter-spacing: 550px; line-height: 0; mso-hide: all;" class="email-size">&nbsp;</div><!-- Yahoo App Min Block -->
+<div style="display:none; white-space:nowrap; font:15px courier; color:#ffffff; line-height:0; width:550px !important; min-width:550px !important; max-width:550px !important; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div><!-- Google App / Inbox Min Block -->
+	<!-- Wrapper -->
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#f7f7f7" >
+		<tr>
+			<td width="100%" valign="top">
+				<!-- start -->
+				%%=ContentAreaByName(Concat(@LegalIntro,'.html'))=%%
+				%%=ContentAreaByName(Concat(@StoryOne,'.html'))=%%
+				%%=ContentAreaByName(Concat(@StoryTwo,'.html'))=%%
+				<table width="550" height="5" border="0" cellpadding="0" cellspacing="0" class="mobile-content-size" style="min-width:550px" align="center">
+					<tr>
+						<td width="550" height="5" style="font-size:2px; line-height:2px;">&nbsp;</td>
+					</tr>                         
+				</table>
+				%%=ContentAreaByName(Concat(@StoryThree,'.html'))=%%
+				<table width="550" height="5" border="0" cellpadding="0" cellspacing="0" class="mobile-content-size" style="min-width:550px" align="center">
+					<tr>
+						<td width="550" height="5" style="font-size:2px; line-height:2px;">&nbsp;</td>
+					</tr>                         
+				</table>
+				%%=ContentAreaByName(Concat(@StoryFour,'.html'))=%%
+				<table width="550" height="5" border="0" cellpadding="0" cellspacing="0" class="mobile-content-size" style="min-width:550px" align="center">
+					<tr>
+						<td width="550" height="5" style="font-size:2px; line-height:2px;">&nbsp;</td>
+					</tr>                         
+				</table>
+				%%=ContentAreaByName(Concat(@StoryFive,'.html'))=%%
+				<table width="550" height="5" border="0" cellpadding="0" cellspacing="0" class="mobile-content-size" style="min-width:550px" align="center">
+					<tr>
+						<td width="550" height="5" style="font-size:2px; line-height:2px;">&nbsp;</td>
+					</tr>                         
+				</table>
+				%%=ContentAreaByName(Concat(@StorySix,'.html'))=%%
+				%%=ContentAreaByName(Concat(@SocialNetworks,'.html'))=%%
+				%%=ContentAreaByName(Concat(@LegalFooter,'.html'))=%%
+				<!-- end -->
+			</td>
+		</tr>
+	</table>
+	<custom name="opencounter" type="tracking"> 
+	<img src="http://pixel.inbox.exacttarget.com/pixel.gif?r=6de0ae58748ebb08b2bc9ea6632a95d9ea85dd97" width="2" height="2" />
+</body>
+</html>

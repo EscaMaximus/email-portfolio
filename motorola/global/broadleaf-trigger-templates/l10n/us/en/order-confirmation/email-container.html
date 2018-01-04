@@ -1,0 +1,35 @@
+%%[
+	/*
+		GLOBAL ORDER CONFIRMATION EMAIL WRAPPER
+		Author: Motorola ExactTarget Team
+		Revision Date: 3/4/2016
+	*/
+
+	/* Define Project Folder */
+	SET @ProjectFolder = 'ORDER_CONFIRMATION'
+
+	/* Call locale router so content is determined by data */
+	VAR @LocaleRouter
+	SET @LocaleRouter = 'My Contents\TRIGGERED_EMAILS\ECOMM\GLO\L10n\LOCALE_ROUTER.html'
+	
+	%%=ContentAreaByName(@LocaleRouter)=%%
+	
+]%%
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="HandheldFriendly" content="True" />
+	<title>%%=v(@SubjectLine)=%%</title>
+
+	%%=ContentAreaByName(@CssHead)=%%
+
+</head>
+<body yahoo="fix" bgcolor="#FAFAFA">
+	<div style="letter-spacing: 550px; line-height: 0; mso-hide: all;" class="email-size">&nbsp;</div><!-- Yahoo App Fix -->
+	<div style="display:none; white-space:nowrap; font:15px courier; color:#ffffff; line-height:0; width:550px !important; min-width:550px !important; max-width:550px !important; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div><!-- Gmail/Inbox App Fix -->
+	%%=ContentAreaByName(@Index)=%%
+	<custom name="opencounter" type="tracking"> 
+</body>
+</html>

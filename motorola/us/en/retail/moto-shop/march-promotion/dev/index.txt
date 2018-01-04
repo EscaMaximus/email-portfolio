@@ -1,0 +1,154 @@
+﻿%%[/*
+
+		US-EN Retail Mot Shop Promo March 2016
+		Author: Motorola ExactTarget Team
+		Revision Date: 3/12/2016
+
+		/* GA Tagging Definitions */
+		
+		SET @UtmSource = 'motoemail'
+		SET @UtmMedium = 'email'
+		SET @UtmCampaign = 'RETAIL_NA_US_EN_MOTOSHOP_MOTOSHOPCHICAGO'
+		SET @UtmContent = 'MARCH2016PROMO'
+
+*/]%%
+
+
+Meet Teuvo Teravainen at the Moto Shop. Get up to $100 off Moto X Pure Edition or $75 off Moto X Pure Edition by Jonathan Adler.
+
+
+****
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola.
+
+Browser View>
+%%view_email_url%%
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+****
+
+
+Free shipping on orders over $75>
+http://www.motorola.com/us/consumers/about-motorola-us/About_Motorola-Legal-Terms_of_Sale/About_Motorola-Legal-Terms_of_Sale.html?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=free_shipping
+
+
+Apply for Moto Credit>
+http://www.motorola.com/us/motorola-finance-pdp.html?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=credit
+
+
+Specials>
+http://www.motorola.com/us/motorola-shop-all-sale.html?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=specials
+
+
+
+****
+
+
+
+
+Meet Blackhawk 
+TEUVO TERAVAINEN
+at the Moto Shop
+
+Skate down to the Moto Shop for an in-store appearance by Teuvo Teravainen of the Blackhawks. 
+
+Tuesday, March 15
+6:00 p.m. to 7:30 p.m. CT
+108 N. State Street
+
+Moto Shop info>
+https://www.motorola.com/us/Moto-Shop/moto-shop.html?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_shop_info
+
+
+
+***
+
+
+Moto X
+PURE EDITION
+
+Up to $100 off*
+
+For a limited time, the customizable phone with a top camera and quick­-charging is $399.99 $299.99 for 16 GB and $449.99 $399.99 for 32 GB.* Plus, it's unlocked so you can change among major carriers and keep your phone. and it doesn't have unnecessary preloaded apps or software.
+
+Hurry, get this deal at the Moto Shop now. This is a limited time offer.
+
+Or buy now>
+http://www.motorola.com/us/products/moto-x-pure-edition?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_x_pe
+
+
+
+***
+
+
+
+
+Moto X
+PURE EDITION
+designed by Jonathan Adler
+
+$75 off**
+
+Get Moto X Pure Edition, featuring styles by iconic American designer Jonathan Adler, for only $399.99.** Drop by the Moto Shop in downtown Chicago and take a look.
+
+Or buy now>
+http://www.motorola.com/us/products/moto-x-pure-edition-adler?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=buy_now_xpe_adler
+
+
+
+****
+
+Motorola-
+http://www.motorola.com/us/home?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_bug_top
+
+Twitter-
+https://twitter.com/Moto_USA
+
+Facebook- 
+https://www.facebook.com/MotoUSA/
+
+Google+
+https://plus.google.com/+Motorola/posts
+
+Instagram-
+http://instagram.com/motorola
+
+YouTube-
+https://www.youtube.com/user/motorola
+
+
+****
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola.If this email has been forwarded to you, you can opt-in for future communications from Motorola.
+
+opt-in for future communications>
+https://pages.motorola-mail.com/registration-us-en/?c=ECOMM_NA_US_EN_REGISTRATION_FORWARDEDOPTIN&utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=forwarded_optin
+
+All screen images simulated.
+
+* Offer valid for 16 GB and 32 GB Moto X Pure Edition only at Motorola.com through 10:59 a.m. CT on 3/17/16, or at the Moto Shop through 8:00 p.m. CT on 3/19/16. On Motorola.com, discounted prices appear in Moto Maker. Leather, wood and storage upgrades are available at an extra cost as stated in Moto Maker.
+
+** Offer valid for Moto X Pure Edition designed by Jonathan Adler only (reg. $474.99) through 10:59 a.m. CT on 3/31/16 or while supplies last. Discount applied at checkout.
+
+If you no longer wish to receive promotional emails from Motorola Mobility LLC, please unsubscribe.
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+Please direct any questions concerning Motorola's privacy practices to privacy@motorola.com.
+
+Inquiries or requests to unsubscribe from ("opt-out" of) communications from Motorola may also be mailed to: Motorola Mobility LLC Attn: Privacy Compliance Program 222 W. Merchandise Mart Plaza, Suite 1800, Mailstop 16-O19.02, Chicago, IL 60654.
+
+Motorola values your privacy. For more information on our Privacy Practices, please visit www.motorola.com/privacy
+
+Privacy>
+http://www.motorola.com/us/consumers/about-motorola-us/About_Motorola-Legal-Legal_and_Privacy_Policy/About_Motorola-Legal-Legal_and_Privacy_Policy.html
+
+Please visit www.motorola.com/legal to see Motorola's website terms of use.
+
+Legal>
+http://www.motorola.com/us/consumers/about-motorola-us/About_Motorola-Legal-Terms_of_Use/About_Motorola-Legal-Terms_of_Use.html
+
+MOTOROLA and the Stylized M Logo are trademarks of Motorola Trademark Holdings, LLC. Android, Google and other marks are trademarks of Google Inc. All other trademarks are the property of their respective owners. (c)%%=Format(Now(), "yyyy")=%% Motorola Mobility LLC. All rights reserved.

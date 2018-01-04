@@ -1,0 +1,121 @@
+%%[
+	/*
+		US-EN MOTO Z FORCE FOLLOW UP 2 MONTHLY PRICE
+		Author: Motorola ExactTarget Team
+		Revision Date: 9/20/2016
+	*/	
+	/* GA Tagging Definitions */
+	VAR @UtmSource, @UtmMedium, @UtmCampaign, @UtmContent, @EmailHash
+	SET @UtmSource = 'motoemail'
+	SET @UtmMedium = 'email'
+	SET @UtmCampaign = 'ECOMM_NA_US_EN_PRODUCT_MOTOZFAMILYMOTOMODS'
+	SET @UtmContent = 'ZFORCEFOLLOWUP2MONTHLYPRICE'
+	SET @EmailHash = SHA256(lowercase(trim(emailaddr)))
+
+]%%
+
+
+With Moto ShatterShield™, the display that's guaranteed not to crack.
+
+
+*****
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola.
+
+Browser View>
+%%view_email_url%%
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+*****
+
+
+Free shipping on orders over $75>
+http://www.motorola.com/us/legal/terms-of-sale?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=free_shipping
+
+
+Apply for Moto Credit>
+http://www.motorola.com/us/motorola-financing?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=credit
+
+
+Specials>
+http://www.motorola.com/us/specials?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=specials
+
+
+*****
+
+There is no flagship phone on the planet that can touch it
+---BGR
+
+Moto Z Force Droid
+
+Guaranteed shatterproof display*, the world's fastest charging**, and the practically endless possibilities of Moto Mods(tm). The new Moto Z Force Droid. Imagine that.
+
+$30 /mo
+
+$0 DOWN (FOR QUALIFIED CUSTOMERS) $30.00/MO FOR 24 MONTHS; 0% APR RETAIL PRICE: $720.00
+
+Learn more>
+https://www.verizonwireless.com/smartphones/moto-z-force-droid/
+
+*****
+
+Motorola-
+http://www.motorola.com/us/home?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_bug_top
+
+Twitter-
+https://twitter.com/Moto_USA
+
+Facebook- 
+https://www.facebook.com/MotoUSA/
+
+Google+
+https://plus.google.com/+Moto
+
+Instagram-
+http://instagram.com/moto_usa/
+
+YouTube-
+https://www.youtube.com/user/motorola
+
+
+*****
+
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola. If this email has been forwarded to you, you can opt-in for future communications from Motorola.
+
+opt-in for future communications>
+https://pages.motorola-mail.com/registration-us-en/?c=ECOMM_NA_US_EN_REGISTRATION_FORWARDEDOPTIN&utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=forwarded_optin
+
+All screen images simulated.
+
+Read the full product review from BGR.
+
+read now>
+http://bgr.com/2016/07/14/moto-z-hands-on-moto-z-force-droid/
+
+
+* The display and embedded lens are warranted against shattering and cracking for four (4) years from the original date of purchase; scratches or other damage to the protective lens is not covered by this warranty, but should always be in place to prevent scratches and other damage to the underlying components. This phone is not shockproof or designed to withstand all damage from dropping. All other warranty exclusions, including scratches and other cosmetic damage, intentional damage or abuse, normal wear and tear and other limitations apply; Visit www.motorola.com/shattershield for additional details.
+
+** Battery must be substantially depleted; charging rate slows as charging progresses. Charger sold separately in some markets.
+
+
+If you no longer wish to receive promotional emails from Motorola Mobility LLC, please unsubscribe.
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+Please direct any questions concerning Motorola's privacy practices to privacy@motorola.com.
+
+Inquiries or requests to unsubscribe from ("opt-out" of) communications from Motorola may also be mailed to: Motorola Mobility LLC Attn: Privacy Compliance Program 222 W. Merchandise Mart Plaza, Suite 1800, Mailstop 16-O19.02, Chicago, IL 60654.
+
+Motorola values your privacy. For more information on our Privacy Practices, please visit Motorola Privacy Policy. Please visit Motorola Website Terms of Use to see Motorola's website terms of use.
+
+Privacy>
+http://www.motorola.com/us/legal/privacy-policy
+
+Legal>
+http://www.motorola.com/us/legal/terms-of-use
+
+MOTOROLA and the Stylized M Logo are trademarks of Motorola Trademark Holdings, LLC. DROID is a trademark of Lucasfilm Ltd. and its related companies. Used under license. Android, Google and other marks are trademarks of Google Inc. All other trademarks are the property of their respective owners. (c)%%=Format(Now(), "yyyy")=%% Motorola Mobility LLC. All rights reserved.

@@ -1,0 +1,113 @@
+﻿%%[
+	/*
+		US-EN Referral Marketing - Brand Advocate Invite Email
+		Author: Motorola ExactTarget Team
+		Revision Date: 1/11/2017
+	*/
+
+	/* GA Tagging Definitions */
+	VAR @UtmSource, @UtmMedium, @UtmCampaign, @UtmContent, @Email, @EmailHash
+	SET @UtmSource = 'motoemail'
+	SET @UtmMedium = 'email'
+	SET @UtmCampaign = 'CONSUMER_NA_US_EN_PROMOTION_REFERRALMARKETING'
+	SET @UtmContent = 'ADVOCATEINVITE'
+	SET @Email = lowercase(trim(emailaddr))
+	SET @EmailHash = SHA256(@Email)
+
+]%%
+
+
+Give your friends and family a great Moto deal, while earning rewards for yourself.
+
+
+****
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola.
+
+Browser View>
+%%view_email_url%%
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+****
+
+
+Free shipping on orders over $75>
+http://www.motorola.com/us/consumers/about-motorola-us/About_Motorola-Legal-Terms_of_Sale/About_Motorola-Legal-Terms_of_Sale.html?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=free_shipping
+
+
+Specials>
+http://www.motorola.com/us/motorola-shop-all-sale.html?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=specials
+
+
+
+****
+
+
+Fans of Moto
+refer friends & earn rewards
+
+As one of our best customers, you can earn rewards for sharing amazing discounts on Moto devices with people you know.* Your friends and family can save up to 10% on smartphones and accessories at Motorola.com.**
+
+Just tell us who to send these great offers to and we'll take care of the rest. Each time you refer four of your friends or family, we'll send you a promo code for $25 off any purchase at Motorola.com as our thanks for being a Fan of Moto.*
+
+Share the offers>
+%%=RedirectTo(MicrositeURL(69252, 'eid', @Email))=%%
+
+
+
+****
+
+
+Motorola-
+http://www.motorola.com/us/home?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_bug_top&ceid=%%=v(@EmailHash)=%%
+
+Twitter-
+https://twitter.com/Moto_USA
+
+Facebook- 
+https://www.facebook.com/MotoUSA/
+
+Google+
+https://plus.google.com/+Motorola/posts
+
+Instagram-
+http://instagram.com/motorola
+
+YouTube-
+https://www.youtube.com/user/motorola
+
+
+****
+
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola. If this email has been forwarded to you, you can opt-in for future communications from Motorola.
+
+opt-in for future communications>
+https://pages.motorola-mail.com/registration-us-en/?c=ECOMM_NA_US_EN_REGISTRATION_FORWARDEDOPTIN&utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=forwarded_optin
+
+All screen images simulated.
+
+* Must provide four valid emails to receive promo code. One submission per 24-hour period allowed. If your friend or family has previously opted out of Motorola email communications they will not receive a promo code. Promo code valid only at Motorola.com through 11:59 p.m. CT on 12/31/17. Shopping cart must contain at least $200 in purchases for discount to apply. Promo code must be entered at checkout for discount to apply. One time use only. Cannot be combined with any other promotions or offers. 
+
+** Pricing may change without notice. We do not authorize reselling of devices purchased on this site for commercial purposes. Warranty, support, and any other services provided are not transferable if you resell devices purchased from this site.
+
+If you no longer wish to receive promotional emails from Motorola Mobility LLC, please unsubscribe.
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+Please direct any questions concerning Motorola's privacy practices to privacy@motorola.com.
+
+Inquiries or requests to unsubscribe from ("opt-out" of) communications from Motorola may also be mailed to: Motorola Mobility LLC Attn: Privacy Compliance Program 222 W. Merchandise Mart Plaza, Suite 1800, Mailstop 16-O19.02, Chicago, IL 60654.
+
+Motorola values your privacy. For more information on our Privacy Practices, please visit Motorola Privacy Policy. Please visit Motorola Website Terms of Use to see Motorola's website terms of use.
+
+Privacy>
+http://www.motorola.com/us/legal/privacy-policy
+
+Legal>
+http://www.motorola.com/us/legal/terms-of-use
+
+Moto branded products are designed and manufactured by or for Motorola Mobility LLC, a wholly owned subsidiary of Lenovo. MOTOROLA and the Stylized M Logo are trademarks of Motorola Trademark Holdings, LLC. Android, Google and other marks are trademarks of Google Inc. All other trademarks are the property of their respective owners. (c)%%=Format(Now(), "yyyy")=%% Motorola Mobility LLC. All rights reserved.

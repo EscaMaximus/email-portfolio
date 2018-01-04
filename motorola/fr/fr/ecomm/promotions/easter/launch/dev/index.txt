@@ -1,0 +1,169 @@
+﻿%%[
+	/*
+		FR-FR Easter Sale
+		Author: Motorola ExactTarget Team
+		Revision Date: 3/18/2016
+
+		/* GA Tagging Definitions */	
+		VAR @UtmSource, @UtmMedium, @UtmCampaign, @UtmContent
+
+		SET @UtmSource = 'motoemail'
+		SET @UtmMedium = 'email'
+		SET @UtmCampaign = 'ECOMM_EMARA_FR_FR_PROMOTION_2016EASTERSALE'
+		SET @UtmContent = 'LAUNCH'
+	*/
+]%%
+
+Faites des économies sur les smartphones Motorola et bénéficiez dès maintenant des réductions de Pâques!
+
+
+****
+
+
+Vous [%%emailaddr%%] avez reçu cet email car vous avez été en contact avec Motorola.
+
+Voir ce message dans une nouvelle fenêtre>
+%%view_email_url%%
+
+Désinscrivez-vous>
+https://pages.motorola-mail.com/unsubscribe_t/?lang=fr
+
+
+****
+
+
+
+Expédition gratuite pour toutes commandes supérieures à 95€>
+http://www.motorola.fr/cgv/cgv.html?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=shipping&#shipping
+
+Offres spéciales>
+http://www.motorola.fr/specials-fr.html?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=specials
+
+
+
+****
+
+
+
+Les réductions de Pâques
+
+Bénéficiez des remises de Pâques jusqu'au lundi 4 avril.*
+
+
+
+****
+
+
+Moto X
+STYLE
+50 € de remise*
+Prix d'origine : 499 €
+Prix après réduction : 449 €*
+
+Achetez maintenant>
+http://www.motorola.fr/products/moto-x-style/?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=buy_now_moto_x_style
+
+
+
+****
+
+
+
+Moto X
+FORCE
+20.90 € de remise*
+Prix d'origine : 699.90 €
+Prix après réduction : 679 €*
+
+Achetez maintenant>
+http://www.motorola.fr/products/moto-x-force/?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=buy_now_moto_x_force
+
+
+
+****
+
+
+
+Moto 360
+20 € de remise*
+Prix d'origine : 299 €
+Prix après réduction : 279 €*
+
+Achetez maintenant>
+http://www.motorola.fr/products/moto-360/?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=buy_now_moto_360_gen2
+
+
+****
+
+
+
+Moto X
+PLAY
+20 € de remise*
+Prix d'origine : 349 €
+Prix après réduction : 329 €*
+
+Achetez maintenant>
+http://www.motorola.fr/products/moto-x-play/?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=buy_now_moto_x_style
+
+
+
+****
+
+
+Moto G
+3e Gen.
+20 € de remise*
+Prix d'origine : 199 €
+Prix après réduction : 179 €*
+
+Achetez maintenant>
+http://www.motorola.fr/products/moto-g/?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=buy_now_moto_g_gen3
+
+
+****
+
+
+Motorola-
+http://www.motorola.fr/home?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_bug_top
+
+Twitter-
+https://twitter.com/Moto_FRA
+
+Facebook- 
+https://www.facebook.com/motoFRA
+
+Instagram-
+https://www.instagram.com/moto_fra/
+
+YouTube-
+http://www.youtube.com/motorolafrance
+
+
+****
+
+
+Vous [%%emailaddr%%] avez reçu cet email car vous avez été en contact avec Motorola.
+
+Toutes les captures d'écran sont des simulations.
+
+* Offre valable jusqu'au 4 avril minuit. Les réductions seront appliquées après validation du panier. Les options nécessitent un surcoût comme mentionné sur Moto Maker.
+
+Si vous ne souhaitez plus recevoir les e-mails promotionnels de Motorola Mobility LLC, vous pouvez vous désinscrire.
+
+https://pages.motorola-mail.com/unsubscribe_t/?lang=fr
+
+Vous pouvez également envoyer vos questions ou demande de désinscription par courrier à l'adresse suivante : Privacy Compliance Program, 222 W. Merchandise Mart Plaza, Suite 1800, Mailstop 16-O19.02, Chicago, IL 60654.
+
+Motorola respecte vos données privées. Pour obtenir plus d'informations sur notre politique de confidentialité consultez la page Pratiques de Confidentialité à l'adresse www.motorola.com/fr.
+
+Pratiques de Confidentialité>
+http://www.motorola.fr/consumers/about-motorola-FR/About_Motorola-Legal-Privacy_Policy/About_Motorola-Legal-Privacy_Policy.html
+
+
+Pour connaître les conditions d'utilisation du site Web Motorola, veuillez consulter l'adresse Internet www.motorola.com/legal
+
+conditions d'utilisation>
+http://www.motorola.fr/consumers/about-motorola-FR/About_Motorola-Legal-Terms_of_Use/About_Motorola-Legal-Terms_of_Use.html
+
+MOTOROLA, le logo M stylisé sont des marques commerciales de Motorola Trademark Holdings, LLC. Facebook est une marque commerciale de Facebook Inc., Android et YouTube sont des marques commerciales de Google Inc. Tous les autres noms et produits ou de services appartiennent à leurs propriétaires respectifs. (c) %%=Format(Now(), "yyyy")=%% Motorola Mobility LLC. Tous droits réservés.

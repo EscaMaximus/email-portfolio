@@ -1,0 +1,170 @@
+<table width="600" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#FFFFFF" class="mobile-content-size" style="min-width:600px;" summary="Calories">
+	<tr>
+		<td valign="top" style="padding:0">
+		
+			<table width="600" border="0" cellpadding="0" cellspacing="0" class="mobile-content-size" style="min-width:600px">
+				<tr>
+					<td width="600" style="text-align: center; vertical-align: top;" class="break-column">
+					
+						%%[ steps container ]%%
+						<table border="0" cellpadding="0" cellspacing="0" align="center" class="mobile-content-size">
+							<tr>
+								<td width="140" style="text-align: left; vertical-align: bottom;" class="break-stat">
+
+									<table width="110" border="0" cellpadding="0" cellspacing="0" align="center" class="mobile-content-size" style="min-width:110px">
+										<tr>
+											<td style="text-align: left; vertical-align: bottom; padding:25px 0 20px 20px;" class="calories-activity-chart"><img src="%%=v(@CaloriesActivityRoundChart)=%%" alt="calories" width="90" height="90" /></td>
+										</tr>
+									</table>
+
+								</td>
+								<td width="460" style="text-align: left; vertical-align: middle;" class="break-stat">
+
+									%%[ start product info ]%%
+									<table border="0" cellpadding="0" cellspacing="0" align="left" class="mobile-content-size">
+										<tr>
+											<td style="text-align: left; vertical-align: middle; font-family: Arial, Helvetica, sans-serif; font-size:20px; line-height:33px; font-weight:normal; color:#FF981D; padding:20px 20px 0 0;" class="calories-activity-header-01">&#x5361;&#x8DEF;&#x91CC;</td>
+										</tr>
+										<tr>
+											<td style="text-align: center; vertical-align: top;" align="center">
+											
+												<table border="0" cellpadding="0" cellspacing="0" align="center" class="mobile-content-size">
+													<tr>
+														<td style="text-align: center; vertical-align: middle;" class="break-stat">
+															%%[ start total minutes ]%%
+															<table border="0" cellpadding="0" cellspacing="0" align="center">
+																<tr>
+																	<td style="font-family: Arial, Helvetica, sans-serif; font-size:24px; line-height:28px; font-weight:normal; color:#80888C; text-align:left;" class="center">%%=FormatNumber(@CaloriesWeekTotal,"N0", @C_Sharp_Locale_Str)=%%</td>
+																</tr>
+																<tr>
+																	<td style="font-family: Arial, Helvetica, sans-serif; font-size:12px; line-height:18px; font-weight:normal; color:#80888C; text-align:left;" class="center">&#x71C3;&#x70E7;&#x603B;&#x8BA1;</td>
+																</tr>
+															</table>
+															%%[ end total minutes ]%%
+														</td>
+														<td width="51" align="center" class="middle-spacer">
+															%%[ start hor line ]%%
+															<table width="51" border="0" cellspacing="0" cellpadding="0" style="min-width:20px;">
+																<tr>
+																	<td width="25"></td>
+																	<td width="1" height="48" bgcolor="#dfe5e9" style="font-size:1px; line-height:1px;"></td>
+																	<td width="25"></td>
+																</tr>
+															</table>
+															%%[ end hor line ]%%
+														</td>
+														<td style="text-align: center; vertical-align: middle;" class="break-stat">
+															%%[ start total minutes ]%%
+															<table border="0" cellpadding="0" cellspacing="0" align="center">
+																<tr>
+																	<td style="font-family: Arial, Helvetica, sans-serif; font-size:24px; line-height:28px; font-weight:normal; color:#80888C; text-align:left;" class="center">%%=FormatNumber(@CaloriesWeekTotalActive,"N0", @C_Sharp_Locale_Str)=%%</td>
+																</tr>
+																<tr>
+																	<td style="font-family: Arial, Helvetica, sans-serif; font-size:12px; line-height:18px; font-weight:normal; color:#80888C; text-align:left;" class="center">&#x4E1C;&#x90E8;&#x6807;&#x51C6;&#x65F6;&#x95F4; &#x6709;&#x6548;&#x71C3;&#x70E7;</td>
+																</tr>
+															</table>
+															%%[ end total minutes ]%%
+														</td>
+														
+												%%[ IF @TemplateID == '2' AND @CaloriesActivityShowLastWeekPercentageActivity == 'yes' THEN ]%%
+			
+														<td width="51" align="center" class="middle-spacer">
+															%%[ start hor line ]%%
+															<table width="51" border="0" cellspacing="0" cellpadding="0" style="min-width:20px;">
+																<tr>
+																	<td width="25"></td>
+																	<td width="1" height="48" bgcolor="#dfe5e9" style="font-size:1px; line-height:1px;"></td>
+																	<td width="25"></td>
+																</tr>
+															</table>
+															%%[ end hor line ]%%
+														</td>
+														<td style="text-align: center; vertical-align: middle;" class="break-stat">
+															%%[ start total minutes ]%%
+															<table border="0" cellpadding="0" cellspacing="0" align="center">
+																<tr>
+																	<td style="font-family: Arial, Helvetica, sans-serif; font-size:24px; line-height:28px; font-weight:normal; color:#80888C; text-align:left;" class="center"><img src="%%=v(@CaloriesActivityPercentageIcon)=%%" alt="" width="18" height="18" style="display:inline-block;" />%%=Replace(FormatNumber(@CaloriesActivityPercentageValue,"N0", @C_Sharp_Locale_Str), "-", "")=%%%</td>
+																</tr>
+																<tr>
+																	<td style="font-family: Arial, Helvetica, sans-serif; font-size:12px; line-height:18px; font-weight:normal; color:#80888C; text-align:left;" class="center">&#x81EA;&#x4E0A;&#x5468;&#x4EE5;&#x6765;</td>
+																</tr>
+															</table>
+															%%[ end total minutes ]%%
+														</td>
+			
+												%%[ ENDIF ]%%
+			
+													</tr>  
+												</table>
+			
+											</td>
+										</tr>  
+										<tr>
+											<td height="20"></td>
+										</tr>
+									</table>
+
+								%%[ close steps container ]%%
+								</td>
+							</tr>
+						</table>						
+						<table width="600" border="0" cellpadding="0" cellspacing="0" align="center" class="mobile-content-size" style="min-width:600px">
+							<tr>
+								<td style="text-align: left; vertical-align: top;">
+								
+									<table width="600" border="0" cellpadding="0" cellspacing="0" class="calories-graph-table" align="center" style="min-width:600px">
+										<tr>
+											<td width="600" style="text-align: center; vertical-align: top; padding:0 10px 0 40px;" class="calories-graph">
+												%%[ start heart graph  ]%%
+												<img src="%%=v(@CaloriesChart)=%%" width="550" alt="" />
+												%%[ end heart graph ]%%
+											</td>
+										</tr>  
+									</table>
+									<table width="600" border="0" cellpadding="0" cellspacing="0" class="mobile-content-size" style="min-width:600px">
+										<tr>
+											<td width="600" style="text-align: left; vertical-align: top;">
+												%%[ start heart info ]%%
+												<table width="600" border="0" cellpadding="0" cellspacing="0" class="mobile-content-size" style="min-width:600px">
+													<tr>
+														<td style="font-family: Arial, Helvetica, sans-serif; font-size:16px; line-height:21px; font-weight:normal; color:#606668; padding:15px 0 0 50px;"class="calories-weekly-goal-hd">&#x6BCF;&#x5468;&#x76EE;&#x6807;： %%=FormatNumber(@CaloriesWeeklyGoal,"N0", @C_Sharp_Locale_Str)=%% &#x5361;&#x8DEF;&#x91CC;<!--/*calorie%%[ IF @CaloriesWeeklyGoal > '1' THEN ]%%s%%[ ENDIF ]%%*/--></td>
+													</tr>
+											%%[ IF @TemplateID == '1' THEN ]%%
+													<tr>
+														<td style="font-family: Arial, Helvetica, sans-serif; font-size:14px; line-height:19px; font-weight:normal; color:#80888C; padding:5px 50px 0 50px;" class="calories-weekly-goal-body">Moto Body &#x4E00;&#x5B8C;&#x6210;&#x5206;&#x6790;&#xFF0C;&#x60A8;&#x4FBF;&#x53EF;&#x9009;&#x62E9;&#x5C06;&#x65E5;&#x5747;&#x6B65;&#x6570;&#x6216;&#x5176; 5% &#x4EE5;&#x4E0A;&#x89C6;&#x4E3A;&#x76EE;&#x6807;&#x3002;</td>
+													</tr>
+											%%[ ELSEIF @TemplateID == '2' AND @CaloriesActivityStatus == 'increase' THEN ]%%	
+													<tr>
+														<td style="font-family: Arial, Helvetica, sans-serif; font-size:14px; line-height:19px; font-weight:normal; color:#80888C; padding:5px 50px 0 50px;" class="calories-weekly-goal-body">Moto Body &#x5B8C;&#x6210;&#x5206;&#x6790;&#x540E;&#xFF0C;&#x5C06;&#x4F1A;&#x6839;&#x636E;&#x60A8;&#x7684;&#x65E5;&#x5747;&#x5361;&#x8DEF;&#x91CC;&#x71C3;&#x70E7;&#x91CF;&#x8BA1;&#x7B97;&#x8FDB;&#x5EA6;&#x3002;</td>
+													</tr>
+											%%[ ELSEIF @TemplateID == '2' AND @CaloriesActivityStatus == 'decrease' THEN ]%%	
+													<tr>
+														<td style="font-family: Arial, Helvetica, sans-serif; font-size:14px; line-height:19px; font-weight:normal; color:#80888C; padding:5px 50px 0 50px;" class="calories-weekly-goal-body">&#x60A8;&#x7684;&#x65E5;&#x5747;&#x5361;&#x8DEF;&#x91CC;&#x71C3;&#x70E7;&#x91CF;&#x4E3A; %%=FormatNumber(Divide(@CaloriesWeekTotal, 7), "N0", @C_Sharp_Locale_Str)=%%&#x3002;<br />&#x5C06;&#x65E5;&#x5747;&#x5361;&#x8DEF;&#x91CC;&#x71C3;&#x70E7;&#x91CF;&#x6216;&#x5176; 105% &#x89C6;&#x4E3A;&#x76EE;&#x6807;&#x3002;</td>
+													</tr>
+											%%[ ENDIF ]%%
+												</table>
+												%%[ end heart info ]%%
+											</td>
+										</tr>  
+									</table>
+
+								</td>
+							</tr>  
+							<tr>
+								<td height="30"></td>
+							</tr>
+						</table>
+						
+						%%[ end product info ]%%
+					</td>
+				</tr>
+			</table> 
+
+		</td>
+	</tr>
+</table>
+<table width="600" height="1" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#AFB6BA" class="mobile-content-size" style="min-width:600px;">
+	<tr>
+		<td class="hor-line" height="1" style="font-size:1px; line-height:1px;"> </td>
+	</tr>
+</table>

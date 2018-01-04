@@ -1,0 +1,118 @@
+﻿%%[
+	/*
+	/*
+		FR-FR MOTO Z PLAY / HASSELBLAD ANNC
+		Author: Motorola ExactTarget Team
+		Revision Date: 9/6/2016
+	*/	
+	/* GA Tagging Definitions */
+	VAR @UtmSource, @UtmMedium, @UtmCampaign, @UtmContent
+	SET @UtmSource = 'motoemail'
+	SET @UtmMedium = 'email'
+	SET @UtmCampaign = 'ECOMM_EMARA_FR_FR_PRODUCT_MOTOZFAMILYMOTOMODS'
+	SET @UtmContent = 'MOTOZPLAYHASSELBLADANNC'
+
+]%%
+
+
+Moto Z Play avec zoom véritable Hasselblad.
+
+
+****
+
+Vous [%%emailaddr%%] avez reçu cet email car vous avez été en contact avec Motorola.
+
+Voir ce message dans une nouvelle fenêtre>
+%%view_email_url%%
+
+Désinscrivez-vous>
+https://pages.motorola-mail.com/unsubscribe_t/?lang=fr
+
+****
+
+Expédition gratuite pour toutes commandes supérieures à 95€>
+http://www.motorola.fr/legal/terms-of-sale?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=shipping&#shipping
+
+Offres spéciales>
+http://www.motorola.fr/specials?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=specials
+
+***
+
+Découvrez le
+Moto Z Play
+
+La batterie ultime. Des possibilités illimitées.
+
+Le Moto Z Play est doté d'une batterie à l'autonomie inégalée, avec jusqu'à 50 heures d'alimentation en une seule charge.* Le chargeur TurboPower(tm)donne à votre Moto Z jusqu'à 8 heures d'autonomie en seulement 15 minutes de charge.**
+
+En outre, vous pouvez métamorphoser votre Moto Z Play à l'aide des Moto Mods(tm)et réaliser tout ce qui vous paraissait inimaginable jusqu'ici avec un smartphone.
+
+Achetez maintenant>
+http://www.motorola.fr/products/moto-z-play?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_z_play_buy_now
+
+***
+
+Transformez l'expérience mobile que vous avez de l'appareil-photo.
+
+Hasselblad Create to Inspire
+
+Le légendaire constructeur d'appareils photo offre à votre smartphone Moto Z son expertise historique et exclusive en matière de prise de vues.
+
+Installez-le en un geste et prenez des photos nettes, détaillées, à n'importe quelle distance, grâce au zoom optique x10. Réalisez des clichés exempts de flous, uniformément éclairés grâce au flash au xénon en toute circonstance. 
+
+Achetez maintenant>
+http://www.motorola.fr/products/moto-mods/hasselblad-true-zoom?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=hasselblad_buy_now
+
+
+Moto Mods
+
+***
+
+Motorola-
+http://www.motorola.fr/home?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_bug_top
+
+Twitter-
+https://twitter.com/Moto_FRA
+
+Facebook- 
+https://www.facebook.com/motoFRA
+
+Instagram-
+https://www.instagram.com/moto_fra/
+
+YouTube-
+http://www.youtube.com/motorolafrance
+
+
+*****
+
+
+Vous [%%emailaddr%%] avez reçu cet email car vous avez été en contact avec Motorola.
+
+Toutes les captures d'écran sont des simulations.
+
+* Les données sur la durée de vie de la batterie sont approximatives et basées sur un profil d'utilisation mixte standard. Le profil d'utilisation mixte est basé sur les appareils Motorola sur les réseaux 4G LTE avec une excellente couverture et inclut à la fois l'utilisation et la veille. Les paramètres prédéfinis en usine sont appliqués au profil d'utilisation mixte afin d'obtenir une estimation des performances de la batterie. Les performances réelles de la batterie varient et dépendent de nombreux facteurs, notamment l'intensité du signal, la configuration réseau, l'âge de la batterie, la température de fonctionnement, les fonctions sélectionnées, les paramètres de l'appareil et les modalités d'utilisation des applications vocales, de données et autres.
+
+** La batterie doit être suffisamment déchargée ; le taux de charge diminue au fur et à mesure. Chargeur vendu séparément sur certains marchés.
+
+Si vous ne souhaitez plus recevoir les e-mails promotionnels de Motorola Mobility LLC, vous pouvez vous désinscrire.
+
+https://pages.motorola-mail.com/unsubscribe_t/?lang=fr
+
+Vous pouvez également envoyer vos questions ou demande de désinscription par courrier à l'adresse suivante : Privacy Compliance Program, 222 W. Merchandise Mart Plaza, Suite 1800, Chicago, IL 60654.
+
+Motorola respecte votre vie privée. Lisez la Motorola Privacy Policy pour plus d'informations sur nos pratiques en matière de respect de la vie privée. Veuillez lire les Motorola Website Terms of Use avant d'utiliser ce site.
+
+Motorola Privacy Policy>
+http://www.motorola.fr/legal/privacy-policy
+
+
+Pour connaître les conditions d'utilisation du site Web Motorola, veuillez consulter l'adresse Internet http://www.motorola.fr/legal/terms-of-use
+
+Motorola Website Terms of Use>
+http://www.motorola.fr/legal/terms-of-use
+
+MOTOROLA, le logo M stylisé sont des marques commerciales de Motorola Trademark Holdings, LLC. Facebook est une marque commerciale de Facebook Inc., Android et YouTube sont des marques commerciales de Google Inc. Tous les autres noms et produits ou de services appartiennent à leurs propriétaires respectifs. (c) %%=Format(Now(), "yyyy")=%% Motorola Mobility LLC. Tous droits réservés.
+
+
+

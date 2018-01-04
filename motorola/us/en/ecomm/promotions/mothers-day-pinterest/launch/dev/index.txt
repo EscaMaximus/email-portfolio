@@ -1,0 +1,163 @@
+﻿%%[/*
+
+	/*
+		US-EN 2016 MOTHERS DAY/PINTEREST LAUNCH
+		Author: Motorola ExactTarget Team
+		Revision Date: 4/25/2016
+	*/
+		/* GA Tagging Definitions */
+		VAR @UtmSource, @UtmMedium, @UtmCampaign, @UtmContent
+		SET @UtmSource = 'motoemail'
+		SET @UtmMedium = 'email'
+		SET @UtmCampaign = 'ECOMM_NA_US_EN_PROMOTION_2016MOTHERSDAY'
+		SET @UtmContent = 'PINTERESTLAUNCH'
+
+*/]%%
+
+
+Save $100 on Moto X Pure Edition for Mom.
+
+
+****
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola.
+
+Browser View>
+%%view_email_url%%
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+****
+
+
+Free shipping on orders over $75>
+http://www.motorola.com/us/consumers/about-motorola-us/About_Motorola-Legal-Terms_of_Sale/About_Motorola-Legal-Terms_of_Sale.html?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=free_shipping
+
+
+Apply for Moto Credit>
+http://www.motorola.com/us/motorola-finance-pdp.html?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=credit
+
+
+Specials>
+http://www.motorola.com/us/motorola-shop-all-sale.html?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=specials
+
+
+
+****
+
+
+moto x
+PURE EDITION
+
+Save $100 on Mom's perfect gift*
+
+A customized gift for Mom! Build Moto X Pure Edition to suit her style. She'll capture her favorite moments with an amazing camera, in any light. Get it now and save $100.*
+
+Shop fast! This offer ends on Monday, May 9.
+
+Build yours>
+http://www.motorola.com/us/products/motomaker/FLEXR6?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=build_yours_motoxpe
+
+
+****
+
+
+Mom-worthy pins
+
+Great fashion tips, gift ideas and more---just in time for Mother's Day. Find inspiration for the perfect gift for the adventurer, trendsetter and everything in between. 
+
+Explore Moto>
+https://www.pinterest.com/motorola/gifts-for-her/
+
+
+****
+
+
+Discover our Pins
+
+Check out our favorite collections of Pins. See what's new, popular and happening with Moto.
+
+Gifts for Her
+
+moto 360
+
+More Moto Pins>
+https://www.pinterest.com/motorola/gifts-for-her/
+
+
+****
+
+
+
+What's New from Moto
+
+moto x
+PURE EDITION
+
+More Moto Pins>
+https://www.pinterest.com/motorola/whats-new-from-moto/
+
+
+****
+
+
+Moto Savvy Style
+
+moto 360
+SPORT
+
+More Moto Pins>
+https://www.pinterest.com/motorola/moto-savvy-style/
+
+
+****
+
+Motorola-
+http://www.motorola.com/us/home?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_bug_top
+
+Twitter-
+https://twitter.com/Moto_USA
+
+Facebook- 
+https://www.facebook.com/MotoUSA/
+
+Google+
+https://plus.google.com/+Motorola/posts
+
+Instagram-
+http://instagram.com/motorola
+
+YouTube-
+https://www.youtube.com/user/motorola
+
+
+****
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola.If this email has been forwarded to you, you can opt-in for future communications from Motorola.
+
+opt-in for future communications>
+https://pages.motorola-mail.com/registration-us-en/?c=ECOMM_NA_US_EN_REGISTRATION_FORWARDEDOPTIN&utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=forwarded_optin
+
+* Offer valid for Moto X Pure Edition only through 10:59 a.m. CT on 5/9/16. Subject to product availability. Moto X Pure Edition upgrades are available at an extra cost as stated in Moto Maker.
+
+If you no longer wish to receive promotional emails from Motorola Mobility LLC, please unsubscribe.
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+Please direct any questions concerning Motorola's privacy practices to privacy@motorola.com.
+
+Inquiries or requests to unsubscribe from ("opt-out" of) communications from Motorola may also be mailed to: Motorola Mobility LLC Attn: Privacy Compliance Program 222 W. Merchandise Mart Plaza, Suite 1800, Mailstop 16-O19.02, Chicago, IL 60654.
+
+Motorola values your privacy. For more information on our Privacy Practices, please visit www.motorola.com/privacy
+
+Privacy>
+http://www.motorola.com/us/consumers/about-motorola-us/About_Motorola-Legal-Legal_and_Privacy_Policy/About_Motorola-Legal-Legal_and_Privacy_Policy.html
+
+Please visit www.motorola.com/legal to see Motorola's website terms of use.
+
+Legal>
+http://www.motorola.com/us/consumers/about-motorola-us/About_Motorola-Legal-Terms_of_Use/About_Motorola-Legal-Terms_of_Use.html
+
+MOTOROLA and the Stylized M Logo are trademarks of Motorola Trademark Holdings, LLC. Android, Google and other marks are trademarks of Google Inc. All other trademarks are the property of their respective owners. (c)%%=Format(Now(), "yyyy")=%% Motorola Mobility LLC. All rights reserved.

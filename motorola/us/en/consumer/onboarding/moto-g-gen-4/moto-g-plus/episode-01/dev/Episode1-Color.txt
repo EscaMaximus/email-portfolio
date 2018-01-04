@@ -1,0 +1,16 @@
+Episode 1
+
+Story 1: Welcome / Promo
+#80b3da, rgb(128, 179, 218)
+
+Story 2: Camera
+#00349e, rgb(0, 52, 158)
+
+Story 3: Power
+#0c3a4e, rgb(12, 58, 78)
+
+Story 4: Unlock
+#006c83, rgb(0, 108, 131)
+
+Story 5: Carrier
+#f46b86, rgb(244, 107, 134)

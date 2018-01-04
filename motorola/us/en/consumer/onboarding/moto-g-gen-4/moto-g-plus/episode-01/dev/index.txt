@@ -1,0 +1,178 @@
+﻿%%[
+	/*
+		US-EN MOTO G4 Plus
+		Author: Motorola ExactTarget Team
+		Revision Date: 2/28/2017
+	*/	
+	/* GA Tagging Definitions */
+	VAR @UtmSource, @UtmMedium, @UtmCampaign, @UtmContent, @EmailHash, @CouponCode
+	SET @UtmSource = 'motoemail'
+	SET @UtmMedium = 'email'
+	SET @UtmCampaign = 'CONSUMER_NA_US_EN_ONBOARDING_MOTOGGEN4PLUS'
+	SET @UtmContent = 'EP1'
+	SET @EmailHash = SHA256(emailaddr)
+	SET @CouponCode = PROMOTION_CODE
+
+]%%
+
+
+It's full of great features to make your life easier.
+
+
+***
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola.
+
+Browser View>
+%%view_email_url%%
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+***
+
+
+User Guide>
+https://motorola-global-portal.custhelp.com/app/answers/prod_answer_detail/a_id/110978/p/30,6720,9687
+
+Customer Service>
+https://motorola-global-portal.custhelp.com/app/mcp/landing_troubleshooter/g_id/5059/?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=customer_service
+
+Owner Forums>
+https://forums.lenovo.com/t5/Moto-G4-Moto-G4-Plus/bd-p/MotoG4thGen
+
+
+
+***
+
+Moto G4 Plus
+
+Welcome to our most popular family of phones! 
+
+Your new Moto G Plus is packed with incredible features for an amazing value. Let's take a look!
+
+
+***
+
+
+Fast focus 16 MP camera
+
+It's the most advanced camera in its class. Shoot beautifully sharp photos day or night with two types of rapid autofocus.
+
+Watch the video>
+https://www.motorola.com/us/products/moto-g-plus-gen-4?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_display#16-mp-camera
+
+
+***
+
+
+All-day battery + TurboPower(tm)
+
+Go all day.* Then power up and get going again. Fast.
+
+Learn more>
+https://www.motorola.com/us/products/moto-g-plus-gen-4?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=turbo_power#battery-turbopower
+
+
+
+50% off**
+
+Get an extra TurboPower charger to keep at the office or in your bag. 
+
+Use promo code at checkout:
+
+%%=v(@CouponCode)=%%
+
+Save 50%>
+http://www.motorola.com/us/products/turbo-power-15-wall-charger?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=turbopower_half_price
+
+
+***
+
+
+Fingerprint reader
+
+With just a touch, wake up your phone and unlock it. 
+
+Learn more>
+https://motorola-global-portal.custhelp.com/app/answers/prod_answer_detail/a_id/110999/p/30,6720,9686/?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=fingerprint_reader#fingerprint-reader
+
+
+***
+
+
+Carrier-friendly + Moto Pure
+
+Choose the major U.S. carrier that works for you, and switch any time you like. And enjoy pure Android(tm) without preloaded carrier apps to slow you down.
+
+Learn more>
+https://www.motorola.com/us/products/moto-g-plus-gen-4?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=carrier_friendly#carrier-friendly
+
+
+***
+
+
+Free shipping**>
+http://www.motorola.com/us/legal/terms-of-sale?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=shipping
+
+
+Specials>
+http://www.motorola.com/us/specials?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=specials
+
+
+***
+
+Motorola-
+http://www.motorola.com/us/home?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_bug_top
+
+Twitter-
+https://twitter.com/Moto_USA
+
+Facebook- 
+https://www.facebook.com/MotoUSA/
+
+Google+
+https://plus.google.com/+Moto
+
+Instagram-
+https://www.instagram.com/moto_usa/
+
+YouTube-
+https://www.youtube.com/user/motorola
+
+
+***
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola. If this email has been forwarded to you, you can opt-in for future communications from Motorola.
+
+opt-in for future communications>
+https://pages.motorola-mail.com/registration-us-en/?c=ECOMM_NA_US_EN_REGISTRATION_FORWARDEDOPTIN&utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=forwarded_optin
+
+All screen images simulated.
+
+* All battery life claims are approximate and based on an average mixed use profile that includes both usage and standby time on a 4G LTE network. Out-of-box settings are applied to the mixed use profile to project battery performance. Actual battery performance will vary and depends on many factors including signal strength, network configuration, age of battery, operating temperature, features selected, device settings, and voice, data, and other application usage patterns.
+
+** Promo code valid with purchase of TurboPower 15 Wall Charger only through 10:59 a.m. CT on 12/31/17. Promo code must be entered at checkout for discount to apply. One time use only. Promotion cannot be combined with any other offer or discounts.
+
+*** Free shipping for orders over $75.
+
+Certain features, functionality and product specifications may be network dependent and subject to additional terms, conditions, and charges. All are subject to change without notice.
+
+If you no longer wish to receive promotional emails from Motorola Mobility LLC, please unsubscribe.
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+Please direct any questions concerning Motorola's privacy practices to privacy@motorola.com.
+
+Inquiries or requests to unsubscribe from ("opt-out" of) communications from Motorola may also be mailed to: Motorola Mobility LLC Attn: Privacy Compliance Program 222 W. Merchandise Mart Plaza, Suite 1800, Chicago, IL 60654.
+
+Motorola values your privacy. For more information on our Privacy Practices, please visit Motorola Privacy Policy. Please visit Motorola Website Terms of Use to see Motorola's website terms of use.
+
+Privacy>
+http://www.motorola.com/us/legal/privacy-policy
+
+Legal>
+http://www.motorola.com/us/legal/terms-of-use
+
+Moto branded products are designed and manufactured by or for Motorola Mobility LLC, a wholly owned subsidiary of Lenovo. MOTOROLA and the Stylized M Logo are trademarks of Motorola Trademark Holdings, LLC. Android, Google and other marks are trademarks of Google Inc. All other trademarks are the property of their respective owners. ©%%=Format(Now(), "yyyy")=%% Motorola Mobility LLC. All rights reserved.

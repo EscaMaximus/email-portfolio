@@ -1,0 +1,110 @@
+﻿%%[
+	/*
+		FR-FR MOTO G4 PLAY LAUNCH
+		Author: Motorola ExactTarget Team
+		Revision Date: 8/9/2016
+	*/	
+		/* GA Tagging Definitions */
+		SET @UtmSource = 'motoemail'
+		SET @UtmMedium = 'email'
+		SET @UtmCampaign = 'ECOMM_EMARA_FR_FR_PRODUCT_MOTOG4FAMILY'
+		SET @UtmContent = 'GPLAYLAUNCH'
+]%%
+
+
+Le tout nouveau modèle de la famille Moto G.
+
+
+****
+
+Vous [%%emailaddr%%] avez reçu cet email car vous avez été en contact avec Motorola.
+
+Voir ce message dans une nouvelle fenêtre>
+%%view_email_url%%
+
+Désinscrivez-vous>
+https://pages.motorola-mail.com/unsubscribe_t/?lang=fr
+
+****
+
+
+Expédition gratuite pour toutes commandes supérieures à 95€>
+http://www.motorola.fr/cgv/cgv.html?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=shipping&#shipping
+
+Offres spéciales>
+http://www.motorola.fr/specials-fr.html?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=specials
+
+
+
+****
+
+
+Présentation
+Moto G4 Play
+
+Plus qu'un smartphone. Plus de divertissement. Pour un prix toujours aussi abordable.
+
+Passez à la vitesse supérieure grâce au nouveau Moto G Play. Doté d'un processeur quad-core puissant, il vous permet de profiter d'un maximum de divertissement sans aucun ralentissement. Et de performances améliorées grâce à une version d'Android™ pure et sans éléments superflus.
+
+à partir de 169,99 €
+
+Pré-commander maintenant>
+http://www.motorola.fr/products/moto-g-play?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_g_play_performance_pre_order
+
+
+*****
+
+Saisissez l'instant présent. Partagez les bons moments.
+
+Prenez des photos parfaitement nettes grâce à l'appareil photo 8 MP utilisant des pixels plus grands que la moyenne pour de superbes photos dans des conditions de faible luminosité. Prenez également d'incroyables selfies grâce à l'appareil photo frontal 5 MP.
+
+à partir de 169,99 €
+
+Pré-commander maintenant>
+http://www.motorola.fr/products/moto-g-play?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_g_play_camera_pre_order
+
+
+*****
+
+
+Motorola-
+http://www.motorola.fr/home?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_bug_top
+
+Twitter-
+https://twitter.com/Moto_FRA
+
+Facebook- 
+https://www.facebook.com/motoFRA
+
+Instagram-
+https://www.instagram.com/moto_fra/
+
+YouTube-
+http://www.youtube.com/motorolafrance
+
+
+*****
+
+
+Vous [%%emailaddr%%] avez reçu cet email car vous avez été en contact avec Motorola.
+
+Toutes les captures d'écran sont des simulations.
+
+Si vous ne souhaitez plus recevoir les e-mails promotionnels de Motorola Mobility LLC, vous pouvez vous désinscrire.
+
+https://pages.motorola-mail.com/unsubscribe_t/?lang=fr
+
+Vous pouvez également envoyer vos questions ou demande de désinscription par courrier à l'adresse suivante : Privacy Compliance Program, 222 W. Merchandise Mart Plaza, Suite 1800, Mailstop 16-O19.02, Chicago, IL 60654.
+
+Motorola respecte vos données privées. Pour obtenir plus d'informations sur notre politique de confidentialité consultez la page Pratiques de Confidentialité à l'adresse http://www.motorola.fr/legal/privacy-policy
+
+Pratiques de Confidentialité>
+http://www.motorola.fr/legal/privacy-policy
+
+
+Pour connaître les conditions d'utilisation du site Web Motorola, veuillez consulter l'adresse Internet http://www.motorola.fr/legal/terms-of-use
+
+conditions d'utilisation>
+http://www.motorola.fr/legal/terms-of-use
+
+MOTOROLA, le logo M stylisé sont des marques commerciales de Motorola Trademark Holdings, LLC. Facebook est une marque commerciale de Facebook Inc., Android et YouTube sont des marques commerciales de Google Inc. Tous les autres noms et produits ou de services appartiennent à leurs propriétaires respectifs. (c) %%=Format(Now(), "yyyy")=%% Motorola Mobility LLC. Tous droits réservés.

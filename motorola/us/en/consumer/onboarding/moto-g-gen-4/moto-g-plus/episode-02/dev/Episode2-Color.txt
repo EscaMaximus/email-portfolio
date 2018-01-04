@@ -1,0 +1,16 @@
+Episode 2
+
+Story 1: Learn More / Promo
+#e02e44, rgb(224, 46, 68)
+
+Story 2: Photos
+#e77f8d, rgb(231, 127, 141)
+
+Story 3: Display
+#80b3da, rgb(128, 179, 218)
+
+Story 4: Action
+#0a516c, rgb(10, 81, 108)
+
+Story 5: Google Now
+#30489e, rgb(48, 72, 158)

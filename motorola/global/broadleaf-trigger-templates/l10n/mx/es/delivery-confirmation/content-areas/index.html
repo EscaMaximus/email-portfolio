@@ -1,0 +1,95 @@
+<!--%%[
+	/*
+		MX-ES LOCALIZED DELIVERY CONFIRMATION
+		Author: Motorola ExactTarget Team
+		Revision Date: 7/21/2016
+	*/
+]%%-->
+%%[
+		VAR @FirstName, @LastName, @FullName, @SubTotal, @DiscountAmt, @ShippingAmt, @EstimatedTaxAmt, @TotalOrderAmt, @MotoOrderNumber, @PurchaseDate, @BillToCompanyName, @BillToAddress01, @BillToAddress02, @BillToAddress03, @BillToCity, @BillToState, @BillToZip, @ShipToFirstName, @ShipToLastName, @ShipToCompanyName, @ShipToAddress01, @ShipToAddress02, @ShipToAddress03, @ShipToCity, @ShipToState, @ShipToZip, @ShipToCountry, @ShipToPhoneNumber, @ShipToFullName, @PhoneNumber
+		
+		SET @Email = EmailAddress
+		SET @FirstName = FIRST_NAME
+		SET @LastName = LAST_NAME
+		
+		IF NOT EMPTY(@LastName) THEN
+			SET @FirstName = Concat(@FirstName, " ")
+		ENDIF
+		
+		SET @FullName = Concat(ProperCase(@FirstName),ProperCase(@LastName))
+		SET @MotoOrderNumber = MOTO_ORDER_NUMBER
+		SET @PurchaseDate = PURCHASE_DATE
+		
+		SET @BillToCompanyName = Propercase(BILL_TO_COMPANY_NAME)
+		SET @BillToAddress01 = Propercase(BILL_TO_STREET_ADDRESS_1)
+		SET @BillToAddress02 = Propercase(BILL_TO_STREET_ADDRESS_2)
+		SET @BillToAddress03 = Propercase(BILL_TO_STREET_ADDRESS_3)
+		SET @BillToCity = Propercase(BILL_TO_CITY)
+		SET @BillToState = Uppercase(BILL_TO_STATE)
+		SET @BillToZip = BILL_TO_ZIP
+		SET @PhoneNumber = PHONE_NUMBER
+
+		SET @ShipToFirstName = SHIP_TO_FIRST_NAME
+		SET @ShipToLastName = SHIP_TO_LAST_NAME
+		SET @ShipToCompanyName = Propercase(SHIP_TO_COMPANY_NAME)
+		SET @ShipToAddress01 = Propercase(SHIP_TO_STREET_ADDRESS_1)
+		SET @ShipToAddress02 = Propercase(SHIP_TO_STREET_ADDRESS_2)
+		SET @ShipToAddress03 = Propercase(SHIP_TO_STREET_ADDRESS_3)
+		SET @ShipToCity = Propercase(SHIP_TO_CITY)
+		SET @ShipToState = Uppercase(SHIP_TO_STATE)
+		SET @ShipToZip = SHIP_TO_ZIP
+		SET @ShipToCountry = SHIP_TO_COUNTRY
+		SET @ShipToPhoneNumber = SHIP_TO_PHONE_NUMBER
+
+		IF NOT EMPTY(@ShipToLastName) THEN
+			SET @ShipToFirstName = Concat(@ShipToFirstName, " ")
+		ENDIF
+		
+		SET @ShipToFullName = Concat(ProperCase(@ShipToFirstName),ProperCase(@ShipToLastName))
+
+		/* Define extensions */
+		VAR @PreTextHeader, @MotoBug, @WelcomeInfo, @OrderSummary, @OrderDetails, @OrderLineItems, @ShipmentDetails, @BillingAddress, @ShippingAddress, @OrderStatusFooter, @CustomerSupport, @Social, @Legal
+
+		/* Localized HTML/CSS for Head Templates */
+		SET @PreTextHeader = Concat(@SharedL10nPath, "SH_PRETEXTHEADER", @HTML)
+		SET @MotoBug = Concat(@SharedL10nPath, "SH_MOTOBUG", @HTML)
+		SET @WelcomeInfo = Concat(@SpecificL10nPath, "WELCOMEINFO", @HTML)
+		SET @OrderSummary = Concat(@SharedL10nPath, "SH_ORDERSUMMARY", @HTML)
+		SET @OrderDetails = Concat(@SharedL10nPath, "SH_ORDERDETAILS", @HTML)
+		SET @OrderLineItems = Concat(@SharedL10nPath, "SH_LINEITEMS", @HTML)
+		SET @ShipmentDetails = Concat(@SharedL10nPath, "SH_SHIPMENTDETAILS", @HTML)
+		SET @BillingAddress = Concat(@SharedL10nPath, "SH_BILLINGADDRESS", @HTML)
+		SET @ShippingAddress = Concat(@SharedL10nPath, "SH_SHIPPINGADDRESS", @HTML)
+		SET @OrderStatusFooter = Concat(@SharedL10nPath, "SH_ORDERSTATUSFOOTER", @HTML)
+		SET @CustomerSupport = Concat(@SharedL10nPath, "SH_CUSTOMERSERVICECONTACT", @HTML)
+		SET @Social = Concat(@SharedL10nPath, "SH_SOCIAL", @HTML)
+		SET @Legal = Concat(@SharedL10nPath, "SH_GENERICLEGAL", @HTML)
+
+]%%
+	<table width="100%" bgcolor="#FAFAFA" border="0" cellpadding="0" cellspacing="0">
+		<tr>
+			<td>
+				<!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->     
+				<table bgcolor="#FFFFFF" class="content" align="center" cellpadding="0" cellspacing="0" border="0" style="margin:0 auto; width: 100%; max-width: 600px;">
+					%%=ContentAreaByName(@PreTextHeader)=%%
+					%%=ContentAreaByName(@MotoBug)=%%
+					%%=ContentAreaByName(@WelcomeInfo)=%%
+					%%=ContentAreaByName(@OrderSummary)=%%
+					%%=ContentAreaByName(@OrderDetails)=%%
+					%%=ContentAreaByName(@OrderLineItems)=%%
+					%%=ContentAreaByName(@ShipmentDetails)=%%
+					<tr>
+						<td style="padding: 30px 10px 30px 30px; border-bottom: 1px solid #D3D3D3;">
+							%%=ContentAreaByName(@BillingAddress)=%%
+							%%=ContentAreaByName(@ShippingAddress)=%%
+						</td>
+					</tr>
+					%%=ContentAreaByName(@OrderStatusFooter)=%%
+					%%=ContentAreaByName(@CustomerSupport)=%%
+					%%=ContentAreaByName(@Social)=%%
+					%%=ContentAreaByName(@Legal)=%%
+				</table>
+				<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+			</td>
+		</tr>
+	</table>

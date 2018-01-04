@@ -1,0 +1,225 @@
+﻿%%[
+	/*
+		FR-FR BLACK FRIDAY EPISODE 2
+		Author: Motorola ExactTarget Team
+		Revision Date: 11/23/2016
+	*/	
+	/* GA Tagging Definitions */
+	VAR @UtmSource, @UtmMedium, @UtmCampaign, @UtmContent, @EmailHash, @CouponCode
+	SET @UtmSource = 'motoemail'
+	SET @UtmMedium = 'email'
+	SET @UtmCampaign = 'ECOMM_EMARA_FR_FR_PROMOTION_2016BLACKFRIDAY'
+	SET @UtmContent = 'EPISODE02'
+
+]%%
+
+
+Profitez des prix les plus bas jamais atteints sur nos produits sélectionnés.
+
+*****
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola.
+
+Browser View>
+%%view_email_url%%
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+*****
+
+
+Expédition gratuite pour toutes commandes supérieures à 95€>
+http://www.motorola.fr/legal/terms-of-sale?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=shipping&#shipping
+
+Offres spéciales>
+http://www.motorola.fr/specials?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=specials
+
+
+*****
+
+hello moto
+
+Bénéficiez dès maintenant de promotions exclusives à l'occasion du Black Friday !
+
+Ne perdez pas de temps pour profiter des promotions exclusives à l'occasion du Black Friday. Des remises exceptionnelles sur les smartphones Moto Z, sur la gamme Moto G, etc.
+
+Achetez maintenant>
+https://www.motorola.fr/specials?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=specials_page
+
+
+Lenovo
+
+***
+
+Moto Mod batterie portable Incipio® offGRID™ offert (valeur: 69.98€)
+
+pour l'achat du Moto Z
++ économisez 50 € supplémentaires
+
+Obtenez le smartphone le plus fin au monde et profitez d'une autonomie exceptionnelle allant jusqu'à 22 heures**. Cette offre est éligible à la livraison gratuite.
+
+Achetez maintenant>
+https://www.motorola.fr/products/motomaker/MotoModsFR?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=free_offgrid
+
+
+Lenovo
+
+***
+
+Moto Mod enceinte stéréo JBL SoundBoost offert (valeur: 99€)
+
+pour l'achat du Moto Z Play
++ économisez 40 € supplémentaires
+
+Obtenez le smartphone offrant une autonomie record et ajoutez-lui gratuitement le Moto Mod enceinte stéréo JBL. Cette offre est éligible à la livraison gratuite.
+
+Achetez maintenant>
+https://www.motorola.fr/products/motomaker/MotoModsFR?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=free_soundboost
+
+
+Lenovo
+
+***
+
+Moto G4 Plus
+
+30 €  de remise
+Prix d'origine : 269 € à partir de 239 €***
+
+Bénéficiez de 30 € de remise sur le téléphone avec appareil photo 16 MP le plus avancé de sa catégorie.*** Cette offre est éligible à la livraison gratuite.
+
+Achetez maintenant>
+https://www.motorola.fr/products/motomaker/FLEXR10FR?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=g_plus&version=16MP32GB&front-color=color-black
+
+
+Lenovo
+
+***
+
+Moto G4
+
+10 €  de remise
+Prix d'origine : 209 € à partir de 199 €***
+
+Ce smartphone puissant et ultra rapide conçu pour durer est désormais disponible pour 10 € de moins.*** Cette offre est éligible à la livraison gratuite.
+
+Achetez maintenant>
+https://www.motorola.fr/products/motomaker/FLEXR10FR?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=g
+
+
+Lenovo
+
+***
+
+Moto G4 Play
+
+20 €  de remise
+Prix d'origine : 159 € à partir de 139 €***
+
+Plus de divertissement. Plus abordable que jamais grâce à une réduction de 20 €.*** Cette offre est éligible à la livraison gratuite.
+
+Achetez maintenant>
+https://www.motorola.fr/products/moto-g-play/ecomm?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=g_play
+
+
+Lenovo
+
+***
+
+Moto X Force
+
+100 €  de remise
+Prix d'origine : 599 € à partir de 499 €***
+
+Économisez 100 €*** sur le premier smartphone au monde disposant d'un écran incassable.† Cette offre est éligible à la livraison gratuite. 
+
+Achetez maintenant>
+https://www.motorola.fr/products/motomaker/FLEXR7FR?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=x_force_discount
+
+
+Lenovo
+
+***
+
+Moto X Style
+
+40 €  de remise
+Prix d'origine : 419 € à partir de 379 €***
+
+Économisez 40 € sur ce smartphone beau à l'intérieur comme à l'extérieur.*** Cette offre est éligible à la livraison gratuite.
+
+Achetez maintenant>
+https://www.motorola.fr/products/motomaker/FLEXR6FR?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=x_style_discount&accent-color=OP106012
+
+
+Lenovo
+
+***
+
+Moto 360
+
+24 €  de remise
+Prix d'origine : 299 € à partir de 275 €***
+
+Économisez 24 € sur la montre qui vous consacre son temps et simplifie votre vie mobile.*** Cette offre est éligible à la livraison gratuite.
+
+Achetez maintenant>
+https://www.motorola.fr/products/motomaker/FLEXR8FR?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_360
+
+
+Lenovo
+
+*****
+
+
+Motorola-
+http://www.motorola.fr/home?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_bug_top
+
+Twitter-
+https://twitter.com/Moto_FRA
+
+Facebook- 
+https://www.facebook.com/motoFRA
+
+Instagram-
+https://www.instagram.com/moto_fra/
+
+YouTube-
+http://www.youtube.com/motorolafrance
+
+
+*****
+
+
+Vous [%%emailaddr%%] avez reçu cet email car vous avez été en contact avec Motorola.
+
+Toutes les captures d'écran sont des simulations.
+
+* Offre valide jusqu'à 23 h 59 le 23 novembre 2016 ou jusqu'à épuisement des stocks disponibles. Réduction appliquée lors de la validation si les deux articles ont été ajoutés à votre panier.
+
+** Les données sur la durée de vie de la batterie sont approximatives et basées sur un profil d'utilisateur mixte standard. Le profil d'utilisation mixte est basé sur les appareils Motorola utilisés sur les réseaux 4G LTE avec une excellente couverture, et inclut à la fois l'utilisation et la veille. Les paramètres prédéfinis en usine sont appliqués au profil d'utilisation mixte afin d'obtenir une estimation des performances de la batterie. Les performances réelles de la batterie varient et dépendent de nombreux facteurs, notamment l'intensité du signal, la configuration du réseau, l'âge de la batterie, la température de fonctionnement, les fonctions sélectionnées, les paramètres de l'appareil et les modalités d'utilisation des applications vocales, de données et autres.
+
+*** Offre valide jusqu'à 23 h 59 le 28 novembre 2016 ou jusqu'à épuisement des stocks disponibles. Remise et coque gratuite appliquées lors de la validation du panier. La mise à niveau vers les modèles Moto G Plus, Moto G, Moto X Force, Moto X Style et Moto 360 est disponible pour un coût supplémentaire, comme indiqué dans Moto Maker.
+
+† L'écran et le film intégré sont garantis contre les risques de fissure et de casse pendant quatre (4) ans à partir de la date initiale d'achat. Les rayures ou tout autre dommage sur le film de protection remplaçable ne sont pas couverts par cette garantie, mais le film de protection doit toujours être installé afin d'empêcher tout risque de rayure ou autre dommage sur les principaux composants. Ce téléphone n'est pas antichoc et n'est pas conçu pour résister aux éventuels dommages en cas de chute. Toutes les autres exclusions de garantie, notamment les rayures et autres dommages cosmétiques, les dommages intentionnels, les utilisations abusives, l'usure normale et les autres limitations, sont applicables.
+
+
+Si vous ne souhaitez plus recevoir les e-mails promotionnels de Motorola Mobility LLC, vous pouvez vous désinscrire.
+
+https://pages.motorola-mail.com/unsubscribe_t/?lang=fr
+
+Vous pouvez également envoyer vos questions ou demande de désinscription par courrier à l'adresse suivante : Privacy Compliance Program, 222 W. Merchandise Mart Plaza, Suite 1800, Mailstop 16-O19.02, Chicago, IL 60654.
+
+Motorola respecte vos données privées. Pour obtenir plus d'informations sur notre politique de confidentialité consultez la page Pratiques de Confidentialité à l'adresse http://www.motorola.fr/legal/privacy-policy
+
+Pratiques de Confidentialité>
+http://www.motorola.fr/legal/privacy-policy
+
+
+Pour connaître les conditions d'utilisation du site Web Motorola, veuillez consulter l'adresse Internet http://www.motorola.fr/legal/terms-of-use
+
+conditions d'utilisation>
+http://www.motorola.fr/legal/terms-of-use
+
+MOTOROLA, le logo M stylisé sont des marques commerciales de Motorola Trademark Holdings, LLC. Facebook est une marque commerciale de Facebook Inc., Android et YouTube sont des marques commerciales de Google Inc. Tous les autres noms et produits ou de services appartiennent à leurs propriétaires respectifs. (c) %%=Format(Now(), "yyyy")=%% Motorola Mobility LLC. Tous droits réservés.

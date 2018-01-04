@@ -1,0 +1,152 @@
+﻿%%[
+	/*
+		GB-EN MOTO G4 EPISODE 1
+		Author: Motorola ExactTarget Team
+		Revision Date: 2/28/2017
+	*/	
+	/* GA Tagging Definitions */
+	SET @UtmSource = 'motoemail'
+	SET @UtmMedium = 'email'
+	SET @UtmCampaign = 'CONSUMER_EMARA_GB_EN_ONBOARDING_MOTOGGEN4'
+	SET @UtmContent = 'EP1'
+
+]%%
+
+
+It's full of great features to make your life easier.
+
+
+***
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola.
+
+Browser View>
+%%view_email_url%%
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+***
+
+
+User Guide>
+https://motorola-global-en-uk.custhelp.com/app/answers/prod_answer_detail/a_id/111373/p/30,6720,9686
+
+Customer Service>
+https://motorola-global-en-uk.custhelp.com/app/mcp/landing_troubleshooter/g_id/5141/?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=customer_service
+
+Owner Forums>
+https://forums.lenovo.com/t5/Moto-G4-Moto-G4-Plus/bd-p/MotoG4thGen
+
+
+***
+
+
+Moto G4
+
+Welcome to our most popular family of phones! 
+
+Your new Moto G is packed with incredible features for an amazing value. Let's take a look!
+
+
+***
+
+
+Octa-core processor + expandable storage
+
+Run multiple apps without slowing down and add up to 128 GB with an optional microSD card.*
+
+Learn more>
+https://www.motorola.co.uk/products/moto-g-gen-4?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=performance#performance
+
+
+***
+
+
+13 MP camera
+
+The advanced design delivers professional-quality pictures.
+
+Learn more>
+https://www.motorola.co.uk/products/moto-g-gen-4?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=camera#camera
+
+
+***
+
+
+All-day battery + TurboPower(tm)
+
+Go all day.** Then power up and get going again. Fast.
+
+Learn more>
+https://www.motorola.co.uk/products/moto-g-gen-4?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=battery#battery
+
+
+***
+
+Moto Pure
+
+Get faster performance with a clutter-free version of Android(tm).
+
+Learn more>
+https://www.motorola.co.uk/products/moto-g-gen-4?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=carrier_friendly#moto-pure
+
+
+***
+
+
+Free shipping***>
+http://www.motorola.co.uk/legal/terms-of-sale?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=shipping#shipping
+
+
+Specials>
+http://www.motorola.co.uk/specials?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=specials
+
+
+***
+
+Motorola-
+http://www.motorola.co.uk/home?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_bug_top
+
+Twitter-
+https://twitter.com/moto
+
+Facebook- 
+https://www.facebook.com/MotoInUK
+
+Instagram-
+https://www.instagram.com/moto.uk/
+
+
+***
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola.
+
+All screen images simulated.
+
+* Actual usable capacity will be less due to formatting, and operating system. MicroSD card sold separately. Content with DRM restrictions may not be able to be moved to the card.
+
+** All battery life claims are approximate and based on an average mixed use profile that includes both usage and standby time on a 4G LTE network. Out-of-box settings are applied to the mixed use profile to project battery performance. Actual battery performance will vary and depends on many factors including signal strength, network configuration, age of battery, operating temperature, features selected, device settings, and voice, data, and other application usage patterns.
+
+*** Free shipping on orders over £75.
+
+Certain features, functionality and product specifications may be network dependent and subject to additional terms, conditions, and charges. All are subject to change without notice.
+
+If you no longer wish to receive promotional emails from Motorola Mobility LLC, please unsubscribe.
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+Please direct any questions concerning Motorola's privacy practices to privacy@motorola.com.
+
+Enquiries or requests to unsubscribe from ("opt-out" of) communications from Motorola may also be mailed to: Motorola Mobility UK, Ltd., Redwood, Crockford Lane, Chineham Business Park, Basingstoke, RG24 8WQ.
+
+Motorola values your privacy. For more information on our Privacy Practices, please visit Motorola Privacy Policy. Please visit Motorola Website Terms of Use to see Motorola's website terms of use.
+
+Privacy>
+http://www.motorola.co.uk/legal/privacy-policy
+
+Legal>
+http://www.motorola.co.uk/legal/terms-of-use
+
+Moto branded products are designed and manufactured by or for Motorola Mobility LLC, a wholly owned subsidiary of Lenovo. MOTOROLA and the Stylised M Logo are trademarks of Motorola Trademark Holdings, LLC. Facebook is a trademark of Facebook, Inc. Android, Google and other marks are trademarks of Google Inc. All other trademarks are the property of their respective owners. (c)%%=Format(Now(), "yyyy")=%% Motorola Mobility LLC. All rights reserved.

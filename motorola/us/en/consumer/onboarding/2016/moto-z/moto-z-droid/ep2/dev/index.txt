@@ -1,0 +1,160 @@
+﻿%%[
+	/*
+		US-EN MOTO Z AMPS EPISODE 2
+		Author: Motorola ExactTarget Team
+		Revision Date: 11/10/2016
+	*/	
+	/* GA Tagging Definitions */
+	VAR @UtmSource, @UtmMedium, @UtmCampaign, @UtmContent, @EmailHash, @CouponCode
+	SET @UtmSource = 'motoemail'
+	SET @UtmMedium = 'email'
+	SET @UtmCampaign = 'CONSUMER_NA_US_EN_ONBOARDING_MOTOZFAMILYMOTOMODS'
+	SET @UtmContent = 'MOTOZEP2'
+	SET @EmailHash = SHA256(lowercase(trim(emailaddr)))
+	SET @CouponCode = PROMOTION_CODE
+
+]%%
+
+
+Learn more about Moto Z.
+
+
+***
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola.
+
+Browser View>
+%%view_email_url%%
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+***
+
+User Guide>
+https://motorola-global-portal.custhelp.com/ci/fattach/get/1729266/1469035162/redirect/1/filename/68018216001a.pdf
+
+Customer Service>
+https://motorola-global-portal.custhelp.com/app/mcp/landing_troubleshooter/g_id/5059/?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=customer_service&ceid=%%=v(@Emailhash)=%%
+
+Owner Forums>
+https://forums.lenovo.com/t5/Moto-Z/bd-p/Moto_Z
+
+
+***
+
+Moto Z Droid
+
+Charge at the speed of life
+
+The included TurboPower(tm) charger gives your Moto Z Droid up to eight hours of battery life in just 15 minutes of charging.[*] And snap on Moto Mods™ for a completely new mobile experience.
+
+Learn more>
+http://www.motorola.com/us/products/moto-z-droid-edition?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=turbopower&ceid=%%=v(@Emailhash)=%%#battery-turbopower
+
+
+50% off**
+
+Get an extra TurboPower charger to keep at the office or in your bag. 
+
+Use promo code at checkout:
+
+%%=v(@CouponCode)=%%
+
+Save 50%>
+http://www.motorola.com/us/products/turbo-power-30-wall-charger?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=turbopower_half_price&ceid=%%=v(@Emailhash)=%%
+
+
+
+***
+
+Shoot like a pro
+
+Switch your camera to Professional Mode for ultimate control. Choose the shutter speed, ISO, white balance and more.
+
+Learn more>
+https://motorola-global-portal.custhelp.com/app/answers/prod_answer_detail/a_id/112167/p/30,6720,9834/?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=pro_mode&ceid=%%=v(@Emailhash)=%%
+
+
+***
+
+
+Moto Mods(tm)
+
+Amazing today. Awesome tomorrow.
+
+Your Moto Z  phone can instantly transform into a 70" movie projector, battery powerhouse and more. This is just the start. More Moto Mods are being developed by your favorite brands. And they're designed to work with future generation Moto Z phones.***
+
+Buy now>
+http://www.motorola.com/us/moto-mods?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_mods&ceid=%%=v(@Emailhash)=%%
+
+
+***
+
+
+Free shipping†>
+http://www.motorola.com/us/legal/terms-of-sale?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=shipping&ceid=%%=v(@Emailhash)=%%
+
+
+Specials>
+http://www.motorola.com/us/specials?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=specials&ceid=%%=v(@Emailhash)=%%
+
+
+***
+
+Motorola-
+http://www.motorola.com/us/home?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_bug_top&ceid=%%=v(@Emailhash)=%%
+
+Twitter-
+https://twitter.com/Moto_USA
+
+Facebook- 
+https://www.facebook.com/MotoUSA/
+
+Google+
+https://plus.google.com/+Moto
+
+Instagram-
+https://www.instagram.com/moto_usa/
+
+YouTube-
+https://www.youtube.com/user/motorola
+
+
+***
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola. If this email has been forwarded to you, you can opt-in for future communications from Motorola.
+
+opt-in for future communications>
+https://pages.motorola-mail.com/registration-us-en/?c=ECOMM_NA_US_EN_REGISTRATION_FORWARDEDOPTIN&utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=forwarded_optin
+
+All screen images simulated.
+
+* Battery must be substantially depleted; charging rate slows as charging progresses. Charger sold separately in some markets.
+
+** Promo code valid with purchase of TurboPower 30 Wall Charger only through 10:59 a.m. CT on 12/31/16. Promo code must be entered at checkout for discount to apply. One time use only. Promotion cannot be combined with any other offer or discounts.
+
+*** Co-branded Moto Mods may require software upgrades to maintain compatibility, contact the manufacturer for details.
+
+† Free shipping for orders over $75.
+
+Certain features, functionality and product specifications may be network dependent and subject to additional terms, conditions, and charges. All are subject to change without notice.
+
+If you no longer wish to receive promotional emails from Motorola Mobility LLC, please unsubscribe.
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+Please direct any questions concerning Motorola's privacy practices to privacy@motorola.com.
+
+Inquiries or requests to unsubscribe from ("opt-out" of) communications from Motorola may also be mailed to: Motorola Mobility LLC Attn: Privacy Compliance Program 222 W. Merchandise Mart Plaza, Suite 1800, Chicago, IL 60654.
+
+Motorola values your privacy. For more information on our Privacy Practices, please visit Motorola Privacy Policy. Please visit Motorola Website Terms of Use to see Motorola's website terms of use.
+
+Privacy>
+http://www.motorola.com/us/legal/privacy-policy
+
+Legal>
+http://www.motorola.com/us/legal/terms-of-use
+
+MOTOROLA and the Stylized M Logo are trademarks of Motorola Trademark Holdings, LLC. DROID is a trademark of Lucasfilm Ltd. and its related companies. Android, Google and other marks are trademarks of Google Inc. All other trademarks are the property of their respective owners. ©%%=Format(Now(), "yyyy")=%% Motorola Mobility LLC. All rights reserved.

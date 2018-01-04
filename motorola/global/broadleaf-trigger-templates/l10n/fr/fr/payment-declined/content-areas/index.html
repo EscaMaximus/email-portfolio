@@ -1,0 +1,68 @@
+<!--%%[
+	/*
+		FR-FR LOCALIZED PAYMENT DECLINED
+		Summary: this template can load different declined content such as credit card, x code and generic.
+		Author: Motorola ExactTarget Team
+		Revision Date: 6/22/2016
+	*/
+]%%-->
+%%[
+		VAR @Email, @FirstName, @LastName, @FullName, @TotalOrderAmt, @MotoOrderNumber, @PurchaseDate, @DeclinedPaymentType, @DeclinedTypeList
+		
+		SET @Email = EmailAddress
+		SET @FirstName = FIRST_NAME
+		SET @LastName = LAST_NAME
+		
+		IF NOT EMPTY(@LastName) THEN
+			SET @FirstName = Concat(@FirstName, " ")
+		ENDIF
+		
+		SET @FullName = Concat(ProperCase(@FirstName),ProperCase(@LastName))
+		SET @TotalOrderAmt = TOTAL_ORDER_AMT
+		SET @MotoOrderNumber = MOTO_ORDER_NUMBER
+		SET @PurchaseDate = PURCHASE_DATE
+		SET @DeclinedPaymentType = Uppercase(Trim(PAYMENT_TYPE))
+		
+		/* Decline type list to check for (e.g. CREDITCARD,XCODE) */
+		SET @DeclinedTypeList = "CREDITCARD,XCODE"
+
+		/* Define extensions */
+		VAR @PreTextHeader, @MotoBug, @DeclinedContent, @TryAgain, @OrderSummary, @OrderDetails, @TryAgainFooter, @CustomerSupport, @Social, @Legal
+
+		/* Localized HTML/CSS for Head Templates */
+		SET @PreTextHeader = Concat(@SharedL10nPath, "SH_PRETEXTHEADER", @HTML)
+		SET @MotoBug = Concat(@SharedL10nPath, "SH_MOTOBUG", @HTML)
+		SET @OrderSummary = Concat(@SharedL10nPath, "SH_ORDERSUMMARY", @HTML)
+		SET @OrderDetails = Concat(@SharedL10nPath, "SH_ORDERDETAILS", @HTML)
+		SET @TryAgainFooter = Concat(@SharedL10nPath, "SH_TRYAGAINFOOTER", @HTML)
+		SET @CustomerSupport = Concat(@SharedL10nPath, "SH_CUSTOMERSERVICECONTACT", @HTML)
+		SET @Social = Concat(@SharedL10nPath, "SH_SOCIAL", @HTML)
+		SET @Legal = Concat(@SharedL10nPath, "SH_GENERICLEGAL", @HTML)
+
+		/* Identify decline type otherwise fallback to generic */
+		IF IndexOf(@DeclinedTypeList, @DeclinedPaymentType) > 0 THEN
+			SET @DeclinedContent = Concat(@SpecificL10nPath,@DeclinedPaymentType, @HTML)
+		ELSE
+			SET @DeclinedContent = Concat(@SpecificL10nPath, "GENERIC", @HTML)
+		ENDIF
+
+]%%
+	<table width="100%" bgcolor="#FAFAFA" border="0" cellpadding="0" cellspacing="0">
+		<tr>
+			<td>
+				<!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->     
+				<table bgcolor="#FFFFFF" class="content" align="center" cellpadding="0" cellspacing="0" border="0" style="margin:0 auto; width: 100%; max-width: 600px;">
+					%%=ContentAreaByName(@PreTextHeader)=%%
+					%%=ContentAreaByName(@MotoBug)=%%
+					%%=ContentAreaByName(@DeclinedContent)=%%
+					%%=ContentAreaByName(@OrderSummary)=%%
+					%%=ContentAreaByName(@OrderDetails)=%%
+					%%=ContentAreaByName(@TryAgainFooter)=%%
+					%%=ContentAreaByName(@CustomerSupport)=%%
+					%%=ContentAreaByName(@Social)=%%
+					%%=ContentAreaByName(@Legal)=%%
+				</table>
+				<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+			</td>
+		</tr>
+	</table>

@@ -1,0 +1,169 @@
+%%[
+	/*
+		GB-EN BLACK FRIDAY EPISODE 1
+		Author: Motorola ExactTarget Team
+		Revision Date: 11/18/2016
+	*/	
+	/* GA Tagging Definitions */
+	VAR @UtmSource, @UtmMedium, @UtmCampaign, @UtmContent, @EmailHash, @CouponCode
+	SET @UtmSource = 'motoemail'
+	SET @UtmMedium = 'email'
+	SET @UtmCampaign = 'ECOMM_EMARA_GB_EN_PROMOTION_2016BLACKFRIDAY'
+	SET @UtmContent = 'EPISODE01'
+
+]%%
+
+
+Featuring some of our lowest prices ever on select devices.
+
+*****
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola.
+
+Browser View>
+%%view_email_url%%
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+*****
+
+
+Free shipping for all orders over £75>
+https://www.motorola.co.uk/legal/terms-of-sale?utm_source=motoemail&utm_medium=email&utm_campaign=ECOMM_EMARA_GB_EN_PROMOTION_WINTERSALE&utm_content=LAUNCH&utm_term=shipping&#shipping
+
+
+Specials>
+https://www.motorola.co.uk/specials?utm_source=motoemail&utm_medium=email&utm_campaign=ECOMM_EMARA_GB_EN_PROMOTION_WINTERSALE&utm_content=LAUNCH&utm_term=specials
+
+
+*****
+
+
+hellomoto
+
+Black Friday begins! Get select new Moto Mods™ free with select Moto Z phones! Together, they transform what phones can do.
+
+Lenovo
+
+***
+
+FREE Incipio® offGRID™ Power Pack (£59.99 value)
+
+when you buy Moto Z
+
+Get the world's thinnest premium phone and snap on up to 22 hours of battery life* for free.** Plus, this offer qualifies for free shipping.
+
+Buy now>
+https://www.motorola.co.uk/products/motomaker/MotoModsUK?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=free_offgrid
+
+
+Lenovo
+
+***
+
+FREE JBL SoundBoost Speaker (£69.98 value)
+
+when you buy Moto Z Play
+
+Get the phone with our longest-lasting battery ever* and snap on powerful, stereo sound for free.** Plus, this offer qualifies for free shipping.
+
+Buy now>
+https://www.motorola.co.uk/products/motomaker/MotoModsUK?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=free_soundboost
+
+
+Lenovo
+
+***
+
+Moto G Play
+Save £10
+Reg. £129.98, now £119.98***
+
+More phone. More fun. Even more affordable than ever with a £10 discount.*** Plus, this offer qualifies for free shipping.
+
+Buy now>
+https://www.motorola.co.uk/products/moto-g-play/ecomm?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=g_play_discount
+
+
+Lenovo
+
+***
+
+Moto X Force
+Save £50 + Free Premium Back (£20 value)
+Reg. £479, from £429***
+
+Take £50 off the phone with the world's first shatterproof display† and get a free premium back.*** Plus, this offer qualifies for free shipping.
+
+Buy now>
+https://www.motorola.co.uk/products/motomaker/FLEXR7UK?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=x_force_discount
+
+
+Lenovo
+
+***
+
+Moto X Style
+Save £40 + Free Premium Back (£20 value) 
+Reg. £349, from £309***
+
+Save £40 and choose a free premium back for the smartphone that's beautiful inside and out.*** Plus, this offer qualifies for free shipping.
+
+Buy now>
+https://www.motorola.co.uk/products/motomaker/FLEXR6UK?accent-color=OP106012?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=x_style_discount
+
+
+Lenovo
+
+*****
+
+
+Motorola-
+http://www.motorola.co.uk/home?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_bug_top
+
+Twitter-
+https://twitter.com/moto
+
+Facebook- 
+https://www.facebook.com/MotoInUK
+
+Instagram-
+https://www.instagram.com/moto.uk/
+
+
+*****
+
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola.
+
+All screen images simulated.
+
+* All battery life claims are approximate and based on a standard mixed use profile. The mixed use profile is based on Motorola devices on major 4G LTE networks with excellent coverage, and includes both usage and standby time. Out-of-the-box settings are applied to the mixed use profile to prolong battery performance. Actual battery performance will vary and depends on many factors including signal strength, network configuration, age of battery, operating temperature, features selected, device settings, and voice, data, and other application usage patterns.
+
+** Offer valid through 11:59 p.m. GMT on 28/11/16 or while supplies last. Discount applied at checkout when both items are added to your cart. 
+
+*** Offer valid through 11:59 p.m. GMT on 28/11/16 or while supplies last. Discount and free premium back applied at checkout. Upgrades to Moto X Force, Moto X Style and Moto 360 are available at an extra cost as stated in Moto Maker.
+
+† The display and embedded lens are warranted against shattering and cracking for four (4) years from the original date of purchase; scratches or other damage to the protective lens is not covered by this warranty, but should always be in place to prevent scratches and other damage to the underlying components. This phone is not shockproof or designed to withstand all damage from dropping. All other warranty exclusions, including scratches and other cosmetic damage, intentional damage or abuse, normal wear and tear and other limitations apply.
+
+If you no longer wish to receive promotional emails from Motorola Mobility LLC, please unsubscribe.
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+Please direct any questions concerning Motorola's privacy practices to privacy@motorola.com.
+
+Enquiries or requests to unsubscribe from ("opt-out" of) communications from Motorola may also be mailed to: Motorola Mobility UK, Ltd., Redwood, Crockford Lane, Chineham Business Park, Basingstoke, RG24 8WQ.
+
+Motorola values your privacy. For more information on our Privacy Practices, please visit www.motorola.com/privacy
+
+Privacy>
+http://www.motorola.com/us/consumers/about-motorola-us/About_Motorola-Legal-Legal_and_Privacy_Policy/About_Motorola-Legal-Legal_and_Privacy_Policy.html
+
+Please visit www.motorola.com/legal to see Motorola's website terms of use.
+
+Legal>
+http://www.motorola.com/us/consumers/about-motorola-us/About_Motorola-Legal-Terms_of_Use/About_Motorola-Legal-Terms_of_Use.html
+
+MOTOROLA and the Stylised M Logo are trademarks of Motorola Trademark Holdings, LLC. Facebook is a trademark of Facebook, Inc. Android, Google and other marks are trademarks of Google Inc. All other trademarks are the property of their respective owners. (c)%%=Format(Now(), "yyyy")=%% Motorola Mobility LLC. All rights reserved.

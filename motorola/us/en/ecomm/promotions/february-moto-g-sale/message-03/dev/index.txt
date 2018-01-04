@@ -1,0 +1,138 @@
+﻿%%[/*
+
+		US-EN MOTO G GEN 3 FEB 2016 SALE MESSAGE 3
+		Author: Motorola ExactTarget Team
+		Revision Date: 2/28/2016
+		
+		/* GA Tagging Definitions */
+		
+		SET @UtmSource = 'motoemail'
+		SET @UtmMedium = 'email'
+		SET @UtmCampaign = 'ECOMM_NA_US_EN_PROMOTION_MOTOGGEN3FEB2016SALE'
+		SET @UtmContent = 'MESSAGE3'
+
+*/]%%
+
+
+16 GB Moto G: get two for only $399.98. Or personalize your Moto X Pure Edition.
+
+
+****
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola.
+
+Browser View>
+%%view_email_url%%
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+****
+
+
+Free shipping on orders over $75>
+http://www.motorola.com/us/consumers/about-motorola-us/About_Motorola-Legal-Terms_of_Sale/About_Motorola-Legal-Terms_of_Sale.html?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=free_shipping
+
+
+Apply for Moto Credit>
+http://www.motorola.com/us/motorola-finance-pdp.html?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=credit
+
+
+Specials>
+http://www.motorola.com/us/motorola-shop-all-sale.html?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=specials
+
+
+
+*****
+
+
+
+
+You choose!
+
+Build a pair of Moto Gs or Moto X Pure Edition with Moto Maker for a great price!
+
+Moto G
+2 for one low price
+
+reg. $439.98
+$399.98*
+
+Get one highly durable, customizable 16 GB Moto G (3rd Gen.) for yourself and another to share for only $399.98.* Use Moto Maker to choose the colors and engrave them with personal phrases.
+
+Build them now. This offer ends on Monday, March 7.
+
+Build yours>
+https://www.motorola.com/us/motomaker?pid=FLEXR4&action=designNew&utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=buy_now_ggen3#memory
+
+
+
+
+****
+
+
+
+Moto X
+PURE EDITION
+
+starting at
+$399.99*
+
+Make Moto X Pure Edition uniquely yours in Moto Maker with thousands of color and material customization options including premium wood and leather.
+
+Build yours>
+
+
+
+
+****
+
+
+Motorola-
+http://www.motorola.com/us/home?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_bug_top
+
+Twitter-
+https://twitter.com/motorola
+
+Facebook- 
+http://www.facebook.com/motorola
+
+Google+
+https://plus.google.com/+Motorola/posts
+
+Instagram-
+http://instagram.com/motorola
+
+YouTube-
+https://www.youtube.com/user/motorola
+
+
+****
+
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola.
+
+All screen images simulated.
+
+* $399.98 is sale price of two Moto G (3rd Gen.) 16GB phones; sale price of one Moto G (3rd Gen.) 16GB is $219.99 $199.99; sale price of Moto G (3rd Gen.) 16GB is through March 7, 2016 at 10:59 a.m. CT and is subject to product availability. $399.99 is non-sale price for Moto X Pure Edition 16GB.
+
+If you no longer wish to receive promotional emails from Motorola Mobility LLC, please unsubscribe.
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+Please direct any questions concerning Motorola's privacy practices to privacy@motorola.com.
+
+Inquiries or requests to unsubscribe from ("opt-out" of) communications from Motorola may also be mailed to: Motorola Mobility LLC Attn: Privacy Compliance Program 222 W. Merchandise Mart Plaza, Suite 1800, Mailstop 16-O19.02, Chicago, IL 60654.
+
+Motorola values your privacy. For more information on our Privacy Practices, please visit www.motorola.com/privacy
+
+Privacy>
+http://www.motorola.com/us/consumers/about-motorola-us/About_Motorola-Legal-Legal_and_Privacy_Policy/About_Motorola-Legal-Legal_and_Privacy_Policy.html
+
+Please visit www.motorola.com/legal to see Motorola's website terms of use.
+
+Legal>
+http://www.motorola.com/us/consumers/about-motorola-us/About_Motorola-Legal-Terms_of_Use/About_Motorola-Legal-Terms_of_Use.html
+
+MOTOROLA and the Stylized M Logo are trademarks of Motorola Trademark Holdings, LLC. Android, Android Wear, Google and other marks are trademarks of Google Inc. All other trademarks are the property of their respective owners. (c)%%=Format(Now(), "yyyy")=%% Motorola Mobility LLC. All rights reserved.

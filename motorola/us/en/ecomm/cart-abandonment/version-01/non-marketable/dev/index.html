@@ -1,0 +1,261 @@
+%%[
+	/*
+		Cart Abandonment Non-Marketables
+		Author: Motorola ExactTarget Team
+		Revision Date: 9/14/2016
+	*/
+
+	VAR @CartID, @URLType
+
+	SET @CartID = CART_ID 
+	SET @URLType = URL_TYPE
+]%%
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="HandheldFriendly" content="True" />
+	<title>Did you mean to leave this behind?</title>
+        
+	<style type="text/css">
+		body	 { width: 100%; background-color: #f1f1f1; margin:0!important; padding:0; -webkit-text-size-adjust: 100%;-ms-text-size-adjust:100%; }
+		html { width: 100%; }
+		table, td { border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; }
+		img{ border:0 none; height:auto;line-height:100%;outline:none;text-decoration:none; }
+		a img{ border:0 none;}
+		.imageFix{ display:block;}
+		#outlook a{ padding:0; }
+		.ExternalClass{ width:100%; }
+		.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div{ line-height: 100%; }
+		div[style*="margin: 16px 0"] { margin:0 !important; }
+		.applelinks a { text-decoration:none; color:#8d8f95; }
+		.default-link a { text-decoration:none; color:#8d8f95; }
+		.body-copy-383838 a { text-decoration:none; color:#383838; }
+
+		@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+		
+		.cta-show-them-table:hover { border-radius:3px; background-color:#5789eb!important; color:#FFFFFF!important; -webkit-transition: all .17s !important; transition: all .17s !important; }
+		a.cta-show-them:hover { border-radius:3px; background-color:#5789eb!important; color:#FFFFFF!important; -webkit-transition: all .17s !important; transition: all .17s !important; }
+				
+		/* Outlook 07/10/13 fix */
+		.pre-text-header  { font-family: Arial, Verdana, sans-serif; color:#383838; font-size:13px; line-height:16px; }
+		.intro-copy-cell, .legal-copy { font-family: Arial, Verdana, sans-serif; font-size:11px; line-height:14px; font-weight:normal; }
+		.promotion-features { font-family: Verdana, Arial, sans-serif; font-size: 11px; line-height: 14px; }
+		.story-one-header-01 { font-family: 'Open Sans', sans-serif; font-size:28px; line-height:36px; font-weight:bold; }
+		.story-one-paragraph-01 { font-family: Verdana, Arial, sans-serif; font-size: 15px; line-height: 24px; font-weight:normal; }
+
+		@media screen and (max-width: 480px), screen and (max-device-width: 480px) {
+
+			body[yahoo] .hide { display:none!important; }
+
+			/* header */
+			body[yahoo] td[class="pre-text-header"] { padding:0 20px 0 0!important; }
+			body[yahoo] td[class="intro-copy-cell"] { padding:3px 0 0 0!important; }
+			body[yahoo] td[class="bug-wrapper"] { padding:15px 20px 10px 10px!important;  }
+			body[yahoo] td[class="intro-wrapper"] { padding:0 0 0 0!important; }
+			body[yahoo] td[class="promotion-features"] { padding:5px 25px 5px 25px!important; }
+			
+			/* mobile resize */
+			body[yahoo] .mobile-content-size { width:320px!important; min-width:320px!important; }
+			
+			/* header info */
+			body[yahoo] td[class="story-one-header-01"] { text-align:center!important; padding: 40px 20px 15px 20px!important; font-family: 'Open Sans', Arial, sans-serif!important; font-size:27px!important; line-height:33px!important; font-weight:bold!important; }
+			body[yahoo] td[class="story-one-paragraph-01"] { text-align:center!important; padding: 0 20px 25px 20px !important;  }
+			
+			/* hero and supporting info */
+			body[yahoo] th[class="break-column"] { width:320px!important; display:block!important; clear:both!important; float:left!important; padding:0 0 0 0!important; text-align:center!important; }
+			body[yahoo] th[class="break-hero-column"] { width:270px!important; display:block!important; clear:both!important; float:left!important; padding:0 25px 0 25px!important; text-align:center!important; }
+			body[yahoo] td[class="product-name"] { padding:0 30px 7px 30px!important; text-align:center!important; }
+			body[yahoo] td[class="product-info"] { padding:0 30px 0 30px!important; text-align:center!important; font-size: 15px!important; font-weight: normal!important; font-family: Verdana, Arial, sans-serif!important; line-height: 23px!important; }
+			body[yahoo] td[class="cta-spacer"] { height:25px!important; }
+			body[yahoo] td[class="cta-one-row"] { width:320px!important; padding:0 0 0 20px!important; }
+			body[yahoo] table[class="cta-one-row-table"] { width:280px!important; }
+			body[yahoo] td[class="hor-line-wrapper"] { padding: 40px 0 20px 20px !important;  }
+			body[yahoo] img[class="hor-line"] { width: 280px!important; height: 1px!important;  }
+
+			/* legal */
+			body[yahoo] td[class="legal-copy"] { text-align:center!important; }	
+		}
+	</style>
+</head>
+
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" yahoo="fix" style="margin:0; padding:0;" bgcolor="#f1f1f1">
+<div style="display:none; white-space:nowrap; font:15px courier; color:#ffffff; line-height:0; width:550px !important; min-width:550px !important; max-width:550px !important; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div>
+	<!-- Wrapper -->
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#f1f1f1" >
+		<tr>
+			<td width="100%" valign="top">
+			
+				<table width="550" border="0" cellpadding="0" cellspacing="0" align="center" class="mobile-content-size" style="min-width:550px;">
+					<tr>
+						<td style="padding:15px 20px 15px 15px;" class="bug-wrapper"><a href="http://www.motorola.com/us/home?utm_source=motoemail&utm_medium=email&utm_campaign=ECOMM_NA_US_EN_AUTOMATION_CARTABANDONMENT&utm_content=REMINDERNONMARKETABLE&utm_term=moto_bug_top" title="Motorola" target="_blank" alias="moto_bug_top"><img src="http://image.motorola-mail.com/lib/fe901272716d077b74/m/3/bug-motorola-20150721.png" alt="" width="51" height="51" style="font-family:arial, verdana, sans-serif; font-size:14px; color:#4d4d4d; border:0;" /></a></td>
+						<td class="intro-wrapper">
+							<!-- start intro -->
+							<table border="0" cellpadding="0" cellspacing="0">
+								<tr>
+									<td style="padding:0 5px 3px 0; font-family: Arial, Verdana, sans-serif; color:#383838; font-size:13px!important; line-height:16px!important; font-weight:normal;" class="pre-text-header"><span style="color:#383838; font-weight:bold;"><a style="text-decoration:none;  font-family: Arial, Verdana, sans-serif; color:#383838; font-size:13px; line-height:16px;" class="body-copy-383838">Visit Motorola.com to complete your purchase.</a></span></td>
+								</tr>
+							</table>
+							<table border="0" cellpadding="0" cellspacing="0">
+								<tr>
+									<td style="padding:0 50px 5px 0; font-family: Arial, Verdana, sans-serif; color:#8d8f95; font-size:11px; line-height:14px; font-weight:normal;" class="intro-copy-cell"><span class="hide">You [<a style="color:#8d8f95; text-decoration:none;" class="default-link"><span style="color:#8d8f95; text-decoration:none;">%%emailaddr%%</span></a>] have received this email message to update you about your recent interaction with <a href="http://www.motorola.com/us/home?utm_source=motoemail&utm_medium=email&utm_campaign=ECOMM_NA_US_EN_AUTOMATION_CARTABANDONMENT&utm_content=REMINDERNONMARKETABLE&utm_term=motorola_com_legal" title="motorola.com" style="text-decoration:underline; color:#8d8f95;" target="_blank" alias="motorola_com_legal">motorola.com</a>. This is a one-time communication. </span> <a href="%%view_email_url%%" title="Web Version" style="text-decoration:underline; color:#8d8f95;" target="_blank" alias="browser_view">Browser View</a> | <a href="%%=RedirectTo(unsub_center_url)=%%" title="Unsubscribe" style="text-decoration:underline; color:#8d8f95;" target="_blank" alias="unsubscribe">Unsubscribe</a>
+									</td>
+								</tr>
+							</table>
+							<!-- end intro -->
+						</td>
+					</tr>
+				</table>
+				<table width="550" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#e7e7e7" class="mobile-content-size" style="min-width:550px; border-top-left-radius:3px; border-top-right-radius:3px;">
+					<tr>
+						<td width="550" class="promotion-features" style="text-align: center; vertical-align: middle; font-size: 11px !important; color: #212121; font-weight: normal; font-family: Verdana, Arial, sans-serif; line-height: 14px !important; padding:5px 10px 8px 10px; letter-spacing:0.20px;"><a href="http://www.motorola.com/us/legal/terms-of-sale?utm_source=motoemail&utm_medium=email&utm_campaign=ECOMM_NA_US_EN_AUTOMATION_CARTABANDONMENT&utm_content=REMINDERNONMARKETABLE&utm_term=free_shipping" title="Free shipping on orders over $75" style="text-decoration:none; font-size: 11px !important; color: #212121; font-weight: normal; font-family: Verdana, Arial, sans-serif; line-height: 14px !important;" class="promo-features-links" target="_blank">Free shipping on orders over $75</a> | <a href="http://www.motorola.com/us/motorola-financing?utm_source=motoemail&utm_medium=email&utm_campaign=ECOMM_NA_US_EN_AUTOMATION_CARTABANDONMENT&utm_content=REMINDERNONMARKETABLE&utm_term=credit" title="Apply for Moto Credit" style="text-decoration:none; font-size: 11px !important; color: #212121; font-weight: normal; font-family: Verdana, Arial, sans-serif; line-height: 14px !important;" class="promo-features-links" target="_blank">Apply for Moto Credit</a> | <a href="http://www.motorola.com/us/specials?utm_source=motoemail&utm_medium=email&utm_campaign=ECOMM_NA_US_EN_AUTOMATION_CARTABANDONMENT&utm_content=REMINDERNONMARKETABLE&utm_term=specials" title="Specials" style="text-decoration:none; font-size: 11px !important; color: #212121; font-weight: normal; font-family: Verdana, Arial, sans-serif; line-height: 14px !important;" class="promo-features-links" target="_blank">Specials</a></td>
+					</tr>
+				</table>	
+				<table width="550" border="0" cellpadding="0" cellspacing="0" align="center" class="mobile-content-size" style="min-width:550px; border-radius:3px;" bgcolor="#FFFFFF">
+					<tr>
+						<td width="550" valign="top" class="mobile-content-size" style="min-width:550px;">
+							<!-- start -->
+								<table width="550" border="0" cellpadding="0" cellspacing="0" align="center" class="mobile-content-size" style="min-width:550px;">
+									<tr>
+										<td valign="top" style="padding:0">
+										
+											<table width="550" border="0" cellpadding="0" cellspacing="0" class="mobile-content-size" style="min-width:550px">
+												<tr>
+													<td width="550" style="text-align: center; vertical-align: top; font-family: 'Open Sans', Arial, sans-serif; font-size:28px; line-height:36px; font-weight:bold; color:#464646; padding:40px 35px 20px 35px;" class="story-one-header-01">Thank you for adding these products to your cart</td>
+												</tr>
+												<tr>
+													<td width="550" style="text-align: center; vertical-align: top; font-size: 15px !important; color: #464646; font-weight: normal; font-family: Verdana, Arial, sans-serif; line-height: 24px !important; padding:0 55px 25px 55px;" class="story-one-paragraph-01"><a style="color:#464646; text-decoration:none;" class="body-copy-464646">To stay informed about Motorola products and services, <a href="https://pages.motorola-mail.com/registration-us-en/?c=ECOMM_NA_US_EN_AUTOMATION_CARTABANDONMENT_REMINDERNONMARKETABLE&utm_source=motoemail&utm_medium=email&utm_campaign=ECOMM_NA_US_EN_AUTOMATION_CARTABANDONMENT&utm_content=REMINDERNONMARKETABLE&utm_term=optin" style="color:#464646; text-decoration:underline" title="Subscribe now" alias="optin" target="_blank">subscribe now</a> or visit <a href="http://www.motorola.com/us/home?utm_source=motoemail&utm_medium=email&utm_campaign=ECOMM_NA_US_EN_AUTOMATION_CARTABANDONMENT&utm_content=REMINDERNONMARKETABLE&utm_term=moto_com" style="color:#464646; text-decoration:underline" title="Visit motorola.com" alias="optin" target="_blank">motorola.com</a>.</a></td>
+												</tr>                         
+											</table>
+											%%[
+											/* Define line item variables */
+											VAR @GAString, @ReturnDataSet, @LoopQty, @Counter, @ImageURL, @AssetModel, @AssetModelList, @ItemNumberSku, @CTAURL, @QueryStringCheck, @QueryStringDelimiter
+
+											SET @GAString = "utm_source=motoemail&utm_medium=email&utm_campaign=ECOMM_NA_US_EN_AUTOMATION_CARTABANDONMENT&utm_content=REMINDERNONMARKETABLE&utm_term="
+											
+											/* Lookup content on Cart ID, limit to 8 rows */
+											SET @ReturnDataSet = LookupOrderedRows("ECOMM_NA_US_EN_AUTOMATION_CARTABANDONMENT_NONMARKETABLEDATA",8,"HIERARCHY ASC","CART_ID",@CartID)
+											SET @TotalRows = Rowcount(@ReturnDataSet)	
+										
+											/* Loop through line items */
+											SET @LoopQty = @TotalRows
+											FOR @Counter = 1 to @LoopQty DO
+
+											SET @row = Row(@ReturnDataSet,@Counter)
+											SET @ImageURL = URLEncode(Field(@row,"IMAGE_URL"),"0","1")
+											SET @AssetModel = Field(@row,"ASSET_MODEL")
+											SET @ItemNumberSku = Field(@row,"ITEM_NUMBER_SKU")
+
+											IF @URLType == "pdp" THEN
+												SET @CTAURL = Field(@row,"PDP_URL")
+											ELSEIF @URLType == "motomaker" THEN
+												SET @CTAURL = Field(@row, "MOTOMAKER_URL")
+											ELSE
+												SET @CTAURL = Field(@row, "PDP_URL")
+											ENDIF
+
+											/* Check query string so we know how to append GA strong */
+											SET @QueryStringCheck = IndexOf(@CTAURL, "?")
+
+											IF @QueryStringCheck >= 1 THEN
+												SET @QueryStringDelimiter = "&"
+											ELSE
+												SET @QueryStringDelimiter = "?"
+											ENDIF
+											]%%
+											
+									%%[IF IndexOf(@AssetModelList,@AssetModel) == 0 THEN
+											/* Add products to list as we loop */
+											SET @AssetModelList = Concat(@AssetModelList,@AssetModel,",") ]%%
+											<table width="550" border="0" cellpadding="0" cellspacing="0" class="mobile-content-size" style="min-width:550px">
+												<tr>
+													<th width="275" style="text-align: center; vertical-align: top; padding:0 0 0 0;" class="break-hero-column">
+														<!-- start hero -->
+															<img src="%%=v(@ImageURL)=%%" alt="" width="270" />
+														<!-- end hero -->
+													</th>
+													<th width="275" style="text-align: left; vertical-align: top; font-size: 15px; color: #464646; font-weight: normal; font-family: Verdana, Arial, sans-serif; line-height: 28px; padding:0 25px 25px 0;" class="break-column">
+														<!-- start product info -->
+															<table width="250" border="0" cellspacing="0" cellpadding="0" class="mobile-content-size" style="min-width:250px">
+																<tr>
+																	<td style="vertical-align: top; font-size: 20px; color: #464646; font-weight: bold; font-family: 'Open Sans', Arial, sans-serif; line-height: 28px; padding:80px 0 0 0;" class="product-name">%%=v(@AssetModel)=%%</td>
+																</tr>
+																<tr>
+																	<td height="25" class="cta-spacer"></td>
+																</tr>
+																<tr>
+																	<td style="vertical-align:top;" class="cta-one-row">
+																		<!-- start CTA -->
+																		<table border="0" bgcolor="#5c92fa" cellpadding="0" cellspacing="0" class="cta-one-row-table" style="color:#FFFFFF; text-decoration:none; background-color:#5c92fa; border-radius:3px; width:200px;" height="55">
+																			<tr>
+																				<td align="center" valign="middle" height="55" style="color:#FFFFFF;" class="cta-show-them"><a href="%%=RedirectTo(Concat(@CTAURL,@QueryStringDelimiter,@GAString,@ItemNumberSku))=%%" target="_blank" class="cta-show-them" style="display:inline-block; color:#FFFFFF; text-decoration:none; font-family: 'Open Sans', Arial, sans-serif; font-size:16px; line-height:55px; height:55px; width:100%; font-weight:normal; border:0;" title="Resume shopping">Resume shopping</a></td>
+																			</tr>
+																		</table>
+																		<!-- end CTA -->
+																	</td>
+																</tr>
+															</table>
+														<!-- end product info -->
+													</th>
+												</tr>                         
+											</table>
+											%%[IF @TotalRows >= 2 THEN]%%
+											<table width="550" border="0" cellpadding="0" cellspacing="0" class="mobile-content-size" style="min-width:550px">
+												<tr>
+													<td width="550" style="text-align: left; vertical-align: top; font-size: 1px !important; font-weight: normal; font-family: Arial, Verdana, sans-serif; line-height: 1px !important; padding:0 0 0 30px;" class="hor-line-wrapper"><img src="https://image.motorola-mail.com/lib/fe901272716d077b74/m/3/hor-line-single_20151001.gif" alt="" height="1" width="484" class="hor-line" /></td>
+												</tr>  
+											</table>
+											%%[ENDIF]%%
+											%%[/* Add products to list as we loop */
+													SET @AssetModelList = Concat(@AssetModelList,@AssetModel,",")
+													ENDIF]%%
+											%%[NEXT @Counter]%%
+											<table width="550" border="0" cellpadding="0" cellspacing="0" align="center" class="mobile-content-size" style="min-width:550px">
+												<tr>
+													<td width="550" height="35" class="promo-features-bottom-spacer"></td>
+												</tr>  
+											</table>
+										</td>
+									</tr>
+								</table>
+							<!-- end -->
+						</td>
+					</tr>
+				</table>	
+				<table width="550" height="54" border="0" cellpadding="0" cellspacing="0" bgcolor="#383838" align="center" class="mobile-content-size" style="min-width:550px; border-bottom-left-radius:4px; border-bottom-right-radius:4px;">
+					<tr>
+						<td style="text-align:center; font-size: 1px; line-height: 1px;"  width="550" height="54">
+							<!-- start social -->
+							<a href="https://twitter.com/Moto_USA" title="Twitter" target="_blank"><img src="http://image.motorola-mail.com/lib/fe901272716d077b74/m/2/ico-twitter-mobile-white-email-20141208.png" width="63" height="54" alt="Twitter" title="Twitter" style="font-family: Arial, Helvetica, sans-serif; font-size:11px; color:#FFFFFF; border:0;" /></a><a href="https://www.facebook.com/MotoUSA/" title="Facebook" target="_blank"><img src="http://image.motorola-mail.com/lib/fe901272716d077b74/m/2/ico-facebook-mobile-white-email-20141208.png" width="63" height="54" alt="Facebook" title="Facebook" style="font-family: Arial, Helvetica, sans-serif; font-size:11px; color:#FFFFFF; border:0;" /></a><a href="https://plus.google.com/+Moto" title="Google+" target="_blank"><img src="http://image.motorola-mail.com/lib/fe901272716d077b74/m/2/ico-google-plus-mobile-white-email-20141208.png" width="63" height="54" alt="Google+" title="Google+" style="font-family: Arial, Helvetica, sans-serif; font-size:11px; color:#FFFFFF; border:0;" /></a><a href="https://www.instagram.com/moto_usa/" title="instagram" target="_blank"><img src="http://image.motorola-mail.com/lib/fe901272716d077b74/m/4/ico-instagram-mobile-white-20160520.png" width="63" height="54" alt="instagram" title="instagram" style="font-family: Arial, Helvetica, sans-serif; font-size:11px; color:#FFFFFF; border:0;" /></a><a href="https://www.youtube.com/user/motorola" title="YouTube" target="_blank"><img src="http://image.motorola-mail.com/lib/fe901272716d077b74/m/2/ico-youtube-mobile-white-email-20141208.png" width="63" height="54" alt="YouTube" title="YouTube" style="font-family: Arial, Helvetica, sans-serif; font-size:11px; color:#FFFFFF; border:0;" /></a>						
+							<!-- end -->
+						</td>
+					</tr>
+				</table>	
+				<table width="550" border="0" cellpadding="0" cellspacing="0" align="center" class="mobile-content-size" style="-webkit-text-size-adjust: 100%;">
+					<tr>
+						<td align="center" style="padding:20px 20px 10px 20px; font-family: Arial, Helvetica, sans-serif; color:#8d8f95; font-size:11px; line-height:15px; text-align:left;" class="legal-copy">You [<a style="color:#8d8f95; text-decoration:none;" class="default-link"><span style="color:#8d8f95; text-decoration:none;">%%emailaddr%%</span></a>] have received this email message to update you about your recent interaction with <a href="http://www.motorola.com/us/home?utm_source=motoemail&utm_medium=email&utm_campaign=ECOMM_NA_US_EN_AUTOMATION_CARTABANDONMENT&utm_content=REMINDERNONMARKETABLE&utm_term=motorola_com_legal" title="motorola.com" style="text-decoration:underline; color:#8d8f95;" target="_blank" alias="motorola_com_legal">motorola.com</a>. This is a one-time communication.</td>
+					</tr>
+					<tr>
+						<td align="center" style="padding:0 20px 10px 20px; font-family: Arial, Helvetica, sans-serif; color:#8d8f95; font-size:11px; line-height:15px; text-align:left;" class="legal-copy">All screen images simulated.</td>
+					</tr>
+					<tr>
+						<td align="center" style="padding:0 20px 10px 20px; font-family: Arial, Helvetica, sans-serif; color:#8d8f95; font-size:11px; line-height:15px; text-align:left;" class="legal-copy">If you no longer wish to receive promotional emails from Motorola Mobility LLC, please <a href="%%=RedirectTo(unsub_center_url)=%%" title="unsubscribe" style="text-decoration:underline; color:#8d8f95;" target="_blank">unsubscribe</a>. Please direct any questions concerning Motorola's privacy practices to <a href="mailto:privacy@motorola.com" title="privacy@motorola.com" style="color:#8d8f95; text-decoration:underline;" target="_blank">privacy@motorola.com</a>.</td>
+					</tr>
+					<tr>
+						<td align="center" style="text-align:left; padding:0 20px 10px 20px; font-family: Arial, Helvetica, sans-serif; color:#8d8f95; font-size:11px; line-height:15px;" class="legal-copy">Inquiries or requests to unsubscribe from (&quot;opt-out&quot; of) communications from Motorola may also be mailed to: Motorola Mobility LLC Attn: Privacy Compliance Program <a style="color:#8d8f95; text-decoration:none;" class="default-link">222 W. Merchandise Mart Plaza, Suite 1800, Chicago, IL 60654.</a></td>
+					</tr>
+					<tr>
+						<td align="center" style="text-align:left; padding:0 20px 10px 20px; font-family: Arial, Helvetica, sans-serif; color:#8d8f95; font-size:11px; line-height:15px;" class="legal-copy">Motorola values your privacy. Read the <a href="http://www.motorola.com/us/legal/privacy-policy" title="Privacy" style="color:#8d8f95; text-decoration:underline;" target="_blank">Motorola Privacy Policy</a> for more information on our privacy practices. Please read the <a href="http://www.motorola.com/us/legal/terms-of-use" title="Terms of Use" style="color:#8d8f95; text-decoration:underline;" target="_blank">Motorola Website Terms of Use</a> before using our website.</td>
+					</tr>
+					<tr>
+						<td align="center" style="padding:0 20px 40px 20px; font-family: Arial, Helvetica, sans-serif; color:#8d8f95; font-size:11px; line-height:15px; text-align:left;" class="legal-copy">MOTOROLA and the Stylized M Logo are trademarks of Motorola Trademark Holdings, LLC. Facebook is a trademark of Facebook, Inc. Android, Google and other marks are trademarks of Google Inc. All other trademarks are the property of their respective owners. &copy;%%=Format(Now(), "yyyy")=%% Motorola Mobility LLC. All rights reserved.</td>
+					</tr>
+				</table>		
+							
+			</td>
+		</tr>
+	</table>
+	<custom name="opencounter" type="tracking"> 
+</body>
+</html>

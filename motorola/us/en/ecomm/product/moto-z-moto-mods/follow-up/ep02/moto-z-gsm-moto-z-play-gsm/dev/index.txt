@@ -1,0 +1,131 @@
+%%[
+	/*
+		US-EN MOTO Z GSM / MOTO Z PLAY GSM FOLLOW UP 2
+		Author: Motorola ExactTarget Team
+		Revision Date: 11/8/2016
+	*/	
+	/* GA Tagging Definitions */
+	VAR @EmailDataDefinitionID, @UtmSource, @UtmMedium, @UtmCampaign, @UtmContent, @EmailHash, @CouponCode
+
+	SET @EmailDataDefinitionID = EMAIL_DEFINITION_ID
+	SET @EmailDataDefinitionID = 356
+	
+	SET @PreTextHeader = Field(@row,"PRE_TEXT_HEADER")
+	SET @UtmSource = Field(@row,"UTM_SOURCE")
+	SET @UtmMedium = Field(@row,"UTM_MEDIUM")
+	SET @UtmCampaign = Field(@row,"UTM_CAMPAIGN")
+	SET @UtmContent = Field(@row,"UTM_CONTENT")
+
+]%%
+
+
+%%=v(@PreTextHeader)=%%
+
+
+*****
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola.
+
+Browser View>
+%%view_email_url%%
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+*****
+
+Free shipping on orders over $75>
+http://www.motorola.com/us/legal/terms-of-sale?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=free_shipping&ceid=%%=v(@EmailHash)=%%
+
+
+Specials>
+http://www.motorola.com/us/specials?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=specials&ceid=%%=v(@EmailHash)=%%
+
+*****
+
+Moto Z unlocked. Impossibly thin.
+
+We have unlocked the world's thinnest premium smartphone for AT&T, T-Mobile and other compatible GSM carriers.
+
+
+Plus, experience true smartphone innovation with Moto Mods™. Transform your Moto Z into an entirely new device in a snap.
+
+Buy now>
+http://www.motorola.com/us/products/moto-z?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=buy_now_moto_z&ceid=%%=v(@EmailHash)=%%
+
+
+GSM UNLOCKED
+
+***
+
+Moto Z Play unlocked. Incredible battery.
+IF @EmailDataDefinitionID == 355 THEN
+Moto Z Play, featuring up to 50 hours of battery life*, is unlocked for AT&T, T-Mobile and other compatible GSM carriers.
+
+You can also convert Moto Z Play into another device in a snap. With Moto Mods, do things you never thought were possible with a phone.
+
+Buy now>
+http://www.motorola.com/us/products/moto-z-play?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=buy_now_moto_z_play_ver_1&ceid=%%=v(@EmailHash)=%%
+
+ELSE
+Moto Z Play, featuring Moto's longest lasting battery ever, is unlocked for AT&T, T-Mobile and other compatible GSM carriers.
+
+You can also convert Moto Z Play into another device in a snap. With Moto Mods, do things you never thought were possible with a phone.
+
+Buy now>
+http://www.motorola.com/us/products/moto-z-play?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=buy_now_moto_z_play_ver_2&ceid=%%=v(@EmailHash)=%%
+
+ENDIF
+
+
+*****
+
+Motorola-
+http://www.motorola.com/us/home?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_bug_top&ceid=%%=v(@EmailHash)=%%
+
+Twitter-
+https://twitter.com/Moto_USA
+
+Facebook- 
+https://www.facebook.com/MotoUSA/
+
+Google+
+https://plus.google.com/+Moto
+
+Instagram-
+http://instagram.com/moto_usa/
+
+YouTube-
+https://www.youtube.com/user/motorola
+
+
+*****
+
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola. If this email has been forwarded to you, you can opt-in for future communications from Motorola.
+
+opt-in for future communications>
+https://pages.motorola-mail.com/registration-us-en/?c=ECOMM_NA_US_EN_REGISTRATION_FORWARDEDOPTIN&utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=forwarded_optin
+
+All screen images simulated.
+IF @EmailDataDefinitionID == 355 THEN
+* All battery life claims are approximate and based on a standard mixed use profile. The mixed use profile is based on Motorola devices on major 4G LTE networks with excellent coverage and includes both usage and standby time. Out-of-box settings are applied to the mixed use profile to project battery performance. Actual battery performance will vary and depends on many factors including signal strength, network configuration, age of battery, operating temperature, features selected, device settings, and voice, data, and other application usage patterns.ENDIF
+
+If you no longer wish to receive promotional emails from Motorola Mobility LLC, please unsubscribe.
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+Please direct any questions concerning Motorola's privacy practices to privacy@motorola.com.
+
+Inquiries or requests to unsubscribe from ("opt-out" of) communications from Motorola may also be mailed to: Motorola Mobility LLC Attn: Privacy Compliance Program 222 W. Merchandise Mart Plaza, Suite 1800, Mailstop 16-O19.02, Chicago, IL 60654.
+
+Motorola values your privacy. For more information on our Privacy Practices, please visit Motorola Privacy Policy. Please visit Motorola Website Terms of Use to see Motorola's website terms of use.
+
+Privacy>
+http://www.motorola.com/us/legal/privacy-policy
+
+Legal>
+http://www.motorola.com/us/legal/terms-of-use
+
+MOTOROLA and the Stylized M Logo are trademarks of Motorola Trademark Holdings, LLC. Android, Google and other marks are trademarks of Google Inc. All other trademarks are the property of their respective owners. (c)%%=Format(Now(), "yyyy")=%% Motorola Mobility LLC. All rights reserved.

@@ -1,0 +1,64 @@
+%%[
+	/*
+		GLOBAL LOCALE FILE ROUTER
+		Summary: Content is defined in the parent email. Locale router pulls l10n content based on PREF_LANGUAGE first two characters and Country which is defined by BILL_TO_COUNTRY.
+		Author: Motorola ExactTarget Team
+		Revision Date: 3/28/2016
+	*/
+
+	VAR @PreferredLanguage, @ParsedLanguage, @ParsedCountry
+
+	/* Parse the Language and Country if it exists */
+	SET @PreferredLanguage = PREF_LANGUAGE
+
+	IF Length(@PreferredLanguage) >= 5 THEN
+		SET @ParsedLanguage = Substring(@PreferredLanguage, 1, 2)
+		SET @ParsedLanguage = Uppercase(@ParsedLanguage)
+		SET @ParsedCountry = BILL_TO_COUNTRY
+	ENDIF
+
+	VAR @Language, @Country, @Locale_Passthru, @Locale_Str
+
+	/* The locales in this string are an exact match delimited (e.g. EN_GB,EN_US,DE_DE,ES_MX,FR_FR) */
+	SET @Locale_Passthru = "EN_US,EN_GB,DE_DE,FR_FR,ES_MX,PT_BR"
+
+	/* Concat so we get an entirely uppercase string with locale */
+	SET @Locale_Str = Concat(@ParsedLanguage, "_", @ParsedCountry)
+
+	/* Used for l10n date and time formatting (en_HK would pass through this without being modified) */
+	VAR @C_Sharp_Locale_Str
+
+	/* Identify l10n otherwise fallback to EN_US */
+	IF IndexOf(@Locale_Passthru, @Locale_Str) > 0 THEN
+		SET @Language = @ParsedLanguage
+		SET @Country = @ParsedCountry
+		SET @C_Sharp_Locale_Str = Concat(Lowercase(@ParsedLanguage), "-", Uppercase(@ParsedCountry))
+	ELSE
+		SET @Language = "EN"
+		SET @Country = "US"
+		SET @C_Sharp_Locale_Str = Concat(Lowercase(@Language), "-", Uppercase(@Country))
+	ENDIF
+
+	/* Define file paths, Project Folder defined at Parent Level */
+	VAR @L10NBaseFilePath, @L10nPath, @SharedFolder, @SpecificL10nPath, @SharedL10nPath
+
+	SET @L10nBaseFilePath = 'My Contents\TRIGGERED_EMAILS\ECOMM\GLO\L10n'
+	SET @SharedFolder = '_SHARED_CONTENT'
+
+	SET @SpecificL10nPath = Concat(@L10nBaseFilePath, "\", @Country, "\", @Language, "\", @ProjectFolder, "\")
+	SET @SharedL10nPath = Concat(@L10nBaseFilePath, "\", @Country, "\", @Language, "\", @SharedFolder, "\")
+
+	/* Define extensions */
+	VAR @CSS, @HTML, @Index, @CssHead
+
+	SET @CSS = '.css'
+	SET @HTML = '.html'
+
+	/* Include localized variables (Subject line, C Sharp date formatting) */
+	ContentAreaByName(Concat(@SpecificL10nPath, "VARIABLES", @HTML))
+
+	/* Localized HTML/CSS for Head Templates */
+	SET @Index = Concat(@SpecificL10nPath, "INDEX", @HTML)
+	SET @CssHead = Concat(@SpecificL10nPath, "CSS_HEAD", @CSS)
+
+]%%

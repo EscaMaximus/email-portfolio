@@ -1,0 +1,67 @@
+                                               
+
+Thank you for registering. Use this promo code to save at Motorola.com. 
+
+
+***
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola.
+
+Browser View: %%view_email_url%% 
+
+Unsubscribe: %%=RedirectTo(unsub_center_url)=%% 
+
+***
+
+Here's your promo code
+
+Thank you for your registration. Use this promo code for special pricing on great products at  
+
+http://www.motorola.com/us/home?utm_source=motoemail&utm_medium=email&utm_campaign=CONSUMER_NA_US_EN_REGISTRATION_DROIDULTRAMAXXMINIPROMO&utm_content=COUPON&utm_term=motorola_com 
+
+Motorola.com :
+
+Enter the promo code at checkout. You must redeem by  
+Thursday, June 2.*
+
+
+Shop now
+http://www.motorola.com/us/home?utm_source=motoemail&utm_medium=email&utm_campaign=CONSUMER_NA_US_EN_REGISTRATION_DROIDULTRAMAXXMINIPROMO&utm_content=COUPON&utm_term=shop_now 
+
+*** 
+ 
+https://twitter.com/Moto_USA
+
+https://www.facebook.com/Motorola 
+
+https://plus.google.com/+Motorola/posts 
+
+http://instagram.com/motorola 
+
+https://www.youtube.com/user/motorola 
+
+***
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola.
+
+All screen images simulated.
+
+* Promo code valid through 11:59 a.m. CT on 6/2/16. Promo code must be entered at checkout for discount to apply. One time use only. Promotion cannot be combined with any other offer or discounts.
+
+If you no longer wish to receive promotional emails from Motorola Mobility LLC, please 
+%%=RedirectTo(unsub_center_url)=%% 
+unsubscribe . Please direct any questions concerning Motorola's privacy practices to 
+privacy@motorola.com
+
+Inquiries or requests to unsubscribe from ("opt-out" of) communications from Motorola may also be mailed to: Motorola Mobility LLC Attn: Privacy Compliance Program 222 W. Merchandise Mart Plaza, Suite 1800, Mailstop 16-O19.02, Chicago, IL 60654.
+Motorola values your privacy. For more information on our Privacy Practices, please visit 
+http://www.motorola.com/us/consumers/about-motorola-us/About_Motorola-Legal-Privacy_Policy/About_Motorola-Legal-Privacy_Policy.html 
+www.motorola.com/privacy
+
+
+Please visit 
+http://www.motorola.com/us/consumers/about-motorola-us/About_Motorola-Legal-Terms_of_Use/About_Motorola-Legal-Terms_of_Use.html 
+
+www.motorola.com/legal  to see Motorola's website terms of use.
+
+MOTOROLA and the Stylized M Logo are trademarks of Motorola Trademark Holdings, LLC. DROID is a trademark of Lucasfilm Ltd. and its related companies. Used under license. Android, Google and other marks are trademarks of Google Inc. All other trademarks are the property of their respective owners. (c)%%=Format(Now(), "yyyy")=%% Motorola Mobility LLC. All rights reserved.

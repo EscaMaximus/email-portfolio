@@ -1,0 +1,98 @@
+%%[
+	/*
+		US-EN XCODE / DESIGN REFRESH VARIABLE CONTENT DEFINITIONS
+		Summary: various items can be set in this file such as Subject Line, Google Analytics, Customer Service URL, Moto Maker URL and Template Highlight Color in Hero and Buttons.
+		Author: Motorola ExactTarget Team
+		Revision Date: 6/23/2016
+	*/
+
+	VAR @XcodeStatus, @SubjectLine, @DateFormat, @DateDayFormat, @DateDayYearFormat
+	
+	/* Check what content we need to render to set subject and GA */
+	SET @XcodeStatus = Uppercase(Trim(XCODE_STATUS))
+	SET @DesignRefresh = Uppercase(Trim(DESIGN_REFRESH))
+
+	/* xCode type list to check for (e.g. NEW,UNUSED,EXPIRED) */
+	SET @XcodeTypeList = "NEW,UNUSED,EXPIRED"
+
+	/* Identify xCode type */
+	IF IndexOf(@XcodeTypeList, @XcodeStatus) > 0 THEN
+		
+		IF @DesignRefresh == 'N' THEN
+			
+			IF @XcodeStatus == 'NEW' THEN
+				SET @SubjectLine = "Your Moto Order: Redemption PIN enclosed"
+			ELSEIF @XcodeStatus == 'EXPIRED' THEN
+				SET @SubjectLine = "Your Moto Order: Redemption PIN expired"
+			ELSEIF @XcodeStatus == 'UNUSED' THEN
+				SET @SubjectLine = "Your Moto Order: Redemption PIN expiring"
+			ENDIF
+		ELSEIF @DesignRefresh == 'Y' THEN
+
+			/* Set Subject Line */
+			IF @XcodeStatus == 'NEW' THEN
+				SET @SubjectLine = "Your Moto Order: Design refresh redemption PIN enclosed"
+			ELSEIF @XcodeStatus == 'EXPIRED' THEN
+				SET @SubjectLine = "Your Moto Order: Design refresh redemption PIN expired"
+			ELSEIF @XcodeStatus == 'UNUSED' THEN
+				SET @SubjectLine = "Your Moto Order: Design refresh redemption PIN expiring"
+			ENDIF
+		ENDIF
+
+	ENDIF
+
+
+	/* Template highlight Color */
+	VAR @TemplateHighlightColor, @MotoBugColor
+
+	SET @TemplateHighlightColor = '#ff9100'
+	SET @MotoBugColor = 'http://image.motorola-mail.com/lib/fe901272716d077b74/m/4/bug-motorola-ff9100.png'
+
+	/* Subject and Date Definition/Formatting */
+	SET @DateFormat = "MM/DD/YY"
+	SET @DateDayFormat = "DDDD MM/DD"
+	SET @DateDayYearFormat = "DDDDD, M/D/YYYY"
+
+	/* GA Tagging Definitions */
+	VAR @UtmSource, @UtmMedium, @UtmCampaign, @UtmContent
+
+	SET @UtmSource = 'motoemail'
+	SET @UtmMedium = 'email'
+	SET @UtmCampaign = 'ECOMM_NA_US_EN_TRIGGER_XCODE'
+	
+	IF @XcodeStatus == 'NEW' THEN
+		SET @UtmContent = 'NEW'
+	ELSEIF @XcodeStatus == 'EXPIRED' THEN
+		SET @UtmContent = 'EXPIRED'
+	ELSEIF @XcodeStatus == 'UNUSED' THEN
+		SET @UtmContent = 'UNUSED'
+	ENDIF
+
+	SET @GaBaseString = Concat("?utm_source=",@UtmSource,"&utm_medium=",@UtmMedium,"&utm_campaign=",@UtmCampaign,"&utm_content=",@UtmContent,"&")
+
+	VAR @MotoBugURL, @PreTextHeaderURL, @CustomerServiceURL, @OrderStatusURL, @MotoMakerURL, @FAQURL
+
+	/* Moto Bug URL */
+	SET @MotoBugURL = 'http://www.motorola.com/us/home'
+	SET @MotoBugURL = Concat(@MotoBugURL,@GaBaseString,"utm_term=moto_bug_top")
+
+	/* Pre-Text Header URL */
+	SET @PreTextHeaderURL = 'http://www.motorola.com/us/home'
+	SET @PreTextHeaderURL = Concat(@PreTextHeaderURL,@GaBaseString,"utm_term=pretext_header")
+
+	/* Customer Service URL */
+	SET @CustomerServiceURL = 'https://motorola-global-portal.custhelp.com/app/mcp/landing_troubleshooter/g_id/5059'
+	SET @CustomerServiceURL = Concat(@CustomerServiceURL,@GaBaseString,"utm_term=customer_service")
+
+	/* Order Status URL */
+	SET @OrderStatusURL = 'https://motorola-global-portal.custhelp.com/app/mcp/track-my-stuff-landing/orderId/'
+
+	/* Moto Maker URL */
+	SET @MotoMakerURL = 'http://www.motorola.com/us/designit'
+	SET @MotoMakerURL = Concat(@MotoMakerURL,@GaBaseString,"utm_term=build_yours")
+
+	/* FAQ URL */
+	SET @FAQURL = 'https://motorola-global-portal.custhelp.com/app/answers/prod_answer_detail/a_id/108289'
+	SET @FAQURL = Concat(@FAQURL,@GaBaseString,"utm_term=xcode_faq")
+
+]%%

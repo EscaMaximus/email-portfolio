@@ -1,0 +1,95 @@
+﻿%%[ 
+	/*
+		Moto 360 GEN 2 POST PURCHASE SURVEY
+		Author: Motorola ExactTarget Team
+		Revision Date: 3/7/2016
+		Summary: Hashing email using SHA256.
+	*/
+
+	VAR @Email, @EmailHash
+
+	SET @Email = emailaddr
+	SET @EmailHash = SHA256(@Email)
+
+	UpdateDE("CONSUMER_NA_US_EN_OWNERPULSE_MOTO360GEN2_JOURNEY",1,"EMAIL_ADDRESS",@Email,"UUID",@EmailHash)
+
+]%%
+
+
+Your opinion of Moto 360 is valuable to us.
+
+
+*************************************************************************************
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola.
+
+Browser View>
+%%view_email_url%%
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+*************************************************************************************
+
+
+
+
+Moto 360
+
+So what do you think?
+
+Now that you've had your Moto 360 for a few weeks, we'd love to hear from you. We're constantly working to improve our products. Just a few minutes of your time helps us ensure we're bringing you the best possible mobile relationship.
+
+Take our survey>
+https://research.brandup.com/?r=survey/index&sid=245614&lang=en&245614X25X330=%%=v(@EmailHash)=%%&utm_source=motoemail&utm_medium=email&utm_campaign=CONSUMER_NA_US_EN_OWNERPULSE_MOTO360GEN2&utm_content=LAUNCH&utm_term=start_survey
+
+
+
+
+************************************************************************************
+
+
+Motorola-
+http://www.motorola.com/us/home?utm_source=motoemail&utm_medium=email&utm_campaign=CONSUMER_NA_US_EN_OWNERPULSE_MOTO360GEN2&utm_content=LAUNCH&utm_term=moto_bug_top
+
+Twitter-
+https://twitter.com/Moto_USA
+
+Facebook- 
+https://www.facebook.com/MotoUSA/
+
+Google+
+https://plus.google.com/+Motorola/posts
+
+Instagram-
+http://instagram.com/motorola
+
+YouTube-
+https://www.youtube.com/user/motorola
+
+
+*************************************************************************************
+
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola.
+
+If you no longer wish to receive promotional emails from Motorola Mobility LLC, please unsubscribe.
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+Please direct any questions concerning Motorola's privacy practices to privacy@motorola.com.
+
+Inquiries or requests to unsubscribe from ("opt-out" of) communications from Motorola may also be mailed to: Motorola Mobility LLC Attn: Privacy Compliance Program 222 W. Merchandise Mart Plaza, Suite 1800, Mailstop 16-O19.02, Chicago, IL 60654.
+
+Motorola values your privacy. For more information on our Privacy Practices, please visit www.motorola.com/privacy
+
+Privacy>
+http://www.motorola.com/us/consumers/about-motorola-us/About_Motorola-Legal-Legal_and_Privacy_Policy/About_Motorola-Legal-Legal_and_Privacy_Policy.html
+
+Please visit www.motorola.com/legal to see Motorola's website terms of use.
+
+Legal>
+http://www.motorola.com/us/consumers/about-motorola-us/About_Motorola-Legal-Terms_of_Use/About_Motorola-Legal-Terms_of_Use.html
+
+MOTOROLA and the Stylized M Logo are trademarks of Motorola Trademark Holdings, LLC. Android, Google and other marks are trademarks of Google Inc. All other trademarks are the property of their respective owners. (c)%%=Format(Now(), "yyyy")=%% Motorola Mobility LLC. All rights reserved.

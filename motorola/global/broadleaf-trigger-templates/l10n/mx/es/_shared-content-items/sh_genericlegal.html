@@ -1,0 +1,29 @@
+					<tr>
+						<td style="vertical-align:top;" bgcolor="#FAFAFA">
+							<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="legal" style="-webkit-text-size-adjust: 100%;">
+								<tr>
+									<td align="center" style="text-align:left; padding:20px 20px 10px 20px; font-family: Arial, Helvetica, sans-serif; color:#8d8f95; font-size:11px; line-height:15px;" class="legal-copy">Por favor no responda este correo. Si tiene preguntas o inquietudes, p&oacute;ngase en contacto con el equipo de <a href="%%=RedirectTo(@CustomerServiceURL)=%%" title="Atenci&oacute;n a Clientes" style="color:#8d8f95; text-decoration:underline;" target="_blank" alias="customer_support">Atenci&oacute;n a Clientes</a> de Motorola.</td>
+								</tr>
+								%%[IF (@ProjectFolder == 'ORDER_CONFIRMATION' AND NOT EMPTY(@RFCnumber)) OR (@ProjectFolder == 'PAYMENT_CONFIRMATION' AND @PaymentTypeOne == 'BILL' AND NOT EMPTY(@RFCnumber)) OR (@ProjectFolder == 'PAYMENT_CONFIRMATION' AND @PaymentTypeTwo == 'BILL' AND NOT EMPTY(@RFCnumber)) THEN]%%
+								<tr>
+									<td align="center" style="text-align:left; padding:0 20px 10px 20px; font-family: Arial, Helvetica, sans-serif; color:#8d8f95; font-size:11px; line-height:15px;" class="legal-copy">Este documento no sustituye a la factura fiscal, ser&aacute; emitida una vez que el proceso de importaci&oacute;n sea finalizado. Los datos que aparezcan en &eacute;sta nota de cargo ser&aacute;n los mismos que aparezcan en la factura final y no podr&aacute;n ser modificados.</td>
+								</tr>
+								%%[ENDIF]%%
+								<tr>
+									<td align="center" style="text-align:left; padding:0 20px 10px 20px; font-family: Arial, Helvetica, sans-serif; color:#8d8f95; font-size:11px; line-height:15px;" class="legal-copy">T&uacute;, [<a style="color:#8d8f95; text-decoration:none;" class="legal-link-8d8f95"><span style="color:#8d8f95; text-decoration:none;">%%emailaddr%%</span></a>] has recibido este correo electr&oacute;nico debido a una transacci&oacute;n o relaci&oacute;n previa con Motorola. <a href="%%view_email_url%%" title="Visita del navegador" style="text-decoration:underline; color:#8d8f95;" target="_blank" alias="browser_view">Visita del navegador</a></td>
+								</tr>
+								<tr>
+									<td align="center" style="text-align:left; padding:0 20px 10px 20px; font-family: Arial, Helvetica, sans-serif; color:#8d8f95; font-size:11px; line-height:15px;" class="legal-copy">Dirige cualquier consulta respecto a las pr&aacute;cticas de privacidad de Motorola a <a href="mailto:privacy@motorola.com" title="privacy@motorola.com" style="color:#8d8f95; text-decoration:underline;">privacy@motorola.com</a>.</td>
+								</tr>
+								<tr>
+									<td align="center" style="text-align:left; padding:0 20px 10px 20px; font-family: Arial, Helvetica, sans-serif; color:#8d8f95; font-size:11px; line-height:15px;" class="legal-copy">Las preguntas o solicitudes para cancelar la suscripci&oacute;n a las comunicaciones de Motorola tambi&eacute;n pueden enviarse por correo a: Motorola Mobility LLC, Attn: Privacy Compliance Program, <a style="color:#8d8f95; text-decoration:none;" class="legal-link-8d8f95"><span style="color:#8d8f95; text-decoration:none; border-bottom-width: 0; border-bottom-style:none; border-bottom-color: transparent;">222 W. Merchandise Mart Plaza, Suite 1800, Chicago, IL 60654</span></a>.</td>
+								</tr>
+								<tr>
+									<td align="center" style="text-align:left; padding:0 20px 10px 20px; font-family: Arial, Helvetica, sans-serif; color:#8d8f95; font-size:11px; line-height:15px;" class="legal-copy">Motorola valora tu privacidad. Para obtener m&aacute;s informaci&oacute;n acerca de nuestras pr&aacute;cticas de privacidad, visita <a href="http://www.motorola.com.mx/legal/privacy-policy" title="pr&aacute;cticas de privacidad" style="color:#8d8f95; text-decoration:underline;" target="_blank" alias="privacy">www.motorola.com.mx/legal/privacy-policy</a>. Visita <a href="http://www.motorola.com.mx/legal/terms-of-use" title="t&eacute;rminos de uso" style="color:#8d8f95; text-decoration:underline;" target="_blank" alias="legal">www.motorola.com.mx/legal/terms-of-use</a> para ver los t&eacute;rminos de uso del sitio web de Motorola.</td>
+								</tr>
+								<tr>
+									<td align="center" style="text-align:left; padding:0 20px 40px 20px; font-family: Arial, Helvetica, sans-serif; color:#8d8f95; font-size:11px; line-height:15px;" class="legal-copy">MOTOROLA y la M estilizada son marcas comerciales de Motorola Trademark Holdings, LLC. Facebook es una marca comercial de Facebook, Inc. Nexus, Android, Android Wear, Chrome, Gmail, Google, Google Maps, Google Play, Google+, YouTube y otras marcas son marcas comerciales de Google Inc. Todas las otras marcas comerciales son propiedad de sus respectivos due&ntilde;os. &copy;%%=Format(Now(), "yyyy")=%% Motorola Mobility LLC. Todos los Derechos Reservados.</td>
+								</tr>
+							</table>
+						</td>
+					</tr>

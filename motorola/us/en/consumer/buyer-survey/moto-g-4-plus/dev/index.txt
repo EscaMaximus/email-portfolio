@@ -1,0 +1,101 @@
+﻿%%[ 
+	/*
+		MOTO G GEN 4 PLUS BUYERS SURVEY
+		Author: Motorola ExactTarget Team
+		Revision Date: 11/2/2016
+		Summary: 
+	*/
+	/* GA Tagging Definitions */
+	SET @UtmSource = 'motoemail'
+	SET @UtmMedium = 'email'
+	SET @UtmCampaign = 'CONSUMER_NA_US_EN_OWNERPULSE_MOTOGGEN4PLUS'
+	SET @UtmContent = 'LAUNCH'
+
+	VAR @Email, @EmailHash, @UUID, @SurveyID, @HIDstudyname
+	SET @Email = emailaddr
+	SET @EmailHash = SHA256(lowercase(trim(@Email)))
+	SET @UUID = @EmailHash
+	SET @SurveyID = "MotoG4Plus_LONG"
+	SET @HIDstudyname = "mgpebdm"
+
+	UpsertDE("SA_SURVEY","2","EMAIL_ADDRESS",@Email,"Survey_ID",@SurveyID,"UUID",@UUID,"EMAIL_SEND_DATE",NOW(),"ET_DATE_ADDED",NOW())
+
+]%%
+
+
+Your opinion of Moto G Plus is valuable to us.
+
+
+****
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola.
+
+Browser View>
+%%view_email_url%%
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+****
+
+
+Moto G
+
+So what do you think?
+
+Now that you've had your Moto G Plus for a few weeks, we'd love to hear from you. Just a few minutes of your time will help us give you the best mobile experience.
+
+Take our survey>
+http://www9.absolutdata.com/cgi-bin/ssiweb848/ciwweb.pl?hid_studyname=%%=v(@HIDstudyname)=%%&UUID=%%=v(@UUID)=%%&Survey_ID=%%=v(@SurveyID)=%%
+
+
+****
+
+
+Motorola-
+http://www.motorola.com/us/home?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_bug_top
+
+Twitter-
+https://twitter.com/Moto_USA
+
+Facebook- 
+https://www.facebook.com/MotoUSA/
+
+Google+
+https://plus.google.com/+Motorola/posts
+
+Instagram-
+http://instagram.com/motorola
+
+YouTube-
+https://www.youtube.com/user/motorola
+
+
+****
+
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola. If this email has been forwarded to you, you can opt-in for future communications from Motorola.
+
+opt-in>
+https://pages.motorola-mail.com/registration-us-en/?c=ECOMM_NA_US_EN_REGISTRATION_FORWARDEDOPTIN&utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=forwarded_optin
+
+If you no longer wish to receive promotional emails from Motorola Mobility LLC, please unsubscribe.
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+Please direct any questions concerning Motorola's privacy practices to privacy@motorola.com.
+
+Inquiries or requests to unsubscribe from ("opt-out" of) communications from Motorola may also be mailed to: Motorola Mobility LLC Attn: Privacy Compliance Program 222 W. Merchandise Mart Plaza, Suite 1800, Mailstop 16-O19.02, Chicago, IL 60654.
+
+Motorola values your privacy. For more information on our Privacy Practices, please visit www.motorola.com/privacy
+
+Privacy>
+http://www.motorola.com/us/consumers/about-motorola-us/About_Motorola-Legal-Legal_and_Privacy_Policy/About_Motorola-Legal-Legal_and_Privacy_Policy.html
+
+Please visit www.motorola.com/legal to see Motorola's website terms of use.
+
+Legal>
+http://www.motorola.com/us/consumers/about-motorola-us/About_Motorola-Legal-Terms_of_Use/About_Motorola-Legal-Terms_of_Use.html
+
+MOTOROLA and the Stylized M Logo are trademarks of Motorola Trademark Holdings, LLC. Android, Google and other marks are trademarks of Google Inc. All other trademarks are the property of their respective owners. (c)%%=Format(Now(), "yyyy")=%% Motorola Mobility LLC. All rights reserved.

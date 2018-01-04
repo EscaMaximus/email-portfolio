@@ -1,0 +1,189 @@
+﻿%%[
+	/*
+		US-EN MOTO Z FORCE DROID EPISODE 1
+		Author: @dnjx37
+		Revision Date: 2/9/2017
+	*/	
+	/* GA Tagging Definitions */
+	VAR @UtmSource, @UtmMedium, @UtmCampaign, @UtmContent, @EmailHash, @CouponCode, @motoModsOwner
+	SET @UtmSource = 'motoemail'
+	SET @UtmMedium = 'email'
+	SET @UtmCampaign = 'CONSUMER_NA_US_EN_ONBOARDING_MOTOZFAMILYMOTOMODS'
+	SET @UtmContent = 'MOTOZFORCEDROIDEP1'
+	SET @EmailHash = SHA256(lowercase(trim(emailaddr)))
+
+	SET @motoModsOwner = 0
+	SET @motoModsOwner = MOTO_MODS_OWNER
+
+]%%
+
+
+Learn more about Moto Z Force.
+
+
+***
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola.
+
+Browser View>
+%%view_email_url%%
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+***
+
+
+User Guide>
+https://motorola-global-portal.custhelp.com/ci/fattach/get/2057848/1485874307/redirect/1/filename/68018224001B.pdf
+
+Customer Service>
+https://motorola-global-portal.custhelp.com/app/mcp/landing_troubleshooter/g_id/5059/?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=customer_service&ceid=%%=v(@EmailHash)=%%
+
+Owner Forums>
+https://forums.lenovo.com/t5/Moto-Z-Force/bd-p/Moto_Z_Force
+
+
+***
+
+Moto Z Droid
+
+ready for unlimited possibilities?
+
+The next generation of ShatterShield™ technology is still guaranteed not to crack or shatter.* But now, it features narrower edges and a thinner design for your new Moto Z Force Droid.
+
+Learn more>
+http://www.motorola.com/us/products/moto-z-force-droid-edition?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_z_force_droid&ceid=%%=v(@EmailHash)=%%#moto-shattershield
+
+***
+
+
+easily stay in the loop
+
+Moto Display provides important information right from the lock-screen. Get a preview of text messages, see your next appointment, even play and pause music.
+
+Learn more>
+https://motorola-global-portal.custhelp.com/app/answers/prod_answer_detail/a_id/112150/p/30,6720,9833/?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_display&ceid=%%=v(@EmailHash)=%%
+
+***
+
+
+ready in a flash
+
+Using Moto Actions, a flick of the wrist is all you need to launch the camera, take a selfie, or turn on the flashlight. Explore new actions to perform even more tasks.
+
+Learn more>
+https://motorola-global-portal.custhelp.com/app/answers/prod_answer_detail/a_id/112154/p/30,6720,9833/?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_actions&ceid=%%=v(@EmailHash)=%%
+
+***
+
+
+JBL soundboost speaker
+
+Give your music a boost
+
+Simply snap on your new speaker and it plays instantly. No pairing. No hassle. Keep the music going with high-quality JBL audio for up to ten hours.**
+
+Learn more>
+http://www.motorola.com/us/products/moto-mods/jbl-soundboost-speaker?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=jbl_soundboost_speaker&ceid=%%=v(@EmailHash)=%%
+
+
+***
+
+
+moto insta-share projector
+
+Project and share. Anytime, anywhere.
+
+Attach your new ultra-thin projector and share it up to 70". Use just about any flat surface to show photos, watch your favorite shows, or put the game on for everyone to see.
+
+Learn more>
+http://www.motorola.com/us/products/moto-mods/moto-insta-share-projector?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=projector&ceid=%%=v(@EmailHash)=%%
+
+***
+
+
+Moto Mods(tm)
+
+amazing today.
+awesome tomorrow.
+
+%%[IF @motoModsOwner == 1 THEN]%%
+The first generation of Moto Mods were just the beginning. More are being developed by your favorite brands. And they're designed to work with future generation Moto Z phones.***
+%%[ELSE]%%
+Your Moto Z phone can instantly transform into a 70" movie projector, battery powerhouse and more. This is just the start. More Moto Mods are being developed by your favorite brands. And they're designed to work with future generation Moto Z phones.***
+%%[ENDIF]%%
+
+Buy now>
+http://www.motorola.com/us/moto-mods?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_mods_learn_more&ceid=%%=v(@EmailHash)=%%
+
+
+***
+
+
+Free shipping†>
+http://www.motorola.com/us/legal/terms-of-sale?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=shipping&ceid=%%=v(@EmailHash)=%%
+
+
+Specials>
+http://www.motorola.com/us/specials?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=specials&ceid=%%=v(@EmailHash)=%%
+
+
+***
+
+Motorola-
+http://www.motorola.com/us/home?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_bug_top&ceid=%%=v(@EmailHash)=%%
+
+Twitter-
+https://twitter.com/Moto_USA
+
+Facebook- 
+https://www.facebook.com/MotoUSA/
+
+Google+
+https://plus.google.com/+Moto
+
+Instagram-
+https://www.instagram.com/moto_usa/
+
+YouTube-
+https://www.youtube.com/user/motorola
+
+
+***
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola. If this email has been forwarded to you, you can opt-in for future communications from Motorola.
+
+opt-in for future communications>
+https://pages.motorola-mail.com/registration-us-en/?c=ECOMM_NA_US_EN_REGISTRATION_FORWARDEDOPTIN&utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=forwarded_optin
+
+All screen images simulated.
+
+* The display and embedded lens are warranted against shattering and cracking for four (4) years from the original date of purchase; scratches or other damage to the protective lens is not covered by this warranty, but should always be in place to prevent scratches and other damage to the underlying components. This phone is not shockproof or designed to withstand all damage from dropping. All other warranty exclusions, including scratches and other cosmetic damage, intentional damage or abuse, normal wear and tear and other limitations apply; Visit www.motorola.com/shattershield for additional details.
+
+** All battery life claims are approximate and based on a mixed use profile (which includes both usage and standby time) under optimal network conditions. Actual battery performance will vary and depends on many factors including signal strength, network configuration, age of battery, operating temperature, features selected, device settings, and voice, data, and other application usage patterns.
+
+*** Co-branded Moto Mods may require software upgrades to maintain compatibility, contact the manufacturer for details.
+
+† Free shipping for orders over $75.
+
+Certain features, functionality and product specifications may be network dependent and subject to additional terms, conditions, and charges. All are subject to change without notice.
+
+If you no longer wish to receive promotional emails from Motorola Mobility LLC, please unsubscribe.
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+Please direct any questions concerning Motorola's privacy practices to privacy@motorola.com.
+
+Inquiries or requests to unsubscribe from ("opt-out" of) communications from Motorola may also be mailed to: Motorola Mobility LLC Attn: Privacy Compliance Program 222 W. Merchandise Mart Plaza, Suite 1800, Mailstop 16-O19.02, Chicago, IL 60654.
+
+Motorola values your privacy. For more information on our Privacy Practices, please visit Motorola Privacy Policy. Please visit Motorola Website Terms of Use to see Motorola's website terms of use.
+
+Privacy>
+http://www.motorola.com/us/legal/privacy-policy
+
+Legal>
+http://www.motorola.com/us/legal/terms-of-use
+
+Moto branded products are designed and manufactured by or for Motorola Mobility LLC, a wholly owned subsidiary of Lenovo. MOTOROLA and the Stylized M Logo are trademarks of Motorola Trademark Holdings, LLC. DROID is a trademark of Lucasfilm Ltd. and its related companies. Android, Google and other marks are trademarks of Google Inc. All other trademarks are the property of their respective owners. ©%%=Format(Now(), "yyyy")=%% Motorola Mobility LLC. All rights reserved.

@@ -1,0 +1,204 @@
+%%[
+	/*
+		US-EN MOTO/LENOVO EMPLOYEE COUPON EMAIL
+		Author: Motorola ExactTarget Team
+		Revision Date: 11/9/2016
+	*/	
+	/* GA Tagging Definitions */
+	VAR @UtmSource, @UtmMedium, @UtmCampaign, @UtmContent, @EmailHash, @FirstName, @Email
+	SET @UtmSource = 'motoemail'
+	SET @UtmMedium = 'email'
+	SET @UtmCampaign = 'ECOMM_NA_US_EN_REGISTRATION_MOTO'
+	SET @UtmContent = 'EMPLOYEEDISCOUNT'
+	SET @Email = emailaddr
+	SET @EmailHash = SHA256(@Email)
+
+	SET @FirstName = ProperCase(Lookup("REGISTRATION_PAGE_INSERT_Adt", "FIRST_NAME", "EMAIL_ADDRESS", @Email))
+
+	/* Claim Coupon */
+	VAR @CouponRow, @CouponCode, @rows, @row, @EmailAddress
+
+	SET @EmailAddress = AttributeValue("emailaddr")		
+
+	IF _messagecontext == "PREVIEW" THEN
+		SET @CouponCode = "XXXX-XXXX"
+	ELSE
+
+		SET @CouponRow = ClaimRow("ECOMM_NA_US_EN_PROMOTION_MOTO_CUSTOMCOUPONS","IsClaimed","SubscriberKey",@EmailAddress) 
+		IF empty(@CouponRow) THEN
+			/* You can do other error handling here if you want.*/
+			/* This aborts the send */
+			raiseError("no more coupons available")
+		ELSE
+			SET @CouponCode = field(@CouponRow,"CouponCode") 
+		ENDIF
+	ENDIF 
+
+]%%
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Hello Moto &amp; Lenovo: Your promo code</title>
+	<style type="text/css">
+		.x-bkg-swap-color:hover a, * [lang~="x-bkg-swap-color"]:hover a { background-color:#3cc0d4!important; color:#FFFFFF!important; -webkit-transition: all .17s !important; transition: all .17s !important; } 
+	</style>
+	<style type="text/css">
+		.x-link-color:hover, * [lang~="x-link-color"]:hover { color:#3cc0d4!important; -webkit-transition: all .17s !important; transition: all .17s !important; } 
+	</style>
+	<style type="text/css">
+
+		/* Reset and Email Client Fixes */
+		body { margin: 0!important; padding: 0; min-width: 100%!important; -webkit-text-size-adjust: 100%;-ms-text-size-adjust:100%; }
+		html { width: 100%; }
+		table, tr, td { border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; }
+		img { height: auto; border: 0; }
+		#outlook a{ padding:0; }
+		.ExternalClass{ width:100%; }
+		.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div{ line-height: 100%; }
+		div[style*="margin: 16px 0"] { margin:0!important; }
+		
+		/* Start Styling */
+		@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+		/* Content Width */
+		.content { width: 100%; max-width: 600px; }
+
+		/* Links */
+		.body-copy-222c30 a { color: #222c30!important; text-decoration:none!important; }
+		.legal-link-8d8f95 a { color: #8d8f95!important; text-decoration:none!important; }
+
+		/* Headlines */
+		.h1 { font-family: 'Open Sans', Arial, sans-serif; font-size: 32px; line-height: 38px; font-weight:normal; color: #222c30; }
+		.h2 { font-family: 'Open Sans', Arial, sans-serif; font-size: 28px; line-height: 34px; font-weight:normal; color: #80888c; }
+		.h3 { font-family: 'Open Sans', Arial, sans-serif; font-size: 24px; line-height: 30px; font-weight:normal; color: #80888c; }
+		.h4 { font-family: 'Open Sans', Arial, sans-serif; font-size: 20px; line-height: 26px; font-weight:normal; color: #80888c; }
+
+		/* Body copy */
+		.p-lead { font-family: 'Open Sans', Arial, sans-serif; font-size: 18px; line-height: 28px; font-weight:normal; color: #222c30; }
+		.p { font-family: 'Open Sans', Arial, sans-serif; font-size: 16px; line-height: 22px; font-weight:normal; color: #222c30; }
+		.p-address { font-family: 'Open Sans', Arial, sans-serif; font-size: 15px; line-height: 21px; font-weight:normal; color: #222c30; }
+		.p-order-detail { font-family: 'Open Sans', Arial, sans-serif; font-size: 14px; line-height: 20px; font-weight:normal; color: #222c30; }
+
+		/* Buttons */
+		.button-full-width { font-family: 'Open Sans', Arial, sans-serif; font-size: 16px; line-height: 16px; font-weight: bold; color:#FFFFFF; text-decoration:none; }
+		.button { font-family: 'Open Sans', Arial, sans-serif; font-size: 16px; line-height: 16px; font-weight: bold; color:#FFFFFF; text-decoration:none; }
+		.button-full-width:hover, .button:hover { border-radius:1px; background-color:#33a1ff!important; color:#FFFFFF!important; -webkit-transition: all .17s !important; transition: all .17s !important; }
+
+		@media screen and (max-width: 480px), screen and (max-device-width: 480px) {
+			body[yahoo] div[class="email-size"] { letter-spacing: 0!important; }
+		}
+	</style>
+</head>
+
+<body yahoo="fix" bgcolor="#FAFAFA">
+<div style="letter-spacing: 550px; line-height: 0; mso-hide: all;" class="email-size">&nbsp;</div>
+<div style="display:none; white-space:nowrap; font:15px courier; color:#ffffff; line-height:0; width:550px !important; min-width:550px !important; max-width:550px !important; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div>
+	<table width="100%" bgcolor="#FAFAFA" border="0" cellpadding="0" cellspacing="0">
+		<tr>
+			<td>
+				<!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->     
+				<table bgcolor="#FFFFFF" class="content" align="center" cellpadding="0" cellspacing="0" border="0" style="margin:0 auto; width: 100%; max-width: 600px;">
+					<tr>
+						<td bgcolor="#FAFAFA" class="header-pretext" style="font-family: Arial, Verdana, sans-serif; font-size:13px; line-height:16px; font-weight:bold; color:#222c30; padding: 15px 20px 15px 20px; text-align:center;">Thanks for your registration.</td>
+					</tr>
+					<tr>
+						<td class="header" style="padding: 20px 20px 0 20px; text-align:center;"><a href="http://www.motorola.com/us/home?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_bug_top" title="Motorola" target="_blank" alias="moto_bug_top"><img src="http://image.motorola-mail.com/lib/fe901272716d077b74/m/5/bug-motorola-20160725.png" alt="" width="51" height="51" style="font-family:arial, verdana, sans-serif; font-size:14px; color:#4d4d4d; border:0;" /></a></td>
+					</tr>
+					<tr>
+						<td class="innerpadding" style="padding: 40px 30px 7px 30px;">
+							<table width="100%" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td class="h1" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 32px!important; line-height: 38px!important; font-weight: bold; color: #222c30; padding: 0 0 20px 0;">%%[ IF NOT empty(@FirstName) THEN ]%%Hi %%=v(@FirstName)=%%,%%[ ELSE ]%%Hi,%%[ ENDIF ]%%</td>
+								</tr>
+								<tr>
+									<td class="p-lead" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 18px; line-height: 28px; font-weight:normal; color: #222c30; padding:0 0 15px 0;">Thanks for registering. As an employee of Motorola and Lenovo, you're eligible for a discount of up to <span style="font-weight:bold;">15% off</span> smartphones, smartwatches, and accessories.</td>
+								</tr>
+								<tr>
+									<td class="p-lead" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 18px; line-height: 28px; font-weight:normal; color: #222c30; padding:0 0 15px 0;">Pricing is subject to change without notice. Discounts cannot be combined.</td>
+								</tr>
+								<tr>
+									<td class="p" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 16px; line-height: 22px; font-weight:normal; color: #222c30; padding:0 0 15px 0; text-align:center;">Here's your unique promo code:<br /><span style="font-weight: bold;">%%=v(@CouponCode)=%%</span></td>
+								</tr>
+								<tr>
+									<td class="p-lead" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 18px; line-height: 28px; font-weight:normal; color: #222c30; padding:0 0 15px 0;">Just visit <a href="http://www.motorola.com/us/home?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=body_copy_moto_com" style="color: #0090a6; text-decoration:underline;" class="x-link-color" alias="body_copy_moto_com">Motorola.com</a> and enter the promo code at the end of checkout to receive the discount.</td>
+								</tr>
+								<tr>
+									<td class="p-lead" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 18px; line-height: 28px; font-weight:normal; color: #222c30; padding:0 0 5px 0;">Happy shopping,</td>
+								</tr>
+								<tr>
+									<td class="p-lead" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 18px; line-height: 28px; font-weight:normal; color: #222c30; padding:0 0 15px 0;">Your Friends at Motorola</td>
+								</tr>
+								<tr>
+									<td class="h3" height="20" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 28px; line-height: 30px; font-weight: normal; color:#80888c; padding:40px 0 0 0;"></td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td bgcolor="#F0F0F0" style="padding: 15px 30px 15px 30px; vertical-align:top;  border-TOP: 1px solid #D3D3D3;border-bottom: 1px solid #D3D3D3;">
+							<table width="200" border="0" cellspacing="0" cellpadding="0" align="center" style="margin:0 auto;">
+								<tr>
+									<td height="52" class="button" style="background: #0090a6; border-radius: 1px;" align="center"><span class="x-bkg-swap-color" lang="x-bkg-swap-color"><a href="https://www.motorola.com/us/home?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=shop_now" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 16px; line-height: 16px; font-weight: normal; color:#FFFFFF; text-decoration:none; display: block; width:100%; padding: 18px 0 18px 0;" title="Shop now" target="_blank" alias="Shop_Now">Shop now</a></span></td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td style="padding: 20px 30px 40px 30px; vertical-align:top;">
+							<table width="100%" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td class="p" align="center" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 16px; line-height: 22px; font-weight:normal; color: #222c30;">For employee pricing details,<br />please refer to the <a href="https://motorola-global-portal.custhelp.com/app/answers/prod_answer_detail/a_id/106956" style="color: #222c30; text-decoration:underline;" alias="Motorola_Employee_FAQs">FAQs</a></td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td style="vertical-align:top;">
+							<table width="100%" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td align="center" style="font-size: 1px; line-height: 1px;">
+										<a href="https://twitter.com/Moto_USA" title="Twitter" target="_blank" alias="twitter"><img src="http://image.motorola-mail.com/lib/fe901272716d077b74/m/4/ico-twitter-grey.png" width="63" height="54" alt="Twitter" title="Twitter" style="font-family: Arial, Helvetica, sans-serif; font-size:11px; color:#FFFFFF; border:0;" /></a>
+										<a href="https://www.facebook.com/MotoUSA/" title="Facebook" target="_blank" alias="facebook"><img src="http://image.motorola-mail.com/lib/fe901272716d077b74/m/4/ico-facebook-grey.png" width="63" height="54" alt="Facebook" title="Facebook" style="font-family: Arial, Helvetica, sans-serif; font-size:11px; color:#FFFFFF; border:0;" /></a>
+										<a href="https://plus.google.com/+Moto" title="Google+" target="_blank" alias="google_plus"><img src="http://image.motorola-mail.com/lib/fe901272716d077b74/m/4/ico-google-plus-grey.png" width="63" height="54" alt="Google+" title="Google+" style="font-family: Arial, Helvetica, sans-serif; font-size:11px; color:#FFFFFF; border:0;" /></a>
+										<a href="https://www.instagram.com/moto_usa/" title="instagram" target="_blank" alias="instagram"><img src="http://image.motorola-mail.com/lib/fe901272716d077b74/m/4/ico-instagram-mobile-grey-20160520.png" width="63" height="54" alt="instagram" title="instagram" style="font-family: Arial, Helvetica, sans-serif; font-size:11px; color:#FFFFFF; border:0;" /></a>
+										<a href="https://www.youtube.com/user/motorola" title="YouTube" target="_blank" alias="youtube"><img src="http://image.motorola-mail.com/lib/fe901272716d077b74/m/4/ico-youtube-grey.png" width="63" height="54" alt="YouTube" title="YouTube" style="font-family: Arial, Helvetica, sans-serif; font-size:11px; color:#FFFFFF; border:0;" /></a>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td style="vertical-align:top;" bgcolor="#FAFAFA">
+							<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="legal" style="-webkit-text-size-adjust: 100%;">
+								<tr>
+									<td align="center" style="text-align:left; padding:20px 20px 10px 20px; font-family: Arial, Helvetica, sans-serif; color:#8d8f95; font-size:11px; line-height:15px;" class="legal-copy">You [<a style="color:#8d8f95; text-decoration:none;" class="legal-link-8d8f95">%%emailaddr%%</a>] have received this email because of a prior transaction or relationship with Motorola.</td>
+								</tr>
+								<tr>
+									<td align="center" style="text-align:left; padding:0 20px 10px 20px; font-family: Arial, Helvetica, sans-serif; color:#8d8f95; font-size:11px; line-height:15px;" class="legal-copy">Promo code valid while supplies last.</td>
+								</tr>
+								<tr>
+									<td align="center" style="text-align:left; padding:0 20px 10px 20px; font-family: Arial, Helvetica, sans-serif; color:#8d8f95; font-size:11px; line-height:15px;" class="legal-copy">We do not authorize reselling of devices purchased on this site for commercial purposes. Warranty, support, and any other services provided are not transferable if you resell devices purchased from this site.</td>
+								</tr>
+								<tr>
+									<td align="center" style="text-align:left; padding:0 20px 10px 20px; font-family: Arial, Helvetica, sans-serif; color:#8d8f95; font-size:11px; line-height:15px;" class="legal-copy">For employee pricing details, please refer to the <a href="https://motorola-global-portal.custhelp.com/app/answers/prod_answer_detail/a_id/106956" style="color:#8d8f95; text-decoration:underline;" alias="Motorola_Employee_FAQs_in_Legal">FAQs</a>.</td>
+								</tr>
+								<tr>
+									<td align="center" style="text-align:left; padding:0 20px 10px 20px; font-family: Arial, Helvetica, sans-serif; color:#8d8f95; font-size:11px; line-height:15px;" class="legal-copy">Motorola values your privacy. Read the <a href="http://www.motorola.com/us/legal/privacy-policy" title="Privacy" style="color:#8d8f95; text-decoration:underline;" target="_blank">Motorola Privacy Policy</a> for more information on our privacy practices. Please read the <a href="http://www.motorola.com/us/legal/terms-of-use" title="Terms of Use" style="color:#8d8f95; text-decoration:underline;" target="_blank">Motorola Website Terms of Use</a> before using our website.</td>
+								</tr>
+								<tr>
+									<td align="center" style="text-align:left; padding:0 20px 40px 20px; font-family: Arial, Helvetica, sans-serif; color:#8d8f95; font-size:11px; line-height:15px;" class="legal-copy">MOTOROLA and the Stylized M Logo are trademarks of Motorola Trademark Holdings, LLC. Facebook is a trademark of Facebook, Inc. Android, Google and other marks are trademarks of Google Inc. All other trademarks are the property of their respective owners. &copy;%%=Format(Now(), "yyyy")=%% Motorola Mobility LLC. All rights reserved.</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+			<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+			</td>
+		</tr>
+	</table>
+	<img src="http://lenovo.demdex.net/event?d_dpid=95079&d_dpuuid=%%=v(@EmailHash)=%%&e_type=email&e_jobid=%%jobid%%" width="2" height="2" alt="" />
+	<custom name="opencounter" type="tracking"> 
+</body>
+</html>

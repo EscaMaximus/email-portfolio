@@ -1,0 +1,148 @@
+﻿%%[
+	/*
+		FR-FR MOTO G4 PLUS EXCITE INTERESTED
+		Segment: FR Interested G4 Plus
+		Tag: ECOMM_EMARA_FR_FR_PRODUCT_MOTOG4FAMILY_G4PEXCITEINTEREST
+		Author: Motorola ExactTarget Team
+		Revision Date: 5/24/2016
+	*/	
+		/* GA Tagging Definitions */
+		
+		SET @UtmSource = 'motoemail'
+		SET @UtmMedium = 'email'
+		SET @UtmCampaign = 'ECOMM_EMARA_FR_FR_PRODUCT_MOTOG4FAMILY'
+		SET @UtmContent = 'G4PEXCITEINTEREST'
+]%%
+
+
+Doté de l'appareil photo 16 MP le plus performant de sa catégorie.
+
+
+****
+
+
+Vous [%%emailaddr%%] avez reçu cet email car vous avez été en contact avec Motorola.
+
+Voir ce message dans une nouvelle fenêtre>
+%%view_email_url%%
+
+Désinscrivez-vous>
+https://pages.motorola-mail.com/unsubscribe_t/?lang=fr
+
+
+****
+
+
+
+Expédition gratuite pour toutes commandes supérieures à 95€>
+http://www.motorola.fr/cgv/cgv.html?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=shipping&#shipping
+
+Offres spéciales>
+http://www.motorola.fr/specials-fr.html?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=specials
+
+
+
+****
+
+
+Concentrez vous sur l'essentiel
+
+La nouvelle génération de Moto G est arrivée. Découvrez ses nouvelles fonctionnalités et passez votre commande dès aujourd'hui.
+
+
+****
+
+
+
+Moto G Plus
+
+À partir de 299,00 €
+Un mot de passe aussi unique que vous l'êtes
+
+Oubliez la contrainte de la saisie de votre mot de passe. Il vous suffit de toucher le lecteur d'empreintes digitales pour que votre Moto G Plus s'active et se déverrouille.
+
+En savoir plus>
+http://www.motorola.fr/products/moto-g-plus?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_g_plus_its_here_fingerprint
+
+
+****
+
+
+Tout va de plus en plus vite. Gardez le rythme.
+
+Grâce à son processeur octa-core, Moto G Plus peut simultanément et facilement exécuter plusieurs applications.
+
+En savoir plus>
+http://www.motorola.fr/products/moto-g-plus?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_g_plus_its_here_performance
+
+
+****
+
+
+
+Moto G4
+
+À partir de 229,00 €
+Tout nouveau design. Même qualité de confort.
+
+Avec son design épuré, notre nouveau Moto G, le plus fin de la gamme, se loge parfaitement dans votre poche. Très facile à prendre en main grâce à ses bords incurvés et sa coque micro-texturée, il s'utilise confortablement d'une seule main.
+
+En savoir plus>
+http://www.motorola.fr/products/moto-g?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_g_its_here_thin
+
+
+****
+
+
+Profitez d'une expérience Android(tm) optimisée
+
+Une version d'Android pure et aucun élément superflu pour ralentir le Moto G.
+
+En savoir plus>
+http://www.motorola.fr/products/moto-g?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_g_its_here_pure
+
+
+****
+
+
+Motorola-
+http://www.motorola.fr/home?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_bug_top
+
+Twitter-
+https://twitter.com/Moto_FRA
+
+Facebook- 
+https://www.facebook.com/motoFRA
+
+Instagram-
+https://www.instagram.com/moto_fra/
+
+YouTube-
+http://www.youtube.com/motorolafrance
+
+
+****
+
+
+Vous [%%emailaddr%%] avez reçu cet email car vous avez été en contact avec Motorola.
+
+Toutes les captures d'écran sont des simulations.
+
+Si vous ne souhaitez plus recevoir les e-mails promotionnels de Motorola Mobility LLC, vous pouvez vous désinscrire.
+
+https://pages.motorola-mail.com/unsubscribe_t/?lang=fr
+
+Vous pouvez également envoyer vos questions ou demande de désinscription par courrier à l'adresse suivante : Privacy Compliance Program, 222 W. Merchandise Mart Plaza, Suite 1800, Mailstop 16-O19.02, Chicago, IL 60654.
+
+Motorola respecte vos données privées. Pour obtenir plus d'informations sur notre politique de confidentialité consultez la page Pratiques de Confidentialité à l'adresse www.motorola.com/fr.
+
+Pratiques de Confidentialité>
+http://www.motorola.fr/consumers/about-motorola-FR/About_Motorola-Legal-Privacy_Policy/About_Motorola-Legal-Privacy_Policy.html
+
+
+Pour connaître les conditions d'utilisation du site Web Motorola, veuillez consulter l'adresse Internet www.motorola.com/legal
+
+conditions d'utilisation>
+http://www.motorola.fr/consumers/about-motorola-FR/About_Motorola-Legal-Terms_of_Use/About_Motorola-Legal-Terms_of_Use.html
+
+MOTOROLA, le logo M stylisé sont des marques commerciales de Motorola Trademark Holdings, LLC. Facebook est une marque commerciale de Facebook Inc., Android et YouTube sont des marques commerciales de Google Inc. Tous les autres noms et produits ou de services appartiennent à leurs propriétaires respectifs. (c) %%=Format(Now(), "yyyy")=%% Motorola Mobility LLC. Tous droits réservés.

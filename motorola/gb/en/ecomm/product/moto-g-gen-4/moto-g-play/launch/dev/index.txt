@@ -1,0 +1,103 @@
+﻿%%[
+	/*
+		GB-EN MOTO G4 PLAY LAUNCH
+		Author: Motorola ExactTarget Team
+		Revision Date: 8/8/2016
+	*/	
+		/* GA Tagging Definitions */
+		SET @UtmSource = 'motoemail'
+		SET @UtmMedium = 'email'
+		SET @UtmCampaign = 'ECOMM_EMARA_GB_EN_PRODUCT_MOTOG4FAMILY'
+		SET @UtmContent = 'GPLAYLAUNCH'
+]%%
+
+
+The newest addition to the Moto G Family.
+
+
+*****
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola.
+
+Browser View>
+%%view_email_url%%
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+*****
+
+
+Free shipping for all orders over £75>
+http://www.motorola.co.uk/legal/terms-of-sale#shipping?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=shipping&#shipping
+
+
+Specials>
+http://www.motorola.co.uk/specials?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=specials
+
+
+*****
+
+Introducing
+Moto G4 Play
+
+More phone. More fun. Affordable as ever.
+
+The new Moto G Play takes performance to the next level. The powerful quad-core processor keeps the fun going without slowing down. And the performance is enhanced with a pure, clutter-free version of Android™.
+
+Starting at £129.99
+
+Pre-order now>
+http://www.motorola.co.uk/products/moto-g-play?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_g_play_performance_pre_order
+
+
+*****
+
+Capture the moment. Share the fun.
+
+Shoot crystal-clear photos with an 8 MP camera. The Moto G Play camera uses larger-than-average pixels for better shots in low light conditions. Plus, take stunning selfies with a 5 MP camera in front.
+
+Starting at £129.99
+
+Pre-order now>
+http://www.motorola.co.uk/products/moto-g-play?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_g_play_camera_pre_order
+
+
+*****
+
+
+Motorola-
+http://www.motorola.co.uk/home?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_bug_top
+
+Twitter-
+https://twitter.com/moto
+
+Facebook- 
+https://www.facebook.com/MotoInUK
+
+Instagram-
+https://www.instagram.com/motorola_uk/
+
+*****
+
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola.
+
+If you no longer wish to receive promotional emails from Motorola Mobility LLC, please unsubscribe.
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+Please direct any questions concerning Motorola's privacy practices to privacy@motorola.com.
+
+Enquiries or requests to unsubscribe from ("opt-out" of) communications from Motorola may also be mailed to: Motorola Mobility UK, Ltd., Redwood, Crockford Lane, Chineham Business Park, Basingstoke, RG24 8WQ.
+
+Motorola values your privacy. Read the Motorola Privacy Policy for more information on our privacy practices. Please read the Motorola Website Terms of Use before using our website.
+
+Motorola Privacy Policy>
+http://www.motorola.co.uk/legal/privacy-policy
+
+Motorola Website Terms of Use>
+http://www.motorola.co.uk/legal/terms-of-use
+
+MOTOROLA and the Stylised M Logo are trademarks of Motorola Trademark Holdings, LLC. Facebook is a trademark of Facebook, Inc. Android, Google and other marks are trademarks of Google Inc. All other trademarks are the property of their respective owners. (c)%%=Format(Now(), "yyyy")=%% Motorola Mobility LLC. All rights reserved.

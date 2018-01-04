@@ -1,0 +1,100 @@
+﻿%%[
+	/*
+		DE-DE MOTO Z PLAY / HASSELBLAD ANNC
+		Author: Motorola ExactTarget Team
+		Revision Date: 9/6/2016
+	*/	
+	/* GA Tagging Definitions */
+	VAR @UtmSource, @UtmMedium, @UtmCampaign, @UtmContent
+	SET @UtmSource = 'motoemail'
+	SET @UtmMedium = 'email'
+	SET @UtmCampaign = 'ECOMM_EMARA_DE_DE_PRODUCT_MOTOZFAMILYMOTOMODS'
+	SET @UtmContent = 'MOTOZPLAYHASSELBLADANNC'
+
+]%%
+
+
+Moto Z Play & Hasselblad True Zoom.
+
+****
+
+Sie [%%emailaddr%%] erhalten diese E-Mail aufgrund einer früheren Transaktion oder Geschäftsbeziehung mit Motorola.
+
+Browser-Ansicht>
+%%view_email_url%%
+
+Abmelden>
+https://pages.motorola-mail.com/unsubscribe_t/?lang=de
+
+****
+
+Das neue
+Moto Z Play
+
+Ultimativer Akku. Unendliche Möglichkeiten.
+
+Moto Z Play bietet Motos längste Smartphone-Akku-Laufzeit aller Zeiten mit bis zu 50 Stunden Akku-Power – ganz ohne Nachladen.[*] Und dank Aufladen mit TurboPower(tm) bringen nur 15 Minuten aufladen weitere 10 Stunden Akku-Laufzeit.[**]
+
+Plus: Das Moto Z Play mit Moto Mods(tm) verwandeln und schon kann das Smartphone Dinge, die man nie für möglich gehalten hätte.
+
+Jetzt kaufen>
+http://www.motorola.co.uk/products/moto-z-play?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_z_play_buy_now
+
+***
+
+Das mobile Fotografie-Erlebnis transformieren
+
+Hasselblad Create to Inspire
+
+Die Tradition und einzigartige Fotografie-Erlebnisse des legendären Kamera-Hersteller jetzt mit dem Moto Z Smartphone erleben.
+
+Einfach anklippen und dank optischem 10fach-Zoom scharfe, detailreiche Fotos aus der Distanz aufnehmen. Zudem sorgt der Xenon-Blitz für scharfe, unverwackelte und gleichmäßig ausgeleuchtete Fotos in jeder Umgebung.
+
+Jetzt kaufen>
+http://www.motorola.co.uk/products/moto-mods/hasselblad-true-zoom?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=hasselblad_buy_now
+
+Moto Mods
+
+***
+
+Motorola-
+http://www.motorola.de/home?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_bug_top
+
+Twitter-
+https://twitter.com/Moto_GER
+
+Facebook- 
+https://www.facebook.com/MotoInGER
+
+YouTube-
+https://www.youtube.com/user/motorola
+
+*****
+
+
+Sie [%%emailaddr%%] erhalten diese E-Mail aufgrund einer früheren Transaktion oder Geschäftsbeziehung mit Motorola.
+
+Abbildungen modifiziert.
+
+* Alle Angaben zur Akku-Laufzeit sind ungefähre Werte, basierend auf einem durchschnittlichen, gemischten Nutzungsprofil, das sowohl Nutzungs- als auch Standby-Zeiten in einem 4G LTE-Netz umfasst. Für das Profil der gemischten Nutzung wurden die Werkseinstellungen verwendet, um die Akku-Laufzeit zu berechnen. Die tatsächliche Akku-Leistung variiert und ist von vielen Faktoren abhängig, dazu zählen Signalstärke, Netzwerkkonfiguration, Alter des Akkus, Umgebungstemperatur, ausgewählte Features, Geräteeinstellungen sowie sprach-, daten- und andere anwendungsspezifische Gegebenheiten.
+
+** Der Akku muss größtenteils entladen sein; die Aufladegeschwindigkeit nimmt mit zunehmender Aufladung ab. Ladegerät in einigen Märkten separat erhältlich.
+
+Wenn Sie keine E-Mails oder andere Informationen von Motorola Mobility Germany GmbH erhalten möchten, können Sie diese hier abbestellen. 
+
+Sie diese hier abbestellen>
+https://pages.motorola-mail.com/unsubscribe_t/?lang=de
+
+Bitte richten Sie alle Fragen zu den Datenschutzrichtlinien von Motorola an: privacy@motorola.com. Falls Sie keine weiteren Informationen von Motorola bekommen möchten, können Sie sich abmelden, indem Sie Ihre Abmeldung an folgende Adresse senden: Motorola Mobility Germany GmbH - a LENOVO Company, Vorstadt 2, D- 61440 Oberursel.
+
+Motorola schützt die Privatsphäre seiner Kunden. Für weitere Informationen zu unseren Datenschutzregelungen lesen Sie bitte die Motorola Privacy Policy. Bitte lesen Sie die Motorola Website Terms of Use, (Motorola Website Nutzungsbedingungen) bevor Sie unsere Website nutzen.
+
+Motorola Privacy Policy>
+http://www.motorola.de/legal/privacy-policy
+
+
+Motorola Website Terms of Use>
+http://www.motorola.de/legal/terms-of-use
+
+
+MOTOROLA und das stilisierte M-Logo sind Marken oder eingetragene Warenzeichen der Motorola Trademark Holdings, LLC. Facebook ist eine Marke von Facebook, lnc. Google, das Google-Logo, Android, YouTube, Chrome, Gmail, Google Play und andere Marken sind Markenzeichen von Google Inc. Bei allen anderen Firmen- und Produktnamen handelt es sich um Marken der betreffenden Unternehmen. (c)%%=Format(Now(), "yyyy")=%% Motorola Mobility LLC. Alle Rechte vorbehalten.

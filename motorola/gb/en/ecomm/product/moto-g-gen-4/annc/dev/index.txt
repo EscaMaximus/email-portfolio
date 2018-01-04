@@ -1,0 +1,120 @@
+﻿<!--%%[
+	/*
+		US-EN MOTO G4 FAMILY ANNC
+		Author: Motorola ExactTarget Team
+		Revision Date: 5/11/2016
+	*/	
+		/* GA Tagging Definitions */
+		
+		SET @UtmSource = 'motoemail'
+		SET @UtmMedium = 'email'
+		SET @UtmCampaign = 'ECOMM_EMARA_GB_EN_PRODUCT_MOTOG4FAMILY'
+		SET @UtmContent = 'ANNC'
+
+]%%-->
+
+
+The new Moto G family is on its way.
+
+
+*****
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola.
+
+Browser View>
+%%view_email_url%%
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+*****
+
+
+Free shipping for all orders over £75>
+http://www.motorola.co.uk/terms-of-sale/terms-of-sale.html?utm_source=motoemail&utm_medium=email&utm_campaign=ECOMM_EMARA_GB_EN_PROMOTION_WINTERSALE&utm_content=LAUNCH&utm_term=shipping&#shipping
+
+
+Specials>
+http://www.motorola.co.uk/specials-uk.html?utm_source=motoemail&utm_medium=email&utm_campaign=ECOMM_EMARA_GB_EN_PROMOTION_WINTERSALE&utm_content=LAUNCH&utm_term=specials
+
+
+*****
+
+
+The multi-award winning Moto G just got better
+
+Now you have a choice. Choose a new Moto G for a better mobile experience, at an affordable price. Then personalise its design, storage and camera in Moto Maker. Pre-orders begin on 24 May.
+
+
+
+*****
+
+
+
+
+Moto G Plus
+
+Focus on what matters
+
+Packed full of new features
+
+The new Moto G Plus has the most advanced 16 MP camera in its class. Dual SIM allows you to have two SIM plans or phone numbers on one phone. TurboPower™ charging gives you up to 6 hours of power in 15 minutes.* Simply touch the fingerprint reader to wake up your phone and unlock it.
+
+Learn more>
+http://www.motorola.co.uk/products/moto-g-plus?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=Moto_G_Plus_Learn_More
+
+
+*****
+
+
+Powerful performance that's built to last
+
+Blazing fast with an advanced camera
+
+Life moves fast. Move faster. The new Moto G packs a powerful octa-core processor so you can run multiple apps without slowing down. Snap professional-quality pictures with the advanced 13 MP camera.
+
+Learn more>
+http://www.motorola.co.uk/products/moto-g?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=Moto_G_Learn_More
+
+
+*****
+
+
+Motorola-
+http://www.motorola.com/us/home?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_bug_top
+
+Twitter-
+https://twitter.com/moto
+
+Facebook- 
+https://www.facebook.com/MotoInUK
+
+YouTube-
+https://www.youtube.com/user/motorola
+
+
+*****
+
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola.
+
+If you no longer wish to receive promotional emails from Motorola Mobility LLC, please unsubscribe.
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+Please direct any questions concerning Motorola's privacy practices to privacy@motorola.com.
+
+Enquiries or requests to unsubscribe from ("opt-out" of) communications from Motorola may also be mailed to: Motorola Mobility UK, Ltd., Redwood, Crockford Lane, Chineham Business Park, Basingstoke, RG24 8WQ.
+
+Motorola values your privacy. For more information on our Privacy Practices, please visit www.motorola.com/privacy
+
+Privacy>
+http://www.motorola.com/us/consumers/about-motorola-us/About_Motorola-Legal-Legal_and_Privacy_Policy/About_Motorola-Legal-Legal_and_Privacy_Policy.html
+
+Please visit www.motorola.com/legal to see Motorola's website terms of use.
+
+Legal>
+http://www.motorola.com/us/consumers/about-motorola-us/About_Motorola-Legal-Terms_of_Use/About_Motorola-Legal-Terms_of_Use.html
+
+MOTOROLA and the Stylised M Logo are trademarks of Motorola Trademark Holdings, LLC. Facebook is a trademark of Facebook, Inc. Android, Google and other marks are trademarks of Google Inc. All other trademarks are the property of their respective owners. (c)%%=Format(Now(), "yyyy")=%% Motorola Mobility LLC. All rights reserved.

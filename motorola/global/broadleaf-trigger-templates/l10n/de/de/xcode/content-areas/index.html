@@ -1,0 +1,74 @@
+<!--%%[
+	/*
+		DE-DE LOCALIZED XCODE / DESIGN REFRESH
+		Summary: this template can load different declined content such as new, unused and expired.
+		Author: Motorola ExactTarget Team
+		Revision Date: 6/23/2016
+	*/
+]%%-->
+%%[
+		VAR @Email, @FirstName, @LastName, @FullName, @XcodeStatus, @DesignRefresh, @XcodeTypeList, @ContentType, @XcodeRedemptionPin, @XcodeExpirationDate
+		
+		SET @Email = EmailAddress
+		SET @FirstName = FIRST_NAME
+		SET @LastName = LAST_NAME
+		
+		IF NOT EMPTY(@LastName) THEN
+			SET @FirstName = Concat(@FirstName, " ")
+		ENDIF
+		
+		SET @FullName = Concat(ProperCase(@FirstName),ProperCase(@LastName))
+		SET @XcodeStatus = Uppercase(Trim(XCODE_STATUS))
+
+		/* xCode type list to check for (e.g. NEW,UNUSED,EXPIRED) */
+		SET @XcodeTypeList = "NEW,UNUSED,EXPIRED"
+		
+		SET @XcodeRedemptionPin = REDEMPTION_PIN
+		SET @XcodeExpirationDate = EXPIRATION_DATE
+
+		/* Define extensions */
+		VAR @PreTextHeader, @MotoBug, @WelcomeInfo, @BuildYours, @CustomerSupport, @Social, @Legal
+
+		/* Localized HTML/CSS for Head Templates */
+		SET @PreTextHeader = Concat(@SharedL10nPath, "SH_PRETEXTHEADER", @HTML)
+		SET @MotoBug = Concat(@SharedL10nPath, "SH_MOTOBUG", @HTML)
+		SET @WelcomeInfo = Concat(@SpecificL10nPath, "WELCOMEINFO", @HTML)
+		SET @BuildYours = Concat(@SharedL10nPath, "SH_BUILDYOURS", @HTML)
+		SET @CustomerSupport = Concat(@SharedL10nPath, "SH_CUSTOMERSERVICECONTACT", @HTML)
+		SET @Social = Concat(@SharedL10nPath, "SH_SOCIAL", @HTML)
+		SET @Legal = Concat(@SharedL10nPath, "SH_GENERICLEGAL", @HTML)
+
+		
+		/* Identify xCode type */
+		IF IndexOf(@XcodeTypeList, @XcodeStatus) > 0 THEN
+			
+			SET @ContentType = 'XCODE_'
+			SET @XcodeContent = Concat(@SpecificL10nPath,@ContentType,@XcodeStatus,@HTML)
+
+		ENDIF
+
+		/* Hash Redemption Pin after email has been sent */
+		VAR @RedemptionPin, @RedemptionPinHash
+		SET @RedemptionPin = @XcodeRedemptionPin
+		SET @RedemptionPinHash = SHA256(@RedemptionPin)
+		
+		UpdateDE("ECOMM_GLO_TRIGGER_XCODE",2,"REDEMPTION_PIN",@XcodeRedemptionPin,"XCODE_STATUS",@XcodeStatus,"REDEMPTION_PIN",@RedemptionPinHash)
+
+]%%
+	<table width="100%" bgcolor="#FAFAFA" border="0" cellpadding="0" cellspacing="0">
+		<tr>
+			<td>
+				<!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->     
+				<table bgcolor="#FFFFFF" class="content" align="center" cellpadding="0" cellspacing="0" border="0" style="margin:0 auto; width: 100%; max-width: 600px;">
+					%%=ContentAreaByName(@PreTextHeader)=%%
+					%%=ContentAreaByName(@MotoBug)=%%
+					%%=ContentAreaByName(@XcodeContent)=%%
+					%%=ContentAreaByName(@BuildYours)=%%
+					%%=ContentAreaByName(@CustomerSupport)=%%
+					%%=ContentAreaByName(@Social)=%%
+					%%=ContentAreaByName(@Legal)=%%
+				</table>
+				<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+			</td>
+		</tr>
+	</table>

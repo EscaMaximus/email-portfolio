@@ -1,0 +1,27 @@
+					<tr>
+						<td class="innerpadding" style="padding: 40px 30px 7px 30px;">
+							<table width="100%" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td class="h1" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 32px!important; line-height: 38px!important; font-weight: bold; color: #222c30; padding: 0 0 20px 0;">
+											%%[IF NOT EMPTY(@FullName) THEN]%%
+												Bonjour %%=v(@FullName)=%%,
+											%%[ELSE]%%
+												Bonjour,
+											%%[ENDIF]%%
+									</td>
+								</tr>
+								<tr>
+									<td class="h3" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 24px; line-height: 30px; font-weight:bold; color: #80888c; padding:0 0 15px 0;">Nous sommes d&eacute;sol&eacute;s.</td>
+								</tr>
+								<tr>
+									<td class="h4" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 20px; line-height: 26px; font-weight:normal; color: #80888c; padding:0 0 15px 0;">Votre commande a &eacute;t&eacute; annul&eacute;e.</td>
+								</tr>
+								<tr>
+									<td class="p-lead" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 18px; line-height: 24px; font-weight:normal; color: #222c30; padding:0 0 15px 0;">Le traitement de votre paiement s&#39;est heurt&eacute; &agrave; un probl&egrave;me.</td>
+								</tr>
+								<tr>
+									<td class="p-lead" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 18px; line-height: 24px; font-weight:normal; color: #222c30; padding:0 0 15px 0;">Si vous estimez que cette annulation n&#39;a pas lieu d&#39;&ecirc;tre, veuillez prendre contact avec <a href="%%=RedirectTo(@ContactUsURL)=%%" style="color: #222c30; text-decoration:underline;" class="highlight-link" title="l&#39;Assistance client" target="_blank" alias="contact_us">l&#39;Assistance client</a> ou essayez de repasser commande en utilisant un autre mode de paiement.</td>
+								</tr>
+							</table>
+						</td>
+					</tr>

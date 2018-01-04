@@ -1,0 +1,49 @@
+							<!--[if (gte mso 9)|(IE)]><table width="510" align="left" cellpadding="0" cellspacing="0" border="0"><tr><td width="270" valign="top"><![endif]-->
+							<table width="270" align="left" border="0" cellpadding="0" cellspacing="0">
+								<tr>
+									<td class="h4" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 20px; line-height: 26px; font-weight:normal; color: #80888c; padding:0 0 10px 0;">Rechnungsadresse</td>
+								</tr>                         
+								<tr>
+									<td class="p-address" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 15px; line-height: 21px; font-weight:normal; color: #222c30; padding: 0 0 3px 0;">
+											%%[IF NOT EMPTY(@FullName) THEN]%%
+												%%=v(@FullName)=%%
+											%%[ELSE]%%
+												%%=v(@FirstName)=%% %%=v(@LastName)=%%
+											%%[ENDIF]%%
+									</td>
+								</tr>
+								%%[IF NOT EMPTY(@BillToCompanyName) THEN]%%
+								<tr>
+									<td class="p-address" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 15px; line-height: 21px; font-weight:normal; color: #222c30; padding: 0 30px 3px 0;"><a style="color: #222c30; text-decoration:none;" class="body-copy-222c30">%%=v(@BillToCompanyName)=%%</a></td>
+								</tr>
+								%%[ENDIF]%%
+								%%[IF NOT EMPTY(@BillToAddress01) THEN]%%
+								<tr>
+									<td class="p-address" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 15px; line-height: 21px; font-weight:normal; color: #222c30; padding: 0 30px 3px 0;"><a style="color: #222c30; text-decoration:none;" class="body-copy-222c30">%%=v(@BillToAddress01)=%%</a></td>
+								</tr>
+								%%[ENDIF]%%
+								%%[IF NOT EMPTY(@BillToAddress02) THEN]%%
+								<tr>
+									<td class="p-address" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 15px; line-height: 21px; font-weight:normal; color: #222c30; padding: 0 30px 3px 0;"><a style="color: #222c30; text-decoration:none;" class="body-copy-222c30">%%=v(@BillToAddress02)=%%</a></td>
+								</tr>
+								%%[ENDIF]%%
+								%%[IF NOT EMPTY(@BillToAddress03) THEN]%%
+								<tr>
+									<td class="p-address" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 15px; line-height: 21px; font-weight:normal; color: #222c30; padding: 0 30px 3px 0;"><a style="color: #222c30; text-decoration:none;" class="body-copy-222c30">%%=v(@BillToAddress03)=%%</a></td>
+								</tr>
+								%%[ENDIF]%%
+								%%[IF NOT EMPTY(@BillToCity) OR NOT EMPTY(@BillToState) OR NOT EMPTY(@BillToZip) THEN]%%
+								<tr>
+									<td class="p-address" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 15px; line-height: 21px; font-weight:normal; color: #222c30; padding: 0 30px 3px 0;"><a style="color: #222c30; text-decoration:none;" class="body-copy-222c30">%%[IF NOT EMPTY(@BillToCity) THEN]%%%%=v(@BillToCity)=%%&nbsp;%%[ENDIF]%%%%[IF NOT EMPTY(@BillToState) THEN]%%%%=v(@BillToState)=%%,&nbsp;%%[ENDIF]%%%%[IF NOT EMPTY(@BillToZip) THEN]%%%%=v(@BillToZip)=%%%%[ENDIF]%%</a></td>
+								</tr>
+								%%[ENDIF]%%
+								<tr>
+									<td class="p-address" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 15px; line-height: 21px; font-weight:normal; color: #222c30; padding: 0 30px 3px 0;"><a style="color: #222c30; text-decoration:none;" class="body-copy-222c30">Germany</a></td>
+								</tr>
+								%%[IF NOT EMPTY(@PhoneNumber) THEN]%%
+								<tr>
+									<td class="p-address" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 15px; line-height: 21px; font-weight:normal; color: #222c30; padding: 0 30px 25px 0;"><a style="color: #222c30; text-decoration:none;" class="body-copy-222c30">%%=v(@PhoneNumber)=%%</a></td>
+								</tr>
+								%%[ENDIF]%%
+							</table>
+                         <!--[if (gte mso 9)|(IE)]></td><td valign="top" width="240"><![endif]-->

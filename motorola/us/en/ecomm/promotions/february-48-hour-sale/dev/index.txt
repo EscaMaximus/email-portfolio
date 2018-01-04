@@ -1,0 +1,115 @@
+﻿
+
+Free Moto 360 (1st Gen.) with Moto X Pure Edition (64 GB) purchase.
+
+
+*****
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola.
+
+Browser View>
+%%view_email_url%%
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+*****
+
+
+Free shipping on orders over $75>
+http://www.motorola.com/us/consumers/about-motorola-us/About_Motorola-Legal-Terms_of_Sale/About_Motorola-Legal-Terms_of_Sale.html?utm_source=motoemail&utm_medium=email&utm_campaign=ECOMM_NA_US_EN_PROMOTION_FEB201648HOURFLASHSALE&utm_content=LAUNCH&utm_term=free_shipping
+
+
+Apply for Moto Credit>
+http://www.motorola.com/us/motorola-finance-pdp.html?utm_source=motoemail&utm_medium=email&utm_campaign=ECOMM_NA_US_EN_PROMOTION_FEB201648HOURFLASHSALE&utm_content=LAUNCH&utm_term=credit
+
+
+Specials>
+http://www.motorola.com/us/motorola-shop-all-sale.html?utm_source=motoemail&utm_medium=email&utm_campaign=ECOMM_NA_US_EN_PROMOTION_FEB201648HOURFLASHSALE&utm_content=LAUNCH&utm_term=specials
+
+
+*****
+
+
+
+Moto X Pure Edition
+Moto 360 (1st Gen.)
+powered by Android Wear
+
+Flash sale
+
+Get the stylish and smart Moto 360 (1st Gen.) for free when you buy a 64 GB Moto X Pure Edition.* They sync together flawlessly, so you can stay in the loop while staying in the moment.
+
+Buy now>
+http://www.motorola.com/us/products/moto-x-pure-edition?utm_source=motoemail&utm_medium=email&utm_campaign=ECOMM_NA_US_EN_PROMOTION_FEB201648HOURFLASHSALE&utm_content=LAUNCH&utm_term=buy_now_motoxpe
+
+
+
+*****
+
+
+
+Accessorize for even less
+
+Buy any clearance accessory and get a second clearance accessory free.** Shop a variety of discounted colorful cases, and more, for your Moto phone.
+
+Buy now>
+http://www.motorola.com/us/clearance/?utm_source=motoemail&utm_medium=email&utm_campaign=ECOMM_NA_US_EN_PROMOTION_FEB201648HOURFLASHSALE&utm_content=LAUNCH&utm_term=buy_now_accessories
+
+
+
+*****
+
+
+Motorola-
+http://www.motorola.com/us/home?utm_source=motoemail&utm_medium=email&utm_campaign=ECOMM_NA_US_EN_PROMOTION_FEB201648HOURFLASHSALE&utm_content=LAUNCH&utm_term=moto_bug_top
+
+Twitter-
+https://twitter.com/Moto_USA
+
+Facebook- 
+http://www.facebook.com/motorola
+
+Google+
+https://plus.google.com/+Motorola/posts
+
+Instagram-
+http://instagram.com/motorola
+
+YouTube-
+https://www.youtube.com/user/motorola
+
+
+*****
+
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola. If this email has been forwarded to you, you can opt-in for future communications from Motorola.
+
+opt-in for future communications>
+https://pages.motorola-mail.com/registration-us-en/?c=ECOMM_NA_US_EN_REGISTRATION_FORWARDEDOPTIN&utm_source=motoemail&utm_medium=email&utm_campaign=ECOMM_NA_US_EN_PROMOTION_FEB201648HOURFLASHSALE&utm_content=LAUNCH&utm_term=forwarded_optin
+
+
+* Offer valid through 10:59 a.m. CT on 2/19/16 or while supplies last. 64 GB Moto X Pure Edition and Moto X (1st Gen.) must be added to cart for discount to apply. Offer does not apply to Moto X Pure Edition designed by Jonathan Adler.
+
+** Offer valid through 10:59 a.m. CT on 2/23/16 or while supplies last. Applies to clearance accessories only, not clearance phones or other devices. For every two clearance accessories, the one of equal or lesser value will appear free when you add both items to your cart.
+
+If you no longer wish to receive promotional emails from Motorola Mobility LLC, please unsubscribe.
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+Please direct any questions concerning Motorola's privacy practices to privacy@motorola.com.
+
+Inquiries or requests to unsubscribe from ("opt-out" of) communications from Motorola may also be mailed to: Motorola Mobility LLC Attn: Privacy Compliance Program 222 W. Merchandise Mart Plaza, Suite 1800, Mailstop 16-O19.02, Chicago, IL 60654.
+
+Motorola values your privacy. For more information on our Privacy Practices, please visit www.motorola.com/privacy
+
+Privacy>
+http://www.motorola.com/us/consumers/about-motorola-us/About_Motorola-Legal-Legal_and_Privacy_Policy/About_Motorola-Legal-Legal_and_Privacy_Policy.html
+
+Please visit www.motorola.com/legal to see Motorola's website terms of use.
+
+Legal>
+http://www.motorola.com/us/consumers/about-motorola-us/About_Motorola-Legal-Terms_of_Use/About_Motorola-Legal-Terms_of_Use.html
+
+MOTOROLA and the Stylized M Logo are trademarks of Motorola Trademark Holdings, LLC. Android, Android Wear, Google and other marks are trademarks of Google Inc. All other trademarks are the property of their respective owners. (c)%%=Format(Now(), "yyyy")=%% Motorola Mobility LLC. All rights reserved.

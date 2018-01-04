@@ -1,0 +1,32 @@
+					<tr>
+						<td class="innerpadding" style="padding: 40px 30px 7px 30px;">
+							<table width="100%" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td class="h1" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 32px!important; line-height: 38px!important; font-weight: bold; color: #222c30; padding: 0 0 20px 0;">
+											%%[IF NOT EMPTY(@FullName) THEN]%%
+												Oi %%=v(@FullName)=%%,
+											%%[ELSE]%%
+												Oi,
+											%%[ENDIF]%%
+									</td>
+								</tr>
+								<tr>
+									<td class="p-lead" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 18px; line-height: 24px; font-weight:normal; color: #222c30; padding:0 0 15px 0;">Obrigado por seu pedido!</td>
+								</tr>
+							%%[IF (@PaymentTypeOne == 'BILL') OR (@PaymentTypeOne == 'DEBIT') OR (@PaymentTypeTwo == 'BILL') OR (@PaymentTypeTwo == 'DEBIT') THEN]%%
+							<!-- offline payment method copy -->
+								<tr>
+									<td class="p-lead" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 18px; line-height: 24px; font-weight:normal; color: #222c30; padding:0 0 15px 0;">Conclua o pagamento do pedido antes da data de validade. Se n&atilde;o recebermos o pagamento dentro desse prazo, seu pedido ser&aacute; cancelado e voc&ecirc; ter&aacute; de refaz&ecirc;-lo.</td>
+								</tr>
+							%%[ELSE]%%
+							<!-- online payment method copy -->
+								<tr>
+									<td class="p-lead" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 18px; line-height: 24px; font-weight:normal; color: #222c30; padding:0 0 15px 0;">Recebemos seu pedido e estamos processando o pagamento. Enviaremos uma atualiza&ccedil;&atilde;o sobre o status do pedido quando o pagamento for confirmado.</td>
+								</tr>
+							%%[ENDIF]%%
+								<tr>
+									<td class="h3" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 24px; line-height: 30px; font-weight: normal; color:#80888c; padding:40px 0 0 0;">Resumo do pedido</td>
+								</tr>
+							</table>
+						</td>
+					</tr>

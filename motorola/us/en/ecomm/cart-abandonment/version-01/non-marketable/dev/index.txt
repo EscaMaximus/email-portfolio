@@ -1,0 +1,156 @@
+﻿%%[
+/*
+Cart Abandonment Non-Marketables
+Author: Motorola ExactTarget Team
+Revision Date: 9/14/2016
+*/
+
+VAR @CartID, @URLType
+
+SET @CartID = CART_ID 
+SET @URLType = URL_TYPE
+]%%
+
+
+You [%%emailaddr%%] have received this email message to update you about your recent interaction with motorola.com. This is a one-time communication. 
+
+
+****
+
+Visit Motorola.com to complete your purchase.
+
+****
+
+Browser View>
+%%view_email_url%% 
+
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%% 
+
+
+****
+
+Free shipping on orders over $75>
+http://www.motorola.com/us/legal/terms-of-sale?utm_source=motoemail&utm_medium=email&utm_campaign=ECOMM_NA_US_EN_AUTOMATION_CARTABANDONMENT&utm_content=REMINDERNONMARKETABLE&utm_term=free_shipping 
+
+Apply for Moto Credit>
+http://www.motorola.com/us/motorola-financing?utm_source=motoemail&utm_medium=email&utm_campaign=ECOMM_NA_US_EN_AUTOMATION_CARTABANDONMENT&utm_content=REMINDERNONMARKETABLE&utm_term=credit 
+
+Specials>
+http://www.motorola.com/us/specials?utm_source=motoemail&utm_medium=email&utm_campaign=ECOMM_NA_US_EN_AUTOMATION_CARTABANDONMENT&utm_content=REMINDERNONMARKETABLE&utm_term=specials 
+
+****
+
+
+
+Thank you for adding these products to your cart
+
+To stay informed about Motorola products and services, subscribe now or visit motorola.com.
+
+Subscribe>
+https://pages.motorola-mail.com/registration-us-en/?c=ECOMM_NA_US_EN_AUTOMATION_CARTABANDONMENT_REMINDERNONMARKETABLE&utm_source=motoemail&utm_medium=email&utm_campaign=ECOMM_NA_US_EN_AUTOMATION_CARTABANDONMENT&utm_content=REMINDERNONMARKETABLE&utm_term=optin
+
+Motorola.com>
+http://www.motorola.com/us/home?utm_source=motoemail&utm_medium=email&utm_campaign=ECOMM_NA_US_EN_AUTOMATION_CARTABANDONMENT&utm_content=REMINDERNONMARKETABLE&utm_term=moto_com
+
+
+%%[
+/* Define line item variables */
+VAR @GAString, @ReturnDataSet, @LoopQty, @Counter, @ImageURL, @AssetModel, @AssetModelList, @ItemNumberSku, @CTAURL, @QueryStringCheck, @QueryStringDelimiter
+
+SET @GAString = "utm_source=motoemail&utm_medium=email&utm_campaign=ECOMM_NA_US_EN_AUTOMATION_CARTABANDONMENT&utm_content=REMINDERNONMARKETABLE&utm_term="
+
+/* Lookup content on Cart ID, limit to 8 rows */
+SET @ReturnDataSet = LookupOrderedRows("ECOMM_NA_US_EN_AUTOMATION_CARTABANDONMENT_NONMARKETABLEDATA",8,"HIERARCHY ASC","CART_ID",@CartID)
+SET @TotalRows = Rowcount(@ReturnDataSet)
+
+/* Loop through line items */
+SET @LoopQty = @TotalRows
+FOR @Counter = 1 to @LoopQty DO
+
+SET @row = Row(@ReturnDataSet,@Counter)
+SET @ImageURL = URLEncode(Field(@row,"IMAGE_URL"),"0","1")
+SET @AssetModel = Field(@row,"ASSET_MODEL")
+SET @ItemNumberSku = Field(@row,"ITEM_NUMBER_SKU")
+
+IF @URLType == "pdp" THEN
+SET @CTAURL = Field(@row,"PDP_URL")
+ELSEIF @URLType == "motomaker" THEN
+SET @CTAURL = Field(@row, "MOTOMAKER_URL")
+ELSE
+SET @CTAURL = Field(@row, "PDP_URL")
+ENDIF
+
+/* Check query string so we know how to append GA strong */
+SET @QueryStringCheck = IndexOf(@CTAURL, "?")
+
+IF @QueryStringCheck >= 1 THEN
+SET @QueryStringDelimiter = "&"
+ELSE
+SET @QueryStringDelimiter = "?"
+ENDIF
+]%%
+
+%%[IF IndexOf(@AssetModelList,@AssetModel) == 0 THEN
+/* Add products to list as we loop */
+SET @AssetModelList = Concat(@AssetModelList,@AssetModel,",") ]%%
+%%=v(@AssetModel)=%%
+
+%%=RedirectTo(Concat(@CTAURL,@QueryStringDelimiter,@GAString,@ItemNumberSku))=%% 
+Shop now>
+
+
+%%[IF @TotalRows >= 2 THEN]%%
+
+
+%%[ENDIF]%%
+%%[/* Add products to list as we loop */
+SET @AssetModelList = Concat(@AssetModelList,@AssetModel,",")
+ENDIF]%%
+%%[NEXT @Counter]%%
+
+
+****
+
+Twitter>
+https://twitter.com/Moto_USA 
+
+Facebook>
+https://www.facebook.com/MotoUSA/
+
+Google+>
+https://plus.google.com/+Moto
+
+Instagram>
+https://www.instagram.com/moto_usa/
+
+YouTube>
+https://www.youtube.com/user/motorola 
+
+
+****
+
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola. This is a one-time communication. 
+
+All screen images simulated.
+
+If you no longer wish to receive promotional emails from Motorola Mobility LLC, please unsubscribe. 
+
+Unsubsribe>
+%%=RedirectTo(unsub_center_url)=%% 
+
+Please direct any questions concerning Motorola's privacy practices to privacy@motorola.com.
+
+Inquiries or requests to unsubscribe from ("opt-out" of) communications from Motorola may also be mailed to: Motorola Mobility LLC Attn: Privacy Compliance Program 222 W. Merchandise Mart Plaza, Suite 1800, Chicago, IL 60654.
+
+Motorola values your privacy. For more information on our Privacy Practices, please visit Motorola Privacy Policy. Please visit Motorola Website Terms of Use to see Motorola's website terms of use.
+
+Privacy>
+http://www.motorola.com/us/legal/privacy-policy
+
+Legal>
+http://www.motorola.com/us/legal/terms-of-use
+
+MOTOROLA and the Stylized M Logo are trademarks of Motorola Trademark Holdings, LLC. Facebook is a trademark of Facebook, Inc. Android, Google and other marks are trademarks of Google Inc. All other trademarks are the property of their respective owners. (c)%%=Format(Now(), "yyyy")=%% Motorola Mobility LLC. All rights reserved.

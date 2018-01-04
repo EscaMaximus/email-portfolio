@@ -1,0 +1,102 @@
+﻿
+
+Moto X (2nd Gen) is $50 off until Jan. 26.
+
+
+*************************************************************************************
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola.
+
+Browser View>
+%%view_email_url%%
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+*************************************************************************************
+
+
+
+Free shipping on orders over $75>
+http://www.motorola.com/us/consumers/about-motorola-us/About_Motorola-Legal-Terms_of_Sale/About_Motorola-Legal-Terms_of_Sale.html?utm_source=motoemail&utm_medium=email&utm_campaign=ECOMM_NA_US_EN_PROMOTION_MOTOXGEN250OFF&utm_content=LAUNCH&utm_term=free_shipping
+
+
+Apply for Moto Credit>
+http://www.motorola.com/us/motorola-finance-pdp.html?utm_source=motoemail&utm_medium=email&utm_campaign=ECOMM_NA_US_EN_PROMOTION_MOTOXGEN250OFF&utm_content=LAUNCH&utm_term=credit
+
+
+Specials>
+http://www.motorola.com/us/motorola-shop-all-sale.html?utm_source=motoemail&utm_medium=email&utm_campaign=ECOMM_NA_US_EN_PROMOTION_MOTOXGEN250OFF&utm_content=LAUNCH&utm_term=specials
+
+
+
+******************************
+
+
+
+
+Moto X
+(2nd Gen.)
+
+Now $50 off*
+
+For a limited time, get Moto X (2nd Gen.) starting at just $249.99. Shop quickly because this offer ends on Tuesday, January 26.*
+
+Build yours>
+https://www.motorola.com/us/motomaker?pid=FLEXR2&utm_source=motoemail&utm_medium=email&utm_campaign=ECOMM_NA_US_EN_PROMOTION_MOTOXGEN250OFF&utm_content=LAUNCH&utm_term=x_gen2_build_yours
+
+
+
+
+
+************************************************************************************
+
+
+Motorola-
+http://www.motorola.com/us/home?utm_source=motoemail&utm_medium=email&utm_campaign=ECOMM_NA_US_EN_PROMOTION_MOTOXGEN250OFF&utm_content=LAUNCH&utm_term=moto_bug_top
+
+Twitter-
+https://twitter.com/motorola
+
+Facebook- 
+http://www.facebook.com/motorola
+
+Google+
+https://plus.google.com/+Motorola/posts
+
+Instagram-
+http://instagram.com/motorola
+
+YouTube-
+https://www.youtube.com/user/motorola
+
+
+*************************************************************************************
+
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola.
+
+All screen images simulated.
+
+* Offer valid for Moto X (2nd Gen.) only through 10:59 a.m. CT on 1/26/16. Moto X upgrades are available at an extra cost as stated in Moto Maker.
+
+If you no longer wish to receive promotional emails from Motorola Mobility LLC, please unsubscribe.
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+Please direct any questions concerning Motorola's privacy practices to privacy@motorola.com.
+
+Inquiries or requests to unsubscribe from ("opt-out" of) communications from Motorola may also be mailed to: Motorola Mobility LLC Attn: Privacy Compliance Program 222 W. Merchandise Mart Plaza, Suite 1800, Mailstop 16-O19.02, Chicago, IL 60654.
+
+Motorola values your privacy. For more information on our Privacy Practices, please visit www.motorola.com/privacy
+
+Privacy>
+http://www.motorola.com/us/consumers/about-motorola-us/About_Motorola-Legal-Legal_and_Privacy_Policy/About_Motorola-Legal-Legal_and_Privacy_Policy.html
+
+Please visit www.motorola.com/legal to see Motorola's website terms of use.
+
+Legal>
+http://www.motorola.com/us/consumers/about-motorola-us/About_Motorola-Legal-Terms_of_Use/About_Motorola-Legal-Terms_of_Use.html
+
+MOTOROLA and the Stylized M Logo are trademarks of Motorola Trademark Holdings, LLC. Android, Google and other marks are trademarks of Google Inc. All other trademarks are the property of their respective owners. (c)%%=Format(Now(), "yyyy")=%% Motorola Mobility LLC. All rights reserved.

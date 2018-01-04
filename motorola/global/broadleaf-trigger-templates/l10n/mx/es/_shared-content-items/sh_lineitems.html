@@ -1,0 +1,143 @@
+					%%[
+						/* Define line item variables */
+						VAR @LineItemQty, @Counter, @TotalDesignedProducts, @LoopQty, @LineItemPosition
+
+						SET @LineItems = ORDER_LINE_ITEMS
+						SET @LineItemQty = 24
+						SET @TotalLineItems = NUMBER_OF_LINE_ITEMS
+
+						SET @LineItemPosition = 0
+						SET @TotalDesignedProducts = Divide(@TotalLineItems, @LineItemQty)
+						
+						/* Outer Loop through line items */
+						SET @LoopQty = @TotalDesignedProducts
+						FOR @Counter = 1 to @LoopQty DO
+						
+						VAR @OrderQTY, @AssetModelSource, @LineItemPrice, @PromisedDeliveryDate, @DaysToDelivery, @ScheduledShipDate, @ShipingMethod, @Memory, @FrontColor, @BackColor, @AccentColor, @Etching, @Greeting, @WallCharger, @Wallpaper, @WearablesCase, @WearablesBezel, @WearablesBand, @WearablesBuckle, @WearablesFace, @Color, @Shells, @Headset, @CarCharger
+
+						SET @LineItemPosition = Add(@LineItemPosition, 1)
+						SET @OrderQTY = Field(Row(BuildRowSetFromString(@LineItems, '&#x7C;'), @LineItemPosition), 1)
+
+						SET @LineItemPosition = Add(@LineItemPosition, 1)
+						SET @AssetModelSource = Field(Row(BuildRowSetFromString(@LineItems, '&#x7C;'), @LineItemPosition), 1)
+
+						SET @LineItemPosition = Add(@LineItemPosition, 1)
+						SET @LineItemPrice = Field(Row(BuildRowSetFromString(@LineItems, '&#x7C;'), @LineItemPosition), 1)
+
+						SET @LineItemPosition = Add(@LineItemPosition, 1)
+						SET @PromisedDeliveryDate = Field(Row(BuildRowSetFromString(@LineItems, '&#x7C;'), @LineItemPosition), 1)
+
+						SET @LineItemPosition = Add(@LineItemPosition, 1)
+						SET @DaysToDelivery = Field(Row(BuildRowSetFromString(@LineItems, '&#x7C;'), @LineItemPosition), 1)
+
+						SET @LineItemPosition = Add(@LineItemPosition, 1)
+						SET @ScheduledShipDate = Field(Row(BuildRowSetFromString(@LineItems, '&#x7C;'), @LineItemPosition), 1)
+
+						SET @LineItemPosition = Add(@LineItemPosition, 1)
+						SET @ShipingMethod = Field(Row(BuildRowSetFromString(@LineItems, '&#x7C;'), @LineItemPosition), 1)
+
+						SET @LineItemPosition = Add(@LineItemPosition, 1)
+						SET @Memory = Field(Row(BuildRowSetFromString(@LineItems, '&#x7C;'), @LineItemPosition), 1)
+
+						SET @LineItemPosition = Add(@LineItemPosition, 1)
+						SET @FrontColor = Field(Row(BuildRowSetFromString(@LineItems, '&#x7C;'), @LineItemPosition), 1)
+
+						SET @LineItemPosition = Add(@LineItemPosition, 1)
+						SET @BackColor = Field(Row(BuildRowSetFromString(@LineItems, '&#x7C;'), @LineItemPosition), 1)
+
+						SET @LineItemPosition = Add(@LineItemPosition, 1)
+						SET @AccentColor = Field(Row(BuildRowSetFromString(@LineItems, '&#x7C;'), @LineItemPosition), 1)
+
+						SET @LineItemPosition = Add(@LineItemPosition, 1)
+						SET @Etching = Field(Row(BuildRowSetFromString(@LineItems, '&#x7C;'), @LineItemPosition), 1)
+
+						SET @LineItemPosition = Add(@LineItemPosition, 1)
+						SET @Greeting = Field(Row(BuildRowSetFromString(@LineItems, '&#x7C;'), @LineItemPosition), 1)
+
+						SET @LineItemPosition = Add(@LineItemPosition, 1)
+						SET @WallCharger = Field(Row(BuildRowSetFromString(@LineItems, '&#x7C;'), @LineItemPosition), 1)
+
+						SET @LineItemPosition = Add(@LineItemPosition, 1)
+						SET @Wallpaper = Field(Row(BuildRowSetFromString(@LineItems, '&#x7C;'), @LineItemPosition), 1)
+
+						SET @LineItemPosition = Add(@LineItemPosition, 1)
+						SET @WearablesCase = Field(Row(BuildRowSetFromString(@LineItems, '&#x7C;'), @LineItemPosition), 1)
+
+						SET @LineItemPosition = Add(@LineItemPosition, 1)
+						SET @WearablesBezel = Field(Row(BuildRowSetFromString(@LineItems, '&#x7C;'), @LineItemPosition), 1)
+
+						SET @LineItemPosition = Add(@LineItemPosition, 1)
+						SET @WearablesBand = Field(Row(BuildRowSetFromString(@LineItems, '&#x7C;'), @LineItemPosition), 1)
+
+						SET @LineItemPosition = Add(@LineItemPosition, 1)
+						SET @WearablesBuckle = Field(Row(BuildRowSetFromString(@LineItems, '&#x7C;'), @LineItemPosition), 1)
+
+						SET @LineItemPosition = Add(@LineItemPosition, 1)
+						SET @WearablesFace = Field(Row(BuildRowSetFromString(@LineItems, '&#x7C;'), @LineItemPosition), 1)
+
+						SET @LineItemPosition = Add(@LineItemPosition, 1)
+						SET @Color = Field(Row(BuildRowSetFromString(@LineItems, '&#x7C;'), @LineItemPosition), 1)
+
+						SET @LineItemPosition = Add(@LineItemPosition, 1)
+						SET @Shells = Field(Row(BuildRowSetFromString(@LineItems, '&#x7C;'), @LineItemPosition), 1)
+
+						SET @LineItemPosition = Add(@LineItemPosition, 1)
+						SET @Headset = Field(Row(BuildRowSetFromString(@LineItems, '&#x7C;'), @LineItemPosition), 1)
+
+						SET @LineItemPosition = Add(@LineItemPosition, 1)
+						SET @CarCharger = Field(Row(BuildRowSetFromString(@LineItems, '&#x7C;'), @LineItemPosition), 1)
+					]%%
+					<tr>
+						<td bgcolor="#F0F0F0" style="padding: 15px 30px 15px 30px; border-bottom: 1px solid #D3D3D3;">
+							<table width="100%" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td class="p-order-detail" width="10%" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 15px; line-height: 21px; font-weight: bold; vertical-align:top; color:#222c30; padding:0 5px 0 0">%%=v(@OrderQTY)=%%</td>
+									<td width="60%" style="vertical-align:top;">
+										<table width="100%" border="0" cellspacing="0" cellpadding="0">
+											<tr>
+												<td class="p-order-detail" width="100%" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 15px; line-height: 21px; font-weight: bold; color:#222c30; padding:0 10px 5px 0;">%%=v(@AssetModelSource)=%%</td>
+											</tr>
+											<tr>
+												<td class="p-order-detail-options" width="100%" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 14px; line-height: 20px; font-weight: normal; color:#80888c; padding:0 20px 5px 0;">
+													%%[IF NOT EMPTY(@Memory) THEN]%%<span style="font-weight:bold;">Memoria</span> - %%=v(@Memory)=%%<br />%%[ENDIF]%%
+													%%[IF NOT EMPTY(@BackColor) THEN]%%<span style="font-weight:bold;">Atr&aacute;s</span> - %%=v(@BackColor)=%%<br />%%[ENDIF]%%
+													%%[IF NOT EMPTY(@FrontColor) THEN]%%<span style="font-weight:bold;">Frente</span> - %%=v(@FrontColor)=%%<br />%%[ENDIF]%%
+													%%[IF NOT EMPTY(@AccentColor) THEN]%%<span style="font-weight:bold;">Detalle</span> - %%=v(@AccentColor)=%%<br />%%[ENDIF]%%
+													%%[IF NOT EMPTY(@Etching) THEN]%%<span style="font-weight:bold;">Grabado</span> - %%=v(@Etching)=%%<br />%%[ENDIF]%%
+													%%[IF NOT EMPTY(@Greeting) THEN]%%<span style="font-weight:bold;">Saludo</span> - %%=v(@Greeting)=%%<br />%%[ENDIF]%%
+													%%[IF NOT EMPTY(@WallCharger) THEN]%%<span style="font-weight:bold;">Cargador de pared</span> - %%=v(@WallCharger)=%%<br />%%[ENDIF]%%
+													%%[/*IF NOT EMPTY(@Wallpaper) THEN*/]%%<!--<span style="font-weight:bold;">Wallpaper</span> - -->%%[/*%%=v(@Wallpaper)=%%*/]%%<!--<br />-->%%[/*ENDIF*/]%%
+													%%[IF NOT EMPTY(@WearablesCase) THEN]%%<span style="font-weight:bold;">Acabado</span> - %%=v(@WearablesCase)=%%<br />%%[ENDIF]%%
+													%%[IF NOT EMPTY(@WearablesBezel) THEN]%%<span style="font-weight:bold;">Bisel</span> - %%=v(@WearablesBezel)=%%<br />%%[ENDIF]%%
+													%%[IF NOT EMPTY(@WearablesBand) THEN]%%<span style="font-weight:bold;">Correa</span> - %%=v(@WearablesBand)=%%<br />%%[ENDIF]%%
+													%%[IF NOT EMPTY(@WearablesBuckle) THEN]%%<span style="font-weight:bold;">Hebilla</span> - %%=v(@WearablesBuckle)=%%<br />%%[ENDIF]%%
+													%%[IF NOT EMPTY(@WearablesFace) THEN]%%<span style="font-weight:bold;">Car&aacute;tula</span> - %%=v(@WearablesFace)=%%<br />%%[ENDIF]%%
+													%%[IF NOT EMPTY(@Color) THEN]%%<span style="font-weight:bold;">Color</span> - %%=v(@Color)=%% %%[ENDIF]%%
+													%%[IF NOT EMPTY(@Shells) THEN]%%<span style="font-weight:bold;">Shells</span> - %%=v(@Shells)=%%<br />%%[ENDIF]%%
+													%%[IF NOT EMPTY(@Headset) THEN]%%<span style="font-weight:bold;">Auriculares</span> - %%=v(@Headset)=%%<br />%%[ENDIF]%%
+													%%[IF NOT EMPTY(@CarCharger) THEN]%%<span style="font-weight:bold;">Cargador para auto</span> - %%=v(@CarCharger)=%%<br />%%[ENDIF]%%
+												</td>
+											</tr>
+											<tr>
+												<td class="p-order-detail" width="100%" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 15px; line-height: 21px; font-weight: bold; color:#222c30; padding:10px 0 0 0;">
+													Entrega estimada<br />
+													<a style="font-family: 'Open Sans', Arial, sans-serif; font-size: 14px; line-height: 20px; font-weight: normal; color:#80888c; text-decoration:none;" class="p-order-detail-options">
+													%%[IF NOT EMPTY(@DaysToDelivery) THEN]%%
+														%%=v(@DaysToDelivery)=%% business days after confirmation of payment<br />
+													%%[ELSEIF NOT EMPTY(@PromisedDeliveryDate) THEN]%%
+														%%=FormatDate(@PromisedDeliveryDate, @DateDayYearFormat, "", @C_Sharp_Locale_Str)=%%<br />
+													%%[ENDIF]%%
+														<!--%%=v(@ShipingMethod)=%%-->
+													</a>
+												</td>
+											</tr>
+										</table>
+									</td>
+									<td width="30%" style="font-size: 15px; color: #222c30; font-weight: bold; text-align: right; font-family: 'Open Sans', Arial, sans-serif; line-height: 21px; vertical-align: top;">%%=FormatNumber(@LineItemPrice,"C2", @C_Sharp_Locale_Str)=%%</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					%%[
+					NEXT @Counter
+					]%%

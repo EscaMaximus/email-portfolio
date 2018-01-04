@@ -1,0 +1,201 @@
+%%[
+	/*
+		US-EN BLACK FRIDAY EPISODE 1
+		Author: Motorola ExactTarget Team
+		Revision Date: 11/18/2016
+	*/	
+	/* GA Tagging Definitions */
+	VAR @UtmSource, @UtmMedium, @UtmCampaign, @UtmContent, @EmailHash, @CouponCode
+	SET @UtmSource = 'motoemail'
+	SET @UtmMedium = 'email'
+	SET @UtmCampaign = 'ECOMM_NA_US_EN_PROMOTION_2016BLACKFRIDAY'
+	SET @UtmContent = 'EPISODE01'
+	SET @EmailHash = SHA256(lowercase(trim(emailaddr)))
+
+]%%
+
+
+Get Moto Z Droid + Moto Mods™ now with these unprecedented deals.
+
+
+*****
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola.
+
+Browser View>
+%%view_email_url%%
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+*****
+
+Free shipping on orders over $75>
+http://www.motorola.com/us/legal/terms-of-sale?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=free_shipping&ceid=%%=v(@EmailHash)=%%
+
+
+Specials>
+http://www.motorola.com/us/specials?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=specials&ceid=%%=v(@EmailHash)=%%
+
+*****
+
+hellomoto
+
+Shop Black Friday deals, like up to $250 off the revolutionary new Moto Z Droid + Moto Mods™.
+
+Lenovo
+
+***
+
+$250 off!
+
+Moto Z Play Droid +
+Moto Insta-Share Projector
+
+was $707.99
+Now from $457.99*
+
+Just add both to your cart, then the discount appears at checkout.
+
+Buy now>
+https://www.motorola.com/us/products/motomaker/MotoMods?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=z_play_droid_insta_share_bundle&ceid=%%=v(@EmailHash)=%%&poExpanded=motozplaydroid
+
+
+Lenovo
+
+***
+
+$250 off!
+
+Moto Z Play Droid +
+Hasselblad True Zoom
+
+was $707.99
+Now from $457.99*
+
+Just add both to your cart, then the discount appears at checkout.
+
+Buy now>
+https://www.motorola.com/us/products/motomaker/MotoMods?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=z_play_droid_hasselblad_bundle&ceid=%%=v(@EmailHash)=%%&poExpanded=motozplaydroid
+
+
+Lenovo
+
+***
+
+$250 off!
+
+Moto Z Droid +
+Moto Insta-Share Projector
+
+was $923.99
+Now from $673.99*
+
+Just add both to your cart, then the discount appears at checkout.
+
+Buy now>
+https://www.motorola.com/us/products/motomaker/MotoMods?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=z_droid_insta_share_bundle&ceid=%%=v(@EmailHash)=%%&poExpanded=motozdroid
+
+
+Lenovo
+
+***
+
+$250 off!
+
+Moto Z Droid +
+Hasselblad True Zoom
+
+was $923.99
+Now from $673.99*
+
+Just add both to your cart, then the discount appears at checkout.
+
+Buy now>
+https://www.motorola.com/us/products/motomaker/MotoMods?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=z_droid_hasselblad_bundle&ceid=%%=v(@EmailHash)=%%&poExpanded=motozdroid
+
+
+Lenovo
+
+***
+
+$100 off!
+
+Moto 360
+
+Buy now>
+https://www.motorola.com/us/products/motomaker/FLEXR8?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_360&ceid=%%=v(@EmailHash)=%%&style=ATO800001&deviceStyle=ATO800001&carrier=ATO800001&action=designNew
+
+
+Lenovo
+
+***
+
+Looking for another Black Friday deal? Check out this special offer from our parent company, Lenovo!***
+
+Shop now>
+http://shop.lenovo.com/us/en/landingpage/promotions/holiday-deals/?cid=EDM_2016_NA_US_CON_MOTOSEND
+
+
+Lenovo
+
+
+*****
+
+Motorola-
+http://www.motorola.com/us/home?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_bug_top&ceid=%%=v(@EmailHash)=%%
+
+Twitter-
+https://twitter.com/Moto_USA
+
+Facebook- 
+https://www.facebook.com/MotoUSA/
+
+Google+
+https://plus.google.com/+Moto
+
+Instagram-
+http://instagram.com/moto_usa/
+
+YouTube-
+https://www.youtube.com/user/motorola
+
+
+*****
+
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola. If this email has been forwarded to you, you can opt-in for future communications from Motorola.
+
+opt-in for future communications>
+https://pages.motorola-mail.com/registration-us-en/?c=ECOMM_NA_US_EN_REGISTRATION_FORWARDEDOPTIN&utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=forwarded_optin
+
+All screen images simulated.
+
+* Offer valid through 10:59 p.m. CT on 11/28/16 or while supplies last. Discount applied at checkout when both items are added to your cart.
+
+
+** Offer valid through 10:59 p.m. CT on 11/28/16 or while supplies last. Upgrades to Moto 360 are available at an extra cost as stated in Moto Maker.
+
+
+*** Motorola Mobility was acquired by Lenovo, the world leader in Personal Computers, in 2014. Motorola products have always been about innovation and Lenovo products are no different. We are proud to share with you the latest innovative products from Lenovo and will occasionally be highlighting special offers from Lenovo in our communications moving forward.
+
+If you no longer wish to receive promotional emails from Motorola Mobility LLC, please unsubscribe.
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+Please direct any questions concerning Motorola's privacy practices to privacy@motorola.com.
+
+Inquiries or requests to unsubscribe from ("opt-out" of) communications from Motorola may also be mailed to: Motorola Mobility LLC Attn: Privacy Compliance Program 222 W. Merchandise Mart Plaza, Suite 1800, Chicago, IL 60654.
+
+Motorola values your privacy. For more information on our Privacy Practices, please visit Motorola Privacy Policy. Please visit Motorola Website Terms of Use to see Motorola's website terms of use.
+
+Privacy>
+http://www.motorola.com/us/legal/privacy-policy
+
+Legal>
+http://www.motorola.com/us/legal/terms-of-use
+
+MOTOROLA and the Stylized M Logo are trademarks of Motorola Trademark Holdings, LLC. Android, Google and other marks are trademarks of Google Inc. All other trademarks are the property of their respective owners. (c)%%=Format(Now(), "yyyy")=%% Motorola Mobility LLC. All rights reserved.
+
+

@@ -1,0 +1,56 @@
+%%[
+	/*
+		FR-FR ORDER DELAYED VARIABLE CONTENT DEFINITIONS
+		Summary: various items can be set in this file such as Subject Line, Google Analytics, Order Status URL, Customer Service URL and Template Highlight Color in Hero and Buttons.
+		Author: Motorola ExactTarget Team
+		Revision Date: 7/25/2016
+	*/
+
+	VAR @SubjectLine, @DateFormat, @DateDayFormat, @DateDayYearFormat
+
+	/* Subject and Date Definition/Formatting */
+	SET @SubjectLine = "Votre commande Moto : Commande retardée"
+
+	/* Template highlight Color */
+	VAR @TemplateHighlightColor, @MotoBugColor
+
+	SET @TemplateHighlightColor = '#ff4f4f'
+	SET @MotoBugColor = 'http://image.motorola-mail.com/lib/fe901272716d077b74/m/4/bug-motorola-ff4f4f.png'
+
+	/* Subject and Date Definition/Formatting */
+	SET @DateFormat = "DD/MM/YYYY"
+	SET @DateDayFormat = "DDDD DD/MM"
+	SET @DateDayYearFormat = "DDDDD DD/MM/YYYY"
+
+	/* GA Tagging Definitions */
+	VAR @UtmSource, @UtmMedium, @UtmCampaign, @UtmContent
+
+	SET @UtmSource = 'motoemail'
+	SET @UtmMedium = 'email'
+	SET @UtmCampaign = 'ECOMM_EMARA_FR_FR_TRIGGER_ORDER'
+	SET @UtmContent = 'DELAYED'
+	SET @GaBaseString = Concat("?utm_source=",@UtmSource,"&utm_medium=",@UtmMedium,"&utm_campaign=",@UtmCampaign,"&utm_content=",@UtmContent,"&")
+	SET @GaBaseStringAmpersand = Concat("&utm_source=",@UtmSource,"&utm_medium=",@UtmMedium,"&utm_campaign=",@UtmCampaign,"&utm_content=",@UtmContent,"&")
+
+	VAR @MotoBugURL, @PreTextHeaderURL, @ContactUsURL, @CustomerServiceURL, @OrderStatusURL
+
+	/* Moto Bug URL */
+	SET @MotoBugURL = 'http://www.motorola.fr/home'
+	SET @MotoBugURL = Concat(@MotoBugURL,@GaBaseString,"utm_term=moto_bug_top")
+
+	/* Pre-Text Header URL */
+	SET @PreTextHeaderURL = 'http://www.motorola.fr/home'
+	SET @PreTextHeaderURL = Concat(@PreTextHeaderURL,@GaBaseString,"utm_term=pretext_header")
+
+	/* Customer Service URL */
+	SET @CustomerServiceURL = 'http://motorola-global-portal-fr.custhelp.com/app/mcp/landing_troubleshooter/g_id/5626'
+	SET @CustomerServiceURL = Concat(@CustomerServiceURL,@GaBaseString,"utm_term=customer_service")
+
+	/* Contact Us Customer Service URL */
+	SET @ContactUsURL = 'https://motorola-global-portal-fr.custhelp.com/app/mcp/contactus/?g_id=5626'
+	SET @ContactUsURL = Concat(@ContactUsURL,@GaBaseStringAmpersand,"utm_term=contact_us")
+
+	/* Order Status URL */
+	SET @OrderStatusURL = 'https://motorola-global-portal-fr.custhelp.com/app/mcp/track-my-stuff-landing/orderId/'
+
+]%%

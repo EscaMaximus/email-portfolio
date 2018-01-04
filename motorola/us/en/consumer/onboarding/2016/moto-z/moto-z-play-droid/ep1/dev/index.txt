@@ -1,0 +1,174 @@
+﻿%%[
+	/*
+		US-EN MOTO Z PLAY EPISODE 1
+		Author: Motorola ExactTarget Team
+		Revision Date: 11/11/2016
+	*/	
+	/* GA Tagging Definitions */
+	VAR @UtmSource, @UtmMedium, @UtmCampaign, @UtmContent, @EmailHash
+	SET @UtmSource = 'motoemail'
+	SET @UtmMedium = 'email'
+	SET @UtmCampaign = 'CONSUMER_NA_US_EN_ONBOARDING_MOTOZFAMILYMOTOMODS'
+	SET @UtmContent = 'MOTOZPLAYDROIDEP1'
+	SET @EmailHash = SHA256(lowercase(trim(emailaddr)))
+	SET @CouponCode = PROMOTION_CODE
+
+]%%
+
+
+Learn more about Moto Z.
+
+
+***
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola.
+
+Browser View>
+%%view_email_url%%
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+***
+
+User Guide>
+https://motorola-global-portal.custhelp.com/ci/fattach/get/1792503/1473362243/redirect/1/filename/68018248001.GSG_final.pdf
+
+Customer Service>
+https://motorola-global-portal.custhelp.com/app/mcp/landing_troubleshooter/g_id/5059/?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=customer_service&ceid=%%=v(@EmailHash)=%%
+
+Owner Forums>
+https://forums.lenovo.com/t5/Moto-Z-Play/bd-p/Moto_Z_Play
+
+***
+
+Moto Z Play Droid
+
+Ready for unlimited possibilities?
+
+Congratulations on getting the world's thinnest premium smartphone. Your new Moto Z Play Droid is built with durable military aircraft-grade aluminum and stainless steel. And with Moto Mods(tm), the possibilities are practically endless.
+
+Learn more>
+http://www.motorola.com/us/products/moto-z-play?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_z_play_droid&ceid=%%=v(@EmailHash)=%%
+
+***
+
+TurboPower(tm) charging
+
+Get up to 9 hours of power in just 15 minutes of charging with the included TurboPower charger.**
+
+Learn more>
+http://www.motorola.com/us/products/moto-z-play?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=turbopower&ceid=%%=v(@EmailHash)=%%#super-battery
+
+***
+
+Save $25***
+
+Get an extra TurboPower charger to keep at the office or in your bag. 
+
+Use promo code at checkout:
+
+%%=v(@CouponCode)=%%
+
+Save $25>
+http://www.motorola.com/us/products/turbo-power-30-wall-charger?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=turbopower_save_25dollars&ceid=%%=v(@EmailHash)=%%
+
+***
+
+16 MP dual auto-focus camera
+
+Shoot beautifully sharp photos day or night with laser and phase detect autofocus.
+
+Learn more>
+http://www.motorola.com/us/products/moto-z-play?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=camera&ceid=%%=v(@EmailHash)=%%#shoot-like-a-pro
+
+***
+
+Hasselblad True Zoom
+
+Transform your mobile camera experience
+
+The legendary camera maker brings its legacy and unique shooting experiences to your Moto Z smartphone. Snap it on and capture crisp, detailed photos from a distance with 10X optical zoom. 
+
+Learn more>
+http://www.motorola.com/us/products/moto-mods/hasselblad-true-zoom?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=hasselblad_learn_more&ceid=%%=v(@EmailHash)=%%
+
+***
+
+Moto Mods(tm)
+
+Amazing today. Awesome tomorrow.
+
+Your Moto Z phone can instantly transform into a 70" movie projector, battery powerhouse and more. This is just the start. More Moto Mods are being developed by your favorite brands. And they're designed to work with future generation Moto Z phones.[†]
+
+Buy now>
+http://www.motorola.com/us/moto-mods?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_mods&ceid=%%=v(@EmailHash)=%%
+
+***
+
+Free shipping***>
+http://www.motorola.com/us/legal/terms-of-sale?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=shipping&ceid=%%=v(@EmailHash)=%%
+
+Specials>
+http://www.motorola.com/us/specials?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=specials&ceid=%%=v(@EmailHash)=%%
+
+***
+
+Motorola-
+http://www.motorola.com/us/home?utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=moto_bug_top
+
+Twitter-
+https://twitter.com/Moto_USA
+
+Facebook- 
+https://www.facebook.com/MotoUSA/
+
+Google+
+https://plus.google.com/+Moto
+
+Instagram-
+https://www.instagram.com/moto_usa/
+
+YouTube-
+https://www.youtube.com/user/motorola
+
+
+***
+
+You [%%emailaddr%%] have received this email because of a prior transaction or relationship with Motorola. If this email has been forwarded to you, you can opt-in for future communications from Motorola.
+
+opt-in for future communications>
+https://pages.motorola-mail.com/registration-us-en/?c=ECOMM_NA_US_EN_REGISTRATION_FORWARDEDOPTIN&utm_source=%%=v(@UtmSource)=%%&utm_medium=%%=v(@UtmMedium)=%%&utm_campaign=%%=v(@UtmCampaign)=%%&utm_content=%%=v(@UtmContent)=%%&utm_term=forwarded_optin
+
+All screen images simulated.
+
+* All battery life claims are approximate and based on a standard mixed use profile. The mixed use profile is based on Motorola devices on major 4G LTE networks with excellent coverage and includes both usage and standby time. Out-of-box settings are applied to the mixed use profile to project battery performance. Actual battery performance will vary and depends on many factors including signal strength, network configuration, age of battery, operating temperature, features selected, device settings, and voice, data, and other application usage patterns.
+
+** Battery must be substantially depleted; charging rate slows as charging progresses. Charger sold separately in some markets.
+
+*** Promo code valid with purchase of TurboPower 30 Wall Charger only through 10:59 a.m. CT on 12/31/16. Promo code must be entered at checkout for discount to apply. One time use only. Promotion cannot be combined with any other offer or discounts.
+
+† Co-branded Moto Mods may require software upgrades to maintain compatibility, contact the manufacturer for details.
+
+‡ Free shipping for orders over $75.
+
+Certain features, functionality and product specifications may be network dependent and subject to additional terms, conditions, and charges. All are subject to change without notice.
+
+If you no longer wish to receive promotional emails from Motorola Mobility LLC, please unsubscribe.
+
+Unsubscribe>
+%%=RedirectTo(unsub_center_url)=%%
+
+Please direct any questions concerning Motorola's privacy practices to privacy@motorola.com.
+
+Inquiries or requests to unsubscribe from ("opt-out" of) communications from Motorola may also be mailed to: Motorola Mobility LLC Attn: Privacy Compliance Program 222 W. Merchandise Mart Plaza, Suite 1800, Mailstop 16-O19.02, Chicago, IL 60654.
+
+Motorola values your privacy. For more information on our Privacy Practices, please visit Motorola Privacy Policy. Please visit Motorola Website Terms of Use to see Motorola's website terms of use.
+
+Privacy>
+http://www.motorola.com/us/legal/privacy-policy
+
+Legal>
+http://www.motorola.com/us/legal/terms-of-use
+
+MOTOROLA and the Stylized M Logo are trademarks of Motorola Trademark Holdings, LLC. DROID is a trademark of Lucasfilm Ltd. and its related companies. Android, Google and other marks are trademarks of Google Inc. All other trademarks are the property of their respective owners. ©%%=Format(Now(), "yyyy")=%% Motorola Mobility LLC. All rights reserved.
